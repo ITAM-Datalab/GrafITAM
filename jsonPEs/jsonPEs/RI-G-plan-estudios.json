@@ -1,0 +1,86 @@
+{
+  "ECO-11101": {
+    "semestre": 1,
+    "nombre": "Economía I",
+    "creditos": 6,
+    "prerreqs": [],
+    "coreqs": [],
+    "estado": 0
+  },
+  "LEN-12701": {
+    "semestre": 1,
+    "nombre": "Estrategias de Comunicación Escrita",
+    "creditos": 6,
+    "prerreqs": [],
+    "coreqs": [],
+    "estado": 0
+  },
+  "MAT-11100": {
+    "semestre": 2,
+    "nombre": "Matemáticas I",
+    "creditos": 9,
+    "prerreqs": [],
+    "coreqs": [],
+    "estado": 0
+  },
+  "COM-16401": {
+    "semestre": 2,
+    "nombre": "Computación I",
+    "creditos": 7,
+    "prerreqs": [],
+    "coreqs": [],
+    "estado": 0
+  },
+  "CON-10100": {
+    "semestre": 2,
+    "nombre": "Contabilidad I",
+    "creditos": 6,
+    "prerreqs": [],
+    "coreqs": [],
+    "estado": 0
+  },
+  "DER-10013": {
+    "semestre": 4,
+    "nombre": "Fundamentos Jurídicos",
+    "creditos": 9,
+    "prerreqs": [],
+    "coreqs": [],
+    "estado": 0
+  },
+  "EIN-16402": {
+    "semestre": 6,
+    "nombre": "Europa Contemporánea",
+    "creditos": 6,
+    "prerreqs": [],
+    "coreqs": [],
+    "estado": 0
+  },
+  "EIN-17303": {
+    "semestre": 7,
+    "nombre": "Relaciones México-EUA-Canadá",
+    "creditos": 6,
+    "prerreqs": [
+      "EIN-15302"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "EIN-17403": {
+    "semestre": 7,
+    "nombre": "Japón, China y el Sudeste Asiático",
+    "creditos": 6,
+    "prerreqs": [
+      "EIN-15105"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "EIN-19414": {
+    "semestre": 7,
+    "nombre": "Medio Oriente",
+    "creditos": 6,
+    "prerreqs": [],
+    "coreqs": [],
+    "estado": 0
+  }
+}

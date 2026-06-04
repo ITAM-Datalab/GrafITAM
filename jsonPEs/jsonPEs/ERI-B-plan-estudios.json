@@ -1,0 +1,77 @@
+{
+  "ECO-11101": {
+    "semestre": 1,
+    "nombre": "Economía I",
+    "creditos": 6,
+    "prerreqs": [],
+    "coreqs": [],
+    "estado": 0
+  },
+  "LEN-10131": {
+    "semestre": 1,
+    "nombre": "Estrategias de Comunicación Escrita",
+    "creditos": 6,
+    "prerreqs": [],
+    "coreqs": [],
+    "estado": 0
+  },
+  "ECO-12102": {
+    "semestre": 2,
+    "nombre": "Economía II",
+    "creditos": 6,
+    "prerreqs": [
+      "ECO-11101"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "MAT-12100": {
+    "semestre": 2,
+    "nombre": "Cálculo I",
+    "creditos": 9,
+    "prerreqs": [],
+    "coreqs": [],
+    "estado": 0
+  },
+  "CON-10100": {
+    "semestre": 2,
+    "nombre": "Contabilidad I",
+    "creditos": 6,
+    "prerreqs": [],
+    "coreqs": [],
+    "estado": 0
+  },
+  "EST-11101": {
+    "semestre": 5,
+    "nombre": "Probabilidad",
+    "creditos": 8,
+    "prerreqs": [
+      "MAT-12101"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "EIN-16403": {
+    "semestre": 7,
+    "nombre": "América Latina",
+    "creditos": 6,
+    "prerreqs": [
+      "EIN-15105"
+    ],
+    "coreqs": [
+      "CORREQ"
+    ],
+    "estado": 0
+  },
+  "ECO-12201": {
+    "semestre": 7,
+    "nombre": "Teoría y Política Monetaria",
+    "creditos": 6,
+    "prerreqs": [
+      "ECO-21104",
+      "ECO-22105"
+    ],
+    "coreqs": [],
+    "estado": 0
+  }
+}

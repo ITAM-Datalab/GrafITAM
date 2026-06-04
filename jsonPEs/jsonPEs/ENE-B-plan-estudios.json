@@ -1,0 +1,200 @@
+{
+  "LEN-10131": {
+    "semestre": 1,
+    "nombre": "Estrateagias de Comunicación Escrita",
+    "creditos": 6,
+    "prerreqs": [],
+    "coreqs": [],
+    "estado": 0
+  },
+  "ECO-11101": {
+    "semestre": 1,
+    "nombre": "Economía I",
+    "creditos": 6,
+    "prerreqs": [],
+    "coreqs": [],
+    "estado": 0
+  },
+  "COM-11101": {
+    "semestre": 1,
+    "nombre": "Algoritmos y Programas",
+    "creditos": 9,
+    "prerreqs": [],
+    "coreqs": [],
+    "estado": 0
+  },
+  "ADM-12107": {
+    "semestre": 1,
+    "nombre": "Estrategia de Negocios I",
+    "creditos": 6,
+    "prerreqs": [],
+    "coreqs": [],
+    "estado": 0
+  },
+  "CON-10001": {
+    "semestre": 2,
+    "nombre": "Proceso Contable",
+    "creditos": 8,
+    "prerreqs": [],
+    "coreqs": [],
+    "estado": 0
+  },
+  "ECO-12102": {
+    "semestre": 2,
+    "nombre": "Economía II",
+    "creditos": 6,
+    "prerreqs": [
+      "ECO-11101"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "MAT-14200": {
+    "semestre": 2,
+    "nombre": "Geometría Analítica",
+    "creditos": 6,
+    "prerreqs": [],
+    "coreqs": [],
+    "estado": 0
+  },
+  "COM-11102": {
+    "semestre": 2,
+    "nombre": "Estructuras de Datos",
+    "creditos": 8,
+    "prerreqs": [
+      "COM-11101"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "MAT-14100": {
+    "semestre": 2,
+    "nombre": "Cálculo Diferencial e Integral I",
+    "creditos": 8,
+    "prerreqs": [],
+    "coreqs": [],
+    "estado": 0
+  },
+  "MAT-14201": {
+    "semestre": 3,
+    "nombre": "Álgebra Lineal I",
+    "creditos": 8,
+    "prerreqs": [
+      "MAT-14200"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "COM-16414": {
+    "semestre": 3,
+    "nombre": "Aplicación de las TI a los Negocios",
+    "creditos": 6,
+    "prerreqs": [
+      "COM-11102"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "MAT-14101": {
+    "semestre": 3,
+    "nombre": "Cálculo Diferencial e Integral II",
+    "creditos": 8,
+    "prerreqs": [
+      "MAT-14100"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "EGN-17161": {
+    "semestre": 4,
+    "nombre": "Historia Socio-Política de México",
+    "creditos": 6,
+    "prerreqs": [
+      "EGN-17123"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "MAT-24630": {
+    "semestre": 5,
+    "nombre": "Matemáticas Aplicadas a la Economía",
+    "creditos": 6,
+    "prerreqs": [
+      "MAT-14102"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "SDI-25916": {
+    "semestre": 5,
+    "nombre": "Sistemas Empresariales",
+    "creditos": 6,
+    "prerreqs": [
+      "ADM-12107"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "COM-16413": {
+    "semestre": 5,
+    "nombre": "Inteligencia de Negocios",
+    "creditos": 6,
+    "prerreqs": [
+      "COM-16203"
+    ],
+    "coreqs": [
+      "CORREQ"
+    ],
+    "estado": 0
+  },
+  "CON-12003": {
+    "semestre": 6,
+    "nombre": "Administración Estratégica de Costos",
+    "creditos": 6,
+    "prerreqs": [
+      "CON-12110"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "ADM-16601": {
+    "semestre": 7,
+    "nombre": "Mercadotecnia I",
+    "creditos": 6,
+    "prerreqs": [
+      "EST-11101"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "ECO-11122": {
+    "semestre": 8,
+    "nombre": "Microeconomía Avanzada II",
+    "creditos": 6,
+    "prerreqs": [
+      "ECO-11121"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "ECO-12201": {
+    "semestre": 8,
+    "nombre": "Teoría y Política Monetaria",
+    "creditos": 6,
+    "prerreqs": [
+      "ECO-22105"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "ADM-12013": {
+    "semestre": 9,
+    "nombre": "Diseño y Cambio Organizacional",
+    "creditos": 6,
+    "prerreqs": [
+      "ADM-14405"
+    ],
+    "coreqs": [],
+    "estado": 0
+  }
+}

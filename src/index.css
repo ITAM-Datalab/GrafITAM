@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Make React Flow canvas transparent so the app background shows through */
+.react-flow,
+.react-flow__renderer,
+.react-flow__zoom-pane {
+  background-color: transparent !important;
+}

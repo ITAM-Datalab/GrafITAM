@@ -1,0 +1,340 @@
+{
+  "COM-11101": {
+    "semestre": 1,
+    "nombre": "Algoritmos y Programas",
+    "creditos": 9,
+    "prerreqs": [],
+    "coreqs": [],
+    "estado": 0
+  },
+  "SDI-14105": {
+    "semestre": 1,
+    "nombre": "Introducción a la Ingeniería",
+    "creditos": 6,
+    "prerreqs": [],
+    "coreqs": [],
+    "estado": 0
+  },
+  "MAT-14200": {
+    "semestre": 1,
+    "nombre": "Geometría Analítica",
+    "creditos": 6,
+    "prerreqs": [],
+    "coreqs": [],
+    "estado": 0
+  },
+  "LEN-12701": {
+    "semestre": 1,
+    "nombre": "Estrategias de Comunicación Escrita",
+    "creditos": 6,
+    "prerreqs": [],
+    "coreqs": [],
+    "estado": 0
+  },
+  "COM-11102": {
+    "semestre": 2,
+    "nombre": "Estructuras de Datos",
+    "creditos": 8,
+    "prerreqs": [
+      "COM-11101"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "MAT-14100": {
+    "semestre": 2,
+    "nombre": "Cálculo Diferencial e Integral I",
+    "creditos": 8,
+    "prerreqs": [],
+    "coreqs": [],
+    "estado": 0
+  },
+  "CON-10001": {
+    "semestre": 2,
+    "nombre": "Proceso Contable",
+    "creditos": 8,
+    "prerreqs": [],
+    "coreqs": [],
+    "estado": 0
+  },
+  "IIO-15130": {
+    "semestre": 2,
+    "nombre": "Fundamentos de Química",
+    "creditos": 11,
+    "prerreqs": [],
+    "coreqs": [],
+    "estado": 0
+  },
+  "MAT-14201": {
+    "semestre": 2,
+    "nombre": "Álgebra Lineal I",
+    "creditos": 8,
+    "prerreqs": [
+      "MAT-14200"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "COM-16203": {
+    "semestre": 3,
+    "nombre": "Desarrollo de Aplicaciones Informáticas",
+    "creditos": 8,
+    "prerreqs": [
+      "COM-11102"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "SDI-11120": {
+    "semestre": 3,
+    "nombre": "Elementos de Física",
+    "creditos": 10,
+    "prerreqs": [
+      "MAT-14100"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "MAT-14101": {
+    "semestre": 3,
+    "nombre": "Cálculo Diferencial e Integral II",
+    "creditos": 8,
+    "prerreqs": [
+      "MAT-14100"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "ADM-12107": {
+    "semestre": 3,
+    "nombre": "Estrategia de Negocios I",
+    "creditos": 6,
+    "prerreqs": [],
+    "coreqs": [],
+    "estado": 0
+  },
+  "LEN-12702": {
+    "semestre": 3,
+    "nombre": "Seminario de Comunicación Escrita",
+    "creditos": 2,
+    "prerreqs": [
+      "LEN-12701"
+    ],
+    "coreqs": [
+      "CORREQ"
+    ],
+    "estado": 0
+  },
+  "EST-11101": {
+    "semestre": 4,
+    "nombre": "Probabilidad",
+    "creditos": 8,
+    "prerreqs": [
+      "MAT-14101"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "ECO-11101": {
+    "semestre": 4,
+    "nombre": "Economía I",
+    "creditos": 6,
+    "prerreqs": [],
+    "coreqs": [],
+    "estado": 0
+  },
+  "SDI-11322": {
+    "semestre": 5,
+    "nombre": "Circuitos Lógicos",
+    "creditos": 10,
+    "prerreqs": [
+      "SDI-11120"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "ECO-12102": {
+    "semestre": 5,
+    "nombre": "Economía II",
+    "creditos": 6,
+    "prerreqs": [
+      "ECO-11101"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "COM-14106": {
+    "semestre": 5,
+    "nombre": "Gráficas por Computadora",
+    "creditos": 6,
+    "prerreqs": [
+      "COM-11103"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "MAT-14301": {
+    "semestre": 6,
+    "nombre": "Álgebra superior II",
+    "creditos": 6,
+    "prerreqs": [
+      "MAT-14300"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "COM-23101": {
+    "semestre": 6,
+    "nombre": "Inteligencia Artificial",
+    "creditos": 8,
+    "prerreqs": [
+      "COM-16203"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "SDI-13760": {
+    "semestre": 7,
+    "nombre": "Redes de Computadoras",
+    "creditos": 10,
+    "prerreqs": [
+      "MAT-14102"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "ADM-16601": {
+    "semestre": 7,
+    "nombre": "Mercadotecnia I",
+    "creditos": 6,
+    "prerreqs": [
+      "EST-11101"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "ECO-11104": {
+    "semestre": 7,
+    "nombre": "Economía IV",
+    "creditos": 6,
+    "prerreqs": [
+      "ECO-11103"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "COM-22104": {
+    "semestre": 7,
+    "nombre": "Ingeniería de Software",
+    "creditos": 6,
+    "prerreqs": [
+      "COM-16203"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "COM-14104": {
+    "semestre": 8,
+    "nombre": "Sistemas Operativos",
+    "creditos": 8,
+    "prerreqs": [
+      "SDI-11561"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "COM-22105": {
+    "semestre": 8,
+    "nombre": "Sistemas Distribuidos",
+    "creditos": 8,
+    "prerreqs": [
+      "COM-12102"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "SDI-25916": {
+    "semestre": 8,
+    "nombre": "Sistemas Empresariales",
+    "creditos": 6,
+    "prerreqs": [
+      "ADM-12107"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "COM-16413": {
+    "semestre": 9,
+    "nombre": "Inteligencia de Negocios",
+    "creditos": 6,
+    "prerreqs": [
+      "COM-16203"
+    ],
+    "coreqs": [
+      "CORREQ"
+    ],
+    "estado": 0
+  },
+  "SDI-24810": {
+    "semestre": 9,
+    "nombre": "Sistemas de Comercio Electrónico",
+    "creditos": 8,
+    "prerreqs": [
+      "COM-12101"
+    ],
+    "coreqs": [
+      "CORREQ"
+    ],
+    "estado": 0
+  },
+  "ADM-12251": {
+    "semestre": 10,
+    "nombre": "Planeación y Ejecución de Estrategias",
+    "creditos": 6,
+    "prerreqs": [
+      "ADM-12013"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "ADM-16644": {
+    "semestre": 10,
+    "nombre": "Modelos de Mercadotecnia",
+    "creditos": 6,
+    "prerreqs": [
+      "ADM-16610"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "ADM-15593": {
+    "semestre": 10,
+    "nombre": "Ingeniería Financiera",
+    "creditos": 6,
+    "prerreqs": [
+      "ADM-15510"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "IIO-16180": {
+    "semestre": 10,
+    "nombre": "Seminario de Titulación",
+    "creditos": 6,
+    "prerreqs": [
+      "ADM-16610"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "SDI-13782": {
+    "semestre": 10,
+    "nombre": "Diseño y Arquitectura de Redes",
+    "creditos": 8,
+    "prerreqs": [
+      "SDI-13760"
+    ],
+    "coreqs": [],
+    "estado": 0
+  }
+}

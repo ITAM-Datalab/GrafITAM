@@ -1,0 +1,96 @@
+{
+  "ECO-11101": {
+    "semestre": 1,
+    "nombre": "Economía I",
+    "creditos": 6,
+    "prerreqs": [],
+    "coreqs": [],
+    "estado": 0
+  },
+  "ECO-12102": {
+    "semestre": 2,
+    "nombre": "Economía II",
+    "creditos": 6,
+    "prerreqs": [
+      "ECO-11101"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "CON-10100": {
+    "semestre": 2,
+    "nombre": "Contabilidad I",
+    "creditos": 6,
+    "prerreqs": [],
+    "coreqs": [],
+    "estado": 0
+  },
+  "MAT-12100": {
+    "semestre": 2,
+    "nombre": "Cálculo I",
+    "creditos": 9,
+    "prerreqs": [],
+    "coreqs": [],
+    "estado": 0
+  },
+  "MAT-12310": {
+    "semestre": 3,
+    "nombre": "Álgebra Matricial",
+    "creditos": 8,
+    "prerreqs": [
+      "MAT-12100"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "MAT-12101": {
+    "semestre": 3,
+    "nombre": "Cálculo II",
+    "creditos": 9,
+    "prerreqs": [
+      "MAT-12100"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "EGN-17161": {
+    "semestre": 4,
+    "nombre": "Historia Socio-política de México",
+    "creditos": 6,
+    "prerreqs": [
+      "EGN-17123"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "EST-11101": {
+    "semestre": 4,
+    "nombre": "Probabilidad",
+    "creditos": 8,
+    "prerreqs": [
+      "MAT-12101"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "MAT-12102": {
+    "semestre": 4,
+    "nombre": "Cálculo III",
+    "creditos": 9,
+    "prerreqs": [
+      "MAT-12101"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "ECO-12201": {
+    "semestre": 7,
+    "nombre": "Teoría y Política Monetaria",
+    "creditos": 6,
+    "prerreqs": [
+      "ECO-22105"
+    ],
+    "coreqs": [],
+    "estado": 0
+  }
+}

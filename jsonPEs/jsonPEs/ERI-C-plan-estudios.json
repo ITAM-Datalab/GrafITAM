@@ -1,0 +1,42 @@
+{
+  "ECO-11101": {
+    "semestre": 1,
+    "nombre": "Economía I",
+    "creditos": 6,
+    "prerreqs": [],
+    "coreqs": [],
+    "estado": 0
+  },
+  "LEN-12701": {
+    "semestre": 1,
+    "nombre": "Estrategias de Comunicación Escrita",
+    "creditos": 6,
+    "prerreqs": [],
+    "coreqs": [],
+    "estado": 0
+  },
+  "MAT-12100": {
+    "semestre": 2,
+    "nombre": "Cálculo I",
+    "creditos": 9,
+    "prerreqs": [],
+    "coreqs": [],
+    "estado": 0
+  },
+  "CON-10100": {
+    "semestre": 2,
+    "nombre": "Contabilidad I",
+    "creditos": 6,
+    "prerreqs": [],
+    "coreqs": [],
+    "estado": 0
+  },
+  "EIN-19414": {
+    "semestre": 9,
+    "nombre": "Medio Oriente",
+    "creditos": 6,
+    "prerreqs": [],
+    "coreqs": [],
+    "estado": 0
+  }
+}

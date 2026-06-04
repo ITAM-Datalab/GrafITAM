@@ -1,0 +1,414 @@
+{
+  "COM-11101": {
+    "semestre": 1,
+    "nombre": "Algoritmos y Programas",
+    "creditos": 9,
+    "prerreqs": [],
+    "coreqs": [],
+    "estado": 0
+  },
+  "MAT-14250": {
+    "semestre": 1,
+    "nombre": "Geometría Vectorial",
+    "creditos": 6,
+    "prerreqs": [],
+    "coreqs": [],
+    "estado": 0
+  },
+  "MAT-14100": {
+    "semestre": 1,
+    "nombre": "Cálculo Diferencial e Integral I",
+    "creditos": 8,
+    "prerreqs": [],
+    "coreqs": [],
+    "estado": 0
+  },
+  "LEN-12701": {
+    "semestre": 1,
+    "nombre": "Estrategias de Comunicación Escrita",
+    "creditos": 6,
+    "prerreqs": [],
+    "coreqs": [],
+    "estado": 0
+  },
+  "ECO-11101": {
+    "semestre": 1,
+    "nombre": "Economía I",
+    "creditos": 6,
+    "prerreqs": [],
+    "coreqs": [],
+    "estado": 0
+  },
+  "EGN-17121": {
+    "semestre": 1,
+    "nombre": "Ideas e Instituciones Políticas y Sociales I",
+    "creditos": 6,
+    "prerreqs": [],
+    "coreqs": [],
+    "estado": 0
+  },
+  "MAT-14280": {
+    "semestre": 2,
+    "nombre": "Pensamiento Matemático",
+    "creditos": 6,
+    "prerreqs": [],
+    "coreqs": [],
+    "estado": 0
+  },
+  "COM-11102": {
+    "semestre": 2,
+    "nombre": "Estructuras de Datos",
+    "creditos": 8,
+    "prerreqs": [
+      "COM-11101"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "MAT-14201": {
+    "semestre": 2,
+    "nombre": "Algebra Lineal I",
+    "creditos": 8,
+    "prerreqs": [
+      "MAT-14250"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "MAT-14101": {
+    "semestre": 2,
+    "nombre": "Cálculo Diferencial e Integral II",
+    "creditos": 8,
+    "prerreqs": [
+      "MAT-14100"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "ECO-12102": {
+    "semestre": 2,
+    "nombre": "Economía II",
+    "creditos": 6,
+    "prerreqs": [
+      "ECO-11101"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "EGN-17122": {
+    "semestre": 2,
+    "nombre": "Ideas e Instituciones Políticas y Sociales II",
+    "creditos": 6,
+    "prerreqs": [
+      "EGN-17121"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "EGN-17141": {
+    "semestre": 2,
+    "nombre": "Problemas de la Civilización Contemporánea I",
+    "creditos": 6,
+    "prerreqs": [],
+    "coreqs": [],
+    "estado": 0
+  },
+  "COM-11112": {
+    "semestre": 3,
+    "nombre": "Estructuras de Datos Avanzadas",
+    "creditos": 6,
+    "prerreqs": [
+      "COM-11102"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "MAT-14281": {
+    "semestre": 3,
+    "nombre": "Matemáticas Discretas",
+    "creditos": 6,
+    "prerreqs": [
+      "MAT-14280"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "LEN-12702": {
+    "semestre": 3,
+    "nombre": "Seminario de Comunicación Escrita",
+    "creditos": 2,
+    "prerreqs": [
+      "LEN-12701"
+    ],
+    "coreqs": [
+      "CORREQ"
+    ],
+    "estado": 0
+  },
+  "COM-16203": {
+    "semestre": 3,
+    "nombre": "Desarrollo de Aplicaciones Informáticas",
+    "creditos": 8,
+    "prerreqs": [
+      "COM-11102"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "ECO-11104": {
+    "semestre": 4,
+    "nombre": "Economía IV",
+    "creditos": 6,
+    "prerreqs": [
+      "ECO-11103"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "EGN-17142": {
+    "semestre": 4,
+    "nombre": "Problemas de la Civilización Contemporánea II",
+    "creditos": 6,
+    "prerreqs": [
+      "EGN-17141"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "SDI-11120": {
+    "semestre": 4,
+    "nombre": "Elementos de Física",
+    "creditos": 10,
+    "prerreqs": [
+      "MAT-14100"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "CON-10100": {
+    "semestre": 4,
+    "nombre": "Contabilidad I",
+    "creditos": 6,
+    "prerreqs": [],
+    "coreqs": [],
+    "estado": 0
+  },
+  "EST-24127": {
+    "semestre": 5,
+    "nombre": "Cálculo de Probabilidades II",
+    "creditos": 8,
+    "prerreqs": [
+      "EST-24126"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "IIO-15130": {
+    "semestre": 5,
+    "nombre": "Fundamentos de Química",
+    "creditos": 11,
+    "prerreqs": [],
+    "coreqs": [],
+    "estado": 0
+  },
+  "CSO-16048": {
+    "semestre": 6,
+    "nombre": "Tópicos de Políticas Públicas I",
+    "creditos": 6,
+    "prerreqs": [
+      "ECO-11104"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "SDI-11221": {
+    "semestre": 6,
+    "nombre": "Elementos de Electrónica",
+    "creditos": 10,
+    "prerreqs": [
+      "SDI-11120"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "COM-14106": {
+    "semestre": 6,
+    "nombre": "Gráficas por Computadora",
+    "creditos": 6,
+    "prerreqs": [
+      "COM-11112"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "COM-23701": {
+    "semestre": 7,
+    "nombre": "Aprendizaje de Máquina",
+    "creditos": 6,
+    "prerreqs": [
+      "COM-12101"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "ADM-12301": {
+    "semestre": 7,
+    "nombre": "Tópicos de Negocios I",
+    "creditos": 6,
+    "prerreqs": [
+      "ECO-11104"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "CSO-16049": {
+    "semestre": 7,
+    "nombre": "Tópicos de Políticas Públicas II",
+    "creditos": 6,
+    "prerreqs": [
+      "CSO-16048"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "COM-22104": {
+    "semestre": 7,
+    "nombre": "Ingeniería de Software",
+    "creditos": 6,
+    "prerreqs": [
+      "COM-12102"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "COM-14101": {
+    "semestre": 7,
+    "nombre": "Fundamentos Matemáticos de la Computación",
+    "creditos": 6,
+    "prerreqs": [
+      "SDI-11322"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "COM-15112": {
+    "semestre": 8,
+    "nombre": "Cómputo Paralelo y en la Nube",
+    "creditos": 6,
+    "prerreqs": [
+      "COM-12103"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "EST-24124": {
+    "semestre": 8,
+    "nombre": "Métodos Lineales",
+    "creditos": 6,
+    "prerreqs": [
+      "EST-14103"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "ECO-10521": {
+    "semestre": 8,
+    "nombre": "Inferencia Causal",
+    "creditos": 6,
+    "prerreqs": [
+      "EST-14103"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "ADM-12302": {
+    "semestre": 8,
+    "nombre": "Tópicos de Negocios II",
+    "creditos": 6,
+    "prerreqs": [
+      "ADM-12301"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "EST-24125": {
+    "semestre": 9,
+    "nombre": "Métodos Multivariados",
+    "creditos": 6,
+    "prerreqs": [
+      "EST-14103"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "EST-24112": {
+    "semestre": 10,
+    "nombre": "Estadística Bayesiana",
+    "creditos": 6,
+    "prerreqs": [
+      "EST-14103"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "SDI-13760": {
+    "semestre": 10,
+    "nombre": "Redes de Computadoras",
+    "creditos": 10,
+    "prerreqs": [
+      "MAT-14102"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "COM-22105": {
+    "semestre": 10,
+    "nombre": "Sistemas Distribuidos",
+    "creditos": 8,
+    "prerreqs": [
+      "COM-12102"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "COM-14104": {
+    "semestre": 10,
+    "nombre": "Sistemas Operativos",
+    "creditos": 8,
+    "prerreqs": [
+      "SDI-11561"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "SDI-13782": {
+    "semestre": 11,
+    "nombre": "Diseño y Arquitectura de Redes",
+    "creditos": 8,
+    "prerreqs": [
+      "SDI-13760"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "SDI-24810": {
+    "semestre": 11,
+    "nombre": "Sistemas de Comercio Electrónico",
+    "creditos": 8,
+    "prerreqs": [
+      "COM-12101"
+    ],
+    "coreqs": [
+      "CORREQ"
+    ],
+    "estado": 0
+  },
+  "SDI-15816": {
+    "semestre": 11,
+    "nombre": "Seminario de Titulación",
+    "creditos": 4,
+    "prerreqs": [],
+    "coreqs": [],
+    "estado": 0
+  }
+}

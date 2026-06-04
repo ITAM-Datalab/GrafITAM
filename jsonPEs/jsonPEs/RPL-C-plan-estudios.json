@@ -1,0 +1,380 @@
+{
+  "CSO-10001": {
+    "semestre": 1,
+    "nombre": "Introducción a la Ciencia Política",
+    "creditos": 6,
+    "prerreqs": [],
+    "coreqs": [],
+    "estado": 0
+  },
+  "ECO-11101": {
+    "semestre": 1,
+    "nombre": "Economía I",
+    "creditos": 6,
+    "prerreqs": [],
+    "coreqs": [],
+    "estado": 0
+  },
+  "LEN-10131": {
+    "semestre": 1,
+    "nombre": "Estrategias de Comunicación Escrita",
+    "creditos": 6,
+    "prerreqs": [],
+    "coreqs": [],
+    "estado": 0
+  },
+  "EIN-14102": {
+    "semestre": 2,
+    "nombre": "Teoría de Relaciones Internacionales",
+    "creditos": 6,
+    "prerreqs": [
+      "EIN-11101"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "CSO-12013": {
+    "semestre": 2,
+    "nombre": "Historia Política Contemporánea",
+    "creditos": 6,
+    "prerreqs": [],
+    "coreqs": [],
+    "estado": 0
+  },
+  "ECO-12102": {
+    "semestre": 2,
+    "nombre": "Economía II",
+    "creditos": 6,
+    "prerreqs": [
+      "ECO-11101"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "MAT-11100": {
+    "semestre": 2,
+    "nombre": "Matemáticas I",
+    "creditos": 9,
+    "prerreqs": [],
+    "coreqs": [],
+    "estado": 0
+  },
+  "CSO-12041": {
+    "semestre": 3,
+    "nombre": "Historia de México I",
+    "creditos": 6,
+    "prerreqs": [],
+    "coreqs": [],
+    "estado": 0
+  },
+  "CSO-11011": {
+    "semestre": 3,
+    "nombre": "Teoría Política Clásica I",
+    "creditos": 6,
+    "prerreqs": [],
+    "coreqs": [],
+    "estado": 0
+  },
+  "MAT-11101": {
+    "semestre": 3,
+    "nombre": "Matemáticas II",
+    "creditos": 9,
+    "prerreqs": [
+      "MAT-11100"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "CSO-12042": {
+    "semestre": 4,
+    "nombre": "Historia de México II",
+    "creditos": 6,
+    "prerreqs": [
+      "CSO-12041"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "COM-16401": {
+    "semestre": 4,
+    "nombre": "Computación I",
+    "creditos": 7,
+    "prerreqs": [],
+    "coreqs": [],
+    "estado": 0
+  },
+  "EGN-17161": {
+    "semestre": 4,
+    "nombre": "Historia Socio-Política de México",
+    "creditos": 6,
+    "prerreqs": [
+      "EGN-17123"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "EIN-14302": {
+    "semestre": 5,
+    "nombre": "Historia de Estados Unidos",
+    "creditos": 6,
+    "prerreqs": [],
+    "coreqs": [],
+    "estado": 0
+  },
+  "CSO-15022": {
+    "semestre": 5,
+    "nombre": "Elección Pública II",
+    "creditos": 6,
+    "prerreqs": [
+      "CSO-15021"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "CSO-11012": {
+    "semestre": 5,
+    "nombre": "Teoría Política Clásica II",
+    "creditos": 6,
+    "prerreqs": [
+      "CSO-11011"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "CSO-12049": {
+    "semestre": 6,
+    "nombre": "Historia de México III",
+    "creditos": 6,
+    "prerreqs": [
+      "CSO-12042"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "MAT-11310": {
+    "semestre": 6,
+    "nombre": "Matemáticas III",
+    "creditos": 8,
+    "prerreqs": [
+      "MAT-11100"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "EST-10102": {
+    "semestre": 6,
+    "nombre": "Estadística II",
+    "creditos": 8,
+    "prerreqs": [
+      "EST-10101"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "ECO-13101": {
+    "semestre": 7,
+    "nombre": "Economía Internacional I",
+    "creditos": 6,
+    "prerreqs": [
+      "ECO-11103"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "CSO-11021": {
+    "semestre": 7,
+    "nombre": "Teoría Política Contemporánea",
+    "creditos": 6,
+    "prerreqs": [
+      "CSO-11012"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "CSO-15024": {
+    "semestre": 7,
+    "nombre": "Elección Pública III",
+    "creditos": 6,
+    "prerreqs": [
+      "CSO-15022"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "CSO-17041": {
+    "semestre": 7,
+    "nombre": "Métodos de Investigación Aplicada",
+    "creditos": 6,
+    "prerreqs": [
+      "EST-10102"
+    ],
+    "coreqs": [
+      "CORREQ"
+    ],
+    "estado": 0
+  },
+  "EIN-16402": {
+    "semestre": 8,
+    "nombre": "Europa Contemporánea",
+    "creditos": 6,
+    "prerreqs": [],
+    "coreqs": [],
+    "estado": 0
+  },
+  "CSO-14041": {
+    "semestre": 8,
+    "nombre": "Política Comparada II",
+    "creditos": 6,
+    "prerreqs": [
+      "CSO-14021"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "CON-10100": {
+    "semestre": 8,
+    "nombre": "Contabilidad I",
+    "creditos": 6,
+    "prerreqs": [],
+    "coreqs": [],
+    "estado": 0
+  },
+  "CSO-15041": {
+    "semestre": 8,
+    "nombre": "Economía Política I",
+    "creditos": 6,
+    "prerreqs": [
+      "ECO-11103"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "EIN-16403": {
+    "semestre": 9,
+    "nombre": "América Latina",
+    "creditos": 6,
+    "prerreqs": [
+      "EIN-15105"
+    ],
+    "coreqs": [
+      "CORREQ"
+    ],
+    "estado": 0
+  },
+  "EIN-19414": {
+    "semestre": 9,
+    "nombre": "Medio Oriente",
+    "creditos": 6,
+    "prerreqs": [],
+    "coreqs": [],
+    "estado": 0
+  },
+  "CSO-14051": {
+    "semestre": 9,
+    "nombre": "Opinión Pública",
+    "creditos": 6,
+    "prerreqs": [
+      "CSO-17041"
+    ],
+    "coreqs": [
+      "CORREQ"
+    ],
+    "estado": 0
+  },
+  "CSO-15043": {
+    "semestre": 9,
+    "nombre": "Economía Política II",
+    "creditos": 6,
+    "prerreqs": [
+      "ECO-11103"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "DER-10005": {
+    "semestre": 9,
+    "nombre": "Derecho Internacional Público I",
+    "creditos": 6,
+    "prerreqs": [
+      "DER-10003"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "CSO-14045": {
+    "semestre": 9,
+    "nombre": "Política y Gobierno de México",
+    "creditos": 6,
+    "prerreqs": [
+      "CSO-14041"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "ADM-11013": {
+    "semestre": 10,
+    "nombre": "Administración Internacional",
+    "creditos": 6,
+    "prerreqs": [],
+    "coreqs": [],
+    "estado": 0
+  },
+  "EIN-17403": {
+    "semestre": 10,
+    "nombre": "Japón, China y el Sudeste de Asia",
+    "creditos": 6,
+    "prerreqs": [],
+    "coreqs": [],
+    "estado": 0
+  },
+  "DER-10006": {
+    "semestre": 10,
+    "nombre": "Derecho Internacional Público II",
+    "creditos": 6,
+    "prerreqs": [
+      "DER-10005"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "CSO-17042": {
+    "semestre": 10,
+    "nombre": "Metodología Política Avanzada",
+    "creditos": 9,
+    "prerreqs": [
+      "EST-13101"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "CSO-14042": {
+    "semestre": 10,
+    "nombre": "Política Comparada III",
+    "creditos": 6,
+    "prerreqs": [
+      "CSO-14041"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "CSO-19075": {
+    "semestre": 11,
+    "nombre": "Seminario de Titulación I",
+    "creditos": 9,
+    "prerreqs": [
+      "CSO-17041"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "CSO-19076": {
+    "semestre": 11,
+    "nombre": "Seminario de Titulación II",
+    "creditos": 9,
+    "prerreqs": [
+      "CSO-17041"
+    ],
+    "coreqs": [],
+    "estado": 0
+  }
+}

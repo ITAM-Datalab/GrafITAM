@@ -1,0 +1,64 @@
+{
+  "ECO-10522": {
+    "semestre": 6,
+    "nombre": "Microeconometría",
+    "creditos": 8,
+    "prerreqs": [
+      "EST-11105"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "ECO-14301": {
+    "semestre": 6,
+    "nombre": "Organización Industrial",
+    "creditos": 6,
+    "prerreqs": [
+      "ECO-11023"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "EGN-17161": {
+    "semestre": 6,
+    "nombre": "Historia Socio-Política de México",
+    "creditos": 6,
+    "prerreqs": [
+      "EGN-17123"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "LEN-12718": {
+    "semestre": 6,
+    "nombre": "Comunicación Escrita para Economía",
+    "creditos": 2,
+    "prerreqs": [
+      "LEN-12701"
+    ],
+    "coreqs": [
+      "CORREQ"
+    ],
+    "estado": 0
+  },
+  "ECO-10523": {
+    "semestre": 7,
+    "nombre": "Macroeconometría",
+    "creditos": 6,
+    "prerreqs": [
+      "EST-11105"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "ECO-18300": {
+    "semestre": 7,
+    "nombre": "Crecimiento Económico",
+    "creditos": 6,
+    "prerreqs": [
+      "ECO-12012"
+    ],
+    "coreqs": [],
+    "estado": 0
+  }
+}
