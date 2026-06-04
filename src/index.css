@@ -10,6 +10,12 @@ body,
   padding: 0;
 }
 
+@media (max-width: 767px) {
+  .react-flow__minimap {
+    display: none;
+  }
+}
+
 /* Make React Flow canvas transparent so the app background shows through */
 .react-flow,
 .react-flow__renderer,
