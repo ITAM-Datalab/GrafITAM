@@ -3,12 +3,12 @@ import { detectCoreqGroups } from '../algorithms/coreqs'
 
 // Vite glob path is relative to project root (starts with /)
 const rawModules = import.meta.glob(
-  '/jsonPEs/jsonPEs/*.json',
+  '/jsonPEs/2025_01/*.json',
   { eager: true, import: 'default' },
 ) as Record<string, RawPlan>
 
 function parseFilename(path: string): PlanMeta {
-  // path looks like "/jsonPEs/jsonPEs/CDA-A-plan-estudios.json"
+  // path looks like "/jsonPEs/2025_01/CDA-A-plan-estudios.json"
   const filename = path.split('/').pop()!
   const base = filename.replace('-plan-estudios.json', '')
   const lastDash = base.lastIndexOf('-')
@@ -28,7 +28,7 @@ for (const { program, letter } of allPlanMetas) {
 }
 
 export function loadPlanData(filename: string): PlanData {
-  const key = `/jsonPEs/jsonPEs/${filename}`
+  const key = `/jsonPEs/2025_01/${filename}`
   const raw = rawModules[key]
   if (!raw) throw new Error(`Plan no encontrado: ${filename}`)
 

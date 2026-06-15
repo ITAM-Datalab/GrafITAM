@@ -20,9 +20,12 @@ export interface CurriculumState {
   userState: UserStateMap
   validationErrors: ValidationError[]
 
-  loadPlan: (filename: string) => void
+  showAvailable: boolean
+
+  loadPlan: (filename: string, existingUserState?: UserStateMap) => void
   toggleApproval: (courseId: string) => void
   togglePlanned: (courseId: string) => void
   setPlannedSemester: (courseId: string, sem: number) => void
   resetPlan: () => void
+  toggleShowAvailable: () => void
 }

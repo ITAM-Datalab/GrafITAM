@@ -1,4 +1,4 @@
-import { useMemo, useEffect } from 'react'
+import { useMemo, useEffect, useState, useRef, useCallback } from 'react'
 import {
   ReactFlow,
   Background,
@@ -30,6 +30,9 @@ export default function FlowCanvas() {
   const planData = useCurriculumStore((s) => s.planData)
   const userState = useCurriculumStore((s) => s.userState)
   const validationErrors = useCurriculumStore((s) => s.validationErrors)
+  const [hoveredNodeId, setHoveredNodeId] = useState<string | null>(null)
+  const [tooltip, setTooltip] = useState<{ courseId: string; x: number; y: number } | null>(null)
+  const tooltipTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null)
 
   const errorSet = useMemo(
     () => new Set(validationErrors.map((e) => `${e.prereqId}__${e.courseId}`)),
@@ -85,26 +88,51 @@ export default function FlowCanvas() {
     return edges
   }, [planData, errorSet])
 
+  const displayEdges = useMemo(() => {
+    if (!hoveredNodeId) return rawEdges
+    return rawEdges.map((edge) => ({
+      ...edge,
+      style: {
+        ...(edge.style ?? {}),
+        opacity:
+          edge.source === hoveredNodeId || edge.target === hoveredNodeId ? 1 : 0.1,
+      },
+    }))
+  }, [rawEdges, hoveredNodeId])
+
   const layoutedNodes = useMemo(
     () => computeGridLayout(rawNodes, userSemesters),
     [rawNodes, userSemesters],
   )
 
   const [nodes, setNodes, onNodesChange] = useNodesState(layoutedNodes)
-  const [edges, setEdges, onEdgesChange] = useEdgesState(rawEdges)
+  const [edges, setEdges, onEdgesChange] = useEdgesState(displayEdges)
 
   useEffect(() => {
     setNodes(layoutedNodes)
   }, [layoutedNodes, setNodes])
 
   useEffect(() => {
-    setEdges(rawEdges)
-  }, [rawEdges, setEdges])
+    setEdges(displayEdges)
+  }, [displayEdges, setEdges])
+
+  const handleNodeMouseEnter = useCallback((event: React.MouseEvent, node: Node) => {
+    setHoveredNodeId(node.id)
+    tooltipTimerRef.current = setTimeout(() => {
+      setTooltip({ courseId: node.id, x: event.clientX, y: event.clientY })
+    }, 800)
+  }, [])
+
+  const handleNodeMouseLeave = useCallback(() => {
+    setHoveredNodeId(null)
+    if (tooltipTimerRef.current) clearTimeout(tooltipTimerRef.current)
+    setTooltip(null)
+  }, [])
 
   if (!planData) return null
 
   return (
-    <div className="w-full h-full">
+    <div className="w-full h-full" style={{ position: 'relative' }}>
       <ReactFlow
         style={{ background: 'transparent' }}
         nodes={nodes}
@@ -114,6 +142,8 @@ export default function FlowCanvas() {
         defaultEdgeOptions={defaultEdgeOptions}
         onNodesChange={onNodesChange}
         onEdgesChange={onEdgesChange}
+        onNodeMouseEnter={handleNodeMouseEnter}
+        onNodeMouseLeave={handleNodeMouseLeave}
         fitView
         fitViewOptions={{ padding: 0.15 }}
         minZoom={0.1}
@@ -132,6 +162,60 @@ export default function FlowCanvas() {
           maskColor="rgba(237,232,200,0.6)"
         />
       </ReactFlow>
+
+      {tooltip && (() => {
+        const course = planData[tooltip.courseId]
+        if (!course) return null
+        const prereqs = course.prerreqs.map((id) => ({
+          id,
+          nombre: planData[id]?.nombre ?? id,
+          aprobada: userState[id]?.aprobada ?? false,
+        }))
+        const coreqs = course.coreqGroup.map((id) => planData[id]?.nombre ?? id)
+        return (
+          <div
+            style={{
+              position: 'fixed',
+              left: tooltip.x + 14,
+              top: tooltip.y + 14,
+              zIndex: 1000,
+              maxWidth: 280,
+              background: '#1A0F0A',
+              color: '#F5F5DC',
+              borderRadius: 8,
+              padding: '10px 14px',
+              fontSize: 12,
+              boxShadow: '0 4px 16px rgba(0,0,0,0.5)',
+              pointerEvents: 'none',
+              lineHeight: 1.5,
+            }}
+          >
+            <div style={{ fontWeight: 700, marginBottom: 8, fontSize: 13 }}>{course.nombre}</div>
+            {prereqs.length > 0 && (
+              <>
+                <div style={{ opacity: 0.5, marginBottom: 4, fontSize: 10, textTransform: 'uppercase', letterSpacing: '0.05em' }}>
+                  Prerrequisitos
+                </div>
+                {prereqs.map((p) => (
+                  <div key={p.id} style={{ color: p.aprobada ? '#22C55E' : '#FCA5A5', marginBottom: 3 }}>
+                    {p.aprobada ? '✓' : '✗'} {p.nombre}
+                  </div>
+                ))}
+              </>
+            )}
+            {coreqs.length > 0 && (
+              <>
+                <div style={{ opacity: 0.5, marginTop: 10, marginBottom: 4, fontSize: 10, textTransform: 'uppercase', letterSpacing: '0.05em' }}>
+                  Correquisitos
+                </div>
+                {coreqs.map((n, i) => (
+                  <div key={i} style={{ marginBottom: 3 }}>↔ {n}</div>
+                ))}
+              </>
+            )}
+          </div>
+        )
+      })()}
     </div>
   )
 }

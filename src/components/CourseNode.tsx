@@ -13,10 +13,15 @@ function CourseNode({ data }: NodeProps) {
   const toggleApproval = useCurriculumStore((s) => s.toggleApproval)
   const togglePlanned = useCurriculumStore((s) => s.togglePlanned)
   const hasError = useCurriculumStore((s) => s.validationErrors.some((e) => e.courseId === course.id))
+  const showAvailable = useCurriculumStore((s) => s.showAvailable)
+  const allPrereqsApproved = useCurriculumStore((s) =>
+    course.prerreqs.every((id) => s.userState[id]?.aprobada ?? false),
+  )
 
   const isApproved = userState?.aprobada ?? false
   const isPlanned = userState?.planeada ?? false
   const plannedSem = userState?.semestrePlaneado ?? course.semestre
+  const isAvailable = showAvailable && !isApproved && !isPlanned && allPrereqsApproved
 
   const stateStyles: CSSProperties = hasError
     ? { background: '#FCFAF8', border: '2px dashed #8C5E58', color: '#8C5E58' }
@@ -24,7 +29,9 @@ function CourseNode({ data }: NodeProps) {
       ? { background: '#1E5E4B', border: 'none', color: '#FCFAF8' }
       : isPlanned
         ? { background: '#FCFAF8', border: '2px solid #8C5E58', color: '#8C5E58' }
-        : { background: '#FCFAF8', border: '1px solid #8CA699', color: '#0D3B2E' }
+        : isAvailable
+          ? { background: '#FCFAF8', border: '2px solid #22C55E', color: '#15803D' }
+          : { background: '#FCFAF8', border: '1px solid #8CA699', color: '#0D3B2E' }
 
   return (
     <div

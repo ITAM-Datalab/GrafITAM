@@ -14,16 +14,17 @@ export const useCurriculumStore = create<CurriculumState>()(
       programIndex,
       userState: {},
       validationErrors: [],
+      showAvailable: false,
 
-      loadPlan: (filename) => {
+      loadPlan: (filename, existingUserState?) => {
         const planData = loadPlanData(filename)
         const userState: UserStateMap = {}
 
         for (const [id, course] of Object.entries(planData)) {
           userState[id] = {
-            aprobada: false,
-            planeada: false,
-            semestrePlaneado: course.semestre,
+            aprobada: existingUserState?.[id]?.aprobada ?? false,
+            planeada: existingUserState?.[id]?.planeada ?? false,
+            semestrePlaneado: existingUserState?.[id]?.semestrePlaneado ?? course.semestre,
           }
         }
 
@@ -66,6 +67,8 @@ export const useCurriculumStore = create<CurriculumState>()(
       togglePlanned: (courseId) => {
         const { planData, userState } = get()
         if (!planData) return
+        const course = planData[courseId]
+        if (!course) return
         const currentlyPlanned = userState[courseId]?.planeada ?? false
         const wasApproved = userState[courseId]?.aprobada ?? false
 
@@ -80,10 +83,40 @@ export const useCurriculumStore = create<CurriculumState>()(
           // Marcar como planeada
           let next = { ...userState }
           if (wasApproved) {
-            // Estaba aprobada → desaprobar ella y sus dependientes
             next = unapproveDescendants(courseId, planData, next)
           }
+
+          // Auto-aprobar prerreqs de la materia principal
+          for (const prereqId of course.prerreqs) {
+            next = approveWithAncestors(prereqId, planData, next)
+          }
+
+          // Auto-aprobar prerreqs de cada correquisito
+          for (const partnerId of course.coreqGroup) {
+            const partner = planData[partnerId]
+            if (partner) {
+              for (const prereqId of partner.prerreqs) {
+                next = approveWithAncestors(prereqId, planData, next)
+              }
+            }
+          }
+
+          // Invariante: aprobada XOR planeada (después de todas las aprobaciones)
+          for (const id of Object.keys(next)) {
+            if (next[id]?.aprobada && next[id]?.planeada) {
+              next[id] = { ...next[id], planeada: false }
+            }
+          }
+
           next[courseId] = { ...next[courseId], planeada: true, aprobada: false }
+
+          // Auto-planear correquisitos
+          for (const partnerId of course.coreqGroup) {
+            if (next[partnerId]) {
+              next[partnerId] = { ...next[partnerId], planeada: true, aprobada: false }
+            }
+          }
+
           const validationErrors = validateTopology(planData, next)
           set({ userState: next, validationErrors })
         }
@@ -107,6 +140,8 @@ export const useCurriculumStore = create<CurriculumState>()(
         const { activePlan } = get()
         if (activePlan) get().loadPlan(activePlan)
       },
+
+      toggleShowAvailable: () => set((s) => ({ showAvailable: !s.showAvailable })),
     }),
     {
       name: 'grafitam-state',
@@ -117,7 +152,7 @@ export const useCurriculumStore = create<CurriculumState>()(
       }),
       onRehydrateStorage: () => (state) => {
         if (state?.activePlan && !state.planData) {
-          state.loadPlan(state.activePlan)
+          state.loadPlan(state.activePlan, state.userState)
         }
       },
     },

@@ -2,4 +2,6 @@ node_modules/
 dist/
 .env
 .env.local
-CDA-B.pdf
+2025_01/
+__pycache__/
+diagnostic.py
