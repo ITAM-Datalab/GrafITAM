@@ -1,0 +1,753 @@
+{
+  "COM-16306": {
+    "semestre": 1,
+    "nombre": "Razonamiento Algorítmico",
+    "creditos": 6,
+    "prerreqs": [],
+    "coreqs": [],
+    "estado": 0
+  },
+  "EGN-17141": {
+    "semestre": 1,
+    "nombre": "Problemas de la Civilización Contemporánea I",
+    "creditos": 6,
+    "prerreqs": [],
+    "coreqs": [],
+    "estado": 0
+  },
+  "LEN-12701": {
+    "semestre": 1,
+    "nombre": "Estrategias de Comunicación Escrita",
+    "creditos": 6,
+    "prerreqs": [],
+    "coreqs": [],
+    "estado": 0
+  },
+  "MAT-14250": {
+    "semestre": 1,
+    "nombre": "Geometría Vectorial",
+    "creditos": 6,
+    "prerreqs": [],
+    "coreqs": [],
+    "estado": 0
+  },
+  "MAT-14280": {
+    "semestre": 1,
+    "nombre": "Pensamiento Matemático",
+    "creditos": 6,
+    "prerreqs": [],
+    "coreqs": [],
+    "estado": 0
+  },
+  "SDI-17112": {
+    "semestre": 1,
+    "nombre": "Introducción a la Ingeniería",
+    "creditos": 7,
+    "prerreqs": [],
+    "coreqs": [],
+    "estado": 0
+  },
+  "COM-11114": {
+    "semestre": 2,
+    "nombre": "Algoritmos y Estructuras de Datos",
+    "creditos": 7,
+    "prerreqs": [
+      "COM-16306"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "COM-15126": {
+    "semestre": 2,
+    "nombre": "Ciencia de Datos y la Transformación de la Sociedad",
+    "creditos": 2,
+    "prerreqs": [],
+    "coreqs": [],
+    "estado": 0
+  },
+  "COM-16305": {
+    "semestre": 2,
+    "nombre": "Gestión de Datos",
+    "creditos": 6,
+    "prerreqs": [
+      "COM-16306"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "EGN-17142": {
+    "semestre": 2,
+    "nombre": "Problemas de la Civilización Contemporánea II",
+    "creditos": 6,
+    "prerreqs": [
+      "EGN-17141"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "IIO-15175": {
+    "semestre": 2,
+    "nombre": "Diseño e Impresión 3D por Computadora",
+    "creditos": 8,
+    "prerreqs": [],
+    "coreqs": [],
+    "estado": 0
+  },
+  "MAT-12200": {
+    "semestre": 2,
+    "nombre": "Cálculo Univariado",
+    "creditos": 9,
+    "prerreqs": [],
+    "coreqs": [],
+    "estado": 0
+  },
+  "MAT-14281": {
+    "semestre": 2,
+    "nombre": "Matemáticas Discretas",
+    "creditos": 6,
+    "prerreqs": [
+      "MAT-14280"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "COM-11113": {
+    "semestre": 3,
+    "nombre": "Análisis de Algoritmos y Complejidad Computacional",
+    "creditos": 7,
+    "prerreqs": [
+      "COM-11114",
+      "MAT-14281"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "CON-10110": {
+    "semestre": 3,
+    "nombre": "Fundamentos de Contabilidad Financiera",
+    "creditos": 6,
+    "prerreqs": [],
+    "coreqs": [],
+    "estado": 0
+  },
+  "ECO-11010": {
+    "semestre": 3,
+    "nombre": "Principios de Microeconomía",
+    "creditos": 6,
+    "prerreqs": [],
+    "coreqs": [],
+    "estado": 0
+  },
+  "EGN-17121": {
+    "semestre": 3,
+    "nombre": "Ideas e Instituciones Políticas y Sociales I",
+    "creditos": 6,
+    "prerreqs": [
+      "LEN-12701"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "IIO-15132": {
+    "semestre": 3,
+    "nombre": "Físico Química",
+    "creditos": 8,
+    "prerreqs": [
+      "SDI-17112"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "LEN-12702": {
+    "semestre": 3,
+    "nombre": "Seminario de Comunicación Escrita",
+    "creditos": 2,
+    "prerreqs": [
+      "LEN-12701"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "MAT-12201": {
+    "semestre": 3,
+    "nombre": "Cálculo Multivariado",
+    "creditos": 9,
+    "prerreqs": [
+      "MAT-12200",
+      "MAT-14250"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "COM-12101": {
+    "semestre": 4,
+    "nombre": "Bases de Datos",
+    "creditos": 8,
+    "prerreqs": [
+      "COM-16305"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "ECO-12010": {
+    "semestre": 4,
+    "nombre": "Principios de Macroeconomía",
+    "creditos": 6,
+    "prerreqs": [
+      "ECO-11010"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "EGN-17122": {
+    "semestre": 4,
+    "nombre": "Ideas e Instituciones Políticas y Sociales II",
+    "creditos": 6,
+    "prerreqs": [
+      "EGN-17121"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "EST-24126": {
+    "semestre": 4,
+    "nombre": "Cálculo de Probabilidades I",
+    "creditos": 6,
+    "prerreqs": [
+      "MAT-12200",
+      "MAT-14281"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "IIO-15141": {
+    "semestre": 4,
+    "nombre": "Ciencias de los Materiales y Compuestos",
+    "creditos": 8,
+    "prerreqs": [
+      "IIO-15132"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "MAT-14201": {
+    "semestre": 4,
+    "nombre": "Álgebra lineal I",
+    "creditos": 8,
+    "prerreqs": [
+      "MAT-14250"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "SDI-17306": {
+    "semestre": 4,
+    "nombre": "Estática, Electricidad y Magnetismo",
+    "creditos": 7,
+    "prerreqs": [
+      "MAT-14250",
+      "MAT-12200"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "COM-12103": {
+    "semestre": 5,
+    "nombre": "Fuentes de Datos",
+    "creditos": 6,
+    "prerreqs": [
+      "COM-12101",
+      "COM-11114"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "ECO-11011": {
+    "semestre": 5,
+    "nombre": "Microeconomía Aplicada I",
+    "creditos": 6,
+    "prerreqs": [
+      "ECO-12010",
+      "MAT-12201"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "EGN-17123": {
+    "semestre": 5,
+    "nombre": "Ideas e Instituciones Políticas y Sociales III",
+    "creditos": 6,
+    "prerreqs": [
+      "EGN-17141",
+      "EGN-17122"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "EST-24127": {
+    "semestre": 5,
+    "nombre": "Cálculo de Probabilidades II",
+    "creditos": 6,
+    "prerreqs": [
+      "MAT-12201",
+      "EST-24126"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "IIO-12182": {
+    "semestre": 5,
+    "nombre": "Automatización y Robótica Industrial",
+    "creditos": 8,
+    "prerreqs": [
+      "COM-16306"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "IIO-15152": {
+    "semestre": 5,
+    "nombre": "Procesos de Manufactura",
+    "creditos": 6,
+    "prerreqs": [
+      "IIO-15141"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "IIO-15164": {
+    "semestre": 5,
+    "nombre": "Laboratorio de CNC y Manufactura",
+    "creditos": 2,
+    "prerreqs": [
+      "IIO-15141"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "MAT-24210": {
+    "semestre": 5,
+    "nombre": "Sistemas Dinámicos I",
+    "creditos": 6,
+    "prerreqs": [
+      "MAT-12201",
+      "MAT-14201"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "ADM-15561": {
+    "semestre": 6,
+    "nombre": "Finanzas en los Negocios I",
+    "creditos": 6,
+    "prerreqs": [
+      "ECO-11010",
+      "CON-10110"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "COM-11308": {
+    "semestre": 6,
+    "nombre": "Introducción a la Inteligencia Artificial",
+    "creditos": 6,
+    "prerreqs": [
+      "COM-16305",
+      "EST-24127"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "COM-22102": {
+    "semestre": 6,
+    "nombre": "Bases de Datos No Relacionales",
+    "creditos": 6,
+    "prerreqs": [
+      "COM-12101"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "CON-12110": {
+    "semestre": 6,
+    "nombre": "Contabilidad de Costos para Ingenieros",
+    "creditos": 6,
+    "prerreqs": [
+      "CON-10110"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "ECO-11012": {
+    "semestre": 6,
+    "nombre": "Microeconomía Aplicada II",
+    "creditos": 6,
+    "prerreqs": [
+      "ECO-11011"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "EGN-17161": {
+    "semestre": 6,
+    "nombre": "Historia Socio-Política de México",
+    "creditos": 6,
+    "prerreqs": [
+      "EGN-17123"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "IIO-13151": {
+    "semestre": 6,
+    "nombre": "Modelado de Redes Inteligentes",
+    "creditos": 6,
+    "prerreqs": [
+      "COM-11114"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "IIO-15174": {
+    "semestre": 6,
+    "nombre": "Cinemática y Dinámica",
+    "creditos": 7,
+    "prerreqs": [
+      "SDI-17306",
+      "MAT-24210"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "COM-12104": {
+    "semestre": 7,
+    "nombre": "Visualización de Información",
+    "creditos": 6,
+    "prerreqs": [
+      "COM-16305",
+      "EST-24126"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "COM-22108": {
+    "semestre": 7,
+    "nombre": "Minería y Análisis de Datos",
+    "creditos": 6,
+    "prerreqs": [
+      "MAT-14281",
+      "COM-11308",
+      "COM-11114"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "EGN-17162": {
+    "semestre": 7,
+    "nombre": "Problemas de la Realidad Mexicana Contemporánea",
+    "creditos": 6,
+    "prerreqs": [
+      "EGN-17161"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "EST-14103": {
+    "semestre": 7,
+    "nombre": "Estadística Matemática",
+    "creditos": 8,
+    "prerreqs": [
+      "EST-24127"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "IIO-13161": {
+    "semestre": 7,
+    "nombre": "Modelado Estocástico y Aprendizaje de Máquinas",
+    "creditos": 6,
+    "prerreqs": [
+      "IIO-13151"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "IIO-14160": {
+    "semestre": 7,
+    "nombre": "Diseño de Planta",
+    "creditos": 6,
+    "prerreqs": [
+      "IIO-13151"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "LEN-12722": {
+    "semestre": 7,
+    "nombre": "Comunicación Escrita para Ciencia de Datos",
+    "creditos": 2,
+    "prerreqs": [
+      "LEN-12701"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "SDI-17602": {
+    "semestre": 7,
+    "nombre": "Redes de Comunicaciones e Internet de las Cosas",
+    "creditos": 8,
+    "prerreqs": [
+      "COM-11308"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "COM-14707": {
+    "semestre": 8,
+    "nombre": "Cómputo Paralelo",
+    "creditos": 6,
+    "prerreqs": [
+      "COM-12103"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "COM-23701": {
+    "semestre": 8,
+    "nombre": "Aprendizaje de Máquina",
+    "creditos": 6,
+    "prerreqs": [
+      "COM-16305",
+      "EST-14103"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "DER-10114": {
+    "semestre": 8,
+    "nombre": "Seminario de Legalidad Ética en Ciencia de Datos",
+    "creditos": 4,
+    "prerreqs": [],
+    "coreqs": [],
+    "estado": 0
+  },
+  "ECO-10521": {
+    "semestre": 8,
+    "nombre": "Inferencia Causal",
+    "creditos": 6,
+    "prerreqs": [
+      "EST-14103"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "EST-24124": {
+    "semestre": 8,
+    "nombre": "Métodos Lineales",
+    "creditos": 6,
+    "prerreqs": [
+      "EST-14103",
+      "MAT-14201"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "IIO-13180": {
+    "semestre": 8,
+    "nombre": "Simulación de Sistemas",
+    "creditos": 6,
+    "prerreqs": [
+      "EST-24127"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "IIO-14161": {
+    "semestre": 8,
+    "nombre": "Planeación y Control de la Producción",
+    "creditos": 6,
+    "prerreqs": [
+      "COM-11114",
+      "EST-24127"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "IIO-16182": {
+    "semestre": 8,
+    "nombre": "Proyecto de Ingeniería II",
+    "creditos": 2,
+    "prerreqs": [
+      "IIO-13161",
+      "IIO-15152"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "ADM-13450": {
+    "semestre": 9,
+    "nombre": "Emprendimiento",
+    "creditos": 6,
+    "prerreqs": [
+      "ADM-15561",
+      "COM-23701"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "COM-23114": {
+    "semestre": 9,
+    "nombre": "Arquitectura para Grandes Volúmenes de Datos",
+    "creditos": 6,
+    "prerreqs": [
+      "COM-14707"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "COM-23710": {
+    "semestre": 9,
+    "nombre": "Series de Tiempo y Aprendizaje de Máquina",
+    "creditos": 6,
+    "prerreqs": [
+      "COM-11308",
+      "COM-23701"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "CSO-10161": {
+    "semestre": 9,
+    "nombre": "Tópicos de Políticas Públicas con Datos",
+    "creditos": 6,
+    "prerreqs": [
+      "ECO-10521"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "ECO-10530": {
+    "semestre": 9,
+    "nombre": "Tópicos de Economía con Datos",
+    "creditos": 6,
+    "prerreqs": [
+      "ECO-10521",
+      "ECO-11012"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "EST-24112": {
+    "semestre": 9,
+    "nombre": "Estadística Bayesiana",
+    "creditos": 6,
+    "prerreqs": [
+      "EST-14103"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "EST-24125": {
+    "semestre": 9,
+    "nombre": "Métodos Multivariados",
+    "creditos": 6,
+    "prerreqs": [
+      "EST-14103"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "IIO-14193": {
+    "semestre": 9,
+    "nombre": "Ingeniería de Procesos de Negocios",
+    "creditos": 6,
+    "prerreqs": [
+      "IIO-13180"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "ADM-12305": {
+    "semestre": 10,
+    "nombre": "Tópicos de Negocios con Datos",
+    "creditos": 6,
+    "prerreqs": [
+      "ADM-15561"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "COM-23119": {
+    "semestre": 10,
+    "nombre": "Ciencia de Datos Aplicada",
+    "creditos": 6,
+    "prerreqs": [
+      "COM-23114"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "IIO-12180": {
+    "semestre": 10,
+    "nombre": "Diseño y Desarrollo de Producto",
+    "creditos": 6,
+    "prerreqs": [
+      "ADM-13450",
+      "IIO-15175"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "IIO-14162": {
+    "semestre": 10,
+    "nombre": "Ingeniería y Control de la Calidad",
+    "creditos": 6,
+    "prerreqs": [
+      "EST-14103"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "IIO-14174": {
+    "semestre": 10,
+    "nombre": "Analítica de la Cadena de Suministro",
+    "creditos": 8,
+    "prerreqs": [
+      "IIO-13161"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "IIO-14180": {
+    "semestre": 10,
+    "nombre": "Administración y Evaluación de Proyectos",
+    "creditos": 6,
+    "prerreqs": [
+      "EST-24127"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "IIO-15162": {
+    "semestre": 10,
+    "nombre": "Manufactura Inteligente",
+    "creditos": 8,
+    "prerreqs": [
+      "IIO-15164",
+      "IIO-15152"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "LEN-12762": {
+    "semestre": 10,
+    "nombre": "Comunicación Profesional para Ciencia de Datos",
+    "creditos": 2,
+    "prerreqs": [
+      "LEN-12722",
+      "LEN-12702"
+    ],
+    "coreqs": [],
+    "estado": 0
+  }
+}

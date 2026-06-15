@@ -1,0 +1,316 @@
+{
+  "EGN-17121": {
+    "semestre": 1,
+    "nombre": "Ideas e Inst. Políticas y Sociales I",
+    "creditos": 6,
+    "prerreqs": [],
+    "coreqs": [],
+    "estado": 0
+  },
+  "EGN-17141": {
+    "semestre": 1,
+    "nombre": "Probl. de la Civ. Contemporánea I",
+    "creditos": 6,
+    "prerreqs": [],
+    "coreqs": [],
+    "estado": 0
+  },
+  "ECO-11101": {
+    "semestre": 1,
+    "nombre": "Economía I",
+    "creditos": 6,
+    "prerreqs": [],
+    "coreqs": [],
+    "estado": 0
+  },
+  "COM-16301": {
+    "semestre": 1,
+    "nombre": "Herramientas Comput. y Algoritmos",
+    "creditos": 7,
+    "prerreqs": [],
+    "coreqs": [],
+    "estado": 0
+  },
+  "EGN-17122": {
+    "semestre": 2,
+    "nombre": "Ideas e Instit. Políticas y Sociales II",
+    "creditos": 6,
+    "prerreqs": [
+      "EGN-17121"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "EGN-17142": {
+    "semestre": 2,
+    "nombre": "Probl. de la Civ. Contemporánea II",
+    "creditos": 6,
+    "prerreqs": [
+      "EGN-17141"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "ECO-12102": {
+    "semestre": 2,
+    "nombre": "Economía II",
+    "creditos": 6,
+    "prerreqs": [
+      "ECO-11101"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "CON-10100": {
+    "semestre": 2,
+    "nombre": "Contabilidad I",
+    "creditos": 6,
+    "prerreqs": [],
+    "coreqs": [],
+    "estado": 0
+  },
+  "MAT-12100": {
+    "semestre": 2,
+    "nombre": "Cálculo I",
+    "creditos": 9,
+    "prerreqs": [],
+    "coreqs": [],
+    "estado": 0
+  },
+  "EGN-17123": {
+    "semestre": 3,
+    "nombre": "Ideas e Instit. Polít. y Sociales III",
+    "creditos": 6,
+    "prerreqs": [
+      "EGN-17122",
+      "EGN-17141"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "MAT-12310": {
+    "semestre": 3,
+    "nombre": "Álgebra Matricial",
+    "creditos": 8,
+    "prerreqs": [
+      "MAT-12100"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "ECO-21103": {
+    "semestre": 3,
+    "nombre": "Economía III",
+    "creditos": 6,
+    "prerreqs": [
+      "ECO-12102",
+      "MAT-12100"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "MAT-12101": {
+    "semestre": 3,
+    "nombre": "Cálculo II",
+    "creditos": 9,
+    "prerreqs": [
+      "MAT-12100"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "DER-10113": {
+    "semestre": 3,
+    "nombre": "Derecho Público",
+    "creditos": 9,
+    "prerreqs": [
+      "ECO-12102",
+      "MAT-12100"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "EGN-17161": {
+    "semestre": 4,
+    "nombre": "Historia Socio-política de México",
+    "creditos": 6,
+    "prerreqs": [
+      "EGN-17123"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "ECO-21104": {
+    "semestre": 4,
+    "nombre": "Economía IV",
+    "creditos": 6,
+    "prerreqs": [
+      "ECO-21103",
+      "MAT-12101"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "ECO-22105": {
+    "semestre": 4,
+    "nombre": "Economía V",
+    "creditos": 8,
+    "prerreqs": [
+      "ECO-21103",
+      "MAT-12101"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "EST-11101": {
+    "semestre": 4,
+    "nombre": "Probabilidad (1)",
+    "creditos": 8,
+    "prerreqs": [
+      "MAT-12101"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "MAT-12102": {
+    "semestre": 4,
+    "nombre": "Cálculo III",
+    "creditos": 9,
+    "prerreqs": [
+      "MAT-12101"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "ECO-10301": {
+    "semestre": 4,
+    "nombre": "Historia del Análisis Económico",
+    "creditos": 6,
+    "prerreqs": [
+      "ECO-12102",
+      "EGN-17123"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "EGN-17162": {
+    "semestre": 5,
+    "nombre": "Materia 1 de Área de concentración Materia 2 de Área de concentración Probl. de la Real. Mex. Contemp.",
+    "creditos": 6,
+    "prerreqs": [
+      "EGN-17161",
+      "EGN-17142"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "EST-11102": {
+    "semestre": 5,
+    "nombre": "Inferencia Estadística",
+    "creditos": 8,
+    "prerreqs": [
+      "EST-11101",
+      "MAT-12102"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "ECO-17103": {
+    "semestre": 5,
+    "nombre": "Seminario de la Econ. de México",
+    "creditos": 6,
+    "prerreqs": [
+      "ECO-21104",
+      "ECO-22105"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "ECO-13101": {
+    "semestre": 6,
+    "nombre": "Materia 3 de Área de concentración Materia 4 de Área de concentración Economía Internacional I",
+    "creditos": 6,
+    "prerreqs": [
+      "ECO-21104",
+      "ECO-22105"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "ECO-14301": {
+    "semestre": 7,
+    "nombre": "Materia 5 de Área de concentración Materia 6 de Área de concentración Materia 7 de Área de concentración Organización Industrial",
+    "creditos": 6,
+    "prerreqs": [
+      "ECO-21104",
+      "ECO-22105"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "ECO-12201": {
+    "semestre": 7,
+    "nombre": "Teoría y Política Monetaria",
+    "creditos": 6,
+    "prerreqs": [
+      "ECO-22105"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "ECO-17100": {
+    "semestre": 8,
+    "nombre": "Materia 8 de Área de concentración Materia 9 de Área de concentración Materia 10 de Área de concentración Historia Económica de México",
+    "creditos": 6,
+    "prerreqs": [
+      "ECO-22105",
+      "EGN-17162"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "ECO-15101": {
+    "semestre": 8,
+    "nombre": "Finanzas Públicas",
+    "creditos": 6,
+    "prerreqs": [
+      "ECO-21104",
+      "ECO-22105"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "ECO-18101": {
+    "semestre": 9,
+    "nombre": "Materia 11 de Área de concentración Desarrollo Económico",
+    "creditos": 6,
+    "prerreqs": [
+      "ECO-21104",
+      "ECO-15101"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "ECO-10204": {
+    "semestre": 9,
+    "nombre": "Seminario de Investig. Econ. I (2)",
+    "creditos": 9,
+    "prerreqs": [
+      "ECO-22105",
+      "ECO-21104"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "ECO-13102": {
+    "semestre": 9,
+    "nombre": "Economía Internacional II",
+    "creditos": 6,
+    "prerreqs": [
+      "ECO-13101",
+      "ECO-12201"
+    ],
+    "coreqs": [],
+    "estado": 0
+  }
+}

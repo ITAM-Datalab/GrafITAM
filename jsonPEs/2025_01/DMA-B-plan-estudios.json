@@ -1,0 +1,674 @@
+{
+  "COM-15126": {
+    "semestre": 1,
+    "nombre": "Ciencia de Datos y la Transformación de la Sociedad",
+    "creditos": 2,
+    "prerreqs": [],
+    "coreqs": [],
+    "estado": 0
+  },
+  "COM-16306": {
+    "semestre": 1,
+    "nombre": "Razonamiento Algorítmico",
+    "creditos": 6,
+    "prerreqs": [],
+    "coreqs": [],
+    "estado": 0
+  },
+  "EGN-17141": {
+    "semestre": 1,
+    "nombre": "Problemas de la Civilización Contemporánea I",
+    "creditos": 6,
+    "prerreqs": [],
+    "coreqs": [],
+    "estado": 0
+  },
+  "LEN-12701": {
+    "semestre": 1,
+    "nombre": "Estrategias de Comunicación Escrita",
+    "creditos": 6,
+    "prerreqs": [],
+    "coreqs": [],
+    "estado": 0
+  },
+  "MAT-12200": {
+    "semestre": 1,
+    "nombre": "Cálculo Univariado",
+    "creditos": 9,
+    "prerreqs": [],
+    "coreqs": [],
+    "estado": 0
+  },
+  "MAT-14250": {
+    "semestre": 1,
+    "nombre": "Geometría Vectorial",
+    "creditos": 6,
+    "prerreqs": [],
+    "coreqs": [],
+    "estado": 0
+  },
+  "MAT-14280": {
+    "semestre": 1,
+    "nombre": "Pensamiento Matemático",
+    "creditos": 6,
+    "prerreqs": [],
+    "coreqs": [],
+    "estado": 0
+  },
+  "COM-16305": {
+    "semestre": 2,
+    "nombre": "Gestión de Datos",
+    "creditos": 6,
+    "prerreqs": [
+      "COM-16306"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "ECO-11010": {
+    "semestre": 2,
+    "nombre": "Principios de Microeconomía",
+    "creditos": 6,
+    "prerreqs": [],
+    "coreqs": [],
+    "estado": 0
+  },
+  "EGN-17142": {
+    "semestre": 2,
+    "nombre": "Problemas de la Civilización Contemporánea II",
+    "creditos": 6,
+    "prerreqs": [
+      "EGN-17141"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "MAT-12201": {
+    "semestre": 2,
+    "nombre": "Cálculo Multivariado",
+    "creditos": 9,
+    "prerreqs": [
+      "MAT-12200",
+      "MAT-14250"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "MAT-14201": {
+    "semestre": 2,
+    "nombre": "Álgebra lineal I",
+    "creditos": 8,
+    "prerreqs": [
+      "MAT-14250"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "MAT-14281": {
+    "semestre": 2,
+    "nombre": "Matemáticas Discretas",
+    "creditos": 6,
+    "prerreqs": [
+      "MAT-14280"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "COM-11114": {
+    "semestre": 3,
+    "nombre": "Algoritmos y Estructuras de Datos",
+    "creditos": 7,
+    "prerreqs": [
+      "COM-16306"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "COM-12101": {
+    "semestre": 3,
+    "nombre": "Bases de Datos",
+    "creditos": 8,
+    "prerreqs": [
+      "COM-16305"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "CON-10110": {
+    "semestre": 3,
+    "nombre": "Fundamentos de Contabilidad Financiera",
+    "creditos": 6,
+    "prerreqs": [],
+    "coreqs": [],
+    "estado": 0
+  },
+  "EGN-17121": {
+    "semestre": 3,
+    "nombre": "Ideas e Instituciones Políticas y Sociales I",
+    "creditos": 6,
+    "prerreqs": [
+      "LEN-12701"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "EST-24126": {
+    "semestre": 3,
+    "nombre": "Cálculo de Probabilidades I",
+    "creditos": 6,
+    "prerreqs": [
+      "MAT-12200",
+      "MAT-14281"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "LEN-12702": {
+    "semestre": 3,
+    "nombre": "Seminario de Comunicación Escrita",
+    "creditos": 2,
+    "prerreqs": [
+      "LEN-12701"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "MAT-12202": {
+    "semestre": 3,
+    "nombre": "Cálculo Vectorial",
+    "creditos": 9,
+    "prerreqs": [
+      "MAT-12201",
+      "MAT-14201"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "COM-11113": {
+    "semestre": 4,
+    "nombre": "Análisis de Algoritmos y Complejidad Computacional",
+    "creditos": 7,
+    "prerreqs": [
+      "COM-11114",
+      "MAT-14281"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "COM-22102": {
+    "semestre": 4,
+    "nombre": "Bases de Datos No Relacionales",
+    "creditos": 6,
+    "prerreqs": [
+      "COM-12101"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "ECO-12010": {
+    "semestre": 4,
+    "nombre": "Principios de Macroeconomía",
+    "creditos": 6,
+    "prerreqs": [
+      "ECO-11010"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "EGN-17122": {
+    "semestre": 4,
+    "nombre": "Ideas e Instituciones Políticas y Sociales II",
+    "creditos": 6,
+    "prerreqs": [
+      "EGN-17121"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "EST-24127": {
+    "semestre": 4,
+    "nombre": "Cálculo de Probabilidades II",
+    "creditos": 6,
+    "prerreqs": [
+      "EST-24126",
+      "MAT-12201"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "MAT-14310": {
+    "semestre": 4,
+    "nombre": "Álgebra Lineal II",
+    "creditos": 8,
+    "prerreqs": [
+      "MAT-14201"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "COM-11308": {
+    "semestre": 5,
+    "nombre": "Introducción a la Inteligencia Artificial",
+    "creditos": 6,
+    "prerreqs": [
+      "COM-16305",
+      "EST-24126"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "COM-12104": {
+    "semestre": 5,
+    "nombre": "Visualización de Información",
+    "creditos": 6,
+    "prerreqs": [
+      "COM-16305",
+      "EST-24126"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "ECO-11011": {
+    "semestre": 5,
+    "nombre": "Microeconomía Aplicada I",
+    "creditos": 6,
+    "prerreqs": [
+      "ECO-12010",
+      "MAT-12201"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "EGN-17123": {
+    "semestre": 5,
+    "nombre": "Ideas e Instituciones Políticas y Sociales III",
+    "creditos": 6,
+    "prerreqs": [
+      "EGN-17122",
+      "EGN-17141"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "EST-14103": {
+    "semestre": 5,
+    "nombre": "Estadística Matemática",
+    "creditos": 8,
+    "prerreqs": [
+      "EST-24127"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "MAT-24406": {
+    "semestre": 5,
+    "nombre": "Análisis Numérico I",
+    "creditos": 8,
+    "prerreqs": [
+      "COM-16305",
+      "MAT-14201"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "COM-23701": {
+    "semestre": 6,
+    "nombre": "Aprendizaje de Máquina",
+    "creditos": 6,
+    "prerreqs": [
+      "COM-16305",
+      "EST-14103"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "ECO-11012": {
+    "semestre": 6,
+    "nombre": "Microeconomía Aplicada II",
+    "creditos": 6,
+    "prerreqs": [
+      "ECO-11011"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "EGN-17161": {
+    "semestre": 6,
+    "nombre": "Historia Socio-Política de México",
+    "creditos": 6,
+    "prerreqs": [
+      "EGN-17123"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "EST-24124": {
+    "semestre": 6,
+    "nombre": "Métodos Lineales",
+    "creditos": 6,
+    "prerreqs": [
+      "EST-14103",
+      "MAT-14201"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "MAT-24100": {
+    "semestre": 6,
+    "nombre": "Principios de Análisis Real",
+    "creditos": 6,
+    "prerreqs": [
+      "MAT-12201"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "MAT-24210": {
+    "semestre": 6,
+    "nombre": "Sistemas Dinámicos I",
+    "creditos": 6,
+    "prerreqs": [
+      "MAT-12201",
+      "MAT-14201"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "MAT-24407": {
+    "semestre": 6,
+    "nombre": "Análisis Numérico II",
+    "creditos": 6,
+    "prerreqs": [
+      "MAT-24406"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "COM-12103": {
+    "semestre": 7,
+    "nombre": "Fuentes de Datos",
+    "creditos": 6,
+    "prerreqs": [
+      "COM-12101",
+      "COM-11114"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "COM-22108": {
+    "semestre": 7,
+    "nombre": "Minería y Análisis de Datos",
+    "creditos": 6,
+    "prerreqs": [
+      "COM-11114",
+      "COM-11308"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "EGN-17162": {
+    "semestre": 7,
+    "nombre": "Problemas de la Realidad Mexicana Contemporánea",
+    "creditos": 6,
+    "prerreqs": [
+      "EGN-17161"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "EST-24125": {
+    "semestre": 7,
+    "nombre": "Métodos Multivariados",
+    "creditos": 6,
+    "prerreqs": [
+      "EST-14103"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "LEN-12719": {
+    "semestre": 7,
+    "nombre": "Comunicación Escrita para Matemáticas Aplicadas",
+    "creditos": 2,
+    "prerreqs": [
+      "LEN-12701"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "MAT-14850": {
+    "semestre": 7,
+    "nombre": "Modelos Matemáticos I",
+    "creditos": 6,
+    "prerreqs": [
+      "MAT-24210",
+      "EST-24126"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "MAT-24433": {
+    "semestre": 7,
+    "nombre": "Optimización Numérica I",
+    "creditos": 6,
+    "prerreqs": [
+      "MAT-24407",
+      "MAT-24100"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "ADM-12303": {
+    "semestre": 8,
+    "nombre": "Tópicos de Negocios",
+    "creditos": 6,
+    "prerreqs": [
+      "CON-10110"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "COM-14707": {
+    "semestre": 8,
+    "nombre": "Cómputo Paralelo",
+    "creditos": 6,
+    "prerreqs": [
+      "COM-12103"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "DER-10114": {
+    "semestre": 8,
+    "nombre": "Seminario de Legalidad Ética en Ciencia de Datos",
+    "creditos": 4,
+    "prerreqs": [],
+    "coreqs": [],
+    "estado": 0
+  },
+  "ECO-10521": {
+    "semestre": 8,
+    "nombre": "Inferencia Causal",
+    "creditos": 6,
+    "prerreqs": [
+      "EST-14103"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "MAT-24121": {
+    "semestre": 8,
+    "nombre": "Análisis Complejo",
+    "creditos": 6,
+    "prerreqs": [
+      "MAT-24100"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "MAT-24220": {
+    "semestre": 8,
+    "nombre": "Ecuaciones Diferenciales Parciales",
+    "creditos": 6,
+    "prerreqs": [
+      "MAT-24210"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "MAT-24435": {
+    "semestre": 8,
+    "nombre": "Optimización Numérica II",
+    "creditos": 6,
+    "prerreqs": [
+      "MAT-24433"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "ADM-12305": {
+    "semestre": 9,
+    "nombre": "Tópicos de Negocios con Datos",
+    "creditos": 6,
+    "prerreqs": [
+      "ADM-12303"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "COM-23114": {
+    "semestre": 9,
+    "nombre": "Arquitectura para Grandes Volúmenes de Datos",
+    "creditos": 6,
+    "prerreqs": [
+      "COM-14707"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "COM-23710": {
+    "semestre": 9,
+    "nombre": "Series de Tiempo y Aprendizaje de Máquina",
+    "creditos": 6,
+    "prerreqs": [
+      "COM-23701",
+      "COM-11308"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "EST-14107": {
+    "semestre": 9,
+    "nombre": "Procesos Estocásticos I",
+    "creditos": 6,
+    "prerreqs": [
+      "EST-24127"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "EST-24112": {
+    "semestre": 9,
+    "nombre": "Estadística Bayesiana",
+    "creditos": 6,
+    "prerreqs": [
+      "EST-14103"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "MAT-24101": {
+    "semestre": 9,
+    "nombre": "Análisis Real",
+    "creditos": 6,
+    "prerreqs": [
+      "MAT-24100"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "MAT-24505": {
+    "semestre": 9,
+    "nombre": "Investigación de Operaciones I",
+    "creditos": 8,
+    "prerreqs": [
+      "MAT-24433"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "ADM-13450": {
+    "semestre": 10,
+    "nombre": "Emprendimiento",
+    "creditos": 6,
+    "prerreqs": [
+      "ADM-12303",
+      "COM-23701"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "COM-23119": {
+    "semestre": 10,
+    "nombre": "Ciencia de Datos Aplicada",
+    "creditos": 6,
+    "prerreqs": [
+      "COM-23114"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "CSO-10161": {
+    "semestre": 10,
+    "nombre": "Tópicos de Políticas Públicas con Datos",
+    "creditos": 6,
+    "prerreqs": [
+      "ECO-10521"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "ECO-10530": {
+    "semestre": 10,
+    "nombre": "Tópicos de Economía con Datos",
+    "creditos": 6,
+    "prerreqs": [
+      "ECO-11012",
+      "ECO-10521"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "LEN-12759": {
+    "semestre": 10,
+    "nombre": "Comunicación Profesional para Matemáticas Aplicadas",
+    "creditos": 2,
+    "prerreqs": [
+      "LEN-12719",
+      "LEN-12702"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "MAT-24102": {
+    "semestre": 10,
+    "nombre": "Análisis Avanzado",
+    "creditos": 6,
+    "prerreqs": [
+      "MAT-24101"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "MAT-24850": {
+    "semestre": 10,
+    "nombre": "Modelos Matemáticos II",
+    "creditos": 6,
+    "prerreqs": [
+      "EST-24124",
+      "MAT-24220"
+    ],
+    "coreqs": [],
+    "estado": 0
+  }
+}

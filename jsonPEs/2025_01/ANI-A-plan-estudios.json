@@ -1,0 +1,750 @@
+{
+  "ADM-11120": {
+    "semestre": 1,
+    "nombre": "Trayectorias en Administración: Propósito y Programa",
+    "creditos": 2,
+    "prerreqs": [],
+    "coreqs": [],
+    "estado": 0
+  },
+  "ADM-13125": {
+    "semestre": 1,
+    "nombre": "Negocios, Emprendimiento y Sociedad",
+    "creditos": 6,
+    "prerreqs": [],
+    "coreqs": [],
+    "estado": 0
+  },
+  "COM-16306": {
+    "semestre": 1,
+    "nombre": "Razonamiento Algorítmico",
+    "creditos": 6,
+    "prerreqs": [],
+    "coreqs": [],
+    "estado": 0
+  },
+  "EGN-17141": {
+    "semestre": 1,
+    "nombre": "Problemas de la Civilización Contemporánea I",
+    "creditos": 6,
+    "prerreqs": [],
+    "coreqs": [],
+    "estado": 0
+  },
+  "LEN-12701": {
+    "semestre": 1,
+    "nombre": "Estrategias de Comunicación Escrita",
+    "creditos": 6,
+    "prerreqs": [],
+    "coreqs": [],
+    "estado": 0
+  },
+  "MAT-12200": {
+    "semestre": 1,
+    "nombre": "Cálculo Univariado",
+    "creditos": 9,
+    "prerreqs": [],
+    "coreqs": [],
+    "estado": 0
+  },
+  "MAT-14250": {
+    "semestre": 1,
+    "nombre": "Geometría Vectorial",
+    "creditos": 6,
+    "prerreqs": [],
+    "coreqs": [],
+    "estado": 0
+  },
+  "SDI-17112": {
+    "semestre": 1,
+    "nombre": "Introducción a la Ingeniería",
+    "creditos": 7,
+    "prerreqs": [],
+    "coreqs": [],
+    "estado": 0
+  },
+  "ADM-12107": {
+    "semestre": 2,
+    "nombre": "Estrategia de Negocios I",
+    "creditos": 6,
+    "prerreqs": [],
+    "coreqs": [],
+    "estado": 0
+  },
+  "CON-10001": {
+    "semestre": 2,
+    "nombre": "Proceso Contable",
+    "creditos": 8,
+    "prerreqs": [],
+    "coreqs": [],
+    "estado": 0
+  },
+  "EGN-17142": {
+    "semestre": 2,
+    "nombre": "Problemas de la Civilización Contemporánea II",
+    "creditos": 6,
+    "prerreqs": [
+      "EGN-17141"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "IIO-12172": {
+    "semestre": 2,
+    "nombre": "Taller de Programación de Dispositivos de Ingeniería",
+    "creditos": 2,
+    "prerreqs": [
+      "COM-16306"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "IIO-15175": {
+    "semestre": 2,
+    "nombre": "Diseño e Impresión 3D por Computadora",
+    "creditos": 8,
+    "prerreqs": [],
+    "coreqs": [],
+    "estado": 0
+  },
+  "MAT-14201": {
+    "semestre": 2,
+    "nombre": "Álgebra lineal I",
+    "creditos": 8,
+    "prerreqs": [
+      "MAT-14250"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "SDI-17306": {
+    "semestre": 2,
+    "nombre": "Estática, Electricidad y Magnetismo",
+    "creditos": 7,
+    "prerreqs": [
+      "MAT-12200",
+      "MAT-14250"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "ADM-14413": {
+    "semestre": 3,
+    "nombre": "Desarrollo de Habilidades Gerenciales",
+    "creditos": 6,
+    "prerreqs": [
+      "ADM-12107"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "ADM-16608": {
+    "semestre": 3,
+    "nombre": "Principios de Mercadotecnia",
+    "creditos": 6,
+    "prerreqs": [
+      "ADM-12107"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "COM-16305": {
+    "semestre": 3,
+    "nombre": "Gestión de Datos",
+    "creditos": 6,
+    "prerreqs": [
+      "COM-16306"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "ECO-11010": {
+    "semestre": 3,
+    "nombre": "Principios de Microeconomía",
+    "creditos": 6,
+    "prerreqs": [],
+    "coreqs": [],
+    "estado": 0
+  },
+  "EGN-17121": {
+    "semestre": 3,
+    "nombre": "Ideas e Instituciones Políticas y Sociales I",
+    "creditos": 6,
+    "prerreqs": [
+      "LEN-12701"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "IIO-15132": {
+    "semestre": 3,
+    "nombre": "Físico Química",
+    "creditos": 8,
+    "prerreqs": [
+      "SDI-17112"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "LEN-12702": {
+    "semestre": 3,
+    "nombre": "Seminario de Comunicación Escrita",
+    "creditos": 2,
+    "prerreqs": [
+      "LEN-12701"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "MAT-12201": {
+    "semestre": 3,
+    "nombre": "Cálculo Multivariado",
+    "creditos": 9,
+    "prerreqs": [
+      "MAT-12200",
+      "MAT-14250"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "ADM-13126": {
+    "semestre": 4,
+    "nombre": "Negocios en Acción: Diseño de Producto",
+    "creditos": 6,
+    "prerreqs": [
+      "ADM-16608"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "CON-14109": {
+    "semestre": 4,
+    "nombre": "Contabilidad Gerencial",
+    "creditos": 6,
+    "prerreqs": [
+      "CON-10001"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "ECO-12010": {
+    "semestre": 4,
+    "nombre": "Principios de Macroeconomía",
+    "creditos": 6,
+    "prerreqs": [
+      "ECO-11010"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "EGN-17122": {
+    "semestre": 4,
+    "nombre": "Ideas e Instituciones Políticas y Sociales II",
+    "creditos": 6,
+    "prerreqs": [
+      "EGN-17121"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "EST-11101": {
+    "semestre": 4,
+    "nombre": "Probabilidad",
+    "creditos": 8,
+    "prerreqs": [
+      "MAT-12201"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "IIO-15141": {
+    "semestre": 4,
+    "nombre": "Ciencias de los Materiales y Compuestos",
+    "creditos": 8,
+    "prerreqs": [
+      "IIO-15132"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "MAT-24210": {
+    "semestre": 4,
+    "nombre": "Sistemas Dinámicos I",
+    "creditos": 6,
+    "prerreqs": [
+      "MAT-12201",
+      "MAT-14201"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "ADM-12312": {
+    "semestre": 5,
+    "nombre": "Trayectorias de Negocios II: Equipo y Liderazgo",
+    "creditos": 2,
+    "prerreqs": [
+      "ADM-11120",
+      "ADM-13126"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "ADM-14431": {
+    "semestre": 5,
+    "nombre": "Comportamiento Organizacional",
+    "creditos": 6,
+    "prerreqs": [
+      "ADM-16608"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "DER-10022": {
+    "semestre": 5,
+    "nombre": "Derecho Empresarial",
+    "creditos": 8,
+    "prerreqs": [
+      "ADM-12107",
+      "CON-10001"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "ECO-14502": {
+    "semestre": 5,
+    "nombre": "Economía Gerencial",
+    "creditos": 8,
+    "prerreqs": [
+      "ECO-12010",
+      "MAT-12201"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "EGN-17123": {
+    "semestre": 5,
+    "nombre": "Ideas e Instituciones Políticas y Sociales III",
+    "creditos": 6,
+    "prerreqs": [
+      "EGN-17122",
+      "EGN-17141"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "EST-11102": {
+    "semestre": 5,
+    "nombre": "Inferencia Estadística",
+    "creditos": 8,
+    "prerreqs": [
+      "EST-11101"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "IIO-15152": {
+    "semestre": 5,
+    "nombre": "Procesos de Manufactura",
+    "creditos": 6,
+    "prerreqs": [
+      "IIO-15141"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "IIO-15164": {
+    "semestre": 5,
+    "nombre": "Laboratorio de CNC y Manufactura",
+    "creditos": 2,
+    "prerreqs": [
+      "IIO-15141"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "ADM-11002": {
+    "semestre": 6,
+    "nombre": "Innovación y Diseño de Modelos de Negocios",
+    "creditos": 6,
+    "prerreqs": [
+      "ADM-13126"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "ADM-14432": {
+    "semestre": 6,
+    "nombre": "Capital Humano",
+    "creditos": 6,
+    "prerreqs": [
+      "ADM-14431",
+      "CON-14109"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "ADM-15561": {
+    "semestre": 6,
+    "nombre": "Finanzas en los Negocios I",
+    "creditos": 6,
+    "prerreqs": [
+      "CON-14109",
+      "ECO-11010"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "EGN-17161": {
+    "semestre": 6,
+    "nombre": "Historia Socio-Política de México",
+    "creditos": 6,
+    "prerreqs": [
+      "EGN-17123"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "IIO-13151": {
+    "semestre": 6,
+    "nombre": "Modelado de Redes Inteligentes",
+    "creditos": 6,
+    "prerreqs": [
+      "IIO-12172"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "IIO-14180": {
+    "semestre": 6,
+    "nombre": "Administración y Evaluación de Proyectos",
+    "creditos": 6,
+    "prerreqs": [
+      "EST-11102"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "IIO-15174": {
+    "semestre": 6,
+    "nombre": "Cinemática y Dinámica",
+    "creditos": 7,
+    "prerreqs": [
+      "MAT-24210",
+      "SDI-17306"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "ADM-11017": {
+    "semestre": 7,
+    "nombre": "Métodos de Pronósticos",
+    "creditos": 7,
+    "prerreqs": [
+      "EST-11102"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "ADM-15562": {
+    "semestre": 7,
+    "nombre": "Finanzas en los Negocios II",
+    "creditos": 6,
+    "prerreqs": [
+      "ADM-15561"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "ADM-15569": {
+    "semestre": 7,
+    "nombre": "Modelaje para Contabilidad y Finanzas",
+    "creditos": 6,
+    "prerreqs": [
+      "ADM-15561",
+      "COM-16305"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "EGN-17162": {
+    "semestre": 7,
+    "nombre": "Problemas de la Realidad Mexicana Contemporánea",
+    "creditos": 6,
+    "prerreqs": [
+      "EGN-17161"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "IIO-12182": {
+    "semestre": 7,
+    "nombre": "Automatización y Robótica Industrial",
+    "creditos": 8,
+    "prerreqs": [
+      "COM-16306"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "IIO-13161": {
+    "semestre": 7,
+    "nombre": "Modelado Estocástico y Aprendizaje de Máquinas",
+    "creditos": 6,
+    "prerreqs": [
+      "IIO-13151"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "IIO-14160": {
+    "semestre": 7,
+    "nombre": "Diseño de Planta",
+    "creditos": 6,
+    "prerreqs": [
+      "IIO-13151"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "ADM-12371": {
+    "semestre": 8,
+    "nombre": "Modelos para Toma de Decisiones",
+    "creditos": 6,
+    "prerreqs": [
+      "ECO-14502"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "ADM-13127": {
+    "semestre": 8,
+    "nombre": "Negocios en Acción: Lanzamiento de Productos Digitales",
+    "creditos": 6,
+    "prerreqs": [
+      "ADM-11002"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "ADM-16739": {
+    "semestre": 8,
+    "nombre": "Métodos de Investigación de Mercados",
+    "creditos": 6,
+    "prerreqs": [
+      "ADM-11017"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "IIO-13180": {
+    "semestre": 8,
+    "nombre": "Simulación de Sistemas",
+    "creditos": 6,
+    "prerreqs": [
+      "EST-11101"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "IIO-14161": {
+    "semestre": 8,
+    "nombre": "Planeación y Control de la Producción",
+    "creditos": 6,
+    "prerreqs": [
+      "EST-11101",
+      "IIO-12172"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "IIO-14173": {
+    "semestre": 8,
+    "nombre": "Logística y Cadena de Suministro",
+    "creditos": 6,
+    "prerreqs": [
+      "ADM-11017"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "IIO-16182": {
+    "semestre": 8,
+    "nombre": "Proyecto de Ingeniería II",
+    "creditos": 2,
+    "prerreqs": [
+      "IIO-13161",
+      "IIO-15152"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "LEN-12714": {
+    "semestre": 8,
+    "nombre": "Comunicación Escrita para Administración",
+    "creditos": 2,
+    "prerreqs": [
+      "LEN-12701"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "ADM-12313": {
+    "semestre": 9,
+    "nombre": "Trayectorias de Negocios III: Emprendimiento e Impacto",
+    "creditos": 2,
+    "prerreqs": [
+      "ADM-12312",
+      "ADM-13127"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "ADM-12350": {
+    "semestre": 9,
+    "nombre": "Decisiones de Negocios Basadas en Datos",
+    "creditos": 6,
+    "prerreqs": [
+      "ADM-15562",
+      "ADM-11017"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "ADM-12372": {
+    "semestre": 9,
+    "nombre": "Estrategia y Organizaciones",
+    "creditos": 6,
+    "prerreqs": [
+      "ADM-12371"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "ADM-13450": {
+    "semestre": 9,
+    "nombre": "Emprendimiento",
+    "creditos": 6,
+    "prerreqs": [
+      "ADM-15562",
+      "ADM-13127"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "ADM-16735": {
+    "semestre": 9,
+    "nombre": "Administración Estratégica de Marcas",
+    "creditos": 6,
+    "prerreqs": [
+      "ADM-16739"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "COM-11308": {
+    "semestre": 9,
+    "nombre": "Introducción a la Inteligencia Artificial",
+    "creditos": 6,
+    "prerreqs": [
+      "COM-16305",
+      "EST-11101"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "CON-15001": {
+    "semestre": 9,
+    "nombre": "Impuestos Corporativos I",
+    "creditos": 6,
+    "prerreqs": [
+      "ADM-15562",
+      "DER-10022"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "IIO-14193": {
+    "semestre": 9,
+    "nombre": "Ingeniería de Procesos de Negocios",
+    "creditos": 6,
+    "prerreqs": [
+      "IIO-13180"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "ADM-11010": {
+    "semestre": 10,
+    "nombre": "Dirección General",
+    "creditos": 6,
+    "prerreqs": [
+      "ADM-13450",
+      "ADM-12372"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "IIO-12180": {
+    "semestre": 10,
+    "nombre": "Diseño y Desarrollo de Producto",
+    "creditos": 6,
+    "prerreqs": [
+      "ADM-13450",
+      "IIO-15175"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "IIO-14162": {
+    "semestre": 10,
+    "nombre": "Ingeniería y Control de la Calidad",
+    "creditos": 6,
+    "prerreqs": [
+      "EST-11102"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "IIO-14174": {
+    "semestre": 10,
+    "nombre": "Analítica de la Cadena de Suministro",
+    "creditos": 8,
+    "prerreqs": [
+      "IIO-13161"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "IIO-15162": {
+    "semestre": 10,
+    "nombre": "Manufactura Inteligente",
+    "creditos": 8,
+    "prerreqs": [
+      "IIO-15152",
+      "IIO-15164"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "LEN-12754": {
+    "semestre": 10,
+    "nombre": "Comunicación Profesional para Administración",
+    "creditos": 2,
+    "prerreqs": [
+      "LEN-12702",
+      "LEN-12714"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "SDI-17602": {
+    "semestre": 10,
+    "nombre": "Redes de Comunicaciones e Internet de las Cosas",
+    "creditos": 8,
+    "prerreqs": [
+      "COM-11308"
+    ],
+    "coreqs": [],
+    "estado": 0
+  }
+}

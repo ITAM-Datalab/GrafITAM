@@ -1,0 +1,276 @@
+{
+  "SDI-14105": {
+    "semestre": 1,
+    "nombre": "Introducción a la Ingeniería (1)",
+    "creditos": 6,
+    "prerreqs": [
+      "COM-11101",
+      "MAT-14200",
+      "EGN-17121"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "IIO-15130": {
+    "semestre": 2,
+    "nombre": "Fundamentos de Química",
+    "creditos": 11,
+    "prerreqs": [],
+    "coreqs": [],
+    "estado": 0
+  },
+  "SDI-11120": {
+    "semestre": 2,
+    "nombre": "SEMESTRE TERCER Elementos de Física Cálculo Diferencial e Integral II",
+    "creditos": 10,
+    "prerreqs": [
+      "MAT-14100",
+      "MAT-14200",
+      "MAT-14201",
+      "COM-11101",
+      "COM-11102",
+      "EGN-17121",
+      "EGN-17122",
+      "EGN-17141",
+      "MAT-14100"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "IIO-15140": {
+    "semestre": 2,
+    "nombre": "Ciencias de los Materiales",
+    "creditos": 9,
+    "prerreqs": [
+      "IIO-15130"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "SDI-11221": {
+    "semestre": 2,
+    "nombre": "SEMESTRE CUARTO Elementos de Electrónica Cálculo Diferencial e Integral III Economía I",
+    "creditos": 10,
+    "prerreqs": [
+      "COM-11102",
+      "COM-16203",
+      "CON-10100",
+      "EGN-17141",
+      "EGN-17142",
+      "EGN-17122",
+      "EGN-17141",
+      "EGN-17123",
+      "LEN-12701",
+      "LEN-12701",
+      "LEN-12702",
+      "SDI-11120"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "IIO-15170": {
+    "semestre": 2,
+    "nombre": "Diseño Asistido por Computadora",
+    "creditos": 6,
+    "prerreqs": [
+      "SDI-11120"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "SDI-11322": {
+    "semestre": 5,
+    "nombre": "Circuitos Lógicos",
+    "creditos": 10,
+    "prerreqs": [
+      "SDI-11120",
+      "SDI-11221"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "EST-11102": {
+    "semestre": 5,
+    "nombre": "Inferencia Estadística",
+    "creditos": 8,
+    "prerreqs": [
+      "EST-11101",
+      "MAT-14102"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "SDI-12515": {
+    "semestre": 5,
+    "nombre": "Señales y Sistemas",
+    "creditos": 8,
+    "prerreqs": [
+      "MAT-14101"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "SDI-11561": {
+    "semestre": 6,
+    "nombre": "Principios de Mecatrónica",
+    "creditos": 10,
+    "prerreqs": [
+      "SDI-11322",
+      "COM-11102"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "SDI-12625": {
+    "semestre": 6,
+    "nombre": "Procesamiento Digital de Señales",
+    "creditos": 8,
+    "prerreqs": [
+      "COM-16203",
+      "COM-23101",
+      "SDI-12515"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "IIO-15171": {
+    "semestre": 6,
+    "nombre": "Mecánica de Sólidos",
+    "creditos": 6,
+    "prerreqs": [
+      "COM-16203",
+      "MAT-14102",
+      "COM-14105",
+      "MAT-14101",
+      "IIO-15170"
+    ],
+    "coreqs": [
+      "CORREQ"
+    ],
+    "estado": 0
+  },
+  "LEN-12725": {
+    "semestre": 6,
+    "nombre": "Comunicac. Escrita para Ing. en Mecatr.",
+    "creditos": 2,
+    "prerreqs": [
+      "LEN-12701"
+    ],
+    "coreqs": [
+      "CORREQ"
+    ],
+    "estado": 0
+  },
+  "SDI-11671": {
+    "semestre": 6,
+    "nombre": "Teoría de Control",
+    "creditos": 6,
+    "prerreqs": [
+      "SDI-12515"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "SDI-13760": {
+    "semestre": 6,
+    "nombre": "SEMESTRE SÉPTIMO Redes de Computadoras",
+    "creditos": 10,
+    "prerreqs": [
+      "MAT-14102"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "IIO-12170": {
+    "semestre": 6,
+    "nombre": "Automatización y Control de Procesos",
+    "creditos": 9,
+    "prerreqs": [
+      "COM-16203"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "IIO-15161": {
+    "semestre": 6,
+    "nombre": "Manufactura de Componentes",
+    "creditos": 9,
+    "prerreqs": [
+      "IIO-15140"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "IIO-15183": {
+    "semestre": 6,
+    "nombre": "Diseño de Mecanismos Robóticos",
+    "creditos": 6,
+    "prerreqs": [
+      "IIO-15171"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "SDI-11911": {
+    "semestre": 6,
+    "nombre": "Robótica",
+    "creditos": 6,
+    "prerreqs": [
+      "MAT-14102"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "IIO-15195": {
+    "semestre": 6,
+    "nombre": "SEMESTRE OCTAVO Celdas Robóticas Sistemas Operativos",
+    "creditos": 9,
+    "prerreqs": [
+      "SDI-11561"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "IIO-12190": {
+    "semestre": 6,
+    "nombre": "Manufactura Integrada por Computadora",
+    "creditos": 6,
+    "prerreqs": [
+      "IIO-15161"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "IIO-15196": {
+    "semestre": 6,
+    "nombre": "Sistemas Mecatrónicos",
+    "creditos": 6,
+    "prerreqs": [
+      "IIO-12170",
+      "IIO-15171"
+    ],
+    "coreqs": [
+      "CORREQ"
+    ],
+    "estado": 0
+  },
+  "LEN-12765": {
+    "semestre": 6,
+    "nombre": "Comunicac. Profesional para Ing. en Meca. (A",
+    "creditos": 2,
+    "prerreqs": [
+      "LEN-12725",
+      "LEN-12702"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "SDI-15816": {
+    "semestre": 6,
+    "nombre": "Seminario de Titulación",
+    "creditos": 4,
+    "prerreqs": [],
+    "coreqs": [],
+    "estado": 0
+  }
+}

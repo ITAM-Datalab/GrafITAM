@@ -1,0 +1,927 @@
+{
+  "EIN-11101": {
+    "semestre": 1,
+    "nombre": "a las Relaciones Internacionales",
+    "creditos": 7,
+    "prerreqs": [],
+    "coreqs": [],
+    "estado": 0
+  },
+  "DER-11104": {
+    "semestre": 1,
+    "nombre": "de la Legalidad",
+    "creditos": 2,
+    "prerreqs": [],
+    "coreqs": [],
+    "estado": 0
+  },
+  "DER-12102": {
+    "semestre": 1,
+    "nombre": "de Derecho Romano",
+    "creditos": 8,
+    "prerreqs": [],
+    "coreqs": [],
+    "estado": 0
+  },
+  "EGN-17121": {
+    "semestre": 1,
+    "nombre": "e Instit. Polít. y Soc. I",
+    "creditos": 6,
+    "prerreqs": [],
+    "coreqs": [],
+    "estado": 0
+  },
+  "EGN-17141": {
+    "semestre": 1,
+    "nombre": "de la Civ. Contemp. I",
+    "creditos": 6,
+    "prerreqs": [],
+    "coreqs": [],
+    "estado": 0
+  },
+  "LEN-12701": {
+    "semestre": 1,
+    "nombre": "de Comunicación Escrita",
+    "creditos": 6,
+    "prerreqs": [],
+    "coreqs": [],
+    "estado": 0
+  },
+  "EGN-17122": {
+    "semestre": 2,
+    "nombre": "e Instit. Polít. y Soc. II",
+    "creditos": 6,
+    "prerreqs": [
+      "EGN-17121"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "EGN-17142": {
+    "semestre": 2,
+    "nombre": "de la Civ. Contemp. II",
+    "creditos": 6,
+    "prerreqs": [
+      "EGN-17141"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "MAT-11100": {
+    "semestre": 2,
+    "nombre": "I",
+    "creditos": 9,
+    "prerreqs": [],
+    "coreqs": [],
+    "estado": 0
+  },
+  "EIN-12201": {
+    "semestre": 2,
+    "nombre": "de las Relaciones Int. I",
+    "creditos": 8,
+    "prerreqs": [],
+    "coreqs": [],
+    "estado": 0
+  },
+  "DER-11101": {
+    "semestre": 2,
+    "nombre": "del Derecho I",
+    "creditos": 10,
+    "prerreqs": [
+      "DER-11104"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "DER-13203": {
+    "semestre": 2,
+    "nombre": "Seminario de Teoria del Derecho I Jurídico y Personas",
+    "creditos": 6,
+    "prerreqs": [
+      "DER-12102",
+      "LEN-12701"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "ECO-11101": {
+    "semestre": 2,
+    "nombre": "I",
+    "creditos": 6,
+    "prerreqs": [],
+    "coreqs": [],
+    "estado": 0
+  },
+  "ECO-12102": {
+    "semestre": 3,
+    "nombre": "II",
+    "creditos": 6,
+    "prerreqs": [
+      "ECO-11101"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "DER-11202": {
+    "semestre": 3,
+    "nombre": "del Derecho II",
+    "creditos": 8,
+    "prerreqs": [
+      "DER-11101"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "DER-11105": {
+    "semestre": 3,
+    "nombre": "y Argumentación Jurídica en Inglés I",
+    "creditos": 6,
+    "prerreqs": [
+      "DER-11104"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "DER-11106": {
+    "semestre": 3,
+    "nombre": "de la Disertación Jurídica",
+    "creditos": 6,
+    "prerreqs": [
+      "DER-11104"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "EIN-13202": {
+    "semestre": 3,
+    "nombre": "de las Relaciones Int. II",
+    "creditos": 8,
+    "prerreqs": [
+      "EIN-12201"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "EIN-13104": {
+    "semestre": 3,
+    "nombre": "de Investigación en Relaciones Internacionales",
+    "creditos": 6,
+    "prerreqs": [
+      "EIN-11101"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "EGN-17123": {
+    "semestre": 3,
+    "nombre": "e Instit. Polít. y Soc. III",
+    "creditos": 6,
+    "prerreqs": [
+      "EGN-17122",
+      "EGN-17141",
+      "LEN-12701"
+    ],
+    "coreqs": [
+      "CORREQ"
+    ],
+    "estado": 0
+  },
+  "LEN-12702": {
+    "semestre": 3,
+    "nombre": "de Comunicación Escrita",
+    "creditos": 2,
+    "prerreqs": [
+      "LEN-12701"
+    ],
+    "coreqs": [
+      "CORREQ"
+    ],
+    "estado": 0
+  },
+  "EGN-17161": {
+    "semestre": 4,
+    "nombre": "Socio-Política de México",
+    "creditos": 6,
+    "prerreqs": [
+      "EGN-17123",
+      "LEN-12702"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "ECO-11103": {
+    "semestre": 4,
+    "nombre": "III",
+    "creditos": 6,
+    "prerreqs": [
+      "ECO-12102",
+      "MAT-11100"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "DER-13108": {
+    "semestre": 4,
+    "nombre": "y Derechos Reales",
+    "creditos": 6,
+    "prerreqs": [
+      "DER-13203",
+      "DER-11106"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "DER-11107": {
+    "semestre": 4,
+    "nombre": "de Disertación Jurídica en Bienes y Derechos Reales",
+    "creditos": 2,
+    "prerreqs": [
+      "DER-13203",
+      "DER-11106"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "DER-11108": {
+    "semestre": 4,
+    "nombre": "y Argumentación Jurídica en Inglés II",
+    "creditos": 6,
+    "prerreqs": [
+      "DER-11105"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "CSO-11021": {
+    "semestre": 4,
+    "nombre": "Política Contemporánea",
+    "creditos": 6,
+    "prerreqs": [],
+    "coreqs": [],
+    "estado": 0
+  },
+  "EIN-14102": {
+    "semestre": 4,
+    "nombre": "de las Relaciones Internacionales",
+    "creditos": 6,
+    "prerreqs": [
+      "EIN-13104"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "COM-16401": {
+    "semestre": 4,
+    "nombre": "I",
+    "creditos": 7,
+    "prerreqs": [],
+    "coreqs": [],
+    "estado": 0
+  },
+  "DER-11109": {
+    "semestre": 5,
+    "nombre": "de Disertación Jurídica en Obligaciones",
+    "creditos": 2,
+    "prerreqs": [
+      "DER-13108"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "EGN-17162": {
+    "semestre": 5,
+    "nombre": "de la Real. Mex. Contemp.",
+    "creditos": 6,
+    "prerreqs": [
+      "EGN-17142",
+      "EGN-17161"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "EIN-14302": {
+    "semestre": 5,
+    "nombre": "de E.U.A.",
+    "creditos": 6,
+    "prerreqs": [],
+    "coreqs": [],
+    "estado": 0
+  },
+  "DER-15403": {
+    "semestre": 5,
+    "nombre": "Constitucional I",
+    "creditos": 6,
+    "prerreqs": [
+      "CSO-11021",
+      "DER-11202",
+      "DER-11106"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "DER-11110": {
+    "semestre": 5,
+    "nombre": "de Disertación Jurídica en Derecho Constitucional I",
+    "creditos": 2,
+    "prerreqs": [
+      "CSO-11021",
+      "DER-11202",
+      "DER-11106"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "DER-11111": {
+    "semestre": 5,
+    "nombre": "Jurídicas Globales I",
+    "creditos": 6,
+    "prerreqs": [
+      "DER-11108",
+      "DER-11202"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "MAT-11101": {
+    "semestre": 5,
+    "nombre": "II",
+    "creditos": 9,
+    "prerreqs": [
+      "MAT-11100"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "EIN-15105": {
+    "semestre": 6,
+    "nombre": "de las Rel. Eco. Int.",
+    "creditos": 6,
+    "prerreqs": [
+      "EIN-14102"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "EST-10101": {
+    "semestre": 6,
+    "nombre": "I",
+    "creditos": 8,
+    "prerreqs": [
+      "MAT-11100",
+      "COM-16401"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "ECO-11104": {
+    "semestre": 6,
+    "nombre": "IV",
+    "creditos": 6,
+    "prerreqs": [
+      "ECO-11103",
+      "MAT-11101"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "EIN-15302": {
+    "semestre": 6,
+    "nombre": "Político en E.U.A.",
+    "creditos": 6,
+    "prerreqs": [
+      "EIN-14302"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "DER-11112": {
+    "semestre": 6,
+    "nombre": "de Disertación Jurídica en Contratos",
+    "creditos": 2,
+    "prerreqs": [
+      "DER-13403",
+      "DER-11107",
+      "DER-11109"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "DER-15504": {
+    "semestre": 6,
+    "nombre": "Constitucional II",
+    "creditos": 6,
+    "prerreqs": [
+      "DER-15403"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "DER-11113": {
+    "semestre": 6,
+    "nombre": "de Disertación Jurídica en Derecho Constitucional II",
+    "creditos": 2,
+    "prerreqs": [
+      "DER-15403"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "ECO-12133": {
+    "semestre": 7,
+    "nombre": "Intermedia",
+    "creditos": 6,
+    "prerreqs": [
+      "ECO-11103"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "DER-16502": {
+    "semestre": 7,
+    "nombre": "Mercantil I",
+    "creditos": 6,
+    "prerreqs": [
+      "DER-13108"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "DER-19501": {
+    "semestre": 7,
+    "nombre": "Laboral I",
+    "creditos": 6,
+    "prerreqs": [
+      "DER-13504"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "DER-14402": {
+    "semestre": 7,
+    "nombre": "del Delito",
+    "creditos": 6,
+    "prerreqs": [
+      "DER-15504"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "DER-13614": {
+    "semestre": 7,
+    "nombre": "y Sucesiones",
+    "creditos": 8,
+    "prerreqs": [
+      "DER-13504",
+      "DER-11112"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "DER-10005": {
+    "semestre": 7,
+    "nombre": "Internacional Público I",
+    "creditos": 6,
+    "prerreqs": [
+      "DER-13403"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "DER-11114": {
+    "semestre": 7,
+    "nombre": "Jurídicas Globales II",
+    "creditos": 4,
+    "prerreqs": [
+      "DER-11111",
+      "DER-13403"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "EST-10102": {
+    "semestre": 8,
+    "nombre": "II",
+    "creditos": 8,
+    "prerreqs": [
+      "EST-10101"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "CSO-15021": {
+    "semestre": 8,
+    "nombre": "Pública",
+    "creditos": 6,
+    "prerreqs": [
+      "EGN-17123"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "DER-16503": {
+    "semestre": 8,
+    "nombre": "Mercantil II",
+    "creditos": 6,
+    "prerreqs": [
+      "DER-16502"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "DER-15600": {
+    "semestre": 8,
+    "nombre": "Constitucional III",
+    "creditos": 6,
+    "prerreqs": [
+      "DER-15504",
+      "DER-11113",
+      "DER-11110"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "DER-11115": {
+    "semestre": 8,
+    "nombre": "de Disertación Jurídica en Derecho Constitucional III",
+    "creditos": 2,
+    "prerreqs": [
+      "DER-15504",
+      "DER-11113",
+      "DER-11110"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "EIN-16403": {
+    "semestre": 8,
+    "nombre": "Latina",
+    "creditos": 6,
+    "prerreqs": [
+      "EIN-15105"
+    ],
+    "coreqs": [
+      "CORREQ"
+    ],
+    "estado": 0
+  },
+  "LEN-12721": {
+    "semestre": 8,
+    "nombre": "Escrita para Relaciones Internacionales",
+    "creditos": 2,
+    "prerreqs": [
+      "LEN-12701"
+    ],
+    "coreqs": [
+      "CORREQ"
+    ],
+    "estado": 0
+  },
+  "ECO-13101": {
+    "semestre": 8,
+    "nombre": "Internacional I",
+    "creditos": 6,
+    "prerreqs": [
+      "ECO-11103"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "DER-19602": {
+    "semestre": 8,
+    "nombre": "Laboral II",
+    "creditos": 6,
+    "prerreqs": [
+      "DER-19501"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "DER-17601": {
+    "semestre": 9,
+    "nombre": "Administrativo I",
+    "creditos": 6,
+    "prerreqs": [
+      "DER-15600",
+      "DER-11115"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "DER-11116": {
+    "semestre": 9,
+    "nombre": "de Disertación Jurídica en Derecho Administrativo I",
+    "creditos": 2,
+    "prerreqs": [
+      "DER-15600",
+      "DER-11115"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "DER-13406": {
+    "semestre": 9,
+    "nombre": "General del Proceso",
+    "creditos": 8,
+    "prerreqs": [
+      "DER-15600",
+      "DER-11115"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "DER-16702": {
+    "semestre": 9,
+    "nombre": "Mercantil III",
+    "creditos": 6,
+    "prerreqs": [
+      "DER-16503"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "DER-10006": {
+    "semestre": 9,
+    "nombre": "Internacional Público II",
+    "creditos": 6,
+    "prerreqs": [
+      "DER-10005"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "DER-11117": {
+    "semestre": 9,
+    "nombre": "Jurídica Globales III",
+    "creditos": 6,
+    "prerreqs": [
+      "DER-11111"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "CSO-13041": {
+    "semestre": 9,
+    "nombre": "Mexicana Contemporánea",
+    "creditos": 6,
+    "prerreqs": [
+      "EGN-17162"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "EIN-17303": {
+    "semestre": 10,
+    "nombre": "México- E.U.A.-Canadá",
+    "creditos": 6,
+    "prerreqs": [
+      "EIN-15302"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "EIN-17304": {
+    "semestre": 10,
+    "nombre": "de la Pol. Exterior de México",
+    "creditos": 6,
+    "prerreqs": [
+      "CSO-13041"
+    ],
+    "coreqs": [
+      "CORREQ"
+    ],
+    "estado": 0
+  },
+  "LEN-12761": {
+    "semestre": 10,
+    "nombre": "Profesional para Relaciones Internacionales",
+    "creditos": 2,
+    "prerreqs": [
+      "LEN-12702",
+      "LEN-12721"
+    ],
+    "coreqs": [
+      "CORREQ"
+    ],
+    "estado": 0
+  },
+  "EST-13101": {
+    "semestre": 10,
+    "nombre": "Estadísticos para CP y RI",
+    "creditos": 8,
+    "prerreqs": [
+      "EST-10102"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "DER-17703": {
+    "semestre": 10,
+    "nombre": "Fiscal I",
+    "creditos": 8,
+    "prerreqs": [
+      "DER-17601",
+      "DER-11116",
+      "DER-13406"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "DER-13607": {
+    "semestre": 10,
+    "nombre": "Civiles y Mercantiles",
+    "creditos": 6,
+    "prerreqs": [
+      "DER-13406",
+      "DER-13614"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "DER-13615": {
+    "semestre": 10,
+    "nombre": "Oral Civil y Familiar",
+    "creditos": 2,
+    "prerreqs": [
+      "DER-13406",
+      "DER-13614"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "DER-14606": {
+    "semestre": 10,
+    "nombre": "Procesal Penal",
+    "creditos": 6,
+    "prerreqs": [
+      "DER-13406",
+      "DER-14505"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "DER-14607": {
+    "semestre": 10,
+    "nombre": "Oral Penal",
+    "creditos": 2,
+    "prerreqs": [
+      "DER-15600",
+      "DER-11115",
+      "DER-13406",
+      "DER-14505"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "ECO-14208": {
+    "semestre": 10,
+    "nombre": "Económico del Derecho II",
+    "creditos": 6,
+    "prerreqs": [
+      "ECO-11104",
+      "EGN-17161"
+    ],
+    "coreqs": [
+      "CORREQ"
+    ],
+    "estado": 0
+  },
+  "DER-17702": {
+    "semestre": 10,
+    "nombre": "Administrativo II",
+    "creditos": 6,
+    "prerreqs": [
+      "DER-17601",
+      "DER-11116"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "EIN-17403": {
+    "semestre": 10,
+    "nombre": "China y Sudeste Asiático",
+    "creditos": 6,
+    "prerreqs": [
+      "EIN-15105"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "ADM-11013": {
+    "semestre": 10,
+    "nombre": "Internacional",
+    "creditos": 6,
+    "prerreqs": [
+      "CON-10100"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "CSO-14021": {
+    "semestre": 10,
+    "nombre": "Comparada I",
+    "creditos": 6,
+    "prerreqs": [
+      "CSO-13041"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "LEN-12711": {
+    "semestre": 10,
+    "nombre": "Escrita para Derecho",
+    "creditos": 2,
+    "prerreqs": [
+      "LEN-12701",
+      "EGN-17161"
+    ],
+    "coreqs": [
+      "CORREQ"
+    ],
+    "estado": 0
+  },
+  "DER-17806": {
+    "semestre": 10,
+    "nombre": "Fiscal II",
+    "creditos": 6,
+    "prerreqs": [
+      "DER-17703",
+      "CON-10100"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "DER-15704": {
+    "semestre": 10,
+    "nombre": "Constitucionales",
+    "creditos": 8,
+    "prerreqs": [
+      "DER-13607",
+      "DER-13615"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "EIN-16402": {
+    "semestre": 10,
+    "nombre": "Contemporánea",
+    "creditos": 6,
+    "prerreqs": [],
+    "coreqs": [],
+    "estado": 0
+  },
+  "EIN-19414": {
+    "semestre": 10,
+    "nombre": "Oriente",
+    "creditos": 6,
+    "prerreqs": [],
+    "coreqs": [],
+    "estado": 0
+  },
+  "DER-11119": {
+    "semestre": 10,
+    "nombre": "del Derecho",
+    "creditos": 9,
+    "prerreqs": [
+      "DER-15600"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "DER-11907": {
+    "semestre": 10,
+    "nombre": "Seminario Filosofía del Derecho de Argumentación Jurídica",
+    "creditos": 6,
+    "prerreqs": [
+      "DER-15704",
+      "LEN-12711"
+    ],
+    "coreqs": [
+      "CORREQ"
+    ],
+    "estado": 0
+  },
+  "DER-11120": {
+    "semestre": 10,
+    "nombre": "de Disertación Jurídica en Técnicas de Argumentación Jurídica",
+    "creditos": 2,
+    "prerreqs": [
+      "DER-15704",
+      "LEN-12711"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "LEN-12751": {
+    "semestre": 10,
+    "nombre": "Profesional para Derecho",
+    "creditos": 2,
+    "prerreqs": [
+      "DER-15704",
+      "LEN-12711"
+    ],
+    "coreqs": [
+      "CORREQ"
+    ],
+    "estado": 0
+  }
+}

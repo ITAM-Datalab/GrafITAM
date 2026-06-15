@@ -1,0 +1,494 @@
+{
+  "COM-16401": {
+    "semestre": 1,
+    "nombre": "Computación I",
+    "creditos": 7,
+    "prerreqs": [],
+    "coreqs": [],
+    "estado": 0
+  },
+  "DER-11101": {
+    "semestre": 1,
+    "nombre": "Teoria del Derecho I",
+    "creditos": 10,
+    "prerreqs": [],
+    "coreqs": [],
+    "estado": 0
+  },
+  "DER-12102": {
+    "semestre": 1,
+    "nombre": "Seminario de Teoria del Derecho I Instituciones de Derecho Romano",
+    "creditos": 8,
+    "prerreqs": [],
+    "coreqs": [],
+    "estado": 0
+  },
+  "EGN-17141": {
+    "semestre": 1,
+    "nombre": "Problemas de la Civilización Contemporánea I",
+    "creditos": 6,
+    "prerreqs": [],
+    "coreqs": [],
+    "estado": 0
+  },
+  "EGN-17121": {
+    "semestre": 1,
+    "nombre": "Ideas e Instituciones Políticas y Sociales I",
+    "creditos": 6,
+    "prerreqs": [],
+    "coreqs": [],
+    "estado": 0
+  },
+  "MAT-11100": {
+    "semestre": 2,
+    "nombre": "Matemáticas I",
+    "creditos": 9,
+    "prerreqs": [],
+    "coreqs": [],
+    "estado": 0
+  },
+  "DER-13203": {
+    "semestre": 2,
+    "nombre": "Negocio Jurídico y Personas",
+    "creditos": 6,
+    "prerreqs": [
+      "DER-11101"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "DER-11202": {
+    "semestre": 2,
+    "nombre": "Teoría del Derecho II",
+    "creditos": 8,
+    "prerreqs": [
+      "DER-11101"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "DER-11203": {
+    "semestre": 2,
+    "nombre": "Inv. y Redacción Jurídica",
+    "creditos": 6,
+    "prerreqs": [
+      "DER-11101"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "CSO-11011": {
+    "semestre": 2,
+    "nombre": "Teoría Política Clásica I",
+    "creditos": 6,
+    "prerreqs": [
+      "DER-11101"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "EGN-17122": {
+    "semestre": 2,
+    "nombre": "Ideas e Instituciones Políticas y Sociales II",
+    "creditos": 6,
+    "prerreqs": [
+      "EGN-17121"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "EGN-17142": {
+    "semestre": 2,
+    "nombre": "Problemas de la Civilización Contemporánea II",
+    "creditos": 6,
+    "prerreqs": [
+      "EGN-17141"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "ECO-11101": {
+    "semestre": 3,
+    "nombre": "Economía I",
+    "creditos": 6,
+    "prerreqs": [],
+    "coreqs": [],
+    "estado": 0
+  },
+  "DER-13302": {
+    "semestre": 3,
+    "nombre": "Bienes y Derechos Reales",
+    "creditos": 6,
+    "prerreqs": [
+      "DER-13203"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "MAT-10101": {
+    "semestre": 3,
+    "nombre": "Métodos Cuantitativos para Derecho",
+    "creditos": 6,
+    "prerreqs": [
+      "MAT-11100"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "DER-12202": {
+    "semestre": 3,
+    "nombre": "Historia del Derecho Mexicano",
+    "creditos": 6,
+    "prerreqs": [
+      "DER-11202",
+      "DER-11203"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "DER-11304": {
+    "semestre": 3,
+    "nombre": "Argumentación oral y escrita",
+    "creditos": 6,
+    "prerreqs": [
+      "DER-11203"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "CSO-11012": {
+    "semestre": 3,
+    "nombre": "Teoria Política Clásica II",
+    "creditos": 6,
+    "prerreqs": [
+      "CSO-11011"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "EGN-17123": {
+    "semestre": 3,
+    "nombre": "Ideas e Instituciones Políticas y Sociales III",
+    "creditos": 6,
+    "prerreqs": [
+      "EGN-17122",
+      "EGN-17141"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "ECO-12102": {
+    "semestre": 4,
+    "nombre": "Economía II",
+    "creditos": 6,
+    "prerreqs": [
+      "ECO-11101"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "DER-13403": {
+    "semestre": 4,
+    "nombre": "Obligaciones",
+    "creditos": 8,
+    "prerreqs": [
+      "DER-13302"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "DER-15402": {
+    "semestre": 4,
+    "nombre": "Derecho Constitucional I",
+    "creditos": 8,
+    "prerreqs": [
+      "DER-11304"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "DER-14402": {
+    "semestre": 4,
+    "nombre": "Teorías del Delito",
+    "creditos": 6,
+    "prerreqs": [
+      "DER-11304"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "CON-10100": {
+    "semestre": 4,
+    "nombre": "Contabilidad",
+    "creditos": 6,
+    "prerreqs": [],
+    "coreqs": [],
+    "estado": 0
+  },
+  "EGN-17161": {
+    "semestre": 4,
+    "nombre": "Historia Socio Política de México",
+    "creditos": 6,
+    "prerreqs": [
+      "EGN-17123"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "DER-13504": {
+    "semestre": 5,
+    "nombre": "Contratos",
+    "creditos": 8,
+    "prerreqs": [
+      "DER-13403"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "DER-15505": {
+    "semestre": 5,
+    "nombre": "Derecho Constitucional II",
+    "creditos": 8,
+    "prerreqs": [
+      "DER-15402"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "DER-14505": {
+    "semestre": 5,
+    "nombre": "Seminario de Derecho Constitucional II Delitos",
+    "creditos": 6,
+    "prerreqs": [
+      "DER-14402"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "DER-16501": {
+    "semestre": 5,
+    "nombre": "Derecho Mercantil I",
+    "creditos": 6,
+    "prerreqs": [
+      "DER-13403"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "EGN-17162": {
+    "semestre": 5,
+    "nombre": "Problemas de la Realidad Mexicana Contemporánea",
+    "creditos": 6,
+    "prerreqs": [
+      "EGN-17142",
+      "EGN-17161"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "DER-18701": {
+    "semestre": 5,
+    "nombre": "Derecho Internacional Publico",
+    "creditos": 6,
+    "prerreqs": [
+      "DER-13403"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "DER-19501": {
+    "semestre": 6,
+    "nombre": "Derecho Laboral I",
+    "creditos": 6,
+    "prerreqs": [
+      "DER-13504"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "ECO-14207": {
+    "semestre": 6,
+    "nombre": "Análisis Economico del Derecho I",
+    "creditos": 6,
+    "prerreqs": [
+      "ECO-12102",
+      "MAT-10101"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "DER-13614": {
+    "semestre": 6,
+    "nombre": "Familia y Sucesiones",
+    "creditos": 8,
+    "prerreqs": [
+      "DER-13504"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "DER-17601": {
+    "semestre": 6,
+    "nombre": "Derecho Administrativo I",
+    "creditos": 6,
+    "prerreqs": [
+      "DER-15505"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "DER-16602": {
+    "semestre": 6,
+    "nombre": "Derecho Mercantil II",
+    "creditos": 6,
+    "prerreqs": [
+      "DER-16501"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "DER-13406": {
+    "semestre": 6,
+    "nombre": "Teoria General del Proceso",
+    "creditos": 8,
+    "prerreqs": [
+      "DER-15505"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "DER-15506": {
+    "semestre": 6,
+    "nombre": "Derecho Constitucional III",
+    "creditos": 8,
+    "prerreqs": [
+      "DER-15505"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "DER-19602": {
+    "semestre": 7,
+    "nombre": "Derecho Laboral II",
+    "creditos": 6,
+    "prerreqs": [
+      "DER-19501"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "DER-17703": {
+    "semestre": 7,
+    "nombre": "Derecho Fiscal I",
+    "creditos": 8,
+    "prerreqs": [
+      "DER-17601",
+      "CON-10100"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "DER-13607": {
+    "semestre": 7,
+    "nombre": "Procedimientos Civiles y Mercantiles",
+    "creditos": 6,
+    "prerreqs": [
+      "DER-13406"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "DER-17702": {
+    "semestre": 7,
+    "nombre": "Derecho Administrativo II",
+    "creditos": 6,
+    "prerreqs": [
+      "DER-17601"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "DER-16702": {
+    "semestre": 7,
+    "nombre": "Derecho Mercantil III",
+    "creditos": 6,
+    "prerreqs": [
+      "DER-16602"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "DER-14603": {
+    "semestre": 7,
+    "nombre": "Derecho Procesal Penal",
+    "creditos": 8,
+    "prerreqs": [
+      "DER-14505",
+      "DER-13406"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "DER-15704": {
+    "semestre": 8,
+    "nombre": "Procedimientos Constitucionales",
+    "creditos": 8,
+    "prerreqs": [
+      "DER-15506",
+      "DER-13607"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "DER-18802": {
+    "semestre": 8,
+    "nombre": "Derecho Internacional Privado",
+    "creditos": 6,
+    "prerreqs": [
+      "DER-14603",
+      "DER-13607"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "DER-17804": {
+    "semestre": 8,
+    "nombre": "Derecho Fiscal II",
+    "creditos": 8,
+    "prerreqs": [
+      "DER-17703"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "ECO-14208": {
+    "semestre": 8,
+    "nombre": "Análisis Económico del Derecho II",
+    "creditos": 6,
+    "prerreqs": [
+      "ECO-14207"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "DER-11805": {
+    "semestre": 9,
+    "nombre": "Filosofía del Derecho",
+    "creditos": 6,
+    "prerreqs": [
+      "DER-13607"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "DER-11907": {
+    "semestre": 9,
+    "nombre": "Técnicas de Argumentación Jurídica",
+    "creditos": 6,
+    "prerreqs": [
+      "DER-13607"
+    ],
+    "coreqs": [],
+    "estado": 0
+  }
+}

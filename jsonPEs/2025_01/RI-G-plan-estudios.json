@@ -1,0 +1,457 @@
+{
+  "ECO-11101": {
+    "semestre": 1,
+    "nombre": "Economía I",
+    "creditos": 6,
+    "prerreqs": [],
+    "coreqs": [],
+    "estado": 0
+  },
+  "EGN-17121": {
+    "semestre": 1,
+    "nombre": "Ideas e Instituc.Polític.y Soc. I",
+    "creditos": 6,
+    "prerreqs": [],
+    "coreqs": [],
+    "estado": 0
+  },
+  "EGN-17141": {
+    "semestre": 1,
+    "nombre": "Probs.de la Civ. Contemp. I",
+    "creditos": 6,
+    "prerreqs": [],
+    "coreqs": [],
+    "estado": 0
+  },
+  "EIN-11101": {
+    "semestre": 1,
+    "nombre": "Introd.a las Rel. Internacionales",
+    "creditos": 7,
+    "prerreqs": [],
+    "coreqs": [],
+    "estado": 0
+  },
+  "LEN-12701": {
+    "semestre": 1,
+    "nombre": "Estrategias de Comunicación Escrita",
+    "creditos": 6,
+    "prerreqs": [],
+    "coreqs": [],
+    "estado": 0
+  },
+  "EIN-12201": {
+    "semestre": 2,
+    "nombre": "Historia de las Rel. Intern. I",
+    "creditos": 8,
+    "prerreqs": [],
+    "coreqs": [],
+    "estado": 0
+  },
+  "ECO-12102": {
+    "semestre": 2,
+    "nombre": "Economía II",
+    "creditos": 6,
+    "prerreqs": [
+      "ECO-11101"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "EGN-17122": {
+    "semestre": 2,
+    "nombre": "Ideas e Instituc.Polític.y Soc. II",
+    "creditos": 6,
+    "prerreqs": [
+      "EGN-17121"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "EGN-17142": {
+    "semestre": 2,
+    "nombre": "Probs.de la Civ. Contemp. II",
+    "creditos": 6,
+    "prerreqs": [
+      "EGN-17141"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "MAT-11100": {
+    "semestre": 2,
+    "nombre": "Matemáticas I",
+    "creditos": 9,
+    "prerreqs": [],
+    "coreqs": [],
+    "estado": 0
+  },
+  "COM-16401": {
+    "semestre": 2,
+    "nombre": "Computación I",
+    "creditos": 7,
+    "prerreqs": [],
+    "coreqs": [],
+    "estado": 0
+  },
+  "CON-10100": {
+    "semestre": 2,
+    "nombre": "Contabilidad I",
+    "creditos": 6,
+    "prerreqs": [],
+    "coreqs": [],
+    "estado": 0
+  },
+  "EIN-13202": {
+    "semestre": 3,
+    "nombre": "Historia de las Rel. Intern. II",
+    "creditos": 8,
+    "prerreqs": [
+      "EIN-12201"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "ADM-11013": {
+    "semestre": 3,
+    "nombre": "Administración Internacional",
+    "creditos": 6,
+    "prerreqs": [
+      "CON-10100"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "ECO-11103": {
+    "semestre": 3,
+    "nombre": "Economía III",
+    "creditos": 6,
+    "prerreqs": [
+      "ECO-12102",
+      "MAT-11100"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "MAT-11101": {
+    "semestre": 3,
+    "nombre": "Matemáticas II",
+    "creditos": 9,
+    "prerreqs": [
+      "MAT-11100"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "EIN-13104": {
+    "semestre": 3,
+    "nombre": "Métodos de Investigación en Rel. Intern,",
+    "creditos": 6,
+    "prerreqs": [
+      "EIN-11101"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "EGN-17123": {
+    "semestre": 3,
+    "nombre": "Ideas e Instituc.Polític.y Soc.III",
+    "creditos": 6,
+    "prerreqs": [
+      "EGN-17122",
+      "EGN-17141"
+    ],
+    "coreqs": [
+      "CORREQ"
+    ],
+    "estado": 0
+  },
+  "LEN-12702": {
+    "semestre": 3,
+    "nombre": "Seminario de Comunicación Escrita",
+    "creditos": 2,
+    "prerreqs": [
+      "LEN-12701",
+      "LEN-12701"
+    ],
+    "coreqs": [
+      "CORREQ"
+    ],
+    "estado": 0
+  },
+  "ECO-11104": {
+    "semestre": 4,
+    "nombre": "Economía IV",
+    "creditos": 6,
+    "prerreqs": [
+      "MAT-11101",
+      "ECO-11103"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "EIN-14302": {
+    "semestre": 4,
+    "nombre": "Historia de E.U.A.",
+    "creditos": 6,
+    "prerreqs": [],
+    "coreqs": [],
+    "estado": 0
+  },
+  "EIN-14102": {
+    "semestre": 4,
+    "nombre": "Teoría de Rel. Internacionales",
+    "creditos": 6,
+    "prerreqs": [
+      "EIN-13104"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "EGN-17161": {
+    "semestre": 4,
+    "nombre": "Historia Sociopolítica de México",
+    "creditos": 6,
+    "prerreqs": [
+      "EGN-17123",
+      "LEN-12702"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "DER-10013": {
+    "semestre": 4,
+    "nombre": "Fundamentos Jurídicos",
+    "creditos": 9,
+    "prerreqs": [],
+    "coreqs": [],
+    "estado": 0
+  },
+  "EST-10101": {
+    "semestre": 4,
+    "nombre": "Estadística I",
+    "creditos": 8,
+    "prerreqs": [
+      "MAT-11100",
+      "COM-16401"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "EIN-15302": {
+    "semestre": 5,
+    "nombre": "Proceso Político en E.U.A.: Dimensión Internacional",
+    "creditos": 6,
+    "prerreqs": [
+      "EIN-14302"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "ECO-12133": {
+    "semestre": 5,
+    "nombre": "Macroeconomía Intermedia",
+    "creditos": 6,
+    "prerreqs": [
+      "ECO-11103"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "CSO-15021": {
+    "semestre": 5,
+    "nombre": "Elección Pública I",
+    "creditos": 6,
+    "prerreqs": [
+      "EGN-17123"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "EGN-17162": {
+    "semestre": 5,
+    "nombre": "Probs.de la Real. Mex. Contemp.",
+    "creditos": 6,
+    "prerreqs": [
+      "EGN-17142",
+      "EGN-17161"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "EST-10102": {
+    "semestre": 5,
+    "nombre": "Estadística II",
+    "creditos": 8,
+    "prerreqs": [
+      "EST-10101"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "EIN-15105": {
+    "semestre": 5,
+    "nombre": "Política de Rel. Eco. Internacionales",
+    "creditos": 6,
+    "prerreqs": [
+      "EIN-14102"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "EIN-16403": {
+    "semestre": 6,
+    "nombre": "América Latina",
+    "creditos": 6,
+    "prerreqs": [
+      "EIN-15105"
+    ],
+    "coreqs": [
+      "CORREQ"
+    ],
+    "estado": 0
+  },
+  "LEN-12721": {
+    "semestre": 6,
+    "nombre": "Comunicación Escrita para Relaciones Internacs.",
+    "creditos": 2,
+    "prerreqs": [
+      "LEN-12701"
+    ],
+    "coreqs": [
+      "CORREQ"
+    ],
+    "estado": 0
+  },
+  "DER-10005": {
+    "semestre": 6,
+    "nombre": "Derecho Internacional Público I",
+    "creditos": 6,
+    "prerreqs": [
+      "DER-10013"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "EIN-16402": {
+    "semestre": 6,
+    "nombre": "Europa Contemporánea",
+    "creditos": 6,
+    "prerreqs": [],
+    "coreqs": [],
+    "estado": 0
+  },
+  "EST-13101": {
+    "semestre": 6,
+    "nombre": "Métodos Estad. p/CP. y R.I.",
+    "creditos": 8,
+    "prerreqs": [
+      "EST-10102"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "CSO-13041": {
+    "semestre": 6,
+    "nombre": "Política Mexicana Contemp.",
+    "creditos": 6,
+    "prerreqs": [
+      "EGN-17162"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "ECO-13101": {
+    "semestre": 6,
+    "nombre": "Economía Internacional I",
+    "creditos": 6,
+    "prerreqs": [
+      "ECO-11103"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "EIN-17303": {
+    "semestre": 7,
+    "nombre": "Relaciones México-EUA-Canadá",
+    "creditos": 6,
+    "prerreqs": [
+      "EIN-15302"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "DER-10006": {
+    "semestre": 7,
+    "nombre": "Derecho Internacional Público II",
+    "creditos": 6,
+    "prerreqs": [
+      "DER-10005"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "EIN-17403": {
+    "semestre": 7,
+    "nombre": "Japón, China y el Sudeste Asiático",
+    "creditos": 6,
+    "prerreqs": [
+      "EIN-15105"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "EIN-19414": {
+    "semestre": 7,
+    "nombre": "Medio Oriente",
+    "creditos": 6,
+    "prerreqs": [],
+    "coreqs": [],
+    "estado": 0
+  },
+  "CSO-14021": {
+    "semestre": 7,
+    "nombre": "Política Comparada I",
+    "creditos": 6,
+    "prerreqs": [
+      "CSO-13041"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "EIN-17304": {
+    "semestre": 7,
+    "nombre": "Formul. de la Polít. Ext.de México",
+    "creditos": 6,
+    "prerreqs": [
+      "CSO-13041"
+    ],
+    "coreqs": [
+      "CORREQ"
+    ],
+    "estado": 0
+  },
+  "LEN-12761": {
+    "semestre": 7,
+    "nombre": "Comunicación Profesional para Rel. Int.",
+    "creditos": 2,
+    "prerreqs": [
+      "LEN-12702",
+      "LEN-12721"
+    ],
+    "coreqs": [
+      "CORREQ"
+    ],
+    "estado": 0
+  },
+  "EIN-18602": {
+    "semestre": 8,
+    "nombre": "Seminario de Titulación (1)",
+    "creditos": 6,
+    "prerreqs": [
+      "EST-13101",
+      "DER-10006"
+    ],
+    "coreqs": [],
+    "estado": 0
+  }
+}

@@ -1,0 +1,472 @@
+{
+  "EST-11101": {
+    "semestre": 6,
+    "nombre": "Probabilidad",
+    "creditos": 8,
+    "prerreqs": [
+      "MAT-12101"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "CSO-11021": {
+    "semestre": 6,
+    "nombre": "Teoría Política Contemporánea",
+    "creditos": 6,
+    "prerreqs": [
+      "CSO-11012"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "CSO-14042": {
+    "semestre": 6,
+    "nombre": "Política Comparada III",
+    "creditos": 6,
+    "prerreqs": [
+      "CSO-11012",
+      "CSO-11021",
+      "CSO-14041"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "CSO-12041": {
+    "semestre": 6,
+    "nombre": "Historia de México I",
+    "creditos": 6,
+    "prerreqs": [],
+    "coreqs": [],
+    "estado": 0
+  },
+  "ECO-10301": {
+    "semestre": 6,
+    "nombre": "Historia del Análisis Económico",
+    "creditos": 6,
+    "prerreqs": [
+      "ECO-12102",
+      "EGN-17123"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "EST-11102": {
+    "semestre": 7,
+    "nombre": "Inferencia Estadística",
+    "creditos": 8,
+    "prerreqs": [
+      "EST-11101",
+      "MAT-12102"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "CSO-12042": {
+    "semestre": 7,
+    "nombre": "Historia de México II",
+    "creditos": 6,
+    "prerreqs": [
+      "CSO-12041"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "ECO-13101": {
+    "semestre": 7,
+    "nombre": "Economía Internacional I",
+    "creditos": 6,
+    "prerreqs": [
+      "ECO-21104",
+      "ECO-22105"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "CSO-14045": {
+    "semestre": 7,
+    "nombre": "Política y Gobierno de México",
+    "creditos": 6,
+    "prerreqs": [
+      "CSO-14041"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "ECO-15101": {
+    "semestre": 7,
+    "nombre": "Finanzas Públicas",
+    "creditos": 6,
+    "prerreqs": [
+      "ECO-21104",
+      "ECO-22105"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "EGN-17162": {
+    "semestre": 8,
+    "nombre": "Probs. de la Realidad Mex. Contemporánea",
+    "creditos": 6,
+    "prerreqs": [
+      "EGN-17142",
+      "EGN-17161",
+      "CSO-12042"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "CSO-17041": {
+    "semestre": 9,
+    "nombre": "Métodos de Investigación Aplicada",
+    "creditos": 6,
+    "prerreqs": [
+      "EST-11102"
+    ],
+    "coreqs": [
+      "CORREQ"
+    ],
+    "estado": 0
+  },
+  "LEN-12715": {
+    "semestre": 9,
+    "nombre": "Comunicación Escrita para Ciencia Política",
+    "creditos": 2,
+    "prerreqs": [
+      "LEN-12701"
+    ],
+    "coreqs": [
+      "CORREQ"
+    ],
+    "estado": 0
+  },
+  "ECO-12201": {
+    "semestre": 7,
+    "nombre": "Teoría y Política Monetaria",
+    "creditos": 6,
+    "prerreqs": [
+      "ECO-22105"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "ECO-17100": {
+    "semestre": 9,
+    "nombre": "Historia Económica de México",
+    "creditos": 6,
+    "prerreqs": [
+      "ECO-22105",
+      "EGN-17162"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "CSO-14051": {
+    "semestre": 10,
+    "nombre": "Opinión Pública",
+    "creditos": 6,
+    "prerreqs": [
+      "CSO-17041"
+    ],
+    "coreqs": [
+      "CORREQ"
+    ],
+    "estado": 0
+  },
+  "LEN-12755": {
+    "semestre": 10,
+    "nombre": "Comunicación Profesional para Ciencia Pol.",
+    "creditos": 2,
+    "prerreqs": [
+      "LEN-12702",
+      "LEN-12715"
+    ],
+    "coreqs": [
+      "CORREQ"
+    ],
+    "estado": 0
+  },
+  "CSO-15043": {
+    "semestre": 9,
+    "nombre": "Economía Política II",
+    "creditos": 6,
+    "prerreqs": [
+      "ECO-21103"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "ECO-14301": {
+    "semestre": 8,
+    "nombre": "Organización Industrial",
+    "creditos": 6,
+    "prerreqs": [
+      "ECO-21104",
+      "ECO-22105"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "ECO-13102": {
+    "semestre": 9,
+    "nombre": "Economía Internacional II",
+    "creditos": 6,
+    "prerreqs": [
+      "ECO-13101",
+      "ECO-12201"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "ECO-18101": {
+    "semestre": 10,
+    "nombre": "Desarrollo Económico",
+    "creditos": 6,
+    "prerreqs": [
+      "ECO-21104",
+      "ECO-15101"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "ECO-15110": {
+    "semestre": 8,
+    "nombre": "Evaluación de Proyectos",
+    "creditos": 6,
+    "prerreqs": [
+      "ECO-22105"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "CSO-19075": {
+    "semestre": 10,
+    "nombre": "ONCEAVO SEMESTRE Seminario de Titulación I",
+    "creditos": 9,
+    "prerreqs": [
+      "CSO-17041"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "ECO-10204": {
+    "semestre": 10,
+    "nombre": "Seminario de Investigación Económica",
+    "creditos": 9,
+    "prerreqs": [
+      "ECO-22105",
+      "ECO-21104"
+    ],
+    "coreqs": [
+      "CORREQ"
+    ],
+    "estado": 0
+  },
+  "LEN-12758": {
+    "semestre": 10,
+    "nombre": "Comunicación Profesional para Economía",
+    "creditos": 2,
+    "prerreqs": [
+      "LEN-12702",
+      "LEN-12718"
+    ],
+    "coreqs": [
+      "CORREQ"
+    ],
+    "estado": 0
+  },
+  "ECO-21111": {
+    "semestre": 8,
+    "nombre": "Teoría del Productor y el Consumidor",
+    "creditos": 6,
+    "prerreqs": [
+      "MAT-12102",
+      "MAT-12310",
+      "MAT-14400",
+      "ECO-21104",
+      "MAT-24110"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "EST-21104": {
+    "semestre": 8,
+    "nombre": "Fundamentos de Econometría",
+    "creditos": 6,
+    "prerreqs": [
+      "EST-11102",
+      "MAT-12310"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "ECO-20513": {
+    "semestre": 9,
+    "nombre": "Microeconometría Avanzada",
+    "creditos": 6,
+    "prerreqs": [
+      "EST-21104",
+      "ECO-21104"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "ECO-21113": {
+    "semestre": 9,
+    "nombre": "Teoría de Juegos",
+    "creditos": 6,
+    "prerreqs": [
+      "ECO-21111"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "ECO-21112": {
+    "semestre": 9,
+    "nombre": "Equilibrio General",
+    "creditos": 6,
+    "prerreqs": [
+      "ECO-21111"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "ECO-22112": {
+    "semestre": 9,
+    "nombre": "Macroeconomía Dinámica I",
+    "creditos": 6,
+    "prerreqs": [
+      "ECO-21111",
+      "ECO-22105"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "ECO-20514": {
+    "semestre": 10,
+    "nombre": "Macroeconometría Avanzada",
+    "creditos": 7,
+    "prerreqs": [
+      "EST-21104"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "ECO-22113": {
+    "semestre": 10,
+    "nombre": "Macroeconomía Dinámica II",
+    "creditos": 6,
+    "prerreqs": [
+      "ECO-22112"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "MAT-24630": {
+    "semestre": 6,
+    "nombre": "Matemáticas Aplicadas a la Economía",
+    "creditos": 6,
+    "prerreqs": [
+      "MAT-12102"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "ECO-11121": {
+    "semestre": 7,
+    "nombre": "Microeconomía Avanzada I",
+    "creditos": 6,
+    "prerreqs": [
+      "ECO-21104",
+      "MAT-24630",
+      "ECO-22105"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "EST-11104": {
+    "semestre": 8,
+    "nombre": "Econometría",
+    "creditos": 6,
+    "prerreqs": [
+      "EST-11102",
+      "MAT-12310"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "ECO-11122": {
+    "semestre": 8,
+    "nombre": "Microeconomía Avanzada II",
+    "creditos": 6,
+    "prerreqs": [
+      "ECO-11121"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "ECO-18300": {
+    "semestre": 8,
+    "nombre": "Crecimiento Económico",
+    "creditos": 6,
+    "prerreqs": [
+      "ECO-22105",
+      "MAT-24630"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "ECO-10516": {
+    "semestre": 9,
+    "nombre": "Microeconometría Aplicada",
+    "creditos": 7,
+    "prerreqs": [
+      "EST-11104",
+      "ECO-21104",
+      "ECO-22105"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "ECO-14303": {
+    "semestre": 9,
+    "nombre": "Economía de Regulación",
+    "creditos": 6,
+    "prerreqs": [
+      "ECO-14301"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "CSO-17042": {
+    "semestre": 10,
+    "nombre": "Metodología Política Avanzada",
+    "creditos": 9,
+    "prerreqs": [
+      "EST-11104"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "ECO-10517": {
+    "semestre": 10,
+    "nombre": "Macroeconometría Aplicada",
+    "creditos": 7,
+    "prerreqs": [
+      "EST-11104"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "ECO-12121": {
+    "semestre": 10,
+    "nombre": "Macroeconomía Avanzada",
+    "creditos": 6,
+    "prerreqs": [
+      "ECO-18300",
+      "ECO-13102",
+      "ECO-11121"
+    ],
+    "coreqs": [],
+    "estado": 0
+  }
+}

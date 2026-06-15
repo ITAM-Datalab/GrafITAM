@@ -1,0 +1,531 @@
+{
+  "CON-10001": {
+    "semestre": 1,
+    "nombre": "Proceso Contable",
+    "creditos": 8,
+    "prerreqs": [],
+    "coreqs": [],
+    "estado": 0
+  },
+  "COM-14113": {
+    "semestre": 1,
+    "nombre": "Fundamentos de Programación",
+    "creditos": 6,
+    "prerreqs": [],
+    "coreqs": [],
+    "estado": 0
+  },
+  "MAT-12250": {
+    "semestre": 1,
+    "nombre": "Cálculo Aplicado",
+    "creditos": 9,
+    "prerreqs": [],
+    "coreqs": [],
+    "estado": 0
+  },
+  "ADM-12107": {
+    "semestre": 1,
+    "nombre": "Estrategia de Negocios I",
+    "creditos": 6,
+    "prerreqs": [],
+    "coreqs": [],
+    "estado": 0
+  },
+  "LEN-12701": {
+    "semestre": 1,
+    "nombre": "Estrategias de Comunicación Escrita",
+    "creditos": 6,
+    "prerreqs": [],
+    "coreqs": [],
+    "estado": 0
+  },
+  "CON-17102": {
+    "semestre": 1,
+    "nombre": "Trayectorias en Contaduría",
+    "creditos": 2,
+    "prerreqs": [],
+    "coreqs": [],
+    "estado": 0
+  },
+  "EGN-17141": {
+    "semestre": 1,
+    "nombre": "Problemas de la Civilización Contemporánea I",
+    "creditos": 6,
+    "prerreqs": [],
+    "coreqs": [],
+    "estado": 0
+  },
+  "CON-10111": {
+    "semestre": 2,
+    "nombre": "Contabilidad Financiera I",
+    "creditos": 8,
+    "prerreqs": [
+      "CON-10001"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "COM-16305": {
+    "semestre": 2,
+    "nombre": "Gestión de Datos",
+    "creditos": 6,
+    "prerreqs": [
+      "COM-14113"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "MAT-12350": {
+    "semestre": 2,
+    "nombre": "Algebra Lineal Aplicada",
+    "creditos": 8,
+    "prerreqs": [],
+    "coreqs": [],
+    "estado": 0
+  },
+  "CON-14109": {
+    "semestre": 2,
+    "nombre": "Contabilidad Gerencial",
+    "creditos": 6,
+    "prerreqs": [
+      "CON-10001"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "ECO-11010": {
+    "semestre": 2,
+    "nombre": "Principios de Microeconomía",
+    "creditos": 6,
+    "prerreqs": [],
+    "coreqs": [],
+    "estado": 0
+  },
+  "EGN-17142": {
+    "semestre": 2,
+    "nombre": "Problemas de la Civilización Contemporánea II",
+    "creditos": 6,
+    "prerreqs": [
+      "EGN-17141"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "CON-14111": {
+    "semestre": 2,
+    "nombre": "Introducción a la Contaduría Analítica",
+    "creditos": 4,
+    "prerreqs": [
+      "CON-10001"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "CON-10112": {
+    "semestre": 3,
+    "nombre": "Contabilidad Financiera II",
+    "creditos": 8,
+    "prerreqs": [
+      "CON-10111"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "CON-16100": {
+    "semestre": 3,
+    "nombre": "Sistemas de Información Contable",
+    "creditos": 6,
+    "prerreqs": [
+      "COM-16305"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "EST-10101": {
+    "semestre": 3,
+    "nombre": "Estadística I",
+    "creditos": 8,
+    "prerreqs": [
+      "MAT-12250"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "DER-10022": {
+    "semestre": 3,
+    "nombre": "Derecho Empresarial",
+    "creditos": 8,
+    "prerreqs": [
+      "ADM-12107",
+      "CON-10001"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "ECO-12010": {
+    "semestre": 3,
+    "nombre": "Principios de Macroeconomía",
+    "creditos": 6,
+    "prerreqs": [
+      "ECO-11010"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "EGN-17121": {
+    "semestre": 3,
+    "nombre": "Ideas e Instituciones Políticas y Sociales I",
+    "creditos": 6,
+    "prerreqs": [
+      "LEN-12701"
+    ],
+    "coreqs": [
+      "CORREQ"
+    ],
+    "estado": 0
+  },
+  "LEN-12702": {
+    "semestre": 3,
+    "nombre": "Seminario de Comunicación Escrita",
+    "creditos": 2,
+    "prerreqs": [
+      "LEN-12701"
+    ],
+    "coreqs": [
+      "CORREQ"
+    ],
+    "estado": 0
+  },
+  "ADM-15561": {
+    "semestre": 4,
+    "nombre": "Finanzas en los Negocios I",
+    "creditos": 6,
+    "prerreqs": [
+      "CON-14109",
+      "ECO-11010"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "EST-10102": {
+    "semestre": 4,
+    "nombre": "Estadística II",
+    "creditos": 8,
+    "prerreqs": [
+      "EST-10101",
+      "MAT-12350"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "DER-19501": {
+    "semestre": 4,
+    "nombre": "Derecho Laboral I",
+    "creditos": 6,
+    "prerreqs": [
+      "DER-10022"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "ECO-14502": {
+    "semestre": 4,
+    "nombre": "Economía Gerencial",
+    "creditos": 8,
+    "prerreqs": [
+      "MAT-12250",
+      "ECO-12010"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "EGN-17122": {
+    "semestre": 4,
+    "nombre": "Ideas e Instituciones Políticas y Sociales II",
+    "creditos": 6,
+    "prerreqs": [
+      "EGN-17121"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "CON-14112": {
+    "semestre": 4,
+    "nombre": "Contaduría Analítica Corporativa",
+    "creditos": 4,
+    "prerreqs": [
+      "CON-14111",
+      "CON-10111"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "ADM-12312": {
+    "semestre": 4,
+    "nombre": "Trayectorias en Negocios II: Equipo y Liderazgo",
+    "creditos": 2,
+    "prerreqs": [
+      "CON-14109",
+      "CON-17102",
+      "CON-10112"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "ADM-15562": {
+    "semestre": 5,
+    "nombre": "Finanzas en los Negocios II",
+    "creditos": 6,
+    "prerreqs": [
+      "ADM-15561"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "ADM-15569": {
+    "semestre": 5,
+    "nombre": "Modelaje para Contabilidad y Finanzas",
+    "creditos": 6,
+    "prerreqs": [
+      "COM-16305",
+      "ADM-15561"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "ADM-11017": {
+    "semestre": 5,
+    "nombre": "Métodos de Pronósticos",
+    "creditos": 7,
+    "prerreqs": [
+      "EST-10102"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "DER-17807": {
+    "semestre": 5,
+    "nombre": "Derecho Fiscal I",
+    "creditos": 6,
+    "prerreqs": [
+      "DER-10022"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "CON-10113": {
+    "semestre": 5,
+    "nombre": "Fusiones y Adquisiciones",
+    "creditos": 6,
+    "prerreqs": [
+      "CON-10112",
+      "DER-10022"
+    ],
+    "coreqs": [
+      "CORREQ"
+    ],
+    "estado": 0
+  },
+  "EGN-17123": {
+    "semestre": 5,
+    "nombre": "Ideas e Instituciones Políticas y Sociales III",
+    "creditos": 6,
+    "prerreqs": [
+      "EGN-17122",
+      "EGN-17141"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "LEN-12733": {
+    "semestre": 5,
+    "nombre": "Comunicación Escrita para Contaduría Analítica y Finanzas Corporativas",
+    "creditos": 2,
+    "prerreqs": [
+      "LEN-12701"
+    ],
+    "coreqs": [
+      "CORREQ"
+    ],
+    "estado": 0
+  },
+  "CON-10012": {
+    "semestre": 6,
+    "nombre": "Valuación de Instrumentos Financieros",
+    "creditos": 6,
+    "prerreqs": [
+      "CON-10113",
+      "ADM-15561"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "CON-12003": {
+    "semestre": 6,
+    "nombre": "Administración Estratégica de Costos",
+    "creditos": 6,
+    "prerreqs": [
+      "ADM-11017",
+      "CON-14112"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "CON-11016": {
+    "semestre": 6,
+    "nombre": "Control Interno y Prevención de Fraudes",
+    "creditos": 6,
+    "prerreqs": [
+      "CON-10113"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "CON-15001": {
+    "semestre": 6,
+    "nombre": "Impuestos Corporativos I",
+    "creditos": 6,
+    "prerreqs": [
+      "DER-17807"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "EGN-17161": {
+    "semestre": 6,
+    "nombre": "Historia Socio-Política de México",
+    "creditos": 6,
+    "prerreqs": [
+      "EGN-17123"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "CON-14113": {
+    "semestre": 6,
+    "nombre": "Contaduría Analítica Integrada",
+    "creditos": 4,
+    "prerreqs": [
+      "CON-14112",
+      "ADM-15562"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "CON-18006": {
+    "semestre": 7,
+    "nombre": "Reportes Corporativos de Sostenibilidad ASG",
+    "creditos": 6,
+    "prerreqs": [
+      "CON-11016"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "CON-18004": {
+    "semestre": 7,
+    "nombre": "Administración y Control de Riesgos",
+    "creditos": 6,
+    "prerreqs": [
+      "ADM-15562"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "CON-11002": {
+    "semestre": 7,
+    "nombre": "Auditoría Analítica",
+    "creditos": 6,
+    "prerreqs": [
+      "CON-16100",
+      "CON-11016"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "CON-15004": {
+    "semestre": 7,
+    "nombre": "Estrategias Fiscales Corporativas",
+    "creditos": 6,
+    "prerreqs": [
+      "CON-15001"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "CON-15006": {
+    "semestre": 7,
+    "nombre": "Estrategias Fiscales Patrimoniales",
+    "creditos": 6,
+    "prerreqs": [
+      "CON-15001"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "EGN-17162": {
+    "semestre": 7,
+    "nombre": "Problemas de la Realidad Mexicana Contemporánea Trayectorias en Negocios III: Emprendimiento e",
+    "creditos": 6,
+    "prerreqs": [
+      "EGN-17161"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "ADM-12313": {
+    "semestre": 7,
+    "nombre": "Impacto",
+    "creditos": 2,
+    "prerreqs": [
+      "ADM-12312",
+      "CON-10113"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "CON-10005": {
+    "semestre": 8,
+    "nombre": "Análisis Financiero de la Empresa",
+    "creditos": 6,
+    "prerreqs": [
+      "CON-10012",
+      "ADM-15562"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "ADM-15567": {
+    "semestre": 8,
+    "nombre": "Finanzas, Tecnología y Datos",
+    "creditos": 6,
+    "prerreqs": [
+      "ADM-15569",
+      "CON-14113"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "CON-15005": {
+    "semestre": 8,
+    "nombre": "Estrategias Fiscales Internacionales",
+    "creditos": 6,
+    "prerreqs": [
+      "CON-15004"
+    ],
+    "coreqs": [
+      "CORREQ"
+    ],
+    "estado": 0
+  },
+  "LEN-12774": {
+    "semestre": 8,
+    "nombre": "Comunicación Profesional para Contaduría Analítica y Finanzas Corporativas de manera simultánea en el semestre que corresponda",
+    "creditos": 2,
+    "prerreqs": [],
+    "coreqs": [
+      "CORREQ"
+    ],
+    "estado": 0
+  }
+}
