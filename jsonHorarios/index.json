@@ -1,0 +1,23 @@
+[
+  {
+    "slug": "primavera_2026_licenciatura",
+    "label": "PRIMAVERA 2026 LICENCIATURA",
+    "sCode": "2938",
+    "scrapedAt": "2026-07-11T00:47:40.099293+00:00",
+    "materiasConGrupos": 503
+  },
+  {
+    "slug": "verano_2026_licenciatura",
+    "label": "VERANO 2026 LICENCIATURA",
+    "sCode": "3007",
+    "scrapedAt": "2026-07-11T00:47:59.955530+00:00",
+    "materiasConGrupos": 46
+  },
+  {
+    "slug": "otono_2026_licenciatura",
+    "label": "OTOÑO 2026 LICENCIATURA",
+    "sCode": "3077",
+    "scrapedAt": "2026-07-11T00:51:44.495464+00:00",
+    "materiasConGrupos": 525
+  }
+]

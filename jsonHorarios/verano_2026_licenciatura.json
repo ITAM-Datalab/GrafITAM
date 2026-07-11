@@ -1,0 +1,694 @@
+{
+  "ADM-12350": [
+    {
+      "campus": "RIO HONDO",
+      "crn": "2218",
+      "dias": "LU MA MI JU",
+      "grupo": "001",
+      "horario": "08:30-12:30",
+      "nombre": "DECIS. NEGOC. BASADAS EN DATOS",
+      "profesor": "JOSE FRANCISCO TUDON MALDONADO",
+      "salon": "PF106"
+    }
+  ],
+  "ADM-12361": [
+    {
+      "campus": "RIO HONDO",
+      "crn": "2220",
+      "dias": "LU MA MI JU",
+      "grupo": "001",
+      "horario": "18:30-20:30",
+      "nombre": "ESTRAT SUSTENT CORPORATIVA",
+      "profesor": "ILEANA MARIA LOPEZ PEREZ",
+      "salon": "PF105"
+    }
+  ],
+  "ADM-14413": [
+    {
+      "campus": "RIO HONDO",
+      "crn": "2216",
+      "dias": "LU MA MI JU",
+      "grupo": "001",
+      "horario": "09:00-13:00",
+      "nombre": "DESAR. DE HABILID. GERENCIALES",
+      "profesor": "MARIANA CONTRERAS AREVALO",
+      "salon": "PF106"
+    },
+    {
+      "campus": "RIO HONDO",
+      "crn": "2245",
+      "dias": "LU MA MI JU",
+      "grupo": "002",
+      "horario": "09:00-13:00",
+      "nombre": "DESAR. DE HABILID. GERENCIALES",
+      "profesor": "MARIANA CONTRERAS AREVALO",
+      "salon": "RHASHAK"
+    }
+  ],
+  "ADM-15582": [
+    {
+      "campus": "RIO HONDO",
+      "crn": "2219",
+      "dias": "LU MA MI JU",
+      "grupo": "001",
+      "horario": "08:30-12:30",
+      "nombre": "FINZS. CORPORA. AVANZADAS",
+      "profesor": "JOSE FRANCISCO TUDON MALDONADO",
+      "salon": "PF106"
+    },
+    {
+      "campus": "RIO HONDO",
+      "crn": "2221",
+      "dias": "LU MA MI JU",
+      "grupo": "002",
+      "horario": "18:30-20:30",
+      "nombre": "FINZS. CORPORA. AVANZADAS",
+      "profesor": "ILEANA MARIA LOPEZ PEREZ",
+      "salon": "PF105"
+    }
+  ],
+  "COM-11302": [
+    {
+      "campus": "RIO HONDO",
+      "crn": "2202",
+      "dias": "LU MA MI JU VI",
+      "grupo": "001",
+      "horario": "09:00-11:00",
+      "nombre": "ALGORITMICA Y PROGRAMACION",
+      "profesor": "IRMA LOZANO MENDICUTI",
+      "salon": "RHLMINT"
+    }
+  ],
+  "COM-14113": [
+    {
+      "campus": "RIO HONDO",
+      "crn": "2205",
+      "dias": "LU MA MI JU VI",
+      "grupo": "01",
+      "horario": "13:30-15:30",
+      "nombre": "FUNDAMENTOS DE PROGRAMACION",
+      "profesor": "SILVIA RIOS MAGOS",
+      "salon": "RHLMINT"
+    }
+  ],
+  "COM-16301": [
+    {
+      "campus": "RIO HONDO",
+      "crn": "2213",
+      "dias": "LU MA MI JU VI",
+      "grupo": "002",
+      "horario": "16:00-18:00",
+      "nombre": "HERRAMIENTAS COMPU. Y ALGORIT.",
+      "profesor": "XOCHITL CHAVARRIA CRUZ",
+      "salon": "RHACERV"
+    },
+    {
+      "campus": "RIO HONDO",
+      "crn": "2247",
+      "dias": "LU MA MI JU VI",
+      "grupo": "003",
+      "horario": "13:30-15:30",
+      "nombre": "HERRAMIENTAS COMPU. Y ALGORIT.",
+      "profesor": "SILVIA RIOS MAGOS",
+      "salon": "RHLMINT"
+    }
+  ],
+  "COM-16303": [
+    {
+      "campus": "RIO HONDO",
+      "crn": "2214",
+      "dias": "LU MA MI JU VI",
+      "grupo": "001",
+      "horario": "12:00-14:35",
+      "nombre": "MODELADO COMPUT. PARA NEGOCIOS",
+      "profesor": "LETICIA RENTERIA FERRAN",
+      "salon": "RHACERV"
+    }
+  ],
+  "COM-16306": [
+    {
+      "campus": "RIO HONDO",
+      "crn": "2212",
+      "dias": "LU MA MI JU VI",
+      "grupo": "002",
+      "horario": "16:00-18:00",
+      "nombre": "RAZONAMIENTO ALGORITMICO",
+      "profesor": "XOCHITL CHAVARRIA CRUZ",
+      "salon": "RHACERV"
+    }
+  ],
+  "COM-16401": [
+    {
+      "campus": "RIO HONDO",
+      "crn": "2236",
+      "dias": "LU MA MI JU VI",
+      "grupo": "001",
+      "horario": "13:30-15:30",
+      "nombre": "COMPUTACION I, INTENSIVA",
+      "profesor": "SILVIA RIOS MAGOS",
+      "salon": "RHLMINT"
+    }
+  ],
+  "COM-16412": [
+    {
+      "campus": "RIO HONDO",
+      "crn": "2215",
+      "dias": "LU MA MI JU VI",
+      "grupo": "001",
+      "horario": "09:00-11:35",
+      "nombre": "HERR. COMP. Y PROD. EMPRESAR.",
+      "profesor": "ALBERTO ISAAC RAMIREZ PEREZ",
+      "salon": "RHACERV"
+    }
+  ],
+  "CON-10001": [
+    {
+      "campus": "RIO HONDO",
+      "crn": "2228",
+      "dias": "LU MA MI JU VI",
+      "grupo": "001",
+      "horario": "09:00-11:45",
+      "nombre": "PROCESO CONTABLE",
+      "profesor": "MONICA GARCIA CEREZO",
+      "salon": "PF105"
+    }
+  ],
+  "CON-10100": [
+    {
+      "campus": "RIO HONDO",
+      "crn": "2229",
+      "dias": "LU MA MI JU VI",
+      "grupo": "001",
+      "horario": "12:00-14:00",
+      "nombre": "CONTABILIDAD, I",
+      "profesor": "MONICA GARCIA CEREZO",
+      "salon": "PF108"
+    },
+    {
+      "campus": "RIO HONDO",
+      "crn": "2230",
+      "dias": "LU MA MI JU VI",
+      "grupo": "002",
+      "horario": "17:00-19:00",
+      "nombre": "CONTABILIDAD, I",
+      "profesor": "ROSARIO EDITH GARCIA MENDIOLA",
+      "salon": "RHASHAK"
+    },
+    {
+      "campus": "RIO HONDO",
+      "crn": "2237",
+      "dias": "LU MA MI JU VI",
+      "grupo": "003",
+      "horario": "12:00-14:00",
+      "nombre": "CONTABILIDAD, I",
+      "profesor": "CLAUDIA EMILIA DE LEON PEREZ",
+      "salon": "PF105"
+    }
+  ],
+  "CON-10110": [
+    {
+      "campus": "RIO HONDO",
+      "crn": "2231",
+      "dias": "LU MA MI JU VI",
+      "grupo": "001",
+      "horario": "12:00-14:00",
+      "nombre": "FUNDAMEN. DE CONTABILID FINANC",
+      "profesor": "MONICA GARCIA CEREZO",
+      "salon": "PF108"
+    },
+    {
+      "campus": "RIO HONDO",
+      "crn": "2232",
+      "dias": "LU MA MI JU VI",
+      "grupo": "002",
+      "horario": "17:00-19:00",
+      "nombre": "FUNDAMEN. DE CONTABILID FINANC",
+      "profesor": "ROSARIO EDITH GARCIA MENDIOLA",
+      "salon": "RHASHAK"
+    },
+    {
+      "campus": "RIO HONDO",
+      "crn": "2238",
+      "dias": "LU MA MI JU VI",
+      "grupo": "003",
+      "horario": "12:00-14:00",
+      "nombre": "FUNDAMEN. DE CONTABILID FINANC",
+      "profesor": "CLAUDIA EMILIA DE LEON PEREZ",
+      "salon": "PF105"
+    }
+  ],
+  "CSO-14086": [
+    {
+      "campus": "RIO HONDO",
+      "crn": "2217",
+      "dias": "LU MA MI JU",
+      "grupo": "001",
+      "horario": "12:00-14:00",
+      "nombre": "POLITICA Y VIOLENCIA",
+      "profesor": "MARIA DEL PILAR LOPEZ FERNANDEZ",
+      "salon": "PF107"
+    }
+  ],
+  "DER-10005": [
+    {
+      "campus": "RIO HONDO",
+      "crn": "2227",
+      "dias": "LU MA MI JU",
+      "grupo": "001",
+      "horario": "07:00-10:00",
+      "nombre": "DER. INTERNACIONAL PUBLICO,I",
+      "profesor": "JORGE AGUILERA SUAREZ",
+      "salon": "PF107"
+    }
+  ],
+  "DER-11033": [
+    {
+      "campus": "RIO HONDO",
+      "crn": "2224",
+      "dias": "LU MA MI JU",
+      "grupo": "001",
+      "horario": "16:00-19:00",
+      "nombre": "SEMIN. FUND. DEL DER. PRIVADO",
+      "profesor": "ROSA MARIA ROJAS VERTIZ CONTRERAS",
+      "salon": "PF108"
+    }
+  ],
+  "DER-11034": [
+    {
+      "campus": "RIO HONDO",
+      "crn": "2225",
+      "dias": "LU MA MI JU",
+      "grupo": "001",
+      "horario": "16:00-18:00",
+      "nombre": "SEM FUNDAMENT  DEL DER PRIVADO",
+      "profesor": "ROSA MARIA ROJAS VERTIZ CONTRERAS",
+      "salon": "PF108"
+    },
+    {
+      "campus": "RIO HONDO",
+      "crn": "2225",
+      "dias": "LU MA MI JU",
+      "grupo": "001",
+      "horario": "16:00-19:00",
+      "nombre": "SEM FUNDAMENT  DEL DER PRIVADO",
+      "profesor": "ROSA MARIA ROJAS VERTIZ CONTRERAS",
+      "salon": "PF108"
+    }
+  ],
+  "DER-11114": [
+    {
+      "campus": "RIO HONDO",
+      "crn": "2243",
+      "dias": "LU MA MI JU",
+      "grupo": "001",
+      "horario": "16:00-18:00",
+      "nombre": "HABILIDADES JURID. GLOBALES II",
+      "profesor": "ROSA MARIA ROJAS VERTIZ CONTRERAS",
+      "salon": "PF108"
+    },
+    {
+      "campus": "RIO HONDO",
+      "crn": "2243",
+      "dias": "LU MA MI JU",
+      "grupo": "001",
+      "horario": "16:00-19:00",
+      "nombre": "HABILIDADES JURID. GLOBALES II",
+      "profesor": "ROSA MARIA ROJAS VERTIZ CONTRERAS",
+      "salon": "PF108"
+    }
+  ],
+  "DER-11117": [
+    {
+      "campus": "RIO HONDO",
+      "crn": "2241",
+      "dias": "LU MA MI JU",
+      "grupo": "001",
+      "horario": "16:00-19:00",
+      "nombre": "HABILIDADES JURID GLOBALES III",
+      "profesor": "ROSA MARIA ROJAS VERTIZ CONTRERAS",
+      "salon": "PF108"
+    }
+  ],
+  "DER-11907": [
+    {
+      "campus": "RIO HONDO",
+      "crn": "2242",
+      "dias": "LU MA MI JU",
+      "grupo": "001",
+      "horario": "16:00-19:00",
+      "nombre": "TECNICAS DE ARGUM. JURID.",
+      "profesor": "ROSA MARIA ROJAS VERTIZ CONTRERAS",
+      "salon": "PF108"
+    }
+  ],
+  "DER-13615": [
+    {
+      "campus": "RIO HONDO",
+      "crn": "2223",
+      "dias": "LU MA MI JU",
+      "grupo": "001",
+      "horario": "19:00-21:00",
+      "nombre": "JUICIO ORAL CIVIL Y FAMILIAR",
+      "profesor": "JUAN PABLO RODRIGUEZ MAZA",
+      "salon": "PF108"
+    }
+  ],
+  "DER-15704": [
+    {
+      "campus": "RIO HONDO",
+      "crn": "2222",
+      "dias": "JU",
+      "grupo": "001",
+      "horario": "07:00-09:30",
+      "nombre": "PROCEDIM. CONSTITUCIONALES",
+      "profesor": "JOSE ANGEL SANTIAGO ABREGO",
+      "salon": "PF103"
+    },
+    {
+      "campus": "RIO HONDO",
+      "crn": "2222",
+      "dias": "LU MA MI",
+      "grupo": "001",
+      "horario": "07:00-09:45",
+      "nombre": "PROCEDIM. CONSTITUCIONALES",
+      "profesor": "JOSE ANGEL SANTIAGO ABREGO",
+      "salon": "PF103"
+    }
+  ],
+  "DER-16925": [
+    {
+      "campus": "RIO HONDO",
+      "crn": "2246",
+      "dias": "LU MA MI JU",
+      "grupo": "001",
+      "horario": "16:00-18:00",
+      "nombre": "LABORATORIO DE DERECHO PRIVADO",
+      "profesor": "ROSA MARIA ROJAS VERTIZ CONTRERAS",
+      "salon": "PF108"
+    },
+    {
+      "campus": "RIO HONDO",
+      "crn": "2246",
+      "dias": "LU MA MI JU",
+      "grupo": "001",
+      "horario": "16:00-19:00",
+      "nombre": "LABORATORIO DE DERECHO PRIVADO",
+      "profesor": "ROSA MARIA ROJAS VERTIZ CONTRERAS",
+      "salon": "PF108"
+    }
+  ],
+  "DER-18600": [
+    {
+      "campus": "RIO HONDO",
+      "crn": "2226",
+      "dias": "LU MA MI JU",
+      "grupo": "001",
+      "horario": "07:00-10:00",
+      "nombre": "DERECHO INTERNACIONAL I",
+      "profesor": "JORGE AGUILERA SUAREZ",
+      "salon": "PF107"
+    }
+  ],
+  "ECO-14301": [
+    {
+      "campus": "RIO HONDO",
+      "crn": "2233",
+      "dias": "LU MA MI JU",
+      "grupo": "001",
+      "horario": "10:00-12:00",
+      "nombre": "ORGANIZACION INDUSTRIAL",
+      "profesor": "JORGE EMILIO MELENDEZ FLORES",
+      "salon": "PF107"
+    }
+  ],
+  "ECO-15301": [
+    {
+      "campus": "RIO HONDO",
+      "crn": "2249",
+      "dias": "LU MA MI",
+      "grupo": "001",
+      "horario": "19:00-21:40",
+      "nombre": "ECONOMIA DE LA EDUCACION (OP)",
+      "profesor": "JORGE HERRERA JUAREZ",
+      "salon": "RHCUBIC"
+    }
+  ],
+  "ECO-17100": [
+    {
+      "campus": "RIO HONDO",
+      "crn": "2234",
+      "dias": "LU MA MI JU",
+      "grupo": "001",
+      "horario": "16:30-18:30",
+      "nombre": "HISTORIA ECONOMICA DE MEXICO",
+      "profesor": "JOSE ANTONIO MERCHANT CERVANTES",
+      "salon": "PF105"
+    },
+    {
+      "campus": "RIO HONDO",
+      "crn": "2234",
+      "dias": "LU MA MI JU",
+      "grupo": "001",
+      "horario": "16:30-18:30",
+      "nombre": "HISTORIA ECONOMICA DE MEXICO",
+      "profesor": "ERICK FERNANDO MOLINA PEREZ",
+      "salon": "PF105"
+    }
+  ],
+  "ECO-18105": [
+    {
+      "campus": "RIO HONDO",
+      "crn": "2250",
+      "dias": "MI JU VI",
+      "grupo": "001",
+      "horario": "07:00-09:40",
+      "nombre": "TOP. EN DESARROLLO ECONOMICO",
+      "profesor": "GUSTAVO HERNANDEZ MONROY",
+      "salon": "RHCUBIC"
+    }
+  ],
+  "EIN-19408": [
+    {
+      "campus": "RIO HONDO",
+      "crn": "2203",
+      "dias": "LU MA MI JU",
+      "grupo": "001",
+      "horario": "07:00-09:00",
+      "nombre": "AFRICA",
+      "profesor": "LUIS FERNANDO BALAGUERA SARMIENTO",
+      "salon": "RHASHAK"
+    }
+  ],
+  "EST-10101": [
+    {
+      "campus": "RIO HONDO",
+      "crn": "2204",
+      "dias": "LU MA MI JU",
+      "grupo": "001",
+      "horario": "11:00-13:40",
+      "nombre": "ESTADISTICA.,I",
+      "profesor": "MARIANA BRIZUELA CURIEL",
+      "salon": "PF102"
+    }
+  ],
+  "EST-11101": [
+    {
+      "campus": "RIO HONDO",
+      "crn": "2207",
+      "dias": "LU MA MI JU",
+      "grupo": "001",
+      "horario": "18:00-20:40",
+      "nombre": "PROBABILIDAD",
+      "profesor": "MARIO DAVID COOPER YARZA",
+      "salon": "PF106"
+    },
+    {
+      "campus": "RIO HONDO",
+      "crn": "2244",
+      "dias": "LU MA MI JU",
+      "grupo": "002",
+      "horario": "09:00-11:40",
+      "nombre": "PROBABILIDAD",
+      "profesor": "LILIANA DE LA TORRE DESENTIS",
+      "salon": "PF104"
+    }
+  ],
+  "EST-11102": [
+    {
+      "campus": "RIO HONDO",
+      "crn": "2209",
+      "dias": "LU MA MI JU",
+      "grupo": "001",
+      "horario": "18:00-20:40",
+      "nombre": "INFERENCIA ESTADISTICA",
+      "profesor": "JOSE DAVID SANTOS SALAZAR",
+      "salon": "PF107"
+    },
+    {
+      "campus": "RIO HONDO",
+      "crn": "2248",
+      "dias": "LU MA MI JU",
+      "grupo": "002",
+      "horario": "08:00-10:40",
+      "nombre": "INFERENCIA ESTADISTICA",
+      "profesor": "MIGUEL ANGEL MENDEZ ANTONIO",
+      "salon": "PF108"
+    }
+  ],
+  "MAT-11101": [
+    {
+      "campus": "RIO HONDO",
+      "crn": "2188",
+      "dias": "LU MA MI JU",
+      "grupo": "001",
+      "horario": "16:00-19:00",
+      "nombre": "MATEMATICAS, II",
+      "profesor": "ANGEL PEREZ JUAREZ",
+      "salon": "PF101"
+    }
+  ],
+  "MAT-11310": [
+    {
+      "campus": "RIO HONDO",
+      "crn": "2189",
+      "dias": "LU MA MI JU",
+      "grupo": "001",
+      "horario": "08:00-10:40",
+      "nombre": "MATEMATICAS, III",
+      "profesor": "ALEJANDRO RIOS HERREJON",
+      "salon": "PF102"
+    }
+  ],
+  "MAT-12101": [
+    {
+      "campus": "RIO HONDO",
+      "crn": "2191",
+      "dias": "LU MA MI JU",
+      "grupo": "001",
+      "horario": "16:00-19:00",
+      "nombre": "CALCULO, II",
+      "profesor": "ANGEL PEREZ JUAREZ",
+      "salon": "PF101"
+    }
+  ],
+  "MAT-12102": [
+    {
+      "campus": "RIO HONDO",
+      "crn": "2192",
+      "dias": "LU MA MI JU",
+      "grupo": "001",
+      "horario": "10:00-13:00",
+      "nombre": "CALCULO, III",
+      "profesor": "JOSE DEL NIÑO JESUS CAMPERO PARDO",
+      "salon": "PF101"
+    }
+  ],
+  "MAT-12200": [
+    {
+      "campus": "RIO HONDO",
+      "crn": "2193",
+      "dias": "LU MA MI JU VI",
+      "grupo": "001",
+      "horario": "16:00-19:00",
+      "nombre": "CALCULO UNIVARIADO",
+      "profesor": "SHARON MAGALI VALVERDE ESPARZA",
+      "salon": "PF103"
+    }
+  ],
+  "MAT-12220": [
+    {
+      "campus": "RIO HONDO",
+      "crn": "2194",
+      "dias": "LU MA MI JU",
+      "grupo": "001",
+      "horario": "10:00-13:00",
+      "nombre": "CALCULO EN UNA VARIABLE",
+      "profesor": "LYSETTE FELIX FELIX",
+      "salon": "PF103"
+    }
+  ],
+  "MAT-12221": [
+    {
+      "campus": "RIO HONDO",
+      "crn": "2195",
+      "dias": "LU MA MI JU",
+      "grupo": "001",
+      "horario": "07:00-10:00",
+      "nombre": "CALCULO EN VARIAS VARIABLES",
+      "profesor": "FRANCISCO FERNANDO NOREÑA VILLARIAS",
+      "salon": "PF101"
+    }
+  ],
+  "MAT-12310": [
+    {
+      "campus": "RIO HONDO",
+      "crn": "2196",
+      "dias": "LU MA MI JU",
+      "grupo": "001",
+      "horario": "08:00-10:40",
+      "nombre": "ALGEBRA MATRICIAL",
+      "profesor": "ALEJANDRO RIOS HERREJON",
+      "salon": "PF102"
+    }
+  ],
+  "MAT-14101": [
+    {
+      "campus": "RIO HONDO",
+      "crn": "2198",
+      "dias": "LU MA MI JU",
+      "grupo": "001",
+      "horario": "10:00-13:00",
+      "nombre": "CALCULO DIF. E INT., II",
+      "profesor": "JOSE DEL NIÑO JESUS CAMPERO PARDO",
+      "salon": "PF101"
+    }
+  ],
+  "MAT-14250": [
+    {
+      "campus": "RIO HONDO",
+      "crn": "2199",
+      "dias": "LU MA MI JU",
+      "grupo": "001",
+      "horario": "12:00-14:00",
+      "nombre": "GEOMETRIA VECTORIAL",
+      "profesor": "JORGE MONROY JIMENEZ",
+      "salon": "PF104"
+    }
+  ],
+  "MAT-14281": [
+    {
+      "campus": "RIO HONDO",
+      "crn": "2200",
+      "dias": "LU MA MI JU",
+      "grupo": "001",
+      "horario": "07:00-09:00",
+      "nombre": "MATEMATICAS DISCRETAS",
+      "profesor": "RAYBEL ANDRES GARCIA ANCONA",
+      "salon": "PF104"
+    }
+  ],
+  "MAT-14301": [
+    {
+      "campus": "RIO HONDO",
+      "crn": "2201",
+      "dias": "LU MA MI JU",
+      "grupo": "001",
+      "horario": "07:00-09:00",
+      "nombre": "ALGEBRA SUPERIOR, II",
+      "profesor": "RAYBEL ANDRES GARCIA ANCONA",
+      "salon": "PF104"
+    }
+  ],
+  "SDI-15977": [
+    {
+      "campus": "RIO HONDO",
+      "crn": "2211",
+      "dias": "LU MA MI JU",
+      "grupo": "001",
+      "horario": "11:00-13:00",
+      "nombre": "FISICA DEL UNIVERSO",
+      "profesor": "FRANCISCO JAVIER BLANCO RIVERA",
+      "salon": "RHLMINT"
+    }
+  ]
+}
