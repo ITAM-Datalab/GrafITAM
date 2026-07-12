@@ -180,7 +180,7 @@
       "LEN-12701"
     ],
     "coreqs": [
-      "CORREQ"
+      "LEN-12702"
     ],
     "estado": 0
   },
@@ -192,7 +192,7 @@
       "LEN-12701"
     ],
     "coreqs": [
-      "CORREQ"
+      "EGN-17121"
     ],
     "estado": 0
   },
@@ -322,7 +322,7 @@
       "DER-10022"
     ],
     "coreqs": [
-      "CORREQ"
+      "LEN-12733"
     ],
     "estado": 0
   },
@@ -345,7 +345,7 @@
       "LEN-12701"
     ],
     "coreqs": [
-      "CORREQ"
+      "CON-10113"
     ],
     "estado": 0
   },
@@ -514,7 +514,7 @@
       "CON-15004"
     ],
     "coreqs": [
-      "CORREQ"
+      "LEN-12774"
     ],
     "estado": 0
   },
@@ -524,7 +524,7 @@
     "creditos": 2,
     "prerreqs": [],
     "coreqs": [
-      "CORREQ"
+      "CON-15005"
     ],
     "estado": 0
   },

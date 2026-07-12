@@ -42,7 +42,7 @@ export default function App() {
           </p>
         </div>
         <PlanSelector />
-        <div className="flex gap-1 px-4 bg-cream-50 border-b border-cream-300">
+        <div className="flex flex-wrap gap-1 px-4 bg-cream-50 border-b border-cream-300">
           <button
             onClick={() => setTab('plan')}
             className="text-xs px-3 py-1.5 font-semibold border-b-2"

@@ -3,6 +3,9 @@ export interface RawCourse {
   nombre: string
   creditos: number
   prerreqs: string[]
+  /** Claves reales de la(s) materia(s) que deben cursarse simultáneamente (no una
+   * bandera genérica) — asignadas por txt_json.py a partir de los marcadores
+   * "(A)"/"(B)" del PDF. */
   coreqs: string[]
   estado: 0 | 1
 }

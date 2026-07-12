@@ -560,7 +560,7 @@
       "CSO-13041"
     ],
     "coreqs": [
-      "CORREQ"
+      "ECO-14208"
     ],
     "estado": 0
   },
@@ -613,7 +613,7 @@
       "ECO-11104"
     ],
     "coreqs": [
-      "CORREQ"
+      "EIN-17304"
     ],
     "estado": 0
   },
@@ -732,9 +732,7 @@
       "ECO-14208",
       "DER-13607"
     ],
-    "coreqs": [
-      "CORREQ"
-    ],
+    "coreqs": [],
     "estado": 0
   }
 }

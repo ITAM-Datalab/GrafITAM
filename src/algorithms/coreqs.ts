@@ -1,22 +1,7 @@
-import type { RawPlan } from '../types/curriculum'
-
-export function detectCoreqGroups(raw: RawPlan): Record<string, string[]> {
-  const bySemestre: Record<number, string[]> = {}
-
-  for (const [id, course] of Object.entries(raw)) {
-    if (course.coreqs.includes('CORREQ')) {
-      const sem = course.semestre
-      if (!bySemestre[sem]) bySemestre[sem] = []
-      bySemestre[sem].push(id)
-    }
-  }
-
-  const result: Record<string, string[]> = {}
-  for (const group of Object.values(bySemestre)) {
-    for (const id of group) {
-      result[id] = group.filter((other) => other !== id)
-    }
-  }
-
-  return result
+/** `coreqs` en el JSON fuente ya trae las claves reales de la(s) materia(s) pareja
+ * (asignadas por txt_json.py) — esto solo descarta referencias a materias que no
+ * existen en el plan, mismo patrón que `presentPrerreqs`/`danglingPrerreqs` en
+ * `loader.ts`. */
+export function resolveCoreqGroup(coreqs: string[], allIds: Set<string>): string[] {
+  return coreqs.filter((id) => allIds.has(id))
 }

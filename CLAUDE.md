@@ -54,7 +54,7 @@ Además, `/.github/workflows/scrape-horarios.yml` corre `horarios_scraper.py` di
 ```
 
 - `estado` siempre `0` en fuente; el estado real del usuario vive en Zustand.
-- `coreqs`: `[]` o `["CORREQ"]` — ver `src/algorithms/CLAUDE.md`.
+- `coreqs`: `[]` o `["{clave de la materia pareja}"]` (ej. `["MAT-14200"]`) — la clave real de la materia con la que debe cursarse simultáneamente, no una bandera genérica — ver `src/algorithms/CLAUDE.md` y `src/data/CLAUDE.md`.
 - Naming: `{PROGRAMA}-{LETRA}-plan-estudios.json` (ej. `CDA-A-plan-estudios.json`), o `{PROGRAMA}-{LETRA}-{AREA-SLUG}-plan-estudios.json` si el plan tiene áreas de concentración (ej. `ACT-D-RIESGOS-FINANCIEROS-plan-estudios.json`) — ver más abajo.
 - **Optativas**: cada plan incluye entradas sintéticas `OPTATIVA-1`, `OPTATIVA-2`, ... (`nombre: "Optativa I"`, `"Optativa II"`, ...) por cada slot de optativa detectado en el PDF (ej. "Optativa de Estadística — 6 créditos", sin clave real). Van sin `prerreqs`/`coreqs`, en `semestre = (máximo semestre real del plan) + 1` — caen solas en su propia columna final del grafo, desconectadas de todo.
 - **Materia N de Área de Concentración**: slots sin clave real dentro de la tabla de semestres (distinto de las áreas de concentración completas descritas abajo) — igual que las optativas en que no tienen `prerreqs`, pero a diferencia de ellas **se quedan en su propio semestre real** (`AREA-{n}`, `n` = el número que ya trae el PDF), porque representan una materia obligatoria de esa etapa del plan, no una optativa libre.

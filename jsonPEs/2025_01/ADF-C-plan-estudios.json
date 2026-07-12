@@ -562,7 +562,7 @@
       "ADM-15535"
     ],
     "coreqs": [
-      "CORREQ"
+      "ADM-11018"
     ],
     "estado": 0
   },
@@ -586,7 +586,7 @@
       "ADM-13101"
     ],
     "coreqs": [
-      "CORREQ"
+      "ADM-15534"
     ],
     "estado": 0
   },

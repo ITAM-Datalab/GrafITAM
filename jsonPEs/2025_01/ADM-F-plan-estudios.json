@@ -165,7 +165,7 @@
       "EGN-17141"
     ],
     "coreqs": [
-      "CORREQ"
+      "LEN-12702"
     ],
     "estado": 0
   },
@@ -178,7 +178,7 @@
       "LEN-12701"
     ],
     "coreqs": [
-      "CORREQ"
+      "EGN-17123"
     ],
     "estado": 0
   },
@@ -440,7 +440,7 @@
       "ADM-13101"
     ],
     "coreqs": [
-      "CORREQ"
+      "LEN-12754"
     ],
     "estado": 0
   },
@@ -453,7 +453,7 @@
       "LEN-12714"
     ],
     "coreqs": [
-      "CORREQ"
+      "ADM-11018"
     ],
     "estado": 0
   },

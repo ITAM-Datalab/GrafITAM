@@ -17,11 +17,10 @@ Los 232 JSONs quedan embebidos en el bundle JS. No hay fetch en runtime.
 ### `loadPlanData(filename): PlanData`
 
 1. Resuelve `rawModules["/jsonPEs/2025_01/" + filename]` (con el filename completo, incluyendo el segmento de área si aplica).
-2. Llama `detectCoreqGroups(raw)` → mapa `id → [partners]`.
-3. Para cada materia, clasifica sus `prerreqs`:
-   - `presentPrerreqs`: IDs que existen en el plan → generan aristas en el grafo.
-   - `danglingPrerreqs`: IDs que no existen → guardados pero ignorados en renderizado.
-4. Construye y retorna `PlanData`.
+2. Para cada materia:
+   - Clasifica sus `prerreqs`: `presentPrerreqs` (IDs que existen en el plan → generan aristas en el grafo) vs. `danglingPrerreqs` (IDs que no existen → guardados pero ignorados en renderizado).
+   - Resuelve `coreqGroup` vía `resolveCoreqGroup(course.coreqs, allIds)` (`src/algorithms/coreqs.ts`) — mismo filtrado de presencia, aplicado a las claves de pareja que ya trae `coreqs` en el JSON fuente.
+3. Construye y retorna `PlanData`.
 
 ### `programIndex` / `areasByPlan`
 
@@ -91,6 +90,18 @@ Máquina de estados que itera filas de palabras clasificadas por columna. Estado
 ```
 El stub se libera (`_flush_stub`) cuando llega el siguiente código de materia o encabezado de semestre.
 
+**Marcador de coreq en su propia fila, cerrando un stub ya completo** (confirmado en `DAC-A`, décimo semestre — `LEN-12762`/`DER-10114`): cuando el nombre de una materia se ensambló desde una fila previa (patrón "fila doble"), `parse_pdf` siempre crea un stub aunque nombre+créditos ya estén completos en la fila del código (`name_came_from_prior_row` fuerza esto — asume que podría venir más continuación). Si el marcador `(A)`/`(B)` de esa materia queda pegado a un nombre largo que se envuelve a dos líneas, el marcador termina en **su propia fila**, después del código:
+```
+[Nombre parcial]                     ← pending_name
+[PREREQS]  [COD-12345]  [N cr]      ← crea stub (nombre+créditos ya completos, pero
+                                        name_came_from_prior_row fuerza stub)
+[(A)]                                 ← se absorbe bien como marcador del stub...
+[Nombre de la SIGUIENTE materia]     ← ...pero el stub sigue abierto, así que esta fila
+                                        se fusiona por error en el stub anterior en vez
+                                        de iniciar el nombre de la materia siguiente
+```
+Antes del fix, esto fusionaba el nombre de las dos materias en la primera (`LEN-12762` terminaba con "...Ciencia de Datos Seminario de Legalidad y Ética en Ciencia de") y dejaba a la segunda con solo la palabra suelta que le quedaba (`DER-10114` = "Datos"). Fix: cuando llega una fila que es *solo* el marcador (sin texto de nombre) y el stub ya tenía `nombre` no vacío y `creditos > 0` **antes** de esa fila, se cierra el stub inmediatamente después de asignarle el marcador, en vez de dejarlo abierto a la espera de más continuaciones.
+
 **Catálogo "MATERIAS OPTATIVAS OFRECIDAS POR LOS DIVERSOS DEPARTAMENTOS"** (sección larga al final del PDF, con clave real por materia pero compartida entre todos los planes — no es lo que se agrega al JSON):
 - Si aparece ese header → `_flush_stub` + `in_optativas = True`, se saltan todas las filas hasta el siguiente encabezado de semestre.
 
@@ -110,7 +121,11 @@ El stub se libera (`_flush_stub`) cuando llega el siguiente código de materia o
 
 ### Correquisitos
 
-Marcadores `(A)`, `(B)` en la columna de nombre → agrupados por `(semestre, marker)`, **por sección** (cada área tiene su propio `coreq_groups`, heredado del tronco al momento de crear la sección). Si el grupo tiene ≥ 2 materias, todas reciben `coreqs: ["CORREQ"]` en el JSON de salida.
+Marcadores `(A)`, `(B)` en la columna de nombre → agrupados por `(semestre, marker)`, **por sección** (cada área tiene su propio `coreq_groups`, heredado del tronco al momento de crear la sección).
+
+**La misma letra se reutiliza para varias parejas independientes dentro de un mismo semestre** — el PDF no usa una letra distinta por pareja (el pie de página lo dice explícitamente: *"(A) Estos pares de materias se deben cursar de manera simultánea..."* / *"(A) Cada par de materias se debe cursar..."*, siempre en plural). El orden de aparición en la tabla es lo que indica la pareja real: al aplicar los correquisitos, cada `(semestre, marker)` se empareja de dos en dos en ese orden (no se trata el grupo entero como un clique donde todos son pareja de todos). `dict.fromkeys` además quita duplicados — algunas materias quedan agregadas más de una vez al mismo grupo (su stub se libera más de una vez), lo que sin deduplicar producía una clave repetida en `coreqs`.
+
+Cada materia recibe en el JSON de salida la(s) clave(s) real(es) de su pareja (`"coreqs": ["LEN-12722"]`), no una bandera genérica — así el frontend (`resolveCoreqGroup` en `src/algorithms/coreqs.ts`) no necesita re-adivinar la agrupación por semestre.
 
 ### Validación de sanidad
 

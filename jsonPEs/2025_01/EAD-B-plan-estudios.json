@@ -616,7 +616,7 @@
       "ECO-21104"
     ],
     "coreqs": [
-      "CORREQ"
+      "ADM-11018"
     ],
     "estado": 0
   },
@@ -639,7 +639,7 @@
       "ADM-13101"
     ],
     "coreqs": [
-      "CORREQ"
+      "ECO-10204"
     ],
     "estado": 0
   },

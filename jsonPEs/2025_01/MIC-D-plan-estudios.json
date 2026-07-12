@@ -341,7 +341,7 @@
       "LEN-12701"
     ],
     "coreqs": [
-      "CORREQ"
+      "IIO-15171"
     ],
     "estado": 0
   },
@@ -354,7 +354,7 @@
       "IIO-15170"
     ],
     "coreqs": [
-      "CORREQ"
+      "LEN-12724"
     ],
     "estado": 0
   },
@@ -365,9 +365,7 @@
     "prerreqs": [
       "LEN-12701"
     ],
-    "coreqs": [
-      "CORREQ"
-    ],
+    "coreqs": [],
     "estado": 0
   },
   "SDI-12625": {
@@ -517,7 +515,7 @@
       "IIO-15171"
     ],
     "coreqs": [
-      "CORREQ"
+      "LEN-12765"
     ],
     "estado": 0
   },
@@ -530,7 +528,7 @@
       "LEN-12702"
     ],
     "coreqs": [
-      "CORREQ"
+      "IIO-15196"
     ],
     "estado": 0
   },
@@ -542,7 +540,7 @@
       "COM-12101"
     ],
     "coreqs": [
-      "CORREQ"
+      "LEN-12764"
     ],
     "estado": 0
   },
@@ -555,7 +553,7 @@
       "LEN-12702"
     ],
     "coreqs": [
-      "CORREQ"
+      "SDI-24810"
     ],
     "estado": 0
   },

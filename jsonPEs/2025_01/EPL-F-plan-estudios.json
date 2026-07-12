@@ -168,9 +168,7 @@
       "EGN-17122",
       "EGN-17141"
     ],
-    "coreqs": [
-      "CORREQ"
-    ],
+    "coreqs": [],
     "estado": 0
   },
   "CSO-11012": {
@@ -271,9 +269,7 @@
       "ECO-21104",
       "ECO-22105"
     ],
-    "coreqs": [
-      "CORREQ"
-    ],
+    "coreqs": [],
     "estado": 0
   },
   "CSO-15041": {
@@ -406,9 +402,7 @@
     "prerreqs": [
       "EST-11102"
     ],
-    "coreqs": [
-      "CORREQ"
-    ],
+    "coreqs": [],
     "estado": 0
   },
   "ECO-12201": {
@@ -440,7 +434,7 @@
       "CSO-17041"
     ],
     "coreqs": [
-      "CORREQ"
+      "ECO-10204"
     ],
     "estado": 0
   },
@@ -518,7 +512,7 @@
       "ECO-21104"
     ],
     "coreqs": [
-      "CORREQ"
+      "CSO-14051"
     ],
     "estado": 0
   },

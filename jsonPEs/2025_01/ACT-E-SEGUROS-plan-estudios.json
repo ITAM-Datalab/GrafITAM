@@ -99,9 +99,7 @@
       "EGN-17122",
       "EGN-17141"
     ],
-    "coreqs": [
-      "CORREQ"
-    ],
+    "coreqs": [],
     "estado": 0
   },
   "ECO-12102": {
@@ -311,9 +309,7 @@
     "prerreqs": [
       "ACT-15357"
     ],
-    "coreqs": [
-      "CORREQ"
-    ],
+    "coreqs": [],
     "estado": 0
   },
   "EST-14107": {
@@ -421,9 +417,7 @@
       "ACT-11302",
       "ACT-11303"
     ],
-    "coreqs": [
-      "CORREQ"
-    ],
+    "coreqs": [],
     "estado": 0
   },
   "COM-16412": {

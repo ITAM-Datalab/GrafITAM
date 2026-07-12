@@ -163,7 +163,7 @@
       "CON-10001"
     ],
     "coreqs": [
-      "CORREQ"
+      "LEN-12702"
     ],
     "estado": 0
   },
@@ -178,7 +178,7 @@
       "LEN-12701"
     ],
     "coreqs": [
-      "CORREQ"
+      "EGN-17123"
     ],
     "estado": 0
   },
@@ -326,7 +326,7 @@
       "CON-10003"
     ],
     "coreqs": [
-      "CORREQ"
+      "LEN-12716"
     ],
     "estado": 0
   },
@@ -338,7 +338,7 @@
       "LEN-12701"
     ],
     "coreqs": [
-      "CORREQ"
+      "CON-12001"
     ],
     "estado": 0
   },
@@ -621,7 +621,7 @@
       "ADM-15535"
     ],
     "coreqs": [
-      "CORREQ"
+      "LEN-12757"
     ],
     "estado": 0
   },
@@ -634,7 +634,7 @@
       "LEN-12702"
     ],
     "coreqs": [
-      "CORREQ"
+      "ADM-15534"
     ],
     "estado": 0
   },

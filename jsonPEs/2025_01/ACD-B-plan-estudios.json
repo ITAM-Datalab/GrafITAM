@@ -565,7 +565,7 @@
       "ADM-15535"
     ],
     "coreqs": [
-      "CORREQ"
+      "ACT-15353"
     ],
     "estado": 0
   },
@@ -621,7 +621,7 @@
       "ACT-11302"
     ],
     "coreqs": [
-      "CORREQ"
+      "ADM-15534"
     ],
     "estado": 0
   },

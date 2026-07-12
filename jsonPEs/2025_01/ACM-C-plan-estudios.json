@@ -354,7 +354,7 @@
       "MAT-24210"
     ],
     "coreqs": [
-      "CORREQ"
+      "ACT-15358"
     ],
     "estado": 0
   },
@@ -386,7 +386,7 @@
       "ACT-15357"
     ],
     "coreqs": [
-      "CORREQ"
+      "MAT-24211"
     ],
     "estado": 0
   },

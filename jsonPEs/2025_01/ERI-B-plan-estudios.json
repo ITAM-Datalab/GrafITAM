@@ -609,7 +609,7 @@
       "ECO-21104"
     ],
     "coreqs": [
-      "CORREQ"
+      "EIN-17304"
     ],
     "estado": 0
   },
@@ -633,7 +633,7 @@
       "CSO-13041"
     ],
     "coreqs": [
-      "CORREQ"
+      "ECO-10204"
     ],
     "estado": 0
   },

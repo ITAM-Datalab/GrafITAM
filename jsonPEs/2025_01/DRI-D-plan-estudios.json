@@ -182,7 +182,7 @@
       "LEN-12701"
     ],
     "coreqs": [
-      "CORREQ"
+      "LEN-12702"
     ],
     "estado": 0
   },
@@ -194,7 +194,7 @@
       "LEN-12701"
     ],
     "coreqs": [
-      "CORREQ"
+      "EGN-17123"
     ],
     "estado": 0
   },
@@ -590,7 +590,7 @@
       "EIN-15105"
     ],
     "coreqs": [
-      "CORREQ"
+      "LEN-12721"
     ],
     "estado": 0
   },
@@ -602,7 +602,7 @@
       "LEN-12701"
     ],
     "coreqs": [
-      "CORREQ"
+      "EIN-16403"
     ],
     "estado": 0
   },
@@ -727,7 +727,7 @@
       "CSO-13041"
     ],
     "coreqs": [
-      "CORREQ"
+      "LEN-12761"
     ],
     "estado": 0
   },
@@ -740,7 +740,7 @@
       "LEN-12721"
     ],
     "coreqs": [
-      "CORREQ"
+      "EIN-17304"
     ],
     "estado": 0
   },
@@ -821,7 +821,7 @@
       "EGN-17161"
     ],
     "coreqs": [
-      "CORREQ"
+      "LEN-12711"
     ],
     "estado": 0
   },
@@ -875,7 +875,7 @@
       "EGN-17161"
     ],
     "coreqs": [
-      "CORREQ"
+      "ECO-14208"
     ],
     "estado": 0
   },
@@ -936,7 +936,7 @@
       "LEN-12711"
     ],
     "coreqs": [
-      "CORREQ"
+      "LEN-12751"
     ],
     "estado": 0
   },
@@ -960,7 +960,7 @@
       "LEN-12711"
     ],
     "coreqs": [
-      "CORREQ"
+      "DER-11907"
     ],
     "estado": 0
   }

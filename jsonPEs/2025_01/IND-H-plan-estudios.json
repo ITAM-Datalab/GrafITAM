@@ -160,7 +160,7 @@
       "EGN-17122"
     ],
     "coreqs": [
-      "CORREQ"
+      "LEN-12702"
     ],
     "estado": 0
   },
@@ -173,7 +173,7 @@
       "LEN-12701"
     ],
     "coreqs": [
-      "CORREQ"
+      "EGN-17123"
     ],
     "estado": 0
   },
@@ -267,7 +267,7 @@
       "EST-11101"
     ],
     "coreqs": [
-      "CORREQ"
+      "LEN-12727"
     ],
     "estado": 0
   },
@@ -279,7 +279,7 @@
       "LEN-12701"
     ],
     "coreqs": [
-      "CORREQ"
+      "IIO-14161"
     ],
     "estado": 0
   },
@@ -447,7 +447,7 @@
       "IIO-15170"
     ],
     "coreqs": [
-      "CORREQ"
+      "LEN-12767"
     ],
     "estado": 0
   },
@@ -460,7 +460,7 @@
       "LEN-12702"
     ],
     "coreqs": [
-      "CORREQ"
+      "IIO-12180"
     ],
     "estado": 0
   },

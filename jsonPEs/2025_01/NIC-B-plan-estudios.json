@@ -529,7 +529,7 @@
       "ADM-11017"
     ],
     "coreqs": [
-      "CORREQ"
+      "COM-16413"
     ],
     "estado": 0
   },
@@ -541,7 +541,7 @@
       "COM-16203"
     ],
     "coreqs": [
-      "CORREQ"
+      "COM-23106"
     ],
     "estado": 0
   },
@@ -585,9 +585,7 @@
     "prerreqs": [
       "COM-12101"
     ],
-    "coreqs": [
-      "CORREQ"
-    ],
+    "coreqs": [],
     "estado": 0
   },
   "ADM-12013": {

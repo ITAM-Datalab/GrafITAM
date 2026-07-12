@@ -135,9 +135,7 @@
       "EGN-17122",
       "EGN-17141"
     ],
-    "coreqs": [
-      "CORREQ"
-    ],
+    "coreqs": [],
     "estado": 0
   },
   "EGN-17161": {
@@ -233,9 +231,7 @@
       "ECO-21104",
       "ECO-22105"
     ],
-    "coreqs": [
-      "CORREQ"
-    ],
+    "coreqs": [],
     "estado": 0
   },
   "ECO-13101": {
@@ -311,9 +307,7 @@
       "ECO-22105",
       "ECO-21104"
     ],
-    "coreqs": [
-      "CORREQ"
-    ],
+    "coreqs": [],
     "estado": 0
   },
   "ECO-13102": {

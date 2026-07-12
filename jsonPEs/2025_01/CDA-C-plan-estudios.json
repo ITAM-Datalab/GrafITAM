@@ -171,7 +171,7 @@
       "LEN-12701"
     ],
     "coreqs": [
-      "CORREQ"
+      "LEN-12702"
     ],
     "estado": 0
   },
@@ -183,7 +183,7 @@
       "LEN-12701"
     ],
     "coreqs": [
-      "CORREQ"
+      "EGN-17121"
     ],
     "estado": 0
   },
@@ -300,7 +300,7 @@
       "MAT-14281"
     ],
     "coreqs": [
-      "CORREQ"
+      "LEN-12722"
     ],
     "estado": 0
   },
@@ -313,7 +313,7 @@
       "LEN-12701"
     ],
     "coreqs": [
-      "CORREQ"
+      "COM-12104"
     ],
     "estado": 0
   },
@@ -471,7 +471,7 @@
       "COM-23114"
     ],
     "coreqs": [
-      "CORREQ"
+      "LEN-12762"
     ],
     "estado": 0
   },
@@ -515,7 +515,7 @@
       "LEN-12722"
     ],
     "coreqs": [
-      "CORREQ"
+      "COM-23119"
     ],
     "estado": 0
   },

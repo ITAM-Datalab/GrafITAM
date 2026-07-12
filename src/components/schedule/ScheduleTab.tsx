@@ -79,8 +79,8 @@ export default function ScheduleTab() {
   }
 
   return (
-    <div className="flex h-full overflow-hidden">
-      <div className="w-[420px] flex-shrink-0 overflow-y-auto border-r border-itam-muted/40 bg-base-bone p-4">
+    <div className="flex flex-col md:flex-row h-full overflow-y-auto md:overflow-hidden">
+      <div className="w-full md:w-[420px] md:flex-shrink-0 overflow-visible md:overflow-y-auto border-b md:border-b-0 md:border-r border-itam-muted/40 bg-base-bone p-4">
         {horarioPeriodos.length > 1 && (
           <div className="mb-3">
             <label className="block text-xs font-semibold mb-1 text-itam-dark">Periodo</label>
@@ -224,7 +224,7 @@ export default function ScheduleTab() {
         })}
       </div>
 
-      <div className="flex-1 overflow-auto">
+      <div className="flex-1 overflow-visible md:overflow-auto">
         <ScheduleCalendar
           groups={selectedGroupObjects}
           orderedCourseIds={allTrackedCourseIds}

@@ -20,11 +20,11 @@ El error se activa cuando `validationErrors` contiene una entrada con `courseId 
 
 ### Layout del nodo
 
-- Ancho fijo: 188 px
-- Fila 1: código (`font-mono`, 9 px, `opacity-50`)
-- Fila 2: nombre (11 px, `font-semibold`)
-- Fila 3: créditos + semestre planeado (10 px, `opacity-50`)
-- Fila 4: botones `[✓ Aprobada]` `[→ Planeada]`
+- Ancho fijo: 188 px (mismo en cualquier viewport — lo que cambia con el tamaño de pantalla es el zoom de `fitView` en `FlowCanvas.tsx`, no el nodo)
+- Fila 1: código (`font-mono`, 9 px desktop / 10 px por debajo de `md:`, `opacity-50`)
+- Fila 2: nombre (11 px desktop / 13 px por debajo de `md:`, `font-semibold`)
+- Fila 3: créditos + semestre planeado (10 px desktop / 11 px por debajo de `md:`, `opacity-50`)
+- Fila 4: botones `[✓ Aprobada]` `[→ Planeada]` (9 px/padding 2px desktop, 11 px/padding 4px por debajo de `md:` — más grandes para tap en móvil; ya que el nodo vive dentro del zoom automático de ReactFlow, un tamaño de fuente más grande en "espacio de canvas" sí se traduce en texto más legible una vez aplicado el zoom-out en pantallas chicas)
 
 Semestre mostrado: `semestrePlaneado ?? course.semestre` — refleja replanificación del usuario.
 
@@ -45,8 +45,9 @@ Wrapper de `<ReactFlow>`. Todo el cálculo de nodes/edges ocurre en `useMemo` pa
 
 Dos o tres `<select>` encadenados. El primero lista programas (keys de `programIndex`); el segundo lista letras disponibles para ese programa. El tercero (área de concentración) **solo se muestra** si `areasByPlan["{programa}-{letra}"]` tiene entradas (13 planes: `ACT-D/E/F/G`, `ECD-A`, `ECO-E/F/G/H/I`, `EDF-B/C/D` — ver `src/data/CLAUDE.md`); al elegir letra con áreas disponibles se auto-selecciona la primera (nunca se deja el plan a medio elegir) y el tercer select queda para cambiarla después. `buildPlanFilename(programa, letra, area?)`/`parseFilename` (`src/data/loader.ts`) arman y reconstruyen el nombre de archivo completo — evita duplicar esa lógica de parseo aquí. Botón "Reiniciar" llama `resetPlan()`.
 
-- **Barra de progreso de créditos**: muestra `aprobados / total (%)` (antes vivía como `<Panel>` en `FlowCanvas.tsx`, se movió aquí).
+- **Barra de progreso de créditos**: muestra `aprobados / total (%)` (antes vivía como `<Panel>` en `FlowCanvas.tsx`, se movió aquí). Se centra con `absolute left-1/2` solo a partir de `md:` — por debajo de eso pasa a `block w-full text-center` en su propia línea, porque a `absolute` siempre se monta encima de la fila de selects en cuanto esta es más ancha que la pantalla.
 - **Toggle "Disponibles"**: botón ligado a `showAvailable`/`toggleShowAvailable()` del store — activa el resaltado de materias cursables (ver estado "Disponible" en `CourseNode.tsx` arriba).
+- **Responsive**: la fila de selects y la fila raíz usan `flex-wrap` — en pantallas angostas los `<select>`, badge y botones pasan a varias líneas en vez de desbordarse.
 
 ## `edges/PrereqEdge.tsx`
 

@@ -1,5 +1,5 @@
 import type { RawPlan, PlanData, PlanMeta, ProgramIndex } from '../types/curriculum'
-import { detectCoreqGroups } from '../algorithms/coreqs'
+import { resolveCoreqGroup } from '../algorithms/coreqs'
 
 // Vite glob path is relative to project root (starts with /)
 const rawModules = import.meta.glob(
@@ -72,7 +72,6 @@ export function loadPlanData(filename: string): PlanData {
   const raw = rawModules[key]
   if (!raw) throw new Error(`Plan no encontrado: ${filename}`)
 
-  const coreqMap = detectCoreqGroups(raw)
   const allIds = new Set(Object.keys(raw))
   const planData: PlanData = {}
 
@@ -95,7 +94,7 @@ export function loadPlanData(filename: string): PlanData {
       semestre: course.semestre,
       prerreqs: presentPrerreqs,
       danglingPrerreqs,
-      coreqGroup: coreqMap[id] ?? [],
+      coreqGroup: resolveCoreqGroup(course.coreqs, allIds),
     }
   }
 

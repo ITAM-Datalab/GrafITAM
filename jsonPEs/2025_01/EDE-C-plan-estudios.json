@@ -697,7 +697,7 @@
       "DER-13607"
     ],
     "coreqs": [
-      "CORREQ"
+      "ECO-10204"
     ],
     "estado": 0
   },
@@ -771,7 +771,7 @@
       "ECO-21104"
     ],
     "coreqs": [
-      "CORREQ"
+      "DER-11907"
     ],
     "estado": 0
   }

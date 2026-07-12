@@ -479,7 +479,7 @@
       "IIO-15171"
     ],
     "coreqs": [
-      "CORREQ"
+      "SDI-24810"
     ],
     "estado": 0
   },
@@ -491,7 +491,7 @@
       "COM-12101"
     ],
     "coreqs": [
-      "CORREQ"
+      "IIO-15196"
     ],
     "estado": 0
   },

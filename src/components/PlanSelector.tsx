@@ -65,8 +65,8 @@ export default function PlanSelector() {
   }, [planData, userState])
 
   return (
-    <div className="relative flex items-center gap-3 px-4 py-2.5 bg-cream-50 border-b border-cream-300">
-      <div className="flex items-center gap-3">
+    <div className="relative flex flex-wrap items-center gap-3 px-4 py-2.5 bg-cream-50 border-b border-cream-300">
+      <div className="flex flex-wrap items-center gap-3">
         <span className="text-espresso-800 font-semibold text-sm">Plan de Estudios</span>
 
         <select
@@ -126,7 +126,7 @@ export default function PlanSelector() {
       </div>
 
       {creditProgress && (
-        <span className="absolute left-1/2 -translate-x-1/2 text-xs text-espresso-800 font-medium pointer-events-none">
+        <span className="block w-full text-center md:absolute md:left-1/2 md:w-auto md:-translate-x-1/2 text-xs text-espresso-800 font-medium pointer-events-none">
           {creditProgress.approved} / {creditProgress.total} cr. ({creditProgress.pct}%)
         </span>
       )}

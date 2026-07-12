@@ -555,7 +555,7 @@
       "CON-15002"
     ],
     "coreqs": [
-      "CORREQ"
+      "ADM-11018"
     ],
     "estado": 0
   },
@@ -588,7 +588,7 @@
       "ADM-13101"
     ],
     "coreqs": [
-      "CORREQ"
+      "CON-15003"
     ],
     "estado": 0
   },

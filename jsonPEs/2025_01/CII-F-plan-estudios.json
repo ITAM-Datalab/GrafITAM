@@ -360,7 +360,7 @@
       "EST-11101"
     ],
     "coreqs": [
-      "CORREQ"
+      "CON-12001"
     ],
     "estado": 0
   },
@@ -405,7 +405,7 @@
       "CON-10003"
     ],
     "coreqs": [
-      "CORREQ"
+      "IIO-14161"
     ],
     "estado": 0
   },

@@ -40,9 +40,9 @@ function CourseNode({ data }: NodeProps) {
     >
       <Handle type="target" position={Position.Left} style={{ background: 'transparent', border: 'none' }} />
 
-      <div className="font-mono text-[9px] opacity-50 tracking-wide mb-0.5">{course.id}</div>
-      <div className="leading-tight text-[11px] font-semibold">{course.nombre}</div>
-      <div className="mt-1.5 flex justify-between opacity-50 text-[10px]">
+      <div className="font-mono text-[10px] md:text-[9px] opacity-50 tracking-wide mb-0.5">{course.id}</div>
+      <div className="leading-tight text-[13px] md:text-[11px] font-semibold">{course.nombre}</div>
+      <div className="mt-1.5 flex justify-between opacity-50 text-[11px] md:text-[10px]">
         <span>{course.creditos} cr.</span>
         <span>Sem {plannedSem}</span>
       </div>
@@ -53,11 +53,8 @@ function CourseNode({ data }: NodeProps) {
       >
         <button
           onClick={() => toggleApproval(course.id)}
+          className="flex-1 rounded text-[11px] md:text-[9px] py-1 md:py-0.5"
           style={{
-            flex: 1,
-            fontSize: 9,
-            padding: '2px 0',
-            borderRadius: 4,
             background: isApproved ? '#1E5E4B' : 'transparent',
             color: isApproved ? '#FCFAF8' : '#8CA699',
             border: `1px solid ${isApproved ? '#1E5E4B' : '#8CA699'}`,
@@ -68,11 +65,8 @@ function CourseNode({ data }: NodeProps) {
         </button>
         <button
           onClick={() => togglePlanned(course.id)}
+          className="flex-1 rounded text-[11px] md:text-[9px] py-1 md:py-0.5"
           style={{
-            flex: 1,
-            fontSize: 9,
-            padding: '2px 0',
-            borderRadius: 4,
             background: isPlanned ? '#8C5E58' : 'transparent',
             color: isPlanned ? '#FCFAF8' : '#8CA699',
             border: `1px solid ${isPlanned ? '#8C5E58' : '#8CA699'}`,

@@ -5,12 +5,12 @@ Módulos independientes, todos puros (reciben estado y retornan estado nuevo, si
 ## `coreqs.ts`
 
 ```ts
-detectCoreqGroups(raw: RawPlan): Record<string, string[]>
+resolveCoreqGroup(coreqs: string[], allIds: Set<string>): string[]
 ```
 
-Agrupa materias que (1) están en el mismo semestre y (2) tienen `coreqs: ["CORREQ"]`. Retorna un mapa `id → [ids de compañeros]`. Solo grupos de tamaño ≥ 2 se incluyen; singletons producen `coreqGroup: []` en el loader.
+`coreqs` en el JSON fuente ya trae las claves reales de la(s) materia(s) pareja (asignadas por `txt_json.py`, no una bandera genérica — ver `src/data/CLAUDE.md`). Esta función solo descarta referencias a materias que no existen en el plan, mismo patrón que `presentPrerreqs`/`danglingPrerreqs` en `loader.ts`.
 
-Invocado en `loadPlanData` antes de construir `PlanData`.
+Invocado por materia dentro de `loadPlanData`, junto al filtrado de `prerreqs`.
 
 ## `dfsApprove.ts`
 

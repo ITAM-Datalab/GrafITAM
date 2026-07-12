@@ -472,7 +472,7 @@
       "EIN-15105"
     ],
     "coreqs": [
-      "CORREQ"
+      "CSO-14051"
     ],
     "estado": 0
   },
@@ -492,7 +492,7 @@
       "CSO-17041"
     ],
     "coreqs": [
-      "CORREQ"
+      "EIN-16403"
     ],
     "estado": 0
   },

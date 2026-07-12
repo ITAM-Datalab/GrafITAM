@@ -569,7 +569,7 @@
       "CON-15002"
     ],
     "coreqs": [
-      "CORREQ"
+      "ACT-15353"
     ],
     "estado": 0
   },
@@ -614,7 +614,7 @@
       "ACT-11302"
     ],
     "coreqs": [
-      "CORREQ"
+      "CON-15003"
     ],
     "estado": 0
   },

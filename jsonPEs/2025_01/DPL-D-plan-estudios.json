@@ -717,7 +717,7 @@
       "CSO-17041"
     ],
     "coreqs": [
-      "CORREQ"
+      "DER-11907"
     ],
     "estado": 0
   },
@@ -739,7 +739,7 @@
       "DER-13607"
     ],
     "coreqs": [
-      "CORREQ"
+      "CSO-14051"
     ],
     "estado": 0
   },

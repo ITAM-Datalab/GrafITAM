@@ -149,7 +149,7 @@
     "creditos": 6,
     "prerreqs": [],
     "coreqs": [
-      "CORREQ"
+      "LEN-12702"
     ],
     "estado": 0
   },
@@ -162,7 +162,7 @@
       "LEN-12701"
     ],
     "coreqs": [
-      "CORREQ"
+      "EGN-17123"
     ],
     "estado": 0
   },
@@ -379,7 +379,7 @@
       "EST-24126"
     ],
     "coreqs": [
-      "CORREQ"
+      "LEN-12722"
     ],
     "estado": 0
   },
@@ -392,7 +392,7 @@
       "LEN-12701"
     ],
     "coreqs": [
-      "CORREQ"
+      "COM-12104"
     ],
     "estado": 0
   },
@@ -434,7 +434,7 @@
       "MAT-24210"
     ],
     "coreqs": [
-      "CORREQ"
+      "LEN-12719"
     ],
     "estado": 0
   },
@@ -446,7 +446,7 @@
       "LEN-12701"
     ],
     "coreqs": [
-      "CORREQ"
+      "MAT-24211"
     ],
     "estado": 0
   },
@@ -590,7 +590,7 @@
       "MAT-24410"
     ],
     "coreqs": [
-      "CORREQ"
+      "LEN-12759"
     ],
     "estado": 0
   },
@@ -603,7 +603,7 @@
       "LEN-12719"
     ],
     "coreqs": [
-      "CORREQ"
+      "MAT-24500"
     ],
     "estado": 0
   },
@@ -618,7 +618,7 @@
       "ADM-12301"
     ],
     "coreqs": [
-      "CORREQ"
+      "LEN-12762"
     ],
     "estado": 0
   },
@@ -632,7 +632,7 @@
       "LEN-12722"
     ],
     "coreqs": [
-      "CORREQ"
+      "COM-23116"
     ],
     "estado": 0
   },

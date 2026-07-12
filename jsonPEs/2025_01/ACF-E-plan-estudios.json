@@ -162,7 +162,7 @@
       "EGN-17141"
     ],
     "coreqs": [
-      "CORREQ"
+      "LEN-12702"
     ],
     "estado": 0
   },
@@ -175,7 +175,7 @@
       "LEN-12701"
     ],
     "coreqs": [
-      "CORREQ"
+      "EGN-17123"
     ],
     "estado": 0
   },
@@ -449,7 +449,7 @@
       "CON-10003"
     ],
     "coreqs": [
-      "CORREQ"
+      "LEN-12716"
     ],
     "estado": 0
   },
@@ -461,7 +461,7 @@
       "LEN-12701"
     ],
     "coreqs": [
-      "CORREQ"
+      "CON-12001"
     ],
     "estado": 0
   },
@@ -498,9 +498,7 @@
       "ADM-15501",
       "LEN-12701"
     ],
-    "coreqs": [
-      "CORREQ"
-    ],
+    "coreqs": [],
     "estado": 0
   },
   "IIO-14278": {
@@ -597,7 +595,7 @@
       "CON-15002"
     ],
     "coreqs": [
-      "CORREQ"
+      "LEN-12756"
     ],
     "estado": 0
   },
@@ -610,7 +608,7 @@
       "LEN-12716"
     ],
     "coreqs": [
-      "CORREQ"
+      "CON-15003"
     ],
     "estado": 0
   },
@@ -643,7 +641,7 @@
       "ADM-13101"
     ],
     "coreqs": [
-      "CORREQ"
+      "LEN-12754"
     ],
     "estado": 0
   },
@@ -656,7 +654,7 @@
       "LEN-12714"
     ],
     "coreqs": [
-      "CORREQ"
+      "ADM-11018"
     ],
     "estado": 0
   },

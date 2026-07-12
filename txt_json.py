@@ -458,14 +458,24 @@ def parse_pdf(pdf_path: Path, pdfplumber) -> dict[str | None, tuple[dict, int]]:
                                 )
                             else:
                                 m2 = COREQ_MARKER_RE.search(name_text2)
-                                if m2 and not pending_stub['marker']:
-                                    pending_stub['marker'] = m2.group(1)
                                 nombre2 = COREQ_MARKER_RE.sub('', name_text2).strip()
                                 nombre2 = re.sub(r'\(\*+\).*$', '', nombre2).strip()
+                                stub_ya_completo = bool(pending_stub['nombre']) and pending_stub['creditos'] > 0
+                                if m2 and not pending_stub['marker']:
+                                    pending_stub['marker'] = m2.group(1)
                                 if nombre2:
                                     pending_stub['nombre'] = ' '.join(
                                         filter(None, [pending_stub['nombre'], nombre2])
                                     ).strip()
+                                elif m2 and stub_ya_completo:
+                                    # Marcador "(A)"/"(B)" en su propia fila (wrap del PDF)
+                                    # cerrando un stub que ya tenía nombre+créditos completos
+                                    # antes de esta fila: es lo último que le faltaba. Cerrarlo
+                                    # ya evita que la fila de la SIGUIENTE materia se cuele como
+                                    # continuación suya (bug DAC-A: DER-10114/LEN-12762 se
+                                    # fusionaban — ver src/data/CLAUDE.md).
+                                    _flush_stub(pending_stub, courses, coreq_groups)
+                                    pending_stub = None
                         if pending_stub and cred_words and pending_stub['creditos'] == 0:
                             cred_text2 = ' '.join(w['text'] for w in cred_words)
                             m_cred2 = re.search(r'\d+', cred_text2)
@@ -569,12 +579,25 @@ def parse_pdf(pdf_path: Path, pdfplumber) -> dict[str | None, tuple[dict, int]]:
         sec_optativa_credits = section['optativa_credits']
         sec_area_concentracion = section['area_concentracion']
 
-        # Aplicar correquisitos (solo si el grupo tiene >= 2 materias)
+        # Aplicar correquisitos: cada materia guarda la clave real de su pareja, no una
+        # bandera genérica. El PDF reutiliza la MISMA letra para varias PAREJAS
+        # independientes dentro de un mismo semestre — no una letra por pareja (ver pie
+        # de página real: "(A) Estos pares de materias se deben cursar de manera
+        # simultánea..." / "(A) Cada par de materias se debe cursar..."). El orden de
+        # aparición en la tabla es lo que indica la pareja real, así que se van
+        # emparejando de dos en dos en ese orden — tratar todo el grupo como un solo
+        # clique (todos compañeros de todos) fundía parejas independientes entre sí
+        # (bug reportado: DAC-A semestre 7, COM-12104/LEN-12722 + ACT-15358/LEN-12713
+        # aparecían como un solo grupo de 4). `dict.fromkeys` además quita duplicados:
+        # algunas materias quedan agregadas más de una vez al mismo grupo (su stub se
+        # libera más de una vez), lo que sin esto producía una clave repetida en
+        # "coreqs".
         for group_courses in sec_coreq_groups.values():
-            if len(group_courses) >= 2:
-                for cid in group_courses:
-                    if cid in sec_courses:
-                        sec_courses[cid]["coreqs"] = ["CORREQ"]
+            unique_courses = [cid for cid in dict.fromkeys(group_courses) if cid in sec_courses]
+            for i in range(0, len(unique_courses) - 1, 2):
+                a, b = unique_courses[i], unique_courses[i + 1]
+                sec_courses[a]["coreqs"] = [b]
+                sec_courses[b]["coreqs"] = [a]
 
         real_course_count = len(sec_courses)
 

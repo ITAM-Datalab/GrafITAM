@@ -5,7 +5,7 @@
     "creditos": 2,
     "prerreqs": [],
     "coreqs": [
-      "CORREQ"
+      "ADM-13125"
     ],
     "estado": 0
   },
@@ -23,7 +23,7 @@
     "creditos": 6,
     "prerreqs": [],
     "coreqs": [
-      "CORREQ"
+      "ADM-11120"
     ],
     "estado": 0
   },
@@ -159,7 +159,7 @@
       "LEN-12701"
     ],
     "coreqs": [
-      "CORREQ"
+      "LEN-12702"
     ],
     "estado": 0
   },
@@ -181,7 +181,7 @@
       "LEN-12701"
     ],
     "coreqs": [
-      "CORREQ"
+      "EGN-17121"
     ],
     "estado": 0
   },
@@ -193,7 +193,7 @@
       "ADM-13126"
     ],
     "coreqs": [
-      "CORREQ"
+      "ADM-12312"
     ],
     "estado": 0
   },
@@ -206,7 +206,7 @@
       "ADM-13126"
     ],
     "coreqs": [
-      "CORREQ"
+      "ADM-11002"
     ],
     "estado": 0
   },
@@ -281,7 +281,7 @@
       "ECO-14502"
     ],
     "coreqs": [
-      "CORREQ"
+      "LEN-12714"
     ],
     "estado": 0
   },
@@ -336,7 +336,7 @@
       "LEN-12701"
     ],
     "coreqs": [
-      "CORREQ"
+      "ADM-12371"
     ],
     "estado": 0
   },
@@ -408,7 +408,7 @@
     "creditos": 2,
     "prerreqs": [],
     "coreqs": [
-      "CORREQ"
+      "ADM-13450"
     ],
     "estado": 0
   },
@@ -421,7 +421,7 @@
       "ADM-13127"
     ],
     "coreqs": [
-      "CORREQ"
+      "ADM-12313"
     ],
     "estado": 0
   },
@@ -475,7 +475,7 @@
       "ADM-12372"
     ],
     "coreqs": [
-      "CORREQ"
+      "LEN-12754"
     ],
     "estado": 0
   },
@@ -496,7 +496,7 @@
     "creditos": 2,
     "prerreqs": [],
     "coreqs": [
-      "CORREQ"
+      "ADM-11010"
     ],
     "estado": 0
   },

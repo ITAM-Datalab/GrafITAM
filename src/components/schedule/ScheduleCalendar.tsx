@@ -26,10 +26,10 @@ export default function ScheduleCalendar({ groups, orderedCourseIds, courseNames
   })
 
   return (
-    <div className="p-4">
+    <div className="p-4 overflow-x-auto">
       <div
         className="grid rounded overflow-hidden bg-base-cream"
-        style={{ gridTemplateColumns: `50px repeat(${DIAS.length}, 1fr)` }}
+        style={{ gridTemplateColumns: `50px repeat(${DIAS.length}, 1fr)`, minWidth: 560 }}
       >
         <div className="border-b-2 border-itam-dark/25" />
         {DIAS.map((d) => (
@@ -69,16 +69,16 @@ export default function ScheduleCalendar({ groups, orderedCourseIds, courseNames
               {layout.map(({ item: b, left, width }, i) => {
                 const color = getCourseColor(b.group.courseId, orderedCourseIds)
                 const nombre = courseNames[b.group.courseId] ?? b.group.nombre
-                const fullLabel = `${b.group.courseId} ${nombre} · ${b.group.profesor} · ${b.group.horario}`
+                const fullLabel = `${b.group.courseId} ${nombre} · ${b.group.salon} · ${b.group.profesor} · ${b.group.horario}`
 
                 return (
                   <div
                     key={`${b.group.crn}-${dia}-${i}`}
                     title={fullLabel}
-                    className="absolute rounded text-[9px] px-1 py-0.5 overflow-hidden leading-tight"
+                    className="absolute rounded text-[10px] px-1 py-0.5 overflow-hidden leading-tight"
                     style={{
                       top: (b.inicio - START_HOUR * 60) * PX_PER_MIN,
-                      height: Math.max((b.fin - b.inicio) * PX_PER_MIN, 16),
+                      height: Math.max((b.fin - b.inicio) * PX_PER_MIN, 26),
                       left: `calc(${left * 100}% + 1px)`,
                       width: `calc(${width * 100}% - 2px)`,
                       background: color.bg,
@@ -86,10 +86,11 @@ export default function ScheduleCalendar({ groups, orderedCourseIds, courseNames
                       border: b.hasConflict ? '2px dashed #8C5E58' : 'none',
                     }}
                   >
-                    <div className="font-semibold truncate">
+                    <div className="font-semibold leading-tight">
                       {b.group.courseId} {nombre}
                     </div>
-                    <div className="opacity-80 truncate">
+                    <div className="opacity-80 leading-tight">{b.group.salon}</div>
+                    <div className="opacity-80 leading-tight">
                       {b.group.profesor} · {b.group.horario}
                     </div>
                   </div>
