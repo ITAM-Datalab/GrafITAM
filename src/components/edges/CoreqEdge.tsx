@@ -1,22 +1,21 @@
-import { BaseEdge, getStraightPath, type EdgeProps } from '@xyflow/react'
+import { useMemo } from 'react'
+import type { EdgeProps } from '@xyflow/react'
+import { computeCoreqRails } from './edgeGeometry'
 
-export default function CoreqEdge({
-  sourceX,
-  sourceY,
-  targetX,
-  targetY,
-}: EdgeProps) {
-  const [edgePath] = getStraightPath({ sourceX, sourceY, targetX, targetY })
+export default function CoreqEdge({ sourceX, sourceY, targetX, targetY, style }: EdgeProps) {
+  const { railA, railB, sleepers } = useMemo(
+    () => computeCoreqRails(sourceX, sourceY, targetX, targetY),
+    [sourceX, sourceY, targetX, targetY],
+  )
+
+  const hoverOpacity = Number(style?.opacity ?? 1)
+  const opacity = hoverOpacity * 0.5
 
   return (
-    <BaseEdge
-      path={edgePath}
-      style={{
-        stroke: '#8CA699',
-        strokeWidth: 2,
-        strokeDasharray: '6 3',
-        opacity: 0.5,
-      }}
-    />
+    <g style={{ opacity }}>
+      <path d={railA} stroke="#8CA699" strokeWidth={1.5} fill="none" />
+      <path d={railB} stroke="#8CA699" strokeWidth={1.5} fill="none" />
+      <path d={sleepers} stroke="#8CA699" strokeWidth={1} fill="none" />
+    </g>
   )
 }

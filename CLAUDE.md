@@ -36,6 +36,17 @@ GitHub Actions (`/.github/workflows/deploy.yml`) corre `npm run build` en cada p
 
 Además, `/.github/workflows/scrape-horarios.yml` corre `horarios_scraper.py` diario (cron) + manualmente (`workflow_dispatch`); si `jsonHorarios/` cambió, commitea a `main` con `github-actions[bot]`, lo cual dispara `deploy.yml` y republica con datos frescos.
 
+## Git — remotos
+
+El repo local tiene dos remotos, y **no son igual de importantes**:
+
+- `upstream` (`ITAM-Datalab/GrafITAM`) — el repo real/canónico. **Es el que siempre debe quedar al día** — cualquier fix o feature termina aquí.
+- `origin` (`BraulioLoz/GrafITAM`) — fork personal de Braulio. No es prioridad mantenerlo sincronizado; si queda atrás o diverge, no importa. Solo existía como destino de push antes de que `ReportIssueModal` apuntara al repo correcto (ver `src/components/schedule/CLAUDE.md`).
+
+**Al hacer push a los dos, cuidado con conflictos falsos en `jsonHorarios/index.json`**: como `scrape-horarios.yml` corre en cada repo (`origin` y `upstream` tienen el workflow habilitado por separado), cada uno genera su propio commit automático `chore(horarios): actualiza datos de horarios <fecha>` de forma independiente, con timestamps distintos — esto hace que `origin/main` y `upstream/main` diverjan aunque el resto del código sea idéntico. Si haces `git pull --rebase <remoto> main` y el remoto de destino no tiene ese commit automático específico (porque generó el suyo propio), vas a ver un conflicto en `jsonHorarios/index.json` al intentar reproducirlo. Como es solo un snapshot de datos regenerable (el remoto de destino ya tiene su propia versión equivalente), la resolución es simplemente `git rebase --skip` ese commit puntual — no hay nada que reconciliar a mano, el scraper lo vuelve a actualizar en la siguiente corrida.
+
+Recomendación práctica: pushear directo a `upstream` sin preocuparte por mantener `origin` sincronizado, salvo que se pida explícitamente.
+
 ## Schema JSON de los planes
 
 `jsonPEs/2025_01/` — 232 archivos generados por `txt_json.py`:

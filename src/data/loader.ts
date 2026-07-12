@@ -78,8 +78,11 @@ export function loadPlanData(filename: string): PlanData {
   for (const [id, course] of Object.entries(raw)) {
     const presentPrerreqs: string[] = []
     const danglingPrerreqs: string[] = []
+    const seenPrereqs = new Set<string>()
 
     for (const prereqId of course.prerreqs) {
+      if (seenPrereqs.has(prereqId)) continue
+      seenPrereqs.add(prereqId)
       if (allIds.has(prereqId)) {
         presentPrerreqs.push(prereqId)
       } else {

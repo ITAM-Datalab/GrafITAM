@@ -8,6 +8,7 @@ export default function ErrorEdge({
   sourcePosition,
   targetPosition,
   markerEnd,
+  style,
 }: EdgeProps) {
   const [edgePath] = getBezierPath({
     sourceX,
@@ -18,6 +19,8 @@ export default function ErrorEdge({
     targetPosition,
   })
 
+  const hoverOpacity = Number(style?.opacity ?? 1)
+
   return (
     <BaseEdge
       path={edgePath}
@@ -26,7 +29,7 @@ export default function ErrorEdge({
         stroke: '#8C5E58',
         strokeWidth: 2.5,
         strokeDasharray: '8 4',
-        opacity: 0.9,
+        opacity: 0.9 * hoverOpacity,
       }}
     />
   )

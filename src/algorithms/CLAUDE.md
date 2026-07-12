@@ -60,6 +60,21 @@ Grid manual — **no usa dagre en runtime** (el nombre es legado). Columnas = se
 
 `userSemesters` ya incluye `semestrePlaneado` del usuario, así que el nodo se mueve de columna si fue replanificado.
 
+`COLUMN_GAP` se exporta (a diferencia de las otras constantes) porque `src/components/edges/edgeGeometry.ts` lo reusa para calcular dónde va el troncal del ruteo ortogonal de `PrereqEdge` — única fuente de verdad, evita que el gutter visual y el gutter real del layout diverjan.
+
+## `graphHighlight.ts`
+
+```ts
+buildDependentsIndex(planData: PlanData): Record<string, string[]>
+computeHoverHighlight(hoveredId: string, planData: PlanData, dependentsIndex: Record<string, string[]>): { nodeIds: Set<string>; edgeIds: Set<string> }
+prereqEdgeId(prereqId: string, courseId: string): string   // "${prereqId}__${courseId}"
+coreqEdgeId(a: string, b: string): string                   // "coreq__${min}__${max}", estable sin importar orden de argumentos
+```
+
+Calcula el resaltado transitivo para el hover del grafo (`FlowCanvas.tsx`): dado un nodo, dos recorridos iterativos independientes — hacia atrás siguiendo `course.prerreqs` (todos los niveles de ancestros) y hacia adelante siguiendo `dependentsIndex` (todos los niveles de descendientes, todo lo que esa materia eventualmente desbloquea) — más los coreqs directos del nodo. Mismo patrón de DFS iterativo (`stack`/`visited`) que `dfsApprove.ts`/`unapproveDescendants.ts`, pero **no los reusa** (esas mutan `userState`; estas son puras y devuelven `Set<string>` de ids). Los edges se agregan al `Set` en el momento exacto en que se descubren durante el recorrido, no por un chequeo posterior de "¿ambos extremos están en `nodeIds`?" — evita marcar una arista coincidental entre dos nodos que terminaron en el set por razones distintas (uno ancestro, otro descendiente, sin relación directa entre sí).
+
+`prereqEdgeId`/`coreqEdgeId` son la única fuente de verdad del formato de id de arista — `FlowCanvas.tsx` los reusa al construir `rawEdges` en vez de duplicar los template literals inline.
+
 ## `scheduleOverlap.ts`
 
 ```ts

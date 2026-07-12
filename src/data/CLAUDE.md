@@ -18,6 +18,7 @@ Los 232 JSONs quedan embebidos en el bundle JS. No hay fetch en runtime.
 
 1. Resuelve `rawModules["/jsonPEs/2025_01/" + filename]` (con el filename completo, incluyendo el segmento de área si aplica).
 2. Para cada materia:
+   - Deduplica `prerreqs` (algunos JSON fuente traen la misma clave repetida dos veces — confirmado en `LEN-12702` de `CDA-B`, ver nota de `txt_json.py` sobre correquisitos que se liberan más de una vez; ahí `dict.fromkeys` ya deduplica `coreqs`, pero `prerreqs` no pasaba por el mismo filtro) antes de clasificar, para no generar dos aristas idénticas (`id` de React duplicado → warning y edge doble en el grafo).
    - Clasifica sus `prerreqs`: `presentPrerreqs` (IDs que existen en el plan → generan aristas en el grafo) vs. `danglingPrerreqs` (IDs que no existen → guardados pero ignorados en renderizado).
    - Resuelve `coreqGroup` vía `resolveCoreqGroup(course.coreqs, allIds)` (`src/algorithms/coreqs.ts`) — mismo filtrado de presencia, aplicado a las claves de pareja que ya trae `coreqs` en el JSON fuente.
 3. Construye y retorna `PlanData`.

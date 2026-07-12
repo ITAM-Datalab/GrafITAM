@@ -13,18 +13,20 @@ import {
 import '@xyflow/react/dist/style.css'
 import { useCurriculumStore } from '../store/curriculumStore'
 import { computeGridLayout } from '../algorithms/dagreLayout'
+import { buildDependentsIndex, computeHoverHighlight, coreqEdgeId, prereqEdgeId } from '../algorithms/graphHighlight'
 import CourseNode, { type CourseNodeData } from './CourseNode'
 import PrereqEdge from './edges/PrereqEdge'
 import CoreqEdge from './edges/CoreqEdge'
 import ErrorEdge from './edges/ErrorEdge'
+import EdgeMarkers from './edges/EdgeMarkers'
 import type { Course } from '../types/curriculum'
 
 const nodeTypes = { courseNode: CourseNode }
 const edgeTypes = { prereqEdge: PrereqEdge, coreqEdge: CoreqEdge, errorEdge: ErrorEdge }
 
-const defaultEdgeOptions = {
-  markerEnd: { type: MarkerType.ArrowClosed, color: '#8CA699', width: 14, height: 14 },
-}
+const EDGE_DIM_OPACITY = 0.12
+const NODE_DIM_OPACITY = 0.3
+const HOVER_GRACE_MS = 100
 
 export default function FlowCanvas() {
   const planData = useCurriculumStore((s) => s.planData)
@@ -33,9 +35,10 @@ export default function FlowCanvas() {
   const [hoveredNodeId, setHoveredNodeId] = useState<string | null>(null)
   const [tooltip, setTooltip] = useState<{ courseId: string; x: number; y: number } | null>(null)
   const tooltipTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null)
+  const hoverClearTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null)
 
   const errorSet = useMemo(
-    () => new Set(validationErrors.map((e) => `${e.prereqId}__${e.courseId}`)),
+    () => new Set(validationErrors.map((e) => prereqEdgeId(e.prereqId, e.courseId))),
     [validationErrors],
   )
 
@@ -64,19 +67,29 @@ export default function FlowCanvas() {
 
     for (const course of Object.values(planData)) {
       for (const prereqId of course.prerreqs) {
-        const key = `${prereqId}__${course.id}`
+        const key = prereqEdgeId(prereqId, course.id)
+        const isError = errorSet.has(key)
+        const isSourceApproved = userState[prereqId]?.aprobada ?? false
         edges.push({
           id: key,
           source: prereqId,
           target: course.id,
-          type: errorSet.has(key) ? 'errorEdge' : 'prereqEdge',
+          type: isError ? 'errorEdge' : 'prereqEdge',
+          markerEnd: isError
+            ? 'error-marker'
+            : {
+                type: MarkerType.ArrowClosed,
+                color: isSourceApproved ? '#1E5E4B' : '#8CA699',
+                width: 14,
+                height: 14,
+              },
         })
       }
 
       for (const partnerId of course.coreqGroup) {
         if (course.id < partnerId) {
           edges.push({
-            id: `coreq__${course.id}__${partnerId}`,
+            id: coreqEdgeId(course.id, partnerId),
             source: course.id,
             target: partnerId,
             type: 'coreqEdge',
@@ -86,37 +99,61 @@ export default function FlowCanvas() {
     }
 
     return edges
-  }, [planData, errorSet])
+  }, [planData, errorSet, userState])
+
+  const dependentsIndex = useMemo(
+    () => (planData ? buildDependentsIndex(planData) : {}),
+    [planData],
+  )
+
+  const highlight = useMemo(
+    () => (hoveredNodeId && planData ? computeHoverHighlight(hoveredNodeId, planData, dependentsIndex) : null),
+    [hoveredNodeId, planData, dependentsIndex],
+  )
 
   const displayEdges = useMemo(() => {
-    if (!hoveredNodeId) return rawEdges
+    if (!highlight) return rawEdges
     return rawEdges.map((edge) => ({
       ...edge,
       style: {
         ...(edge.style ?? {}),
-        opacity:
-          edge.source === hoveredNodeId || edge.target === hoveredNodeId ? 1 : 0.1,
+        opacity: highlight.edgeIds.has(edge.id) ? 1 : EDGE_DIM_OPACITY,
       },
     }))
-  }, [rawEdges, hoveredNodeId])
+  }, [rawEdges, highlight])
 
   const layoutedNodes = useMemo(
     () => computeGridLayout(rawNodes, userSemesters),
     [rawNodes, userSemesters],
   )
 
-  const [nodes, setNodes, onNodesChange] = useNodesState(layoutedNodes)
+  const displayNodes = useMemo(() => {
+    if (!highlight) return layoutedNodes
+    return layoutedNodes.map((node) => ({
+      ...node,
+      style: {
+        ...(node.style ?? {}),
+        opacity: highlight.nodeIds.has(node.id) ? 1 : NODE_DIM_OPACITY,
+      },
+    }))
+  }, [layoutedNodes, highlight])
+
+  const [nodes, setNodes, onNodesChange] = useNodesState(displayNodes)
   const [edges, setEdges, onEdgesChange] = useEdgesState(displayEdges)
 
   useEffect(() => {
-    setNodes(layoutedNodes)
-  }, [layoutedNodes, setNodes])
+    setNodes(displayNodes)
+  }, [displayNodes, setNodes])
 
   useEffect(() => {
     setEdges(displayEdges)
   }, [displayEdges, setEdges])
 
   const handleNodeMouseEnter = useCallback((event: React.MouseEvent, node: Node) => {
+    if (hoverClearTimerRef.current) {
+      clearTimeout(hoverClearTimerRef.current)
+      hoverClearTimerRef.current = null
+    }
     setHoveredNodeId(node.id)
     tooltipTimerRef.current = setTimeout(() => {
       setTooltip({ courseId: node.id, x: event.clientX, y: event.clientY })
@@ -124,22 +161,24 @@ export default function FlowCanvas() {
   }, [])
 
   const handleNodeMouseLeave = useCallback(() => {
-    setHoveredNodeId(null)
     if (tooltipTimerRef.current) clearTimeout(tooltipTimerRef.current)
-    setTooltip(null)
+    hoverClearTimerRef.current = setTimeout(() => {
+      setHoveredNodeId(null)
+      setTooltip(null)
+    }, HOVER_GRACE_MS)
   }, [])
 
   if (!planData) return null
 
   return (
     <div className="w-full h-full" style={{ position: 'relative' }}>
+      <EdgeMarkers />
       <ReactFlow
         style={{ background: 'transparent' }}
         nodes={nodes}
         edges={edges}
         nodeTypes={nodeTypes}
         edgeTypes={edgeTypes}
-        defaultEdgeOptions={defaultEdgeOptions}
         onNodesChange={onNodesChange}
         onEdgesChange={onEdgesChange}
         onNodeMouseEnter={handleNodeMouseEnter}
@@ -172,6 +211,9 @@ export default function FlowCanvas() {
           aprobada: userState[id]?.aprobada ?? false,
         }))
         const coreqs = course.coreqGroup.map((id) => planData[id]?.nombre ?? id)
+        const blocked = Object.values(planData)
+          .filter((c) => c.prerreqs.includes(tooltip.courseId))
+          .map((c) => c.nombre)
         return (
           <div
             style={{
@@ -210,6 +252,16 @@ export default function FlowCanvas() {
                 </div>
                 {coreqs.map((n, i) => (
                   <div key={i} style={{ marginBottom: 3 }}>↔ {n}</div>
+                ))}
+              </>
+            )}
+            {blocked.length > 0 && (
+              <>
+                <div style={{ opacity: 0.5, marginTop: 10, marginBottom: 4, fontSize: 10, textTransform: 'uppercase', letterSpacing: '0.05em' }}>
+                  Desbloquea
+                </div>
+                {blocked.map((n, i) => (
+                  <div key={i} style={{ marginBottom: 3 }}>→ {n}</div>
                 ))}
               </>
             )}
