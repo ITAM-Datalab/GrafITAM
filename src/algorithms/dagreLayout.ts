@@ -2,7 +2,7 @@ import type { Node } from '@xyflow/react'
 
 const NODE_WIDTH = 188
 const NODE_HEIGHT = 112
-const COLUMN_GAP = 120
+export const COLUMN_GAP = 120
 const NODE_GAP = 28
 
 export function computeGridLayout(

@@ -33,10 +33,11 @@ Semestre mostrado: `semestrePlaneado ?? course.semestre` — refleja replanifica
 Wrapper de `<ReactFlow>`. Todo el cálculo de nodes/edges ocurre en `useMemo` para evitar re-renders.
 
 - **Nodes**: uno por cada `Course` en `planData`.
-- **Edges**: `prereqEdge` por cada `(prereqId → courseId)` presente; `coreqEdge` por cada par de `coreqGroup` (solo renderiza `id < partnerId` para evitar duplicados); `errorEdge` cuando la clave `prereqId__courseId` está en `errorSet`.
+- **Edges**: `prereqEdge` por cada `(prereqId → courseId)` presente; `coreqEdge` por cada par de `coreqGroup` (solo renderiza `id < partnerId` para evitar duplicados); `errorEdge` cuando la clave `prereqId__courseId` está en `errorSet`. Los ids se construyen con `prereqEdgeId`/`coreqEdgeId` (`src/algorithms/graphHighlight.ts`), única fuente de verdad del formato — no se arman como template literal inline en ningún otro lugar.
+- **`markerEnd` dinámico por edge**: cada edge declara su propio marcador (no hay `defaultEdgeOptions` global) — `MarkerType.ArrowClosed` con color verde/gris según `aprobada` del source para prereq, o `'error-marker'` (id del `<marker>` custom montado por `EdgeMarkers.tsx`) para errorEdge. Antes había un solo color fijo para todas las flechas, que no coincidía con el stroke de la línea.
 - **Layout**: `computeGridLayout(rawNodes, userSemesters)` — recalcula posiciones cuando cambia `planData` o `userState`.
-- **Tooltip on-hover**: al pasar el mouse sobre un nodo (delay 800ms) muestra sus prerreqs/coreqs.
-- **Dimming de edges**: `displayEdges` atenúa las aristas no relacionadas al nodo con hover activo.
+- **Tooltip on-hover**: al pasar el mouse sobre un nodo (delay 800ms) muestra sus prerreqs, coreqs, y "Desbloquea" (materias cuyo `prerreqs` incluye directamente a esta — no transitivo).
+- **Hover-highlight transitivo**: `computeHoverHighlight` (`src/algorithms/graphHighlight.ts`) calcula, sobre el nodo con hover, la cadena completa de ancestros (prerreqs de prerreqs...) y descendientes (todo lo que esa materia eventualmente desbloquea) en ambas direcciones, más sus coreqs directos — `displayNodes`/`displayEdges` atenúan (`NODE_DIM_OPACITY`/`EDGE_DIM_OPACITY`) todo lo que quede fuera de ese set. Los edges se marcan durante el mismo recorrido BFS/DFS (no por chequeo posterior de "¿ambos extremos están en el set?"), para no resaltar una arista coincidental entre dos nodos que están en el set por razones distintas.
 - `MiniMap` y `Controls` de ReactFlow habilitados.
 - `nodesDraggable={false}`: posiciones fijas por columna de semestre.
 - `fitView` con `padding: 0.15` al montar.
@@ -49,14 +50,26 @@ Dos o tres `<select>` encadenados. El primero lista programas (keys de `programI
 - **Toggle "Disponibles"**: botón ligado a `showAvailable`/`toggleShowAvailable()` del store — activa el resaltado de materias cursables (ver estado "Disponible" en `CourseNode.tsx` arriba).
 - **Responsive**: la fila de selects y la fila raíz usan `flex-wrap` — en pantallas angostas los `<select>`, badge y botones pasan a varias líneas en vez de desbordarse.
 
+## `edges/edgeGeometry.ts`
+
+Geometría pura (sin React/store), reusada por `PrereqEdge`/`CoreqEdge`. Estilo "vías de tren":
+
+- `computePrereqEdgeGeometry(sourceX, sourceY, targetX, targetY, creditosOrigen, columnGap)`: si source/target comparten fila, path recto; si cruzan filas, ruteo H-V-H con esquinas redondeadas (`CORNER_RADIUS`) por un troncal vertical fijo a la mitad del primer gutter de semestre (`sourceX + columnGap/2` — **simplificación deliberada**: en saltos de más de un semestre no evade columnas intermedias, igual que el bézier anterior). También calcula los "ticks de crédito" (`buildTicks`, densidad `clamp(creditosOrigen, MIN_TICKS=2, MAX_TICKS=9)`, siempre en el primer tramo horizontal, nunca sobre columnas intermedias) y el punto "estación" (círculo en el origen).
+- `computeLengthOpacity(length)`: aristas más largas (más semestres de distancia, longitud Manhattan) quedan más tenues (entre `MIN_OPACITY=0.35` y `MAX_OPACITY=0.85`), sin desaparecer del todo.
+- `computeCoreqRails(sourceX, sourceY, targetX, targetY)`: "riel doble + durmientes" — dos líneas paralelas offset perpendicular (`RAIL_OFFSET=3px`) al segmento source→target, con travesaños entre ellas cada `SLEEPER_SPACING=14px`.
+
 ## `edges/PrereqEdge.tsx`
 
-Bézier suave. Color del stroke: verde (`#1E5E4B`) si el nodo source tiene `aprobada: true`, gris (`#8CA699`) si no. `strokeWidth: 1.5`, `opacity: 0.7`. Dibuja la flecha estándar de ReactFlow en el target.
+Usa `computePrereqEdgeGeometry` (créditos del nodo **origen**, i.e. el prerrequisito — no del target). Color del stroke: verde (`#1E5E4B`) si el nodo source tiene `aprobada: true`, gris (`#8CA699`) si no. Renderiza `<BaseEdge>` (el path) + `<circle>` (estación) + un `<line>` por tick, todos con la misma opacidad: `style?.opacity` que llega de `EdgeProps` (multiplicador de hover-dim seteado por `FlowCanvas.tsx`) × `computeLengthOpacity` del propio edge. Dibuja la flecha estándar de ReactFlow en el target (color dinámico, ver `FlowCanvas.tsx` arriba).
 
 ## `edges/CoreqEdge.tsx`
 
-Línea recta (sin curva). `stroke: #8CA699`, `strokeWidth: 2`, `strokeDasharray: "6 3"`, `opacity: 0.5`. Representa que dos materias deben cursarse simultáneamente.
+Usa `computeCoreqRails`. Renderiza dos `<path>` (rieles, `stroke: #8CA699`, `strokeWidth: 1.5`) + un `<path>` (durmientes, `strokeWidth: 1`) dentro de un `<g>` con la opacidad combinada (`style?.opacity` de hover-dim × `0.5` fijo). No usa `<BaseEdge>`/`getStraightPath` — coreq no es seleccionable/eliminable hoy, no necesita el hit-area que provee `BaseEdge`; si se necesita interacción más adelante, se puede agregar un `<BaseEdge>` extra invisible sin tocar el resto.
 
 ## `edges/ErrorEdge.tsx`
 
-Bézier. `stroke: #8C5E58`, `strokeWidth: 2.5`, `strokeDasharray: "8 4"`, `opacity: 0.9`. Indica que la materia target está planeada en un semestre inválido respecto a este prerrequisito.
+Bézier (sin cambio de path). `stroke: #8C5E58`, `strokeWidth: 2.5`, `strokeDasharray: "8 4"`, opacidad `0.9 × style?.opacity` (hover-dim). Indica que la materia target está planeada en un semestre inválido respecto a este prerrequisito. Usa el marcador custom `error-marker` (ver `edges/EdgeMarkers.tsx`) en vez del triángulo estándar.
+
+## `edges/EdgeMarkers.tsx`
+
+Componente sin props, monta un `<svg><defs>` una sola vez (como hermano de `<ReactFlow>` en `FlowCanvas.tsx`) con el `<marker id="error-marker">` custom (círculo + cruz, stroke rust) — los `<marker>` SVG resuelven por id a nivel de documento, no necesitan vivir dentro del mismo `<svg>` que las aristas.
