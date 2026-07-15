@@ -355,24 +355,24 @@
   ],
   "DER-15704": [
     {
-      "campus": "RIO HONDO",
+      "campus": "",
       "crn": "2222",
       "dias": "JU",
       "grupo": "001",
       "horario": "07:00-09:30",
       "nombre": "PROCEDIM. CONSTITUCIONALES",
       "profesor": "JOSE ANGEL SANTIAGO ABREGO",
-      "salon": "PF103"
+      "salon": ""
     },
     {
-      "campus": "RIO HONDO",
+      "campus": "",
       "crn": "2222",
       "dias": "LU MA MI",
       "grupo": "001",
       "horario": "07:00-09:45",
       "nombre": "PROCEDIM. CONSTITUCIONALES",
       "profesor": "JOSE ANGEL SANTIAGO ABREGO",
-      "salon": "PF103"
+      "salon": ""
     }
   ],
   "DER-16925": [
