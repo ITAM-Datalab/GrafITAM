@@ -3196,7 +3196,7 @@
       "horario": "17:30-19:30",
       "nombre": "CONTABILIDAD FINANCIERA I",
       "profesor": "ROSARIO EDITH GARCIA MENDIOLA",
-      "salon": "RHB-5"
+      "salon": "RH213"
     },
     {
       "campus": "RIO HONDO",
@@ -3277,7 +3277,7 @@
     {
       "campus": "RIO HONDO",
       "crn": "2682",
-      "dias": "LU",
+      "dias": "VI",
       "grupo": "001",
       "horario": "07:00-10:00",
       "nombre": "CONTRALORIA",
@@ -7967,6 +7967,28 @@
       "salon": "RH206"
     }
   ],
+  "EGN-11171": [
+    {
+      "campus": "RIO HONDO",
+      "crn": "3401",
+      "dias": "MA JU",
+      "grupo": "001",
+      "horario": "16:00-17:30",
+      "nombre": "CAT. EXT. MANUEL GOMEZ MORIN:",
+      "profesor": "LORENA PEREZ HERNANDEZ",
+      "salon": "RH210"
+    },
+    {
+      "campus": "RIO HONDO",
+      "crn": "3401",
+      "dias": "MA JU",
+      "grupo": "001",
+      "horario": "16:00-17:30",
+      "nombre": "CAT. EXT. MANUEL GOMEZ MORIN:",
+      "profesor": "FERNANDO RODRIGUEZ DOVAL",
+      "salon": "RH210"
+    }
+  ],
   "EGN-17121": [
     {
       "campus": "RIO HONDO",
@@ -11125,7 +11147,7 @@
       "grupo": "004",
       "horario": "08:00-09:00",
       "nombre": "COMUNIC. PROFES. PARA DIR. FIN",
-      "profesor": "",
+      "profesor": "EDUARDO JOSE PABLO MARTIN GARCIA CORREA",
       "salon": "RHPB3"
     }
   ],
@@ -11189,7 +11211,7 @@
       "grupo": "002",
       "horario": "08:00-09:00",
       "nombre": "COMUNIC. PROFES. PARA MAT. APL",
-      "profesor": "",
+      "profesor": "ALEXANDRA LEMUS RODRIGUEZ",
       "salon": "RHPB3"
     }
   ],
