@@ -6045,16 +6045,6 @@
       "grupo": "001",
       "horario": "16:00-17:30",
       "nombre": "DERECHO CONSTITUCIONAL, III",
-      "profesor": "MARIA GUADALUPE ADRIANA ORTEGA ORTIZ",
-      "salon": "RH317"
-    },
-    {
-      "campus": "RIO HONDO",
-      "crn": "3159",
-      "dias": "LU MI",
-      "grupo": "001",
-      "horario": "16:00-17:30",
-      "nombre": "DERECHO CONSTITUCIONAL, III",
       "profesor": "FRANCISCA MARIA POU GIMENEZ",
       "salon": "RH317"
     },
@@ -6065,7 +6055,7 @@
       "grupo": "001",
       "horario": "10:00-12:00",
       "nombre": "DERECHO CONSTITUCIONAL, III",
-      "profesor": "",
+      "profesor": "MARIA GUADALUPE ADRIANA ORTEGA ORTIZ",
       "salon": "RH313"
     },
     {
@@ -6601,7 +6591,7 @@
       "grupo": "002",
       "horario": "20:30-22:00",
       "nombre": "DERECHO LABORAL II",
-      "profesor": "",
+      "profesor": "JOSE ANTONIO MORALES YAÑEZ",
       "salon": "RH311"
     }
   ],
@@ -12741,7 +12731,7 @@
       "crn": "2747",
       "dias": "VI",
       "grupo": "001",
-      "horario": "11:00-13:00",
+      "horario": "12:00-14:00",
       "nombre": "CIRCUITOS LOGICOS",
       "profesor": "MARIO ANDRES AGUILAR ORDUÑA",
       "salon": "RHLFIEL"
@@ -12810,7 +12800,7 @@
       "horario": "10:00-12:00",
       "nombre": "REDES DE COMPUTADORAS",
       "profesor": "FRANCISCO JAVIER DEL OLMO HERNANDEZ",
-      "salon": "RHLI2"
+      "salon": "RH211"
     },
     {
       "campus": "RIO HONDO",
