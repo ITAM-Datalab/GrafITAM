@@ -4317,20 +4317,20 @@
       "crn": "3215",
       "dias": "LU",
       "grupo": "004",
-      "horario": "07:00-09:00",
+      "horario": "19:00-21:00",
       "nombre": "DERECHO EMPRESARIAL",
-      "profesor": "",
-      "salon": "RHLI2"
+      "profesor": "MARIA CRISTINA GARCIA BARRAGAN DE LA PEÑA",
+      "salon": "RH311"
     },
     {
       "campus": "RIO HONDO",
       "crn": "3215",
       "dias": "MI",
       "grupo": "004",
-      "horario": "07:00-09:30",
+      "horario": "19:00-21:30",
       "nombre": "DERECHO EMPRESARIAL",
-      "profesor": "",
-      "salon": "RHLI2"
+      "profesor": "MARIA CRISTINA GARCIA BARRAGAN DE LA PEÑA",
+      "salon": "RH311"
     }
   ],
   "DER-10016": [
@@ -4399,20 +4399,20 @@
       "crn": "3219",
       "dias": "LU",
       "grupo": "004",
-      "horario": "07:00-09:00",
+      "horario": "19:00-21:00",
       "nombre": "INTROD. AL DERECHO CORPORATIVO",
-      "profesor": "",
-      "salon": "RHLI2"
+      "profesor": "MARIA CRISTINA GARCIA BARRAGAN DE LA PEÑA",
+      "salon": "RH311"
     },
     {
       "campus": "RIO HONDO",
       "crn": "3219",
       "dias": "MI",
       "grupo": "004",
-      "horario": "07:00-09:30",
+      "horario": "19:00-21:30",
       "nombre": "INTROD. AL DERECHO CORPORATIVO",
-      "profesor": "",
-      "salon": "RHLI2"
+      "profesor": "MARIA CRISTINA GARCIA BARRAGAN DE LA PEÑA",
+      "salon": "RH311"
     }
   ],
   "DER-10017": [
@@ -4509,10 +4509,10 @@
       "crn": "3223",
       "dias": "LU MI",
       "grupo": "004",
-      "horario": "07:00-09:00",
+      "horario": "19:00-21:00",
       "nombre": "DERECHO EMPRESARIAL",
-      "profesor": "",
-      "salon": "RHLI2"
+      "profesor": "MARIA CRISTINA GARCIA BARRAGAN DE LA PEÑA",
+      "salon": "RH311"
     }
   ],
   "DER-10023": [
