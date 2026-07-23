@@ -190,7 +190,8 @@
     "creditos": 8,
     "prerreqs": [
       "COM-11103",
-      "COM-16203"
+      "COM-16203",
+      "SDI-14105"
     ],
     "coreqs": [],
     "estado": 0
@@ -200,7 +201,6 @@
     "nombre": "Elementos de Electrónica",
     "creditos": 10,
     "prerreqs": [
-      "SDI-14105",
       "SDI-11120"
     ],
     "coreqs": [],
@@ -533,7 +533,8 @@
     "prerreqs": [
       "ECO-11103",
       "EST-11101",
-      "IIO-13150"
+      "IIO-13150",
+      "MAT-14102"
     ],
     "coreqs": [],
     "estado": 0
@@ -543,7 +544,6 @@
     "nombre": "Estruct. Proc. y Comp. Org. I",
     "creditos": 6,
     "prerreqs": [
-      "MAT-14102",
       "ADM-12107"
     ],
     "coreqs": [],

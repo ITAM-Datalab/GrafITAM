@@ -311,7 +311,10 @@
     "semestre": 6,
     "nombre": "Minería y Análisis de Datos",
     "creditos": 6,
-    "prerreqs": [],
+    "prerreqs": [
+      "COM-11114",
+      "COM-11308"
+    ],
     "coreqs": [],
     "estado": 0
   },
@@ -320,8 +323,6 @@
     "nombre": "Aprendizaje de Máquina",
     "creditos": 6,
     "prerreqs": [
-      "COM-11114",
-      "COM-11308",
       "COM-16305",
       "EST-14103"
     ],
@@ -397,7 +398,8 @@
     "creditos": 6,
     "prerreqs": [
       "COM-11308",
-      "COM-23701"
+      "COM-23701",
+      "EST-14103"
     ],
     "coreqs": [],
     "estado": 0
@@ -407,7 +409,6 @@
     "nombre": "Problemas de la Realidad Mexicana Contemporánea",
     "creditos": 6,
     "prerreqs": [
-      "EST-14103",
       "EGN-17161"
     ],
     "coreqs": [],
@@ -475,7 +476,7 @@
     "estado": 0
   },
   "OPTATIVA-1": {
-    "semestre": 9,
+    "semestre": 5,
     "nombre": "Optativa I",
     "creditos": 6,
     "prerreqs": [],
@@ -483,7 +484,7 @@
     "estado": 0
   },
   "OPTATIVA-2": {
-    "semestre": 9,
+    "semestre": 6,
     "nombre": "Optativa II",
     "creditos": 6,
     "prerreqs": [],
@@ -491,7 +492,7 @@
     "estado": 0
   },
   "OPTATIVA-3": {
-    "semestre": 9,
+    "semestre": 7,
     "nombre": "Optativa III",
     "creditos": 6,
     "prerreqs": [],
@@ -499,7 +500,7 @@
     "estado": 0
   },
   "OPTATIVA-4": {
-    "semestre": 9,
+    "semestre": 8,
     "nombre": "Optativa IV",
     "creditos": 6,
     "prerreqs": [],
@@ -507,7 +508,7 @@
     "estado": 0
   },
   "OPTATIVA-5": {
-    "semestre": 9,
+    "semestre": 8,
     "nombre": "Optativa V",
     "creditos": 6,
     "prerreqs": [],

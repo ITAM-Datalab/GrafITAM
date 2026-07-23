@@ -358,6 +358,7 @@
     "nombre": "Modelos Matemáticos I",
     "creditos": 6,
     "prerreqs": [
+      "LEN-12701",
       "MAT-24210",
       "EST-24126"
     ],
@@ -408,6 +409,7 @@
     "nombre": "Métodos Lineales",
     "creditos": 6,
     "prerreqs": [
+      "EGN-17161",
       "EST-14103",
       "MAT-14201"
     ],
@@ -609,6 +611,8 @@
     "nombre": "Análisis Avanzado",
     "creditos": 6,
     "prerreqs": [
+      "LEN-12702",
+      "LEN-12719",
       "MAT-24101"
     ],
     "coreqs": [],
@@ -626,7 +630,7 @@
     "estado": 0
   },
   "OPTATIVA-1": {
-    "semestre": 11,
+    "semestre": 8,
     "nombre": "Optativa I",
     "creditos": 6,
     "prerreqs": [],
@@ -634,7 +638,7 @@
     "estado": 0
   },
   "OPTATIVA-2": {
-    "semestre": 11,
+    "semestre": 10,
     "nombre": "Optativa II",
     "creditos": 6,
     "prerreqs": [],

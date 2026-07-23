@@ -193,7 +193,8 @@
     "creditos": 8,
     "prerreqs": [
       "COM-11302",
-      "MAT-14201"
+      "MAT-14201",
+      "MAT-14101"
     ],
     "coreqs": [],
     "estado": 0
@@ -203,7 +204,6 @@
     "nombre": "Economía IV",
     "creditos": 6,
     "prerreqs": [
-      "MAT-14101",
       "ECO-21103",
       "MAT-14101"
     ],
@@ -513,7 +513,8 @@
     "creditos": 6,
     "prerreqs": [
       "ECO-21111",
-      "ECO-22105"
+      "ECO-22105",
+      "MAT-24210"
     ],
     "coreqs": [],
     "estado": 0
@@ -523,9 +524,9 @@
     "nombre": "Microeconometría Avanzada",
     "creditos": 7,
     "prerreqs": [
-      "MAT-24210",
       "ECO-21104",
-      "ECO-22105"
+      "ECO-22105",
+      "EST-24105"
     ],
     "coreqs": [],
     "estado": 0
@@ -535,7 +536,6 @@
     "nombre": "Desarrollo Económico",
     "creditos": 6,
     "prerreqs": [
-      "EST-24105",
       "ECO-21104",
       "ECO-15101"
     ],
@@ -605,7 +605,7 @@
     "estado": 0
   },
   "OPTATIVA-1": {
-    "semestre": 11,
+    "semestre": 10,
     "nombre": "Optativa I",
     "creditos": 6,
     "prerreqs": [],
@@ -613,7 +613,7 @@
     "estado": 0
   },
   "OPTATIVA-2": {
-    "semestre": 11,
+    "semestre": 10,
     "nombre": "Optativa II",
     "creditos": 6,
     "prerreqs": [],
@@ -621,7 +621,7 @@
     "estado": 0
   },
   "OPTATIVA-3": {
-    "semestre": 11,
+    "semestre": 10,
     "nombre": "Optativa III",
     "creditos": 6,
     "prerreqs": [],
@@ -629,7 +629,7 @@
     "estado": 0
   },
   "OPTATIVA-4": {
-    "semestre": 11,
+    "semestre": 10,
     "nombre": "Optativa IV",
     "creditos": 6,
     "prerreqs": [],

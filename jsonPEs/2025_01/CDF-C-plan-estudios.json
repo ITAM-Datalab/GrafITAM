@@ -524,7 +524,8 @@
     "creditos": 6,
     "prerreqs": [
       "ADM-15514",
-      "MAT-24630"
+      "MAT-24630",
+      "ADM-15522"
     ],
     "coreqs": [],
     "estado": 0
@@ -534,7 +535,6 @@
     "nombre": "Renta Fija",
     "creditos": 6,
     "prerreqs": [
-      "ADM-15522",
       "ADM-15532"
     ],
     "coreqs": [],
@@ -546,7 +546,8 @@
     "creditos": 6,
     "prerreqs": [
       "EST-11103",
-      "ADM-15535"
+      "ADM-15535",
+      "ADM-15571"
     ],
     "coreqs": [],
     "estado": 0
@@ -556,7 +557,6 @@
     "nombre": "Análisis Financiero de la Empresa",
     "creditos": 6,
     "prerreqs": [
-      "ADM-15571",
       "CON-10011",
       "DMON-15507"
     ],
@@ -575,7 +575,7 @@
     "estado": 0
   },
   "OPTATIVA-1": {
-    "semestre": 11,
+    "semestre": 10,
     "nombre": "Optativa I",
     "creditos": 6,
     "prerreqs": [],
@@ -583,7 +583,7 @@
     "estado": 0
   },
   "OPTATIVA-2": {
-    "semestre": 11,
+    "semestre": 10,
     "nombre": "Optativa II",
     "creditos": 6,
     "prerreqs": [],
@@ -591,7 +591,7 @@
     "estado": 0
   },
   "OPTATIVA-3": {
-    "semestre": 11,
+    "semestre": 10,
     "nombre": "Optativa III",
     "creditos": 6,
     "prerreqs": [],
@@ -599,7 +599,7 @@
     "estado": 0
   },
   "OPTATIVA-4": {
-    "semestre": 11,
+    "semestre": 10,
     "nombre": "Optativa IV",
     "creditos": 6,
     "prerreqs": [],

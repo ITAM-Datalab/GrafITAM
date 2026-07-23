@@ -290,7 +290,8 @@
     "creditos": 4,
     "prerreqs": [
       "CON-14111",
-      "CON-14109"
+      "CON-14109",
+      "CON-10111"
     ],
     "coreqs": [],
     "estado": 0
@@ -300,7 +301,6 @@
     "nombre": "Sistemas de Información Contable",
     "creditos": 6,
     "prerreqs": [
-      "CON-10111",
       "COM-16305"
     ],
     "coreqs": [],

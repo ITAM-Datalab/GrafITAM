@@ -255,7 +255,8 @@
     "creditos": 6,
     "prerreqs": [
       "MAT-22600",
-      "ACT-15357"
+      "ACT-15357",
+      "EST-14101"
     ],
     "coreqs": [],
     "estado": 0
@@ -265,7 +266,6 @@
     "nombre": "Algorítmica y Programación",
     "creditos": 6,
     "prerreqs": [
-      "EST-14101",
       "MAT-14300",
       "COM-16301"
     ],

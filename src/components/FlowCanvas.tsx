@@ -24,8 +24,8 @@ import type { Course } from '../types/curriculum'
 const nodeTypes = { courseNode: CourseNode }
 const edgeTypes = { prereqEdge: PrereqEdge, coreqEdge: CoreqEdge, errorEdge: ErrorEdge }
 
-const EDGE_DIM_OPACITY = 0.12
-const NODE_DIM_OPACITY = 0.3
+const EDGE_DIM_OPACITY = 0.35
+const NODE_DIM_OPACITY = 0.55
 const HOVER_GRACE_MS = 100
 
 export default function FlowCanvas() {

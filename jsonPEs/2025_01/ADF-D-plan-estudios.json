@@ -482,7 +482,8 @@
     "creditos": 7,
     "prerreqs": [
       "ADM-16601",
-      "EST-11103"
+      "EST-11103",
+      "ADM-14401"
     ],
     "coreqs": [],
     "estado": 0
@@ -492,8 +493,6 @@
     "nombre": "Desarrollo Empresarial",
     "creditos": 6,
     "prerreqs": [
-      "ADM-14401",
-      "ADM-16601",
       "ADM-11013"
     ],
     "coreqs": [
@@ -628,7 +627,8 @@
     "creditos": 6,
     "prerreqs": [
       "EST-11103",
-      "ADM-15535"
+      "ADM-15535",
+      "ADM-15571"
     ],
     "coreqs": [],
     "estado": 0
@@ -638,7 +638,6 @@
     "nombre": "Seminario de Dirección",
     "creditos": 6,
     "prerreqs": [
-      "ADM-15571",
       "ADM-13101"
     ],
     "coreqs": [
@@ -670,7 +669,7 @@
     "estado": 0
   },
   "OPTATIVA-1": {
-    "semestre": 11,
+    "semestre": 10,
     "nombre": "Optativa I",
     "creditos": 6,
     "prerreqs": [],
@@ -678,7 +677,7 @@
     "estado": 0
   },
   "OPTATIVA-2": {
-    "semestre": 11,
+    "semestre": 10,
     "nombre": "Optativa II",
     "creditos": 6,
     "prerreqs": [],

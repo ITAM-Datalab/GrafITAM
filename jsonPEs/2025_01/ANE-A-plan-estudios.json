@@ -294,7 +294,9 @@
     "semestre": 5,
     "nombre": "Innovación y Diseño de Modelos de Negocios",
     "creditos": 6,
-    "prerreqs": [],
+    "prerreqs": [
+      "ADM-13126"
+    ],
     "coreqs": [],
     "estado": 0
   },
@@ -302,9 +304,7 @@
     "semestre": 5,
     "nombre": "Trayectorias de Negocios II: Equipo y Liderazgo",
     "creditos": 2,
-    "prerreqs": [
-      "ADM-13126"
-    ],
+    "prerreqs": [],
     "coreqs": [],
     "estado": 0
   },
@@ -313,6 +313,8 @@
     "nombre": "Finanzas en los Negocios I",
     "creditos": 6,
     "prerreqs": [
+      "ADM-11120",
+      "ADM-13126",
       "ECO-11021",
       "CON-14109"
     ],
@@ -325,7 +327,8 @@
     "creditos": 3,
     "prerreqs": [
       "COM-16305",
-      "ECO-11002"
+      "ECO-11002",
+      "EST-11102"
     ],
     "coreqs": [],
     "estado": 0
@@ -335,7 +338,6 @@
     "nombre": "Microeconomía III",
     "creditos": 6,
     "prerreqs": [
-      "EST-11102",
       "ECO-11022",
       "MAT-24632"
     ],
@@ -348,7 +350,8 @@
     "creditos": 8,
     "prerreqs": [
       "ECO-11021",
-      "MAT-12221"
+      "MAT-12221",
+      "MAT-24632"
     ],
     "coreqs": [],
     "estado": 0
@@ -358,7 +361,6 @@
     "nombre": "Ideas e Instituciones Políticas y Sociales III",
     "creditos": 6,
     "prerreqs": [
-      "MAT-24632",
       "EGN-17122",
       "EGN-17141"
     ],
@@ -389,6 +391,7 @@
     "nombre": "Modelaje para Contabilidad y Finanzas",
     "creditos": 6,
     "prerreqs": [
+      "ADM-11002",
       "ADM-15561",
       "COM-16305"
     ],
@@ -529,6 +532,7 @@
     "nombre": "Comunicación Escrita para Administración",
     "creditos": 2,
     "prerreqs": [
+      "EGN-17161",
       "LEN-12701"
     ],
     "coreqs": [],
@@ -561,7 +565,8 @@
     "creditos": 8,
     "prerreqs": [
       "DER-12204",
-      "ADM-12107"
+      "ADM-12107",
+      "CON-10001"
     ],
     "coreqs": [],
     "estado": 0
@@ -571,7 +576,6 @@
     "nombre": "Seminario Análisis Económico del Derecho",
     "creditos": 3,
     "prerreqs": [
-      "CON-10001",
       "ECO-11023",
       "DER-12204"
     ],
@@ -621,7 +625,12 @@
     "semestre": 9,
     "nombre": "Emprendimiento",
     "creditos": 6,
-    "prerreqs": [],
+    "prerreqs": [
+      "ADM-12312",
+      "ADM-13127",
+      "ADM-15562",
+      "ECO-10522"
+    ],
     "coreqs": [],
     "estado": 0
   },
@@ -630,7 +639,6 @@
     "nombre": "Administración Estratégica de Marcas",
     "creditos": 6,
     "prerreqs": [
-      "ECO-10522",
       "ADM-16739"
     ],
     "coreqs": [],
@@ -664,7 +672,8 @@
     "creditos": 6,
     "prerreqs": [
       "ECO-11023",
-      "ECO-12012"
+      "ECO-12012",
+      "ECO-10522"
     ],
     "coreqs": [],
     "estado": 0
@@ -674,7 +683,6 @@
     "nombre": "Crecimiento Económico",
     "creditos": 6,
     "prerreqs": [
-      "ECO-10522",
       "ECO-12012"
     ],
     "coreqs": [],
@@ -708,7 +716,9 @@
     "creditos": 9,
     "prerreqs": [
       "ECO-11023",
-      "ECO-12012"
+      "ECO-12012",
+      "ECO-10522",
+      "ECO-10523"
     ],
     "coreqs": [],
     "estado": 0
@@ -718,8 +728,6 @@
     "nombre": "Tópicos Avanzados de Microeconomía",
     "creditos": 6,
     "prerreqs": [
-      "ECO-10522",
-      "ECO-10523",
       "ECO-11023",
       "ECO-12012"
     ],

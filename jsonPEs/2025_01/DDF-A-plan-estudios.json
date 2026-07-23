@@ -177,7 +177,8 @@
     "creditos": 6,
     "prerreqs": [
       "ECO-11101",
-      "ADM-12107"
+      "ADM-12107",
+      "CON-10001"
     ],
     "coreqs": [],
     "estado": 0
@@ -187,7 +188,6 @@
     "nombre": "Contabilidad Intermedia I",
     "creditos": 8,
     "prerreqs": [
-      "CON-10001",
       "CON-10001"
     ],
     "coreqs": [],
@@ -479,7 +479,8 @@
     "creditos": 6,
     "prerreqs": [
       "ADM-15531",
-      "EST-14103"
+      "EST-14103",
+      "ECO-21104"
     ],
     "coreqs": [],
     "estado": 0
@@ -489,7 +490,6 @@
     "nombre": "Renta Fija",
     "creditos": 6,
     "prerreqs": [
-      "ECO-21104",
       "ADM-15532"
     ],
     "coreqs": [],
@@ -647,7 +647,8 @@
     "creditos": 6,
     "prerreqs": [
       "ADM-15533",
-      "ADM-15571"
+      "ADM-15571",
+      "ADM-15535"
     ],
     "coreqs": [
       "LEN-12757"
@@ -659,7 +660,6 @@
     "nombre": "Comunicación Profesional para Dir. Financiera",
     "creditos": 2,
     "prerreqs": [
-      "ADM-15535",
       "LEN-12702",
       "LEN-12717"
     ],
@@ -714,7 +714,8 @@
       "COM-22108",
       "COM-23115",
       "COM-23114",
-      "ADM-15533"
+      "ADM-15533",
+      "CSO-16048"
     ],
     "coreqs": [
       "LEN-12762"
@@ -726,7 +727,6 @@
     "nombre": "Comunicación Profesional para Ciencia de Datos",
     "creditos": 2,
     "prerreqs": [
-      "CSO-16048",
       "LEN-12702",
       "LEN-12722"
     ],

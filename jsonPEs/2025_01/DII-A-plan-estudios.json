@@ -159,7 +159,8 @@
     "creditos": 6,
     "prerreqs": [
       "EGN-17122",
-      "EGN-17141"
+      "EGN-17141",
+      "LEN-12701"
     ],
     "coreqs": [
       "LEN-12702"
@@ -171,7 +172,6 @@
     "nombre": "Seminario de Comunicación Escrita",
     "creditos": 2,
     "prerreqs": [
-      "LEN-12701",
       "LEN-12701"
     ],
     "coreqs": [
@@ -348,7 +348,8 @@
     "creditos": 6,
     "prerreqs": [
       "COM-11101",
-      "EST-24126"
+      "EST-24126",
+      "MAT-14281"
     ],
     "coreqs": [
       "LEN-12722"
@@ -360,7 +361,6 @@
     "nombre": "Comunicación Escrita para Ciencia de Datos",
     "creditos": 2,
     "prerreqs": [
-      "MAT-14281",
       "LEN-12701"
     ],
     "coreqs": [
@@ -498,7 +498,8 @@
     "creditos": 6,
     "prerreqs": [
       "EST-24127",
-      "IIO-13150"
+      "IIO-13150",
+      "MAT-14102"
     ],
     "coreqs": [],
     "estado": 0
@@ -508,7 +509,6 @@
     "nombre": "Procesos de Manufactura I",
     "creditos": 6,
     "prerreqs": [
-      "MAT-14102",
       "IIO-15140"
     ],
     "coreqs": [],
@@ -665,7 +665,8 @@
       "COM-22108",
       "COM-23115",
       "COM-23114",
-      "ADM-12301"
+      "ADM-12301",
+      "CSO-16048"
     ],
     "coreqs": [
       "LEN-12762"
@@ -677,7 +678,6 @@
     "nombre": "Comunicación Profesional para Ciencia de Datos",
     "creditos": 2,
     "prerreqs": [
-      "CSO-16048",
       "LEN-12702",
       "LEN-12722"
     ],

@@ -137,7 +137,8 @@
     "creditos": 6,
     "prerreqs": [
       "EGN-17122",
-      "EGN-17141"
+      "EGN-17141",
+      "LEN-10131"
     ],
     "coreqs": [],
     "estado": 0
@@ -147,7 +148,6 @@
     "nombre": "Algorítmica y Programación",
     "creditos": 6,
     "prerreqs": [
-      "LEN-10131",
       "COM-16301"
     ],
     "coreqs": [],
@@ -202,7 +202,8 @@
     "creditos": 8,
     "prerreqs": [
       "COM-11302",
-      "MAT-14201"
+      "MAT-14201",
+      "MAT-14101"
     ],
     "coreqs": [],
     "estado": 0
@@ -212,7 +213,6 @@
     "nombre": "Economía IV",
     "creditos": 6,
     "prerreqs": [
-      "MAT-14101",
       "ECO-21103",
       "MAT-14101"
     ],
@@ -614,7 +614,7 @@
     "estado": 0
   },
   "OPTATIVA-1": {
-    "semestre": 11,
+    "semestre": 10,
     "nombre": "Optativa I",
     "creditos": 6,
     "prerreqs": [],
@@ -622,7 +622,7 @@
     "estado": 0
   },
   "OPTATIVA-2": {
-    "semestre": 11,
+    "semestre": 10,
     "nombre": "Optativa II",
     "creditos": 6,
     "prerreqs": [],
@@ -630,7 +630,7 @@
     "estado": 0
   },
   "OPTATIVA-3": {
-    "semestre": 11,
+    "semestre": 10,
     "nombre": "Optativa III",
     "creditos": 6,
     "prerreqs": [],
@@ -638,7 +638,7 @@
     "estado": 0
   },
   "OPTATIVA-4": {
-    "semestre": 11,
+    "semestre": 10,
     "nombre": "Optativa IV",
     "creditos": 6,
     "prerreqs": [],

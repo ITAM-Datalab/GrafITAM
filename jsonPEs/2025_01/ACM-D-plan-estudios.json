@@ -207,7 +207,8 @@
     "creditos": 8,
     "prerreqs": [
       "COM-11302",
-      "MAT-14201"
+      "MAT-14201",
+      "MAT-14101"
     ],
     "coreqs": [],
     "estado": 0
@@ -217,7 +218,6 @@
     "nombre": "Álgebra Lineal II",
     "creditos": 8,
     "prerreqs": [
-      "MAT-14101",
       "MAT-14201",
       "MAT-14301"
     ],
@@ -543,7 +543,8 @@
     "creditos": 6,
     "prerreqs": [
       "MAT-14400",
-      "EST-14103"
+      "EST-14103",
+      "ACT-15358"
     ],
     "coreqs": [],
     "estado": 0
@@ -553,7 +554,6 @@
     "nombre": "Planes de Beneficios",
     "creditos": 6,
     "prerreqs": [
-      "ACT-15358",
       "ACT-11301"
     ],
     "coreqs": [],
@@ -618,7 +618,7 @@
     "estado": 0
   },
   "OPTATIVA-1": {
-    "semestre": 11,
+    "semestre": 9,
     "nombre": "Optativa I",
     "creditos": 6,
     "prerreqs": [],
@@ -626,7 +626,7 @@
     "estado": 0
   },
   "OPTATIVA-2": {
-    "semestre": 11,
+    "semestre": 9,
     "nombre": "Optativa II",
     "creditos": 6,
     "prerreqs": [],
@@ -634,7 +634,7 @@
     "estado": 0
   },
   "OPTATIVA-3": {
-    "semestre": 11,
+    "semestre": 10,
     "nombre": "Optativa III",
     "creditos": 6,
     "prerreqs": [],
@@ -642,7 +642,7 @@
     "estado": 0
   },
   "OPTATIVA-4": {
-    "semestre": 11,
+    "semestre": 10,
     "nombre": "Optativa IV",
     "creditos": 6,
     "prerreqs": [],
@@ -650,7 +650,7 @@
     "estado": 0
   },
   "OPTATIVA-5": {
-    "semestre": 11,
+    "semestre": 10,
     "nombre": "Optativa V",
     "creditos": 6,
     "prerreqs": [],
@@ -658,7 +658,7 @@
     "estado": 0
   },
   "OPTATIVA-6": {
-    "semestre": 11,
+    "semestre": 10,
     "nombre": "Optativa VI",
     "creditos": 6,
     "prerreqs": [],

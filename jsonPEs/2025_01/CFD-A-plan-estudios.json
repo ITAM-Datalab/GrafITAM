@@ -408,7 +408,8 @@
     "creditos": 4,
     "prerreqs": [
       "CON-14111",
-      "CON-10111"
+      "CON-10111",
+      "CON-14109"
     ],
     "coreqs": [],
     "estado": 0
@@ -418,7 +419,6 @@
     "nombre": "Contratos",
     "creditos": 6,
     "prerreqs": [
-      "CON-14109",
       "DER-13403"
     ],
     "coreqs": [],

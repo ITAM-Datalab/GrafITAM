@@ -565,6 +565,8 @@
     "nombre": "Emprendimiento",
     "creditos": 6,
     "prerreqs": [
+      "ADM-12312",
+      "COM-23120",
       "ADM-15532",
       "COM-23120"
     ],
@@ -628,7 +630,8 @@
     "creditos": 6,
     "prerreqs": [
       "ADM-12313",
-      "ADM-13450"
+      "ADM-13450",
+      "ADM-15563"
     ],
     "coreqs": [],
     "estado": 0
@@ -638,7 +641,6 @@
     "nombre": "Banca de Inversión",
     "creditos": 6,
     "prerreqs": [
-      "ADM-15563",
       "ADM-15564",
       "ADM-15563"
     ],
@@ -651,7 +653,8 @@
     "creditos": 6,
     "prerreqs": [
       "COM-16307",
-      "ADM-15563"
+      "ADM-15563",
+      "COM-23120"
     ],
     "coreqs": [],
     "estado": 0
@@ -661,7 +664,6 @@
     "nombre": "Mercadotecnia Analítica",
     "creditos": 6,
     "prerreqs": [
-      "COM-23120",
       "ADM-16739"
     ],
     "coreqs": [],
@@ -679,7 +681,7 @@
     "estado": 0
   },
   "OPTATIVA-1": {
-    "semestre": 11,
+    "semestre": 10,
     "nombre": "Optativa I",
     "creditos": 6,
     "prerreqs": [],

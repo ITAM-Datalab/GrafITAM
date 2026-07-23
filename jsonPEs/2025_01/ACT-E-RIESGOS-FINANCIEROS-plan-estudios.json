@@ -97,7 +97,8 @@
     "creditos": 6,
     "prerreqs": [
       "EGN-17122",
-      "EGN-17141"
+      "EGN-17141",
+      "LEN-10131"
     ],
     "coreqs": [],
     "estado": 0
@@ -156,7 +157,6 @@
     "nombre": "Principios del Seguro",
     "creditos": 6,
     "prerreqs": [
-      "LEN-10131",
       "ECO-11101"
     ],
     "coreqs": [],
@@ -264,7 +264,8 @@
     "creditos": 6,
     "prerreqs": [
       "MAT-22600",
-      "ACT-15357"
+      "ACT-15357",
+      "EST-14101"
     ],
     "coreqs": [],
     "estado": 0
@@ -274,7 +275,6 @@
     "nombre": "Algorítmica y Programación",
     "creditos": 6,
     "prerreqs": [
-      "EST-14101",
       "MAT-14300",
       "COM-16301"
     ],
@@ -463,7 +463,7 @@
     "estado": 0
   },
   "OPTATIVA-1": {
-    "semestre": 9,
+    "semestre": 8,
     "nombre": "Optativa I",
     "creditos": 6,
     "prerreqs": [],
@@ -471,7 +471,7 @@
     "estado": 0
   },
   "OPTATIVA-2": {
-    "semestre": 9,
+    "semestre": 8,
     "nombre": "Optativa II",
     "creditos": 6,
     "prerreqs": [],
@@ -479,7 +479,7 @@
     "estado": 0
   },
   "OPTATIVA-3": {
-    "semestre": 9,
+    "semestre": 8,
     "nombre": "Optativa III",
     "creditos": 6,
     "prerreqs": [],

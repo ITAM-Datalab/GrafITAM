@@ -534,7 +534,9 @@
     "prerreqs": [
       "ADM-14401",
       "ADM-15501",
-      "ADM-16601"
+      "ADM-16601",
+      "ADM-11013",
+      "ADM-11002"
     ],
     "coreqs": [],
     "estado": 0
@@ -543,10 +545,7 @@
     "semestre": 9,
     "nombre": "Europa Contemporánea",
     "creditos": 6,
-    "prerreqs": [
-      "ADM-11013",
-      "ADM-11002"
-    ],
+    "prerreqs": [],
     "coreqs": [],
     "estado": 0
   },
@@ -600,7 +599,8 @@
     "prerreqs": [
       "EST-13101",
       "ADM-15502",
-      "ADM-16602"
+      "ADM-16602",
+      "ADM-13101"
     ],
     "coreqs": [],
     "estado": 0
@@ -609,9 +609,7 @@
     "semestre": 10,
     "nombre": "Japón, China y Sudeste Asiático",
     "creditos": 6,
-    "prerreqs": [
-      "ADM-13101"
-    ],
+    "prerreqs": [],
     "coreqs": [],
     "estado": 0
   },

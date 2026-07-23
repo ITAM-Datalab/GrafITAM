@@ -512,7 +512,9 @@
     "prerreqs": [
       "ADM-14401",
       "ADM-16601",
-      "ADM-15501"
+      "ADM-15501",
+      "ADM-11013",
+      "ADM-11002"
     ],
     "coreqs": [],
     "estado": 0
@@ -522,8 +524,6 @@
     "nombre": "Logística y Distribución",
     "creditos": 6,
     "prerreqs": [
-      "ADM-11013",
-      "ADM-11002",
       "IIO-14161",
       "IIO-13150"
     ],

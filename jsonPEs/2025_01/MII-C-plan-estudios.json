@@ -526,7 +526,8 @@
     "creditos": 7,
     "prerreqs": [
       "ECO-11101",
-      "CON-10100"
+      "CON-10100",
+      "EST-11102"
     ],
     "coreqs": [],
     "estado": 0
@@ -536,7 +537,6 @@
     "nombre": "Economía II",
     "creditos": 6,
     "prerreqs": [
-      "EST-11102",
       "ECO-11101"
     ],
     "coreqs": [],

@@ -425,7 +425,8 @@
     "creditos": 6,
     "prerreqs": [
       "COM-16305",
-      "EST-24126"
+      "EST-24126",
+      "MAT-14281"
     ],
     "coreqs": [],
     "estado": 0
@@ -435,7 +436,6 @@
     "nombre": "Minería y Análisis de Datos",
     "creditos": 6,
     "prerreqs": [
-      "MAT-14281",
       "COM-11308",
       "COM-11114"
     ],

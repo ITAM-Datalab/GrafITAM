@@ -573,7 +573,7 @@
     "estado": 0
   },
   "OPTATIVA-1": {
-    "semestre": 10,
+    "semestre": 5,
     "nombre": "Optativa I",
     "creditos": 4,
     "prerreqs": [],
@@ -581,7 +581,7 @@
     "estado": 0
   },
   "OPTATIVA-2": {
-    "semestre": 10,
+    "semestre": 7,
     "nombre": "Optativa II",
     "creditos": 4,
     "prerreqs": [],
@@ -589,7 +589,7 @@
     "estado": 0
   },
   "OPTATIVA-3": {
-    "semestre": 10,
+    "semestre": 8,
     "nombre": "Optativa III",
     "creditos": 4,
     "prerreqs": [],
@@ -597,7 +597,7 @@
     "estado": 0
   },
   "OPTATIVA-4": {
-    "semestre": 10,
+    "semestre": 9,
     "nombre": "Optativa IV",
     "creditos": 4,
     "prerreqs": [],
@@ -605,7 +605,7 @@
     "estado": 0
   },
   "OPTATIVA-5": {
-    "semestre": 10,
+    "semestre": 9,
     "nombre": "Optativa V",
     "creditos": 4,
     "prerreqs": [],

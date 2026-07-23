@@ -515,7 +515,8 @@
     "creditos": 6,
     "prerreqs": [
       "CON-10001",
-      "ECO-11011"
+      "ECO-11011",
+      "EST-11101"
     ],
     "coreqs": [],
     "estado": 0
@@ -525,7 +526,6 @@
     "nombre": "Principios de Mercadotecnia",
     "creditos": 6,
     "prerreqs": [
-      "EST-11101",
       "EST-11101"
     ],
     "coreqs": [],
@@ -609,6 +609,7 @@
     "nombre": "Emprendimiento",
     "creditos": 6,
     "prerreqs": [
+      "COM-23120",
       "ADM-15561",
       "COM-23120"
     ],

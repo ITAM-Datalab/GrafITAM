@@ -390,7 +390,8 @@
     "creditos": 6,
     "prerreqs": [
       "EGN-17142",
-      "EGN-17161"
+      "EGN-17161",
+      "CSO-12042"
     ],
     "coreqs": [],
     "estado": 0
@@ -464,7 +465,6 @@
     "nombre": "Economía Internacional II",
     "creditos": 6,
     "prerreqs": [
-      "ECO-22105",
       "ECO-13101",
       "ECO-12201"
     ],
@@ -487,7 +487,6 @@
     "nombre": "Evaluación de Proyectos",
     "creditos": 6,
     "prerreqs": [
-      "CSO-12042",
       "ECO-22105"
     ],
     "coreqs": [],
@@ -562,7 +561,8 @@
     "creditos": 8,
     "prerreqs": [
       "MAT-12102",
-      "MAT-12310"
+      "MAT-12310",
+      "COM-11302"
     ],
     "coreqs": [],
     "estado": 0
@@ -572,9 +572,9 @@
     "nombre": "Teoría del Productor y el Consumidor",
     "creditos": 6,
     "prerreqs": [
-      "COM-11302",
       "ECO-21104",
-      "MAT-24110"
+      "MAT-24110",
+      "ECO-22105"
     ],
     "coreqs": [],
     "estado": 0
@@ -584,7 +584,6 @@
     "nombre": "Fundamentos de Econometría",
     "creditos": 6,
     "prerreqs": [
-      "ECO-22105",
       "EST-11102",
       "MAT-12310"
     ],
@@ -597,7 +596,8 @@
     "creditos": 6,
     "prerreqs": [
       "EST-21104",
-      "ECO-21104"
+      "ECO-21104",
+      "ECO-22105"
     ],
     "coreqs": [],
     "estado": 0
@@ -607,7 +607,6 @@
     "nombre": "Teoría de Juegos",
     "creditos": 6,
     "prerreqs": [
-      "ECO-22105",
       "ECO-21111"
     ],
     "coreqs": [],
@@ -713,7 +712,8 @@
     "creditos": 7,
     "prerreqs": [
       "EST-11104",
-      "ECO-21104"
+      "ECO-21104",
+      "ECO-22105"
     ],
     "coreqs": [],
     "estado": 0
@@ -760,7 +760,7 @@
     "estado": 0
   },
   "OPTATIVA-1": {
-    "semestre": 11,
+    "semestre": 10,
     "nombre": "Optativa I",
     "creditos": 6,
     "prerreqs": [],
@@ -768,7 +768,7 @@
     "estado": 0
   },
   "OPTATIVA-2": {
-    "semestre": 11,
+    "semestre": 10,
     "nombre": "Optativa II",
     "creditos": 6,
     "prerreqs": [],
@@ -776,7 +776,7 @@
     "estado": 0
   },
   "OPTATIVA-3": {
-    "semestre": 11,
+    "semestre": 10,
     "nombre": "Optativa III",
     "creditos": 6,
     "prerreqs": [],

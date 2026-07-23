@@ -315,7 +315,8 @@
     "creditos": 6,
     "prerreqs": [
       "MAT-24630",
-      "ECO-21104"
+      "ECO-21104",
+      "ECO-22105"
     ],
     "coreqs": [],
     "estado": 0
@@ -325,7 +326,6 @@
     "nombre": "Seminario de la Econ. de México",
     "creditos": 6,
     "prerreqs": [
-      "ECO-22105",
       "ECO-21104",
       "ECO-22105"
     ],
@@ -505,6 +505,7 @@
     "nombre": "Comunicación Escrita para Administración",
     "creditos": 2,
     "prerreqs": [
+      "ADM-11002",
       "LEN-12701"
     ],
     "coreqs": [
@@ -589,7 +590,8 @@
     "creditos": 6,
     "prerreqs": [
       "ECO-11121",
-      "ECO-13102"
+      "ECO-13102",
+      "ECO-18300"
     ],
     "coreqs": [],
     "estado": 0
@@ -599,7 +601,6 @@
     "nombre": "Desarrollo Económico",
     "creditos": 6,
     "prerreqs": [
-      "ECO-18300",
       "ECO-21104",
       "ECO-15101"
     ],
@@ -734,7 +735,7 @@
     "estado": 0
   },
   "OPTATIVA-1": {
-    "semestre": 11,
+    "semestre": 10,
     "nombre": "Optativa I",
     "creditos": 6,
     "prerreqs": [],

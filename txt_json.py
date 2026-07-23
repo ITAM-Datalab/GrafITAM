@@ -271,7 +271,7 @@ def _new_section() -> dict:
     return {
         'courses': {},
         'coreq_groups': defaultdict(list),
-        # créditos de cada slot de optativa encontrado (sin clave real), en orden
+        # (semestre, creditos) de cada slot de optativa encontrado (sin clave real), en orden
         'optativa_credits': [],
         # numero (tal cual lo trae el PDF) -> (semestre, creditos) de cada slot de
         # área de concentración; si el mismo número se repite (bloque duplicado),
@@ -307,12 +307,24 @@ def parse_pdf(pdf_path: Path, pdfplumber) -> dict[str | None, tuple[dict, int]]:
         credits_x = col['credits_x']
 
         current_semester = 0
-        pending_prereq_words: list[dict] = []
+        # Filas de continuación de prerrequisitos acumuladas desde el último
+        # reinicio, cada una como (top, words) — cuando se encuentra la
+        # siguiente materia, el hueco vertical más grande entre [última materia
+        # guardada, cada fila acumulada, esta materia nueva] decide dónde
+        # "corta": todo antes del hueco se atribuye hacia atrás (desborde de la
+        # materia YA guardada, ver last_saved_top); todo después se usa, sin
+        # cambios, como prerreqs propios de la materia nueva (patrón "antes").
+        pending_prereq_groups: list[tuple[float, list[dict]]] = []
         # stub: materia en construcción (nombre y/o créditos pueden llegar en filas separadas)
         # Se libera al iniciar la siguiente materia o al cambiar de semestre.
         pending_stub: dict | None = None
         # nombre acumulado de filas de solo-nombre ANTES del código (patrón CDA-B)
         pending_name: str = ''
+        # course_id y top de la última materia guardada directo (todo en una fila),
+        # para poder comparar distancias si aparece una fila ambigua de prerreqs
+        # después. Se limpia en cualquier punto que cambie de contexto.
+        last_saved_course_id: str | None = None
+        last_saved_top: float | None = None
         in_optativas = False
         done = False
 
@@ -328,6 +340,7 @@ def parse_pdf(pdf_path: Path, pdfplumber) -> dict[str | None, tuple[dict, int]]:
                     break
 
                 text = row_text(row)
+                row_top = row[0]['top'] if row else None
 
                 # Fin real del plan (notas al plan, servicio social) — pero no si es
                 # solo la referencia corta en línea de fin de área de concentración
@@ -347,7 +360,9 @@ def parse_pdf(pdf_path: Path, pdfplumber) -> dict[str | None, tuple[dict, int]]:
                     _flush_stub(pending_stub, courses, coreq_groups)
                     pending_stub = None
                     pending_name = ''
-                    pending_prereq_words = []
+                    pending_prereq_groups = []
+                    last_saved_course_id = None
+                    last_saved_top = None
 
                     label = m_area_header.group(1).strip()
                     tronco = sections[0][1]
@@ -373,6 +388,8 @@ def parse_pdf(pdf_path: Path, pdfplumber) -> dict[str | None, tuple[dict, int]]:
                     _flush_stub(pending_stub, courses, coreq_groups)
                     pending_stub = None
                     pending_name = ''
+                    last_saved_course_id = None
+                    last_saved_top = None
                     in_optativas = True
                     continue
 
@@ -388,8 +405,10 @@ def parse_pdf(pdf_path: Path, pdfplumber) -> dict[str | None, tuple[dict, int]]:
                 if m_sem:
                     _flush_stub(pending_stub, courses, coreq_groups)
                     pending_stub = None
-                    pending_prereq_words = []
+                    pending_prereq_groups = []
                     pending_name = ''
+                    last_saved_course_id = None
+                    last_saved_top = None
                     key = m_sem.group(1).upper()
                     current_semester = SEMESTER_MAP.get(key, SEMESTER_MAP.get(key.replace('É', 'E'), 0))
                     continue
@@ -434,6 +453,17 @@ def parse_pdf(pdf_path: Path, pdfplumber) -> dict[str | None, tuple[dict, int]]:
                 if not course_id:
                     if pending_stub:
                         # Acumular información adicional en el stub existente
+                        if prereq_words:
+                            # Los prerreqs PROPIOS del stub ya se resolvieron al
+                            # crearlo (fila con su course_id); cualquier fila de puros
+                            # prerreqs que aparezca mientras sigue abierto pertenece,
+                            # por el patrón "antes" de este parser, a la SIGUIENTE
+                            # materia que se anuncie — no al stub. Antes se perdía en
+                            # silencio; ahora se acumula igual que si no hubiera stub
+                            # abierto — bug ACT-13307 (#5): "EST-24124, EST-14107 y"
+                            # pertenece a ACT-13307, no al stub DER-10114 que está
+                            # abierto en ese momento solo por su propio nombre partido.
+                            pending_prereq_groups.append((row_top, list(prereq_words)))
                         if name_words:
                             name_text2 = merge_letter_runs(name_words).strip()
                             # Slot genérico de optativa — liberar el stub anterior y capturar
@@ -445,7 +475,9 @@ def parse_pdf(pdf_path: Path, pdfplumber) -> dict[str | None, tuple[dict, int]]:
                                 pending_name = ''
                                 cred_text_opt = ' '.join(w['text'] for w in cred_words)
                                 m_cred_opt = re.search(r'\d+', cred_text_opt)
-                                optativa_credits.append(int(m_cred_opt.group()) if m_cred_opt else 6)
+                                optativa_credits.append(
+                                    (current_semester, int(m_cred_opt.group()) if m_cred_opt else 6)
+                                )
                             elif m_area2:
                                 _flush_stub(pending_stub, courses, coreq_groups)
                                 pending_stub = None
@@ -491,7 +523,9 @@ def parse_pdf(pdf_path: Path, pdfplumber) -> dict[str | None, tuple[dict, int]]:
                             # Slot genérico de optativa (no el nombre de la siguiente materia)
                             cred_text_opt = ' '.join(w['text'] for w in cred_words)
                             m_cred_opt = re.search(r'\d+', cred_text_opt)
-                            optativa_credits.append(int(m_cred_opt.group()) if m_cred_opt else 6)
+                            optativa_credits.append(
+                                (current_semester, int(m_cred_opt.group()) if m_cred_opt else 6)
+                            )
                         elif m_area:
                             # Slot de "Materia N de Área de Concentración" — se queda en
                             # el semestre actual, no es el nombre de la siguiente materia
@@ -502,12 +536,25 @@ def parse_pdf(pdf_path: Path, pdfplumber) -> dict[str | None, tuple[dict, int]]:
                                 int(m_cred_area.group()) if m_cred_area else 6,
                             )
                         elif raw:
+                            # El nombre de la SIGUIENTE materia ya empezó a aparecer —
+                            # cualquier desborde de aquí en adelante es "hacia adelante",
+                            # no atribuible hacia atrás.
+                            last_saved_course_id = None
+                            last_saved_top = None
                             pending_name = (pending_name + ' ' + raw).strip()
                     else:
-                        # Fila de continuación de prerrequisitos
+                        # Fila de continuación de prerrequisitos. No se puede saber
+                        # todavía si pertenece "hacia atrás" (desborde de la materia
+                        # que se acaba de guardar, ver last_saved_course_id) o "hacia
+                        # adelante" (patrón normal, prerreqs de la materia que está
+                        # por venir) — se decide por cercanía vertical cuando se
+                        # encuentre la siguiente materia (ver más abajo, "Nueva
+                        # materia encontrada"). Por default se acumula igual que
+                        # siempre; ahí se corrige la atribución si corresponde.
                         pending_name = ''
-                        pending_prereq_words.extend(prereq_words)
-                        pending_prereq_words.extend(clave_words)
+                        row_words = prereq_words + clave_words
+                        if row_words:
+                            pending_prereq_groups.append((row_top, row_words))
                     continue
 
                 # --- Nueva materia encontrada (course_id presente) ---
@@ -516,11 +563,44 @@ def parse_pdf(pdf_path: Path, pdfplumber) -> dict[str | None, tuple[dict, int]]:
                 _flush_stub(pending_stub, courses, coreq_groups)
                 pending_stub = None
 
+                # Decidir la atribución de pending_prereq_groups por el hueco vertical
+                # más grande en la secuencia [última materia guardada, cada fila
+                # acumulada, esta materia nueva]: todo lo que quede ANTES de ese hueco
+                # se atribuye hacia atrás (desborde de la materia ya guardada — bug
+                # DAC-A: COM-22108 perdía su propio prerreq y lo encadenaba de más en
+                # COM-23114/COM-23115/ACT-25354, issues #4/#5); todo lo que quede
+                # DESPUÉS se deja tal cual, como prerreqs propios de esta materia nueva
+                # (patrón "antes" normal). Esto también resuelve el caso en que DOS
+                # materias consecutivas desbordan a la vez hacia el mismo hueco (cada
+                # una cae de su lado del hueco más grande, que separa ambos bloques).
+                if last_saved_course_id is not None and pending_prereq_groups and row_top is not None:
+                    boundary_tops = (
+                        [last_saved_top] + [top for top, _ in pending_prereq_groups] + [row_top]
+                    )
+                    gaps = [b - a for a, b in zip(boundary_tops, boundary_tops[1:])]
+                    split_index = gaps.index(max(gaps))
+                    if split_index > 0:
+                        backward_words = [
+                            w for _, ws in pending_prereq_groups[:split_index] for w in ws
+                        ]
+                        extra_codes = extract_codes_from_text(
+                            ' '.join(w['text'] for w in backward_words)
+                        )
+                        if extra_codes:
+                            saved = courses[last_saved_course_id]
+                            saved['prerreqs'] = list(
+                                dict.fromkeys(saved['prerreqs'] + extra_codes)
+                            )
+                        pending_prereq_groups = pending_prereq_groups[split_index:]
+                last_saved_course_id = None
+                last_saved_top = None
+
                 # Prereqs: fila actual + acumulados de continuación
+                pending_prereq_words = [w for _, ws in pending_prereq_groups for w in ws]
                 all_prereq_words = pending_prereq_words + prereq_words
                 prereq_text = ' '.join(w['text'] for w in all_prereq_words)
                 prereqs = extract_codes_from_text(prereq_text)
-                pending_prereq_words = []
+                pending_prereq_groups = []
 
                 # Nombre y marcador de correquisito
                 name_text = merge_letter_runs(name_words).strip()
@@ -553,6 +633,8 @@ def parse_pdf(pdf_path: Path, pdfplumber) -> dict[str | None, tuple[dict, int]]:
                     }
                     if marker:
                         coreq_groups[(current_semester, marker)].append(course_id)
+                    last_saved_course_id = course_id
+                    last_saved_top = row_top
                 else:
                     # Nombre y/o créditos vienen de filas separadas — crear stub
                     # para acumular posibles continuaciones en la(s) fila(s) siguiente(s)
@@ -601,18 +683,18 @@ def parse_pdf(pdf_path: Path, pdfplumber) -> dict[str | None, tuple[dict, int]]:
 
         real_course_count = len(sec_courses)
 
-        # Optativas sintéticas: una columna final, desconectada, después del último semestre real
-        if sec_optativa_credits:
-            max_semestre = max((c['semestre'] for c in sec_courses.values()), default=0)
-            for i, creditos in enumerate(sec_optativa_credits, start=1):
-                sec_courses[f"OPTATIVA-{i}"] = {
-                    "semestre": max_semestre + 1,
-                    "nombre": f"Optativa {to_roman(i)}",
-                    "creditos": creditos,
-                    "prerreqs": [],
-                    "coreqs": [],
-                    "estado": 0,
-                }
+        # Optativas sintéticas: cada una en su semestre real (el que trae el PDF),
+        # desconectadas de prerreqs — mismo patrón que "Materia N de Área de
+        # Concentración" abajo. Numeración global secuencial por orden de aparición.
+        for i, (semestre, creditos) in enumerate(sec_optativa_credits, start=1):
+            sec_courses[f"OPTATIVA-{i}"] = {
+                "semestre": semestre,
+                "nombre": f"Optativa {to_roman(i)}",
+                "creditos": creditos,
+                "prerreqs": [],
+                "coreqs": [],
+                "estado": 0,
+            }
 
         # Slots de área de concentración: cada uno en su propio semestre real, desconectado
         for numero, (semestre, creditos) in sec_area_concentracion.items():

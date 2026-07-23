@@ -101,7 +101,8 @@
     "creditos": 6,
     "prerreqs": [
       "EGN-17122",
-      "EGN-17141"
+      "EGN-17141",
+      "LEN-12701"
     ],
     "coreqs": [
       "LEN-12702"
@@ -113,7 +114,6 @@
     "nombre": "Seminario de Comunicación Escrita",
     "creditos": 2,
     "prerreqs": [
-      "LEN-12701",
       "LEN-12701"
     ],
     "coreqs": [
@@ -168,7 +168,8 @@
     "creditos": 6,
     "prerreqs": [
       "ECO-11101",
-      "ADM-12107"
+      "ADM-12107",
+      "CON-10001"
     ],
     "coreqs": [],
     "estado": 0
@@ -177,9 +178,7 @@
     "semestre": 3,
     "nombre": "Herramientas Comput. y Algoritmos",
     "creditos": 7,
-    "prerreqs": [
-      "CON-10001"
-    ],
+    "prerreqs": [],
     "coreqs": [],
     "estado": 0
   },
@@ -503,7 +502,6 @@
     "nombre": "Derivados",
     "creditos": 6,
     "prerreqs": [
-      "ADM-15522",
       "ADM-15514",
       "EST-21104"
     ],
@@ -558,7 +556,8 @@
     "creditos": 6,
     "prerreqs": [
       "ADM-15533",
-      "ADM-15535"
+      "ADM-15535",
+      "ADM-15571"
     ],
     "coreqs": [
       "LEN-12757"
@@ -570,7 +569,6 @@
     "nombre": "Comunicac. Profesional para Dir. Financ.",
     "creditos": 2,
     "prerreqs": [
-      "ADM-15571",
       "LEN-12702",
       "LEN-12717"
     ],
@@ -663,7 +661,8 @@
     "creditos": 6,
     "prerreqs": [
       "MAT-24110",
-      "ECO-21104"
+      "ECO-21104",
+      "ECO-22105"
     ],
     "coreqs": [],
     "estado": 0
@@ -673,7 +672,6 @@
     "nombre": "Optimización",
     "creditos": 6,
     "prerreqs": [
-      "ECO-22105",
       "MAT-24110",
       "MAT-12210"
     ],
@@ -748,7 +746,8 @@
     "creditos": 6,
     "prerreqs": [
       "ADM-15514",
-      "MAT-24630"
+      "MAT-24630",
+      "ADM-15522"
     ],
     "coreqs": [],
     "estado": 0

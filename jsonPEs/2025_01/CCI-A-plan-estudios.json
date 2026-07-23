@@ -278,6 +278,7 @@
     "nombre": "Sistemas",
     "creditos": 8,
     "prerreqs": [
+      "MAT-14201",
       "COM-11111"
     ],
     "coreqs": [],

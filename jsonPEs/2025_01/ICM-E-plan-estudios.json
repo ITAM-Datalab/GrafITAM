@@ -345,7 +345,9 @@
     "creditos": 8,
     "prerreqs": [
       "MAT-14102",
-      "MAT-14310"
+      "MAT-14310",
+      "MAT-14390",
+      "COM-16203"
     ],
     "coreqs": [],
     "estado": 0
@@ -355,8 +357,6 @@
     "nombre": "Inteligencia Artificial",
     "creditos": 8,
     "prerreqs": [
-      "MAT-14390",
-      "COM-16203",
       "COM-16203"
     ],
     "coreqs": [],
@@ -572,7 +572,7 @@
     "estado": 0
   },
   "OPTATIVA-1": {
-    "semestre": 11,
+    "semestre": 10,
     "nombre": "Optativa I",
     "creditos": 6,
     "prerreqs": [],
@@ -580,7 +580,7 @@
     "estado": 0
   },
   "OPTATIVA-2": {
-    "semestre": 11,
+    "semestre": 10,
     "nombre": "Optativa II",
     "creditos": 6,
     "prerreqs": [],

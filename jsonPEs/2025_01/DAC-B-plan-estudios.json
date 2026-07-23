@@ -272,7 +272,8 @@
     "creditos": 6,
     "prerreqs": [
       "MAT-14281",
-      "COM-16305"
+      "COM-16305",
+      "EST-24126"
     ],
     "coreqs": [],
     "estado": 0
@@ -282,7 +283,6 @@
     "nombre": "Contabilidad Administrativa I",
     "creditos": 9,
     "prerreqs": [
-      "EST-24126",
       "CON-10001"
     ],
     "coreqs": [],

@@ -406,7 +406,8 @@
     "creditos": 6,
     "prerreqs": [
       "ECO-11011",
-      "CON-10001"
+      "CON-10001",
+      "EST-11101"
     ],
     "coreqs": [],
     "estado": 0
@@ -416,7 +417,6 @@
     "nombre": "Historia Socio-Política de México",
     "creditos": 6,
     "prerreqs": [
-      "EST-11101",
       "EGN-17123"
     ],
     "coreqs": [],
@@ -544,7 +544,7 @@
     "estado": 0
   },
   "OPTATIVA-1": {
-    "semestre": 9,
+    "semestre": 8,
     "nombre": "Optativa I",
     "creditos": 6,
     "prerreqs": [],
@@ -552,7 +552,7 @@
     "estado": 0
   },
   "OPTATIVA-2": {
-    "semestre": 9,
+    "semestre": 8,
     "nombre": "Optativa II",
     "creditos": 6,
     "prerreqs": [],
@@ -560,7 +560,7 @@
     "estado": 0
   },
   "OPTATIVA-3": {
-    "semestre": 9,
+    "semestre": 8,
     "nombre": "Optativa III",
     "creditos": 6,
     "prerreqs": [],

@@ -99,7 +99,8 @@
     "creditos": 6,
     "prerreqs": [
       "ECO-11101",
-      "ADM-12107"
+      "ADM-12107",
+      "CON-10001"
     ],
     "coreqs": [],
     "estado": 0
@@ -109,7 +110,6 @@
     "nombre": "Cálculo II",
     "creditos": 9,
     "prerreqs": [
-      "CON-10001",
       "MAT-12100"
     ],
     "coreqs": [],
@@ -325,7 +325,8 @@
     "creditos": 6,
     "prerreqs": [
       "ADM-15531",
-      "EST-11102"
+      "EST-11102",
+      "ECO-21104"
     ],
     "coreqs": [],
     "estado": 0
@@ -335,7 +336,6 @@
     "nombre": "Régimen Fiscal Mexicano para Contaduría Pública",
     "creditos": 6,
     "prerreqs": [
-      "ECO-21104",
       "DER-10015"
     ],
     "coreqs": [],
@@ -389,7 +389,8 @@
     "creditos": 6,
     "prerreqs": [
       "ADM-15514",
-      "MAT-24630"
+      "MAT-24630",
+      "ADM-15522"
     ],
     "coreqs": [],
     "estado": 0
@@ -399,7 +400,6 @@
     "nombre": "Análisis Financiero de la Empresa",
     "creditos": 6,
     "prerreqs": [
-      "ADM-15522",
       "CON-10004"
     ],
     "coreqs": [],
@@ -431,7 +431,8 @@
     "creditos": 6,
     "prerreqs": [
       "ADM-15533",
-      "ADM-15571"
+      "ADM-15571",
+      "ADM-15535"
     ],
     "coreqs": [],
     "estado": 0
@@ -442,14 +443,13 @@
     "creditos": 6,
     "prerreqs": [
       "ADM-15535",
-      "ADM-15535",
       "EST-11103"
     ],
     "coreqs": [],
     "estado": 0
   },
   "OPTATIVA-1": {
-    "semestre": 9,
+    "semestre": 8,
     "nombre": "Optativa I",
     "creditos": 6,
     "prerreqs": [],
@@ -457,7 +457,7 @@
     "estado": 0
   },
   "OPTATIVA-2": {
-    "semestre": 9,
+    "semestre": 8,
     "nombre": "Optativa II",
     "creditos": 6,
     "prerreqs": [],
@@ -465,7 +465,7 @@
     "estado": 0
   },
   "OPTATIVA-3": {
-    "semestre": 9,
+    "semestre": 8,
     "nombre": "Optativa III",
     "creditos": 6,
     "prerreqs": [],

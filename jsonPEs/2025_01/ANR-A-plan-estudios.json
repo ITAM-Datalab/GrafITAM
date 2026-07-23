@@ -267,6 +267,7 @@
     "nombre": "Estadística I",
     "creditos": 8,
     "prerreqs": [
+      "EIN-14102",
       "MAT-12250"
     ],
     "coreqs": [],
@@ -286,7 +287,10 @@
     "semestre": 5,
     "nombre": "Trayectorias de Negocios II: Equipo y Liderazgo",
     "creditos": 2,
-    "prerreqs": [],
+    "prerreqs": [
+      "ADM-11120",
+      "ADM-13126"
+    ],
     "coreqs": [],
     "estado": 0
   },
@@ -295,8 +299,6 @@
     "nombre": "Finanzas en los Negocios I",
     "creditos": 6,
     "prerreqs": [
-      "ADM-11120",
-      "ADM-13126",
       "ECO-11010",
       "CON-14109"
     ],
@@ -376,6 +378,7 @@
     "nombre": "Capital Humano",
     "creditos": 6,
     "prerreqs": [
+      "ADM-11002",
       "ADM-14431",
       "CON-14109"
     ],
@@ -423,7 +426,9 @@
     "semestre": 6,
     "nombre": "Europa Contemporánea",
     "creditos": 6,
-    "prerreqs": [],
+    "prerreqs": [
+      "EIN-13104"
+    ],
     "coreqs": [],
     "estado": 0
   },
@@ -470,7 +475,9 @@
     "semestre": 7,
     "nombre": "Política y Gobierno de Estados Unidos",
     "creditos": 6,
-    "prerreqs": [],
+    "prerreqs": [
+      "EGN-17161"
+    ],
     "coreqs": [],
     "estado": 0
   },
@@ -597,6 +604,8 @@
     "nombre": "Emprendimiento",
     "creditos": 6,
     "prerreqs": [
+      "ADM-12312",
+      "ADM-13127",
       "ADM-15562",
       "ADM-13127"
     ],

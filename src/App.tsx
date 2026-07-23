@@ -3,6 +3,7 @@ import PlanSelector from './components/PlanSelector'
 import FlowCanvas from './components/FlowCanvas'
 import ScheduleTab from './components/schedule/ScheduleTab'
 import ReportIssueModal from './components/schedule/ReportIssueModal'
+import ManualTab from './components/manual/ManualTab'
 import { useCurriculumStore } from './store/curriculumStore'
 import bgDesktop from './assets/bg-desktop.png'
 import bgMobile from './assets/bg-mobile.png'
@@ -11,7 +12,7 @@ export default function App() {
   const activePlan = useCurriculumStore((s) => s.activePlan)
   const planData = useCurriculumStore((s) => s.planData)
   const loadPlan = useCurriculumStore((s) => s.loadPlan)
-  const [tab, setTab] = useState<'plan' | 'horario'>('plan')
+  const [tab, setTab] = useState<'plan' | 'horario' | 'manual'>('plan')
 
   useEffect(() => {
     if (activePlan && !planData) {
@@ -21,17 +22,19 @@ export default function App() {
 
   return (
     <div className="flex flex-col h-screen">
-      {/* Background fijo — desktop */}
+      {/* Background fijo — desktop. object-top: en vez de recortar parejo
+          arriba/abajo (default center), sacrifica el margen vacío de abajo
+          para no cortar las orejas del lobo/gato, pegadas al borde superior. */}
       <img
         src={bgDesktop}
         aria-hidden
-        className="fixed inset-0 w-full h-full object-cover -z-10 hidden md:block"
+        className="fixed inset-0 w-full h-full object-cover object-top -z-10 hidden md:block"
       />
       {/* Background fijo — móvil */}
       <img
         src={bgMobile}
         aria-hidden
-        className="fixed inset-0 w-full h-full object-cover -z-10 block md:hidden"
+        className="fixed inset-0 w-full h-full object-cover object-top -z-10 block md:hidden"
       />
 
       <header className="flex-shrink-0">
@@ -42,26 +45,36 @@ export default function App() {
           </p>
         </div>
         <PlanSelector />
-        <div className="flex flex-wrap gap-1 px-4 bg-cream-50 border-b border-cream-300">
+        <div className="flex flex-wrap gap-1 px-4 bg-base-cream border-b border-itam-muted/40">
           <button
             onClick={() => setTab('plan')}
-            className="text-xs px-3 py-1.5 font-semibold border-b-2"
+            className="text-sm px-3 py-2 font-semibold border-b-2 transition-colors"
             style={{
               borderColor: tab === 'plan' ? '#1E5E4B' : 'transparent',
-              color: tab === 'plan' ? '#1E5E4B' : '#8CA699',
+              color: tab === 'plan' ? '#1E5E4B' : 'rgba(13, 59, 46, 0.65)',
             }}
           >
             Plan de Estudios
           </button>
           <button
             onClick={() => setTab('horario')}
-            className="text-xs px-3 py-1.5 font-semibold border-b-2"
+            className="text-sm px-3 py-2 font-semibold border-b-2 transition-colors"
             style={{
               borderColor: tab === 'horario' ? '#1E5E4B' : 'transparent',
-              color: tab === 'horario' ? '#1E5E4B' : '#8CA699',
+              color: tab === 'horario' ? '#1E5E4B' : 'rgba(13, 59, 46, 0.65)',
             }}
           >
             Planear Horario
+          </button>
+          <button
+            onClick={() => setTab('manual')}
+            className="text-sm px-3 py-2 font-semibold border-b-2 transition-colors"
+            style={{
+              borderColor: tab === 'manual' ? '#1E5E4B' : 'transparent',
+              color: tab === 'manual' ? '#1E5E4B' : 'rgba(13, 59, 46, 0.65)',
+            }}
+          >
+            Manual
           </button>
           <div className="ml-auto flex items-center py-1">
             <ReportIssueModal />
@@ -72,6 +85,8 @@ export default function App() {
       <main className="flex-1 overflow-hidden">
         {tab === 'horario' ? (
           <ScheduleTab />
+        ) : tab === 'manual' ? (
+          <ManualTab />
         ) : planData ? (
           <FlowCanvas />
         ) : (

@@ -252,7 +252,8 @@
     "creditos": 6,
     "prerreqs": [
       "COM-16305",
-      "EST-24126"
+      "EST-24126",
+      "EST-24127"
     ],
     "coreqs": [],
     "estado": 0
@@ -262,7 +263,6 @@
     "nombre": "Bases de Datos",
     "creditos": 8,
     "prerreqs": [
-      "EST-24127",
       "COM-16305"
     ],
     "coreqs": [],
@@ -411,7 +411,8 @@
     "creditos": 6,
     "prerreqs": [
       "MAT-12201",
-      "MAT-14201"
+      "MAT-14201",
+      "COM-11114"
     ],
     "coreqs": [],
     "estado": 0
@@ -421,7 +422,6 @@
     "nombre": "Graficación por Computadora",
     "creditos": 6,
     "prerreqs": [
-      "COM-11114",
       "MAT-14201",
       "COM-11114"
     ],
@@ -476,7 +476,8 @@
     "creditos": 6,
     "prerreqs": [
       "COM-16305",
-      "EST-24126"
+      "EST-24126",
+      "MAT-14281"
     ],
     "coreqs": [],
     "estado": 0
@@ -486,7 +487,6 @@
     "nombre": "Cómputo Paralelo",
     "creditos": 6,
     "prerreqs": [
-      "MAT-14281",
       "COM-12103",
       "COM-14117"
     ],
@@ -598,7 +598,9 @@
     "creditos": 6,
     "prerreqs": [
       "COM-11308",
-      "ADM-12303"
+      "ADM-12303",
+      "COM-23701",
+      "CON-10110"
     ],
     "coreqs": [],
     "estado": 0
@@ -608,8 +610,6 @@
     "nombre": "Programación y Tecnologías Web",
     "creditos": 6,
     "prerreqs": [
-      "COM-23701",
-      "CON-10110",
       "COM-12101",
       "COM-14117"
     ],
