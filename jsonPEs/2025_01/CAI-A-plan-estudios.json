@@ -399,7 +399,8 @@
     "creditos": 6,
     "prerreqs": [
       "CON-14109",
-      "CON-10001"
+      "CON-10001",
+      "ECO-11010"
     ],
     "coreqs": [],
     "estado": 0
@@ -409,7 +410,6 @@
     "nombre": "Introducción a la Inteligencia Artificial",
     "creditos": 6,
     "prerreqs": [
-      "ECO-11010",
       "COM-16305",
       "EST-11101"
     ],
@@ -506,7 +506,8 @@
     "creditos": 4,
     "prerreqs": [
       "CON-14111",
-      "CON-14109"
+      "CON-14109",
+      "CON-10111"
     ],
     "coreqs": [],
     "estado": 0
@@ -516,7 +517,6 @@
     "nombre": "Derecho Fiscal I",
     "creditos": 6,
     "prerreqs": [
-      "CON-10111",
       "DER-10022"
     ],
     "coreqs": [],

@@ -101,7 +101,8 @@
     "creditos": 6,
     "prerreqs": [
       "EGN-17122",
-      "EGN-17141"
+      "EGN-17141",
+      "LEN-10131"
     ],
     "coreqs": [],
     "estado": 0
@@ -111,7 +112,6 @@
     "nombre": "Álgebra Matricial",
     "creditos": 8,
     "prerreqs": [
-      "LEN-10131",
       "MAT-12100"
     ],
     "coreqs": [],
@@ -292,6 +292,7 @@
     "creditos": 6,
     "prerreqs": [
       "ECO-21104",
+      "ECO-21104",
       "ECO-22105"
     ],
     "coreqs": [],
@@ -302,7 +303,6 @@
     "nombre": "Teoría de las Finanzas",
     "creditos": 6,
     "prerreqs": [
-      "ECO-22105",
       "ADM-15531",
       "ECO-21104"
     ],
@@ -464,7 +464,6 @@
     "nombre": "Derivados",
     "creditos": 6,
     "prerreqs": [
-      "ADM-15522",
       "ADM-15514",
       "EST-11104"
     ],
@@ -476,7 +475,6 @@
     "nombre": "Régimen Fiscal Mexicano para Contaduría",
     "creditos": 6,
     "prerreqs": [
-      "ADM-15571",
       "DER-10015"
     ],
     "coreqs": [],
@@ -498,7 +496,6 @@
     "nombre": "Impuestos Corporativos I",
     "creditos": 6,
     "prerreqs": [
-      "ECO-18300",
       "DER-10011"
     ],
     "coreqs": [],
@@ -520,7 +517,8 @@
     "creditos": 6,
     "prerreqs": [
       "ADM-15533",
-      "ADM-15535"
+      "ADM-15535",
+      "ADM-15571"
     ],
     "coreqs": [
       "ECO-10204"
@@ -588,7 +586,8 @@
     "creditos": 6,
     "prerreqs": [
       "MAT-24630",
-      "ECO-21104"
+      "ECO-21104",
+      "ECO-22105"
     ],
     "coreqs": [],
     "estado": 0
@@ -599,7 +598,8 @@
     "creditos": 6,
     "prerreqs": [
       "ECO-22105",
-      "MAT-24630"
+      "MAT-24630",
+      "ECO-21104"
     ],
     "coreqs": [],
     "estado": 0
@@ -609,7 +609,6 @@
     "nombre": "Macroeconometría Aplicada",
     "creditos": 7,
     "prerreqs": [
-      "ECO-21104",
       "EST-11104",
       "ECO-21104"
     ],
@@ -642,7 +641,8 @@
     "creditos": 6,
     "prerreqs": [
       "ADM-15514",
-      "MAT-24630"
+      "MAT-24630",
+      "ADM-15522"
     ],
     "coreqs": [],
     "estado": 0
@@ -653,13 +653,14 @@
     "creditos": 6,
     "prerreqs": [
       "ECO-11121",
-      "ECO-13102"
+      "ECO-13102",
+      "ECO-18300"
     ],
     "coreqs": [],
     "estado": 0
   },
   "OPTATIVA-1": {
-    "semestre": 11,
+    "semestre": 10,
     "nombre": "Optativa I",
     "creditos": 6,
     "prerreqs": [],
@@ -667,7 +668,7 @@
     "estado": 0
   },
   "OPTATIVA-2": {
-    "semestre": 11,
+    "semestre": 10,
     "nombre": "Optativa II",
     "creditos": 6,
     "prerreqs": [],
@@ -675,7 +676,7 @@
     "estado": 0
   },
   "OPTATIVA-3": {
-    "semestre": 11,
+    "semestre": 10,
     "nombre": "Optativa III",
     "creditos": 6,
     "prerreqs": [],

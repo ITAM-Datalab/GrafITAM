@@ -422,7 +422,8 @@
     "creditos": 6,
     "prerreqs": [
       "ECO-11011",
-      "EST-24127"
+      "EST-24127",
+      "CON-10001"
     ],
     "coreqs": [],
     "estado": 0
@@ -432,7 +433,6 @@
     "nombre": "Fuentes de Datos",
     "creditos": 6,
     "prerreqs": [
-      "CON-10001",
       "COM-11114",
       "COM-12101"
     ],
@@ -567,7 +567,8 @@
     "creditos": 2,
     "prerreqs": [
       "COM-22108",
-      "COM-16413"
+      "COM-16413",
+      "ADM-12312"
     ],
     "coreqs": [],
     "estado": 0
@@ -577,9 +578,9 @@
     "nombre": "Emprendimiento",
     "creditos": 6,
     "prerreqs": [
-      "ADM-12312",
       "COM-22108",
-      "COM-23701"
+      "COM-23701",
+      "ADM-15561"
     ],
     "coreqs": [],
     "estado": 0
@@ -589,7 +590,6 @@
     "nombre": "Finanzas en los Negocios II",
     "creditos": 6,
     "prerreqs": [
-      "ADM-15561",
       "ADM-15561"
     ],
     "coreqs": [],

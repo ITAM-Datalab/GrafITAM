@@ -551,7 +551,8 @@
     "creditos": 6,
     "prerreqs": [
       "ADM-15514",
-      "MAT-24630"
+      "MAT-24630",
+      "ADM-15522"
     ],
     "coreqs": [],
     "estado": 0
@@ -561,7 +562,6 @@
     "nombre": "Análisis Financiero de la Empresa",
     "creditos": 6,
     "prerreqs": [
-      "ADM-15522",
       "CON-10004"
     ],
     "coreqs": [],
@@ -581,7 +581,11 @@
     "semestre": 10,
     "nombre": "Métodos Empíricos en Finanzas",
     "creditos": 6,
-    "prerreqs": [],
+    "prerreqs": [
+      "EST-11103",
+      "ADM-15535",
+      "ADM-15571"
+    ],
     "coreqs": [],
     "estado": 0
   },
@@ -590,9 +594,9 @@
     "nombre": "Modelos Financieros II",
     "creditos": 6,
     "prerreqs": [
-      "ADM-15571",
       "ADM-15533",
-      "ADM-15535"
+      "ADM-15535",
+      "ADM-15571"
     ],
     "coreqs": [],
     "estado": 0
@@ -602,7 +606,6 @@
     "nombre": "Seminario de Titulación",
     "creditos": 6,
     "prerreqs": [
-      "ADM-15571",
       "ADM-15514",
       "CON-10005"
     ],
@@ -610,7 +613,7 @@
     "estado": 0
   },
   "OPTATIVA-1": {
-    "semestre": 11,
+    "semestre": 10,
     "nombre": "Optativa I",
     "creditos": 6,
     "prerreqs": [],

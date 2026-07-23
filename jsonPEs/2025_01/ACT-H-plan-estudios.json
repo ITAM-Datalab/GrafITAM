@@ -393,6 +393,7 @@
     "nombre": "Aprendizaje Estadístico",
     "creditos": 6,
     "prerreqs": [
+      "EGN-17161",
       "COM-16305",
       "EST-14103"
     ],
@@ -486,7 +487,7 @@
     "estado": 0
   },
   "OPTATIVA-1": {
-    "semestre": 9,
+    "semestre": 8,
     "nombre": "Optativa I",
     "creditos": 6,
     "prerreqs": [],
@@ -494,7 +495,7 @@
     "estado": 0
   },
   "OPTATIVA-2": {
-    "semestre": 9,
+    "semestre": 8,
     "nombre": "Optativa II",
     "creditos": 6,
     "prerreqs": [],
@@ -502,7 +503,7 @@
     "estado": 0
   },
   "OPTATIVA-3": {
-    "semestre": 9,
+    "semestre": 8,
     "nombre": "Optativa III",
     "creditos": 6,
     "prerreqs": [],

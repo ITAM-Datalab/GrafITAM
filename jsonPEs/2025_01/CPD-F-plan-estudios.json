@@ -558,7 +558,8 @@
     "prerreqs": [
       "DER-13403",
       "DER-11109",
-      "DER-15504"
+      "DER-15504",
+      "DER-11113"
     ],
     "coreqs": [],
     "estado": 0
@@ -568,7 +569,6 @@
     "nombre": "Jurídicas Globales II",
     "creditos": 4,
     "prerreqs": [
-      "DER-11113",
       "DER-11111",
       "DER-13403"
     ],
@@ -775,7 +775,8 @@
     "prerreqs": [
       "DER-13406",
       "DER-14505",
-      "DER-15600"
+      "DER-15600",
+      "DER-11115"
     ],
     "coreqs": [],
     "estado": 0
@@ -785,10 +786,10 @@
     "nombre": "Oral Penal",
     "creditos": 2,
     "prerreqs": [
-      "DER-11115",
       "DER-13406",
       "DER-14505",
-      "DER-15600"
+      "DER-15600",
+      "DER-11115"
     ],
     "coreqs": [],
     "estado": 0
@@ -798,7 +799,6 @@
     "nombre": "Laboral II",
     "creditos": 6,
     "prerreqs": [
-      "DER-11115",
       "DER-19501"
     ],
     "coreqs": [],
@@ -954,7 +954,7 @@
     "estado": 0
   },
   "OPTATIVA-1": {
-    "semestre": 11,
+    "semestre": 10,
     "nombre": "Optativa I",
     "creditos": 6,
     "prerreqs": [],
@@ -962,7 +962,7 @@
     "estado": 0
   },
   "OPTATIVA-2": {
-    "semestre": 11,
+    "semestre": 10,
     "nombre": "Optativa II",
     "creditos": 6,
     "prerreqs": [],

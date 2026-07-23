@@ -101,7 +101,8 @@
     "creditos": 6,
     "prerreqs": [
       "EGN-17122",
-      "EGN-17141"
+      "EGN-17141",
+      "LEN-10131"
     ],
     "coreqs": [],
     "estado": 0
@@ -111,7 +112,6 @@
     "nombre": "Álgebra Matricial",
     "creditos": 8,
     "prerreqs": [
-      "LEN-10131",
       "MAT-12100"
     ],
     "coreqs": [],
@@ -154,7 +154,8 @@
     "creditos": 6,
     "prerreqs": [
       "ECO-11101",
-      "ADM-12107"
+      "ADM-12107",
+      "CON-10001"
     ],
     "coreqs": [],
     "estado": 0
@@ -163,9 +164,7 @@
     "semestre": 3,
     "nombre": "Herramientas Comput. y Algoritmos",
     "creditos": 7,
-    "prerreqs": [
-      "CON-10001"
-    ],
+    "prerreqs": [],
     "coreqs": [],
     "estado": 0
   },
@@ -381,7 +380,6 @@
     "nombre": "Historia Económica de México",
     "creditos": 6,
     "prerreqs": [
-      "MAT-12210",
       "ECO-22105",
       "EGN-17162"
     ],
@@ -464,7 +462,6 @@
     "nombre": "Derivados",
     "creditos": 6,
     "prerreqs": [
-      "ADM-15522",
       "ADM-15514",
       "EST-21104"
     ],
@@ -486,7 +483,6 @@
     "nombre": "Desarrollo Económico",
     "creditos": 6,
     "prerreqs": [
-      "ECO-22105",
       "ECO-21104",
       "ECO-15101"
     ],
@@ -630,7 +626,8 @@
     "creditos": 6,
     "prerreqs": [
       "ECO-21111",
-      "ECO-22105"
+      "ECO-22105",
+      "MAT-12210"
     ],
     "coreqs": [],
     "estado": 0
@@ -682,7 +679,8 @@
     "creditos": 6,
     "prerreqs": [
       "ADM-15514",
-      "MAT-24630"
+      "MAT-24630",
+      "ADM-15522"
     ],
     "coreqs": [],
     "estado": 0
@@ -703,7 +701,8 @@
     "creditos": 7,
     "prerreqs": [
       "EST-21104",
-      "ECO-21104"
+      "ECO-21104",
+      "ECO-22105"
     ],
     "coreqs": [],
     "estado": 0

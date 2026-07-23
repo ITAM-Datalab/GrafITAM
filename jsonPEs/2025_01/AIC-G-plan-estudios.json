@@ -611,7 +611,9 @@
     "prerreqs": [
       "ADM-14401",
       "ADM-16601",
-      "ADM-15501"
+      "ADM-15501",
+      "ADM-11013",
+      "ADM-11002"
     ],
     "coreqs": [
       "LEN-12714"
@@ -623,8 +625,6 @@
     "nombre": "Comunicación Escrita para Administración",
     "creditos": 2,
     "prerreqs": [
-      "ADM-11013",
-      "ADM-11002",
       "LEN-12701"
     ],
     "coreqs": [

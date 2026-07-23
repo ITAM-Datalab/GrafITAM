@@ -754,7 +754,9 @@
     "creditos": 6,
     "prerreqs": [
       "DER-13406",
-      "DER-14505"
+      "DER-14505",
+      "DER-15600",
+      "DER-11115"
     ],
     "coreqs": [],
     "estado": 0
@@ -764,8 +766,6 @@
     "nombre": "Oral Penal",
     "creditos": 2,
     "prerreqs": [
-      "DER-15600",
-      "DER-11115",
       "DER-13406",
       "DER-14505"
     ],

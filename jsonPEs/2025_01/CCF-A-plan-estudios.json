@@ -196,7 +196,8 @@
     "creditos": 2,
     "prerreqs": [
       "ADM-15568",
-      "ADM-12107"
+      "ADM-12107",
+      "CON-10112"
     ],
     "coreqs": [],
     "estado": 0
@@ -206,7 +207,6 @@
     "nombre": "Desarrollo de Habilidades Gerenciales",
     "creditos": 6,
     "prerreqs": [
-      "CON-10112",
       "ADM-12107"
     ],
     "coreqs": [],
@@ -291,7 +291,8 @@
     "creditos": 4,
     "prerreqs": [
       "CON-14111",
-      "CON-14109"
+      "CON-14109",
+      "CON-10111"
     ],
     "coreqs": [],
     "estado": 0
@@ -301,7 +302,6 @@
     "nombre": "Derecho Laboral I",
     "creditos": 6,
     "prerreqs": [
-      "CON-10111",
       "DER-10022"
     ],
     "coreqs": [],
@@ -552,6 +552,7 @@
     "nombre": "Banca de Inversión",
     "creditos": 6,
     "prerreqs": [
+      "ADM-15565",
       "ADM-15564",
       "ADM-15563"
     ],
@@ -615,7 +616,8 @@
     "creditos": 6,
     "prerreqs": [
       "CON-14113",
-      "ADM-12350"
+      "ADM-12350",
+      "ADM-15569"
     ],
     "coreqs": [],
     "estado": 0
@@ -625,7 +627,6 @@
     "nombre": "Análisis Financiero de la Empresa",
     "creditos": 6,
     "prerreqs": [
-      "ADM-15569",
       "ADM-15563",
       "CON-10012"
     ],
@@ -664,7 +665,7 @@
     "estado": 0
   },
   "OPTATIVA-1": {
-    "semestre": 11,
+    "semestre": 8,
     "nombre": "Optativa I",
     "creditos": 6,
     "prerreqs": [],
@@ -672,7 +673,7 @@
     "estado": 0
   },
   "OPTATIVA-2": {
-    "semestre": 11,
+    "semestre": 8,
     "nombre": "Optativa II",
     "creditos": 6,
     "prerreqs": [],
@@ -680,7 +681,7 @@
     "estado": 0
   },
   "OPTATIVA-3": {
-    "semestre": 11,
+    "semestre": 10,
     "nombre": "Optativa III",
     "creditos": 6,
     "prerreqs": [],

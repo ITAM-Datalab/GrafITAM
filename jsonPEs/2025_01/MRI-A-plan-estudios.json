@@ -460,7 +460,8 @@
     "creditos": 6,
     "prerreqs": [
       "SDI-17609",
-      "COM-11308"
+      "COM-11308",
+      "IIO-12172"
     ],
     "coreqs": [],
     "estado": 0
@@ -470,7 +471,6 @@
     "nombre": "Manufactura Inteligente",
     "creditos": 8,
     "prerreqs": [
-      "IIO-12172",
       "IIO-12182",
       "IIO-15164"
     ],
@@ -498,7 +498,7 @@
     "estado": 0
   },
   "OPTATIVA-1": {
-    "semestre": 9,
+    "semestre": 7,
     "nombre": "Optativa I",
     "creditos": 6,
     "prerreqs": [],
@@ -506,7 +506,7 @@
     "estado": 0
   },
   "OPTATIVA-2": {
-    "semestre": 9,
+    "semestre": 7,
     "nombre": "Optativa II",
     "creditos": 6,
     "prerreqs": [],
@@ -514,7 +514,7 @@
     "estado": 0
   },
   "OPTATIVA-3": {
-    "semestre": 9,
+    "semestre": 8,
     "nombre": "Optativa III",
     "creditos": 6,
     "prerreqs": [],
@@ -522,7 +522,7 @@
     "estado": 0
   },
   "OPTATIVA-4": {
-    "semestre": 9,
+    "semestre": 8,
     "nombre": "Optativa IV",
     "creditos": 6,
     "prerreqs": [],

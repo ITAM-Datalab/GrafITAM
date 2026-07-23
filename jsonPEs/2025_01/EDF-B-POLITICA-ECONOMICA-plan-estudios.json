@@ -101,7 +101,8 @@
     "creditos": 6,
     "prerreqs": [
       "EGN-17122",
-      "EGN-17141"
+      "EGN-17141",
+      "LEN-10131"
     ],
     "coreqs": [],
     "estado": 0
@@ -111,7 +112,6 @@
     "nombre": "Álgebra Matricial",
     "creditos": 8,
     "prerreqs": [
-      "LEN-10131",
       "MAT-12100"
     ],
     "coreqs": [],
@@ -154,7 +154,8 @@
     "creditos": 6,
     "prerreqs": [
       "ECO-11101",
-      "ADM-12107"
+      "ADM-12107",
+      "CON-10001"
     ],
     "coreqs": [],
     "estado": 0
@@ -163,9 +164,7 @@
     "semestre": 3,
     "nombre": "Herramientas Comput. y Algoritmos",
     "creditos": 7,
-    "prerreqs": [
-      "CON-10001"
-    ],
+    "prerreqs": [],
     "coreqs": [],
     "estado": 0
   },
@@ -302,7 +301,6 @@
     "nombre": "Teoría de las Finanzas",
     "creditos": 6,
     "prerreqs": [
-      "ECO-22105",
       "ADM-15531",
       "ECO-21104"
     ],
@@ -350,7 +348,6 @@
     "nombre": "Administración de Portafolios de Inversión",
     "creditos": 6,
     "prerreqs": [
-      "ECO-22105",
       "ADM-15531",
       "EST-11102"
     ],
@@ -465,7 +462,6 @@
     "nombre": "Derivados",
     "creditos": 6,
     "prerreqs": [
-      "ADM-15522",
       "ADM-15514",
       "EST-11104"
     ],
@@ -498,7 +494,6 @@
     "nombre": "Impuestos Corporativos I",
     "creditos": 6,
     "prerreqs": [
-      "ECO-18300",
       "DER-10011"
     ],
     "coreqs": [],
@@ -520,7 +515,8 @@
     "creditos": 6,
     "prerreqs": [
       "ADM-15533",
-      "ADM-15535"
+      "ADM-15535",
+      "ADM-15571"
     ],
     "coreqs": [
       "ECO-10204"
@@ -556,7 +552,8 @@
     "creditos": 6,
     "prerreqs": [
       "EST-11104",
-      "ADM-15535"
+      "ADM-15535",
+      "ADM-15571"
     ],
     "coreqs": [],
     "estado": 0
@@ -588,7 +585,8 @@
     "creditos": 6,
     "prerreqs": [
       "MAT-24630",
-      "ECO-21104"
+      "ECO-21104",
+      "ECO-22105"
     ],
     "coreqs": [],
     "estado": 0
@@ -599,7 +597,8 @@
     "creditos": 6,
     "prerreqs": [
       "ECO-22105",
-      "MAT-24630"
+      "MAT-24630",
+      "ECO-21104"
     ],
     "coreqs": [],
     "estado": 0
@@ -609,9 +608,9 @@
     "nombre": "Macroeconometría Aplicada",
     "creditos": 7,
     "prerreqs": [
-      "ECO-21104",
       "EST-11104",
-      "ECO-21104"
+      "ECO-21104",
+      "ECO-22105"
     ],
     "coreqs": [],
     "estado": 0
@@ -632,7 +631,8 @@
     "creditos": 6,
     "prerreqs": [
       "ADM-15514",
-      "MAT-24630"
+      "MAT-24630",
+      "ADM-15522"
     ],
     "coreqs": [],
     "estado": 0
@@ -643,7 +643,8 @@
     "creditos": 6,
     "prerreqs": [
       "ECO-11121",
-      "ECO-13102"
+      "ECO-13102",
+      "ECO-18300"
     ],
     "coreqs": [],
     "estado": 0
@@ -653,7 +654,6 @@
     "nombre": "Evaluación de Proyectos",
     "creditos": 6,
     "prerreqs": [
-      "ADM-15571",
       "ECO-21104",
       "ECO-22105"
     ],
@@ -665,9 +665,9 @@
     "nombre": "Microeconometría aplicada",
     "creditos": 7,
     "prerreqs": [
-      "ADM-15571",
       "ECO-21104",
-      "ECO-22105"
+      "ECO-22105",
+      "EST-11104"
     ],
     "coreqs": [],
     "estado": 0
@@ -677,7 +677,6 @@
     "nombre": "Economía Política",
     "creditos": 6,
     "prerreqs": [
-      "EST-11104",
       "ECO-21104",
       "ECO-22105"
     ],

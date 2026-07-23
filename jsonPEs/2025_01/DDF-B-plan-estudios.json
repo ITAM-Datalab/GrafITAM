@@ -391,7 +391,8 @@
     "creditos": 6,
     "prerreqs": [
       "COM-16305",
-      "EST-24126"
+      "EST-24126",
+      "MAT-14281"
     ],
     "coreqs": [],
     "estado": 0
@@ -401,7 +402,6 @@
     "nombre": "Microeconomía Aplicada II",
     "creditos": 6,
     "prerreqs": [
-      "MAT-14281",
       "ECO-11011"
     ],
     "coreqs": [],

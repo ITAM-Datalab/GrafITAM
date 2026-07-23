@@ -448,7 +448,8 @@
     "creditos": 6,
     "prerreqs": [
       "CSO-10160",
-      "CSO-10111"
+      "CSO-10111",
+      "ECO-11012"
     ],
     "coreqs": [],
     "estado": 0
@@ -458,7 +459,6 @@
     "nombre": "Seminario de Investigación Política",
     "creditos": 6,
     "prerreqs": [
-      "ECO-11012",
       "CSO-10111"
     ],
     "coreqs": [],
@@ -491,7 +491,7 @@
     "estado": 0
   },
   "OPTATIVA-1": {
-    "semestre": 9,
+    "semestre": 6,
     "nombre": "Optativa I",
     "creditos": 6,
     "prerreqs": [],
@@ -499,7 +499,7 @@
     "estado": 0
   },
   "OPTATIVA-2": {
-    "semestre": 9,
+    "semestre": 7,
     "nombre": "Optativa II",
     "creditos": 6,
     "prerreqs": [],
@@ -507,7 +507,7 @@
     "estado": 0
   },
   "OPTATIVA-3": {
-    "semestre": 9,
+    "semestre": 8,
     "nombre": "Optativa III",
     "creditos": 6,
     "prerreqs": [],

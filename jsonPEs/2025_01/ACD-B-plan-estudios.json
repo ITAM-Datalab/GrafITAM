@@ -170,7 +170,8 @@
     "creditos": 6,
     "prerreqs": [
       "CON-10001",
-      "ADM-12107"
+      "ADM-12107",
+      "ECO-11101"
     ],
     "coreqs": [],
     "estado": 0
@@ -180,7 +181,6 @@
     "nombre": "Cálculo Diferencial e Integral III",
     "creditos": 8,
     "prerreqs": [
-      "ECO-11101",
       "MAT-14101",
       "MAT-14201"
     ],
@@ -295,7 +295,8 @@
     "creditos": 6,
     "prerreqs": [
       "ACT-15357",
-      "EST-14101"
+      "EST-14101",
+      "ADM-15507"
     ],
     "coreqs": [],
     "estado": 0
@@ -305,7 +306,6 @@
     "nombre": "Sistemas de Seguros",
     "creditos": 6,
     "prerreqs": [
-      "ADM-15507",
       "ACT-15357"
     ],
     "coreqs": [],
@@ -432,7 +432,8 @@
     "creditos": 6,
     "prerreqs": [
       "ADM-15531",
-      "EST-14103"
+      "EST-14103",
+      "ECO-21104"
     ],
     "coreqs": [],
     "estado": 0
@@ -442,7 +443,6 @@
     "nombre": "Renta Fija",
     "creditos": 6,
     "prerreqs": [
-      "ECO-21104",
       "ADM-15532"
     ],
     "coreqs": [],
@@ -475,7 +475,8 @@
     "creditos": 8,
     "prerreqs": [
       "MAT-14310",
-      "MAT-14102"
+      "MAT-14102",
+      "COM-11302"
     ],
     "coreqs": [],
     "estado": 0
@@ -485,7 +486,6 @@
     "nombre": "Impuestos Corporativos I",
     "creditos": 6,
     "prerreqs": [
-      "COM-11302",
       "DER-10011"
     ],
     "coreqs": [],
@@ -507,7 +507,8 @@
     "creditos": 6,
     "prerreqs": [
       "ADM-15514",
-      "MAT-24210"
+      "MAT-24210",
+      "ADM-15522"
     ],
     "coreqs": [],
     "estado": 0
@@ -517,7 +518,6 @@
     "nombre": "Derivados",
     "creditos": 6,
     "prerreqs": [
-      "ADM-15522",
       "ADM-15514",
       "EST-14107"
     ],
@@ -530,7 +530,8 @@
     "creditos": 6,
     "prerreqs": [
       "ACT-15358",
-      "MAT-14400"
+      "MAT-14400",
+      "EST-14103"
     ],
     "coreqs": [],
     "estado": 0
@@ -540,7 +541,6 @@
     "nombre": "Impuestos Corporativos II",
     "creditos": 6,
     "prerreqs": [
-      "EST-14103",
       "CON-15001"
     ],
     "coreqs": [],
@@ -562,7 +562,8 @@
     "creditos": 6,
     "prerreqs": [
       "ADM-15533",
-      "ADM-15535"
+      "ADM-15535",
+      "ADM-15571"
     ],
     "coreqs": [
       "ACT-15353"
@@ -574,9 +575,9 @@
     "nombre": "Métodos Empíricos en Finanzas",
     "creditos": 6,
     "prerreqs": [
-      "ADM-15571",
       "EST-14107",
-      "ADM-15535"
+      "ADM-15535",
+      "ADM-15571"
     ],
     "coreqs": [],
     "estado": 0
@@ -585,9 +586,7 @@
     "semestre": 10,
     "nombre": "Desarrollo de Habilidades Gerenciales",
     "creditos": 6,
-    "prerreqs": [
-      "ADM-15571"
-    ],
+    "prerreqs": [],
     "coreqs": [],
     "estado": 0
   },

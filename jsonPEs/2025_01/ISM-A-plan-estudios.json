@@ -528,7 +528,8 @@
     "creditos": 6,
     "prerreqs": [
       "SDI-17604",
-      "ADM-15561"
+      "ADM-15561",
+      "CON-10110"
     ],
     "coreqs": [],
     "estado": 0
@@ -538,7 +539,6 @@
     "nombre": "Robots Autónomos",
     "creditos": 6,
     "prerreqs": [
-      "CON-10110",
       "SDI-17609",
       "COM-11308"
     ],
@@ -561,7 +561,8 @@
     "creditos": 8,
     "prerreqs": [
       "IIO-15164",
-      "IIO-12182"
+      "IIO-12182",
+      "IIO-15152"
     ],
     "coreqs": [],
     "estado": 0
@@ -571,7 +572,6 @@
     "nombre": "Diseño y Dinámica de Máquinas Eléctricas",
     "creditos": 7,
     "prerreqs": [
-      "IIO-15152",
       "SDI-17604",
       "IIO-15174"
     ],
@@ -631,7 +631,7 @@
     "estado": 0
   },
   "OPTATIVA-1": {
-    "semestre": 11,
+    "semestre": 10,
     "nombre": "Optativa I",
     "creditos": 6,
     "prerreqs": [],

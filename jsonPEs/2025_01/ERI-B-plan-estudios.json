@@ -107,7 +107,8 @@
     "creditos": 6,
     "prerreqs": [
       "EGN-17122",
-      "EGN-17141"
+      "EGN-17141",
+      "LEN-10131"
     ],
     "coreqs": [],
     "estado": 0
@@ -117,7 +118,6 @@
     "nombre": "Álgebra Matricial",
     "creditos": 8,
     "prerreqs": [
-      "LEN-10131",
       "MAT-12100"
     ],
     "coreqs": [],
@@ -422,7 +422,8 @@
     "creditos": 6,
     "prerreqs": [
       "MAT-24630",
-      "ECO-21104"
+      "ECO-21104",
+      "ECO-22105"
     ],
     "coreqs": [],
     "estado": 0
@@ -432,7 +433,6 @@
     "nombre": "Macroeconometría Aplicada",
     "creditos": 6,
     "prerreqs": [
-      "ECO-22105",
       "EST-11104"
     ],
     "coreqs": [],
@@ -485,7 +485,8 @@
     "creditos": 7,
     "prerreqs": [
       "ECO-21104",
-      "ECO-22105"
+      "ECO-22105",
+      "EST-11104"
     ],
     "coreqs": [],
     "estado": 0
@@ -495,7 +496,6 @@
     "nombre": "Microeconomía Avanzada II",
     "creditos": 6,
     "prerreqs": [
-      "EST-11104",
       "ECO-11121"
     ],
     "coreqs": [],
@@ -619,7 +619,8 @@
     "creditos": 6,
     "prerreqs": [
       "ECO-11121",
-      "ECO-13102"
+      "ECO-13102",
+      "ECO-18300"
     ],
     "coreqs": [],
     "estado": 0
@@ -629,7 +630,6 @@
     "nombre": "Formul. de la Polít. Ext.de México",
     "creditos": 6,
     "prerreqs": [
-      "ECO-18300",
       "CSO-13041"
     ],
     "coreqs": [
@@ -638,7 +638,7 @@
     "estado": 0
   },
   "OPTATIVA-1": {
-    "semestre": 11,
+    "semestre": 10,
     "nombre": "Optativa I",
     "creditos": 6,
     "prerreqs": [],
@@ -646,7 +646,7 @@
     "estado": 0
   },
   "OPTATIVA-2": {
-    "semestre": 11,
+    "semestre": 10,
     "nombre": "Optativa II",
     "creditos": 6,
     "prerreqs": [],
@@ -654,7 +654,7 @@
     "estado": 0
   },
   "OPTATIVA-3": {
-    "semestre": 11,
+    "semestre": 10,
     "nombre": "Optativa III",
     "creditos": 6,
     "prerreqs": [],

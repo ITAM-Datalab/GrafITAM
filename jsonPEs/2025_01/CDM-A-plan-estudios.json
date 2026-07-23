@@ -289,7 +289,8 @@
     "creditos": 6,
     "prerreqs": [
       "COM-16305",
-      "EST-24126"
+      "EST-24126",
+      "MAT-14281"
     ],
     "coreqs": [],
     "estado": 0
@@ -299,7 +300,6 @@
     "nombre": "Bases de Datos No Relacionales",
     "creditos": 6,
     "prerreqs": [
-      "MAT-14281",
       "COM-12101"
     ],
     "coreqs": [],
@@ -602,7 +602,9 @@
     "creditos": 6,
     "prerreqs": [
       "SDI-17604",
-      "ADM-12303"
+      "ADM-12303",
+      "COM-23701",
+      "CON-10110"
     ],
     "coreqs": [],
     "estado": 0
@@ -612,8 +614,6 @@
     "nombre": "Arquitectura para Grandes Volúmenes de Datos",
     "creditos": 6,
     "prerreqs": [
-      "COM-23701",
-      "CON-10110",
       "COM-14707"
     ],
     "coreqs": [],

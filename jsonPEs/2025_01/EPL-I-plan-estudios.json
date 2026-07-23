@@ -269,7 +269,8 @@
     "creditos": 8,
     "prerreqs": [
       "MAT-12221",
-      "MAT-24632"
+      "MAT-24632",
+      "ECO-11021"
     ],
     "coreqs": [],
     "estado": 0
@@ -279,7 +280,6 @@
     "nombre": "Ideas e Instituciones Políticas y Sociales II",
     "creditos": 6,
     "prerreqs": [
-      "ECO-11021",
       "EGN-17121"
     ],
     "coreqs": [],
@@ -399,7 +399,8 @@
     "creditos": 3,
     "prerreqs": [
       "COM-16305",
-      "EST-11102"
+      "EST-11102",
+      "ECO-11002"
     ],
     "coreqs": [],
     "estado": 0
@@ -409,7 +410,6 @@
     "nombre": "Microeconomía Internacional",
     "creditos": 6,
     "prerreqs": [
-      "ECO-11002",
       "ECO-11022"
     ],
     "coreqs": [],
@@ -650,7 +650,8 @@
     "creditos": 6,
     "prerreqs": [
       "ECO-12012",
-      "ECO-10522"
+      "ECO-10522",
+      "ECO-11023"
     ],
     "coreqs": [],
     "estado": 0
@@ -659,9 +660,7 @@
     "semestre": 9,
     "nombre": "Electiva Política 1",
     "creditos": 6,
-    "prerreqs": [
-      "ECO-11023"
-    ],
+    "prerreqs": [],
     "coreqs": [],
     "estado": 0
   },
@@ -703,7 +702,9 @@
     "creditos": 9,
     "prerreqs": [
       "ECO-11023",
-      "ECO-12012"
+      "ECO-12012",
+      "ECO-10523",
+      "ECO-10522"
     ],
     "coreqs": [],
     "estado": 0
@@ -713,8 +714,6 @@
     "nombre": "Tópicos Avanzados de Macroeconomía",
     "creditos": 6,
     "prerreqs": [
-      "ECO-10523",
-      "ECO-10522",
       "ECO-11023",
       "ECO-18300"
     ],

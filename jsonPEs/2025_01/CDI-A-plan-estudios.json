@@ -583,7 +583,8 @@
     "creditos": 6,
     "prerreqs": [
       "COM-23701",
-      "ADM-12303"
+      "ADM-12303",
+      "CON-10110"
     ],
     "coreqs": [],
     "estado": 0
@@ -593,7 +594,6 @@
     "nombre": "Procesamiento de Lenguaje Natural",
     "creditos": 6,
     "prerreqs": [
-      "CON-10110",
       "COM-23701"
     ],
     "coreqs": [],
@@ -630,7 +630,7 @@
     "estado": 0
   },
   "OPTATIVA-1": {
-    "semestre": 11,
+    "semestre": 8,
     "nombre": "Optativa I",
     "creditos": 6,
     "prerreqs": [],
@@ -638,7 +638,7 @@
     "estado": 0
   },
   "OPTATIVA-2": {
-    "semestre": 11,
+    "semestre": 9,
     "nombre": "Optativa II",
     "creditos": 6,
     "prerreqs": [],
@@ -646,7 +646,7 @@
     "estado": 0
   },
   "OPTATIVA-3": {
-    "semestre": 11,
+    "semestre": 10,
     "nombre": "Optativa III",
     "creditos": 6,
     "prerreqs": [],
@@ -654,7 +654,7 @@
     "estado": 0
   },
   "OPTATIVA-4": {
-    "semestre": 11,
+    "semestre": 10,
     "nombre": "Optativa IV",
     "creditos": 6,
     "prerreqs": [],

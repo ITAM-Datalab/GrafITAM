@@ -268,7 +268,8 @@
     "creditos": 8,
     "prerreqs": [
       "ECO-11021",
-      "MAT-12201"
+      "MAT-12201",
+      "MAT-24632"
     ],
     "coreqs": [],
     "estado": 0
@@ -278,7 +279,6 @@
     "nombre": "Ideas e Instituciones Políticas y Sociales II",
     "creditos": 6,
     "prerreqs": [
-      "MAT-24632",
       "EGN-17121"
     ],
     "coreqs": [],
@@ -384,7 +384,8 @@
     "creditos": 6,
     "prerreqs": [
       "CON-10001",
-      "ECO-11021"
+      "ECO-11021",
+      "EST-11101"
     ],
     "coreqs": [],
     "estado": 0
@@ -394,7 +395,6 @@
     "nombre": "Administración Estratégica de Costos",
     "creditos": 6,
     "prerreqs": [
-      "EST-11101",
       "CON-14109"
     ],
     "coreqs": [],
@@ -406,7 +406,8 @@
     "creditos": 3,
     "prerreqs": [
       "COM-16305",
-      "ECO-11002"
+      "ECO-11002",
+      "EST-11102"
     ],
     "coreqs": [],
     "estado": 0
@@ -416,7 +417,6 @@
     "nombre": "Microeconomía Internacional",
     "creditos": 6,
     "prerreqs": [
-      "EST-11102",
       "ECO-11022"
     ],
     "coreqs": [],
@@ -644,7 +644,13 @@
     "semestre": 9,
     "nombre": "Emprendimiento",
     "creditos": 6,
-    "prerreqs": [],
+    "prerreqs": [
+      "COM-16413",
+      "CON-10001",
+      "ECO-10522",
+      "ADM-15561",
+      "COM-23120"
+    ],
     "coreqs": [],
     "estado": 0
   },
@@ -653,8 +659,6 @@
     "nombre": "Finanzas, Tecnología y Datos",
     "creditos": 6,
     "prerreqs": [
-      "ADM-15561",
-      "COM-23120",
       "ADM-15562",
       "COM-16307"
     ],
@@ -678,7 +682,8 @@
     "creditos": 6,
     "prerreqs": [
       "ECO-11023",
-      "ECO-12012"
+      "ECO-12012",
+      "ECO-10522"
     ],
     "coreqs": [],
     "estado": 0
@@ -688,7 +693,6 @@
     "nombre": "Crecimiento Económico",
     "creditos": 6,
     "prerreqs": [
-      "ECO-10522",
       "ECO-12012"
     ],
     "coreqs": [],
@@ -732,7 +736,9 @@
     "creditos": 9,
     "prerreqs": [
       "ECO-11023",
-      "ECO-12012"
+      "ECO-12012",
+      "ECO-10522",
+      "ECO-10523"
     ],
     "coreqs": [],
     "estado": 0
@@ -742,8 +748,6 @@
     "nombre": "Tópicos Avanzados de Macroeconomía",
     "creditos": 6,
     "prerreqs": [
-      "ECO-10522",
-      "ECO-10523",
       "ECO-11023",
       "ECO-18300"
     ],

@@ -2,6 +2,20 @@ import { useState } from 'react'
 
 const GITHUB_REPO = 'ITAM-Datalab/GrafITAM'
 
+// Form "Reportar Problema - GrafItam" (https://forms.gle/kG7GuWgdZoAYrye3A). No
+// requiere inicio de sesión — es la opción por default para reportar sin cuenta
+// de GitHub. Entry IDs sacados de FB_PUBLIC_LOAD_DATA_ del HTML público del form;
+// si se edita el form (agregar/quitar pregunta), hay que volver a sacarlos.
+const GOOGLE_FORM_ID = '1FAIpQLSeJbtKxLvnWrrWk8mE_O-ncBoJedsG1Zzq1BeBZmkicj5O6xw'
+const GOOGLE_FORM_ENTRIES = {
+  tipo: '1970869378',
+  clave: '1561787857',
+  nombre: '621577110',
+  grupo: '373217162',
+  carrera: '1057271016',
+  comentario: '1981201194',
+}
+
 type TipoProblema = 'materia_faltante' | 'grupo_incorrecto' | 'plan_faltante' | 'otro'
 
 const TIPO_LABELS: Record<TipoProblema, string> = {
@@ -9,6 +23,15 @@ const TIPO_LABELS: Record<TipoProblema, string> = {
   grupo_incorrecto: 'Grupo/CRN incorrecto o faltante',
   plan_faltante: 'Plan de estudios no encontrado',
   otro: 'Otro problema',
+}
+
+// Texto exacto de la opción correspondiente en el Google Form — 'otro' no tiene
+// texto fijo, usa el mecanismo de "Otro" (__other_option__) del form en su lugar.
+const TIPO_FORM_OPTION: Record<TipoProblema, string | null> = {
+  materia_faltante: 'Materia no aparece en horarios',
+  grupo_incorrecto: 'Grupo/CRN incorrecto o faltante',
+  plan_faltante: 'Plan de estudios no encontrado',
+  otro: null,
 }
 
 export default function ReportIssueModal() {
@@ -20,7 +43,39 @@ export default function ReportIssueModal() {
   const [carrera, setCarrera] = useState('')
   const [comentario, setComentario] = useState('')
 
-  const handleSubmit = () => {
+  const resetForm = () => {
+    setOpen(false)
+    setClave('')
+    setNombre('')
+    setGrupo('')
+    setCarrera('')
+    setComentario('')
+  }
+
+  const handleSubmitGoogleForm = () => {
+    const e = GOOGLE_FORM_ENTRIES
+    const params = new URLSearchParams({
+      usp: 'pp_url',
+      [`entry.${e.clave}`]: clave,
+      [`entry.${e.nombre}`]: nombre,
+      [`entry.${e.grupo}`]: grupo,
+      [`entry.${e.carrera}`]: carrera,
+      [`entry.${e.comentario}`]: comentario,
+    })
+    const tipoOpcion = TIPO_FORM_OPTION[tipo]
+    if (tipoOpcion) {
+      params.set(`entry.${e.tipo}`, tipoOpcion)
+    } else {
+      params.set(`entry.${e.tipo}`, '__other_option__')
+      params.set(`entry.${e.tipo}.other_option_response`, TIPO_LABELS[tipo])
+    }
+
+    const url = `https://docs.google.com/forms/d/e/${GOOGLE_FORM_ID}/viewform?${params.toString()}`
+    window.open(url, '_blank', 'noopener,noreferrer')
+    resetForm()
+  }
+
+  const handleSubmitGithub = () => {
     const title = `[Reporte] ${TIPO_LABELS[tipo]}${clave ? ` — ${clave}` : ''}`
     const body = [
       `**Tipo de problema:** ${TIPO_LABELS[tipo]}`,
@@ -35,12 +90,7 @@ export default function ReportIssueModal() {
 
     const url = `https://github.com/${GITHUB_REPO}/issues/new?title=${encodeURIComponent(title)}&body=${encodeURIComponent(body)}`
     window.open(url, '_blank', 'noopener,noreferrer')
-    setOpen(false)
-    setClave('')
-    setNombre('')
-    setGrupo('')
-    setCarrera('')
-    setComentario('')
+    resetForm()
   }
 
   return (
@@ -113,25 +163,34 @@ export default function ReportIssueModal() {
             />
 
             <p className="text-[10px] opacity-60 mb-3">
-              Al enviar se abre una pestaña nueva en GitHub con un Issue prellenado — hace falta darle clic a
-              "Submit new issue" ahí para que quede registrado.
+              Al enviar se abre una pestaña nueva con el formulario ya prellenado — hace falta darle clic a
+              "Enviar" ahí para que quede registrado. No necesitas cuenta de Google ni de GitHub.
             </p>
 
-            <div className="flex gap-2 justify-end">
+            <div className="flex items-center justify-between gap-2">
               <button
-                onClick={() => setOpen(false)}
-                className="text-xs px-3 py-1.5 rounded border border-itam-muted/50"
-              >
-                Cancelar
-              </button>
-              <button
-                onClick={handleSubmit}
+                onClick={handleSubmitGithub}
                 disabled={!clave.trim()}
-                className="text-xs px-3 py-1.5 rounded font-semibold disabled:opacity-40"
-                style={{ background: '#1E5E4B', color: '#FCFAF8' }}
+                className="text-[10px] underline opacity-60 hover:opacity-100 disabled:opacity-30 whitespace-nowrap"
               >
-                Abrir reporte en GitHub
+                o repórtalo en GitHub
               </button>
+              <div className="flex gap-2">
+                <button
+                  onClick={() => setOpen(false)}
+                  className="text-xs px-3 py-1.5 rounded border border-itam-muted/50"
+                >
+                  Cancelar
+                </button>
+                <button
+                  onClick={handleSubmitGoogleForm}
+                  disabled={!clave.trim()}
+                  className="text-xs px-3 py-1.5 rounded font-semibold disabled:opacity-40"
+                  style={{ background: '#1E5E4B', color: '#FCFAF8' }}
+                >
+                  Enviar reporte
+                </button>
+              </div>
             </div>
           </div>
         </div>

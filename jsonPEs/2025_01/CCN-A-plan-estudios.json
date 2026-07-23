@@ -435,7 +435,8 @@
     "creditos": 6,
     "prerreqs": [
       "COM-11114",
-      "MAT-12201"
+      "MAT-12201",
+      "MAT-14201"
     ],
     "coreqs": [],
     "estado": 0
@@ -445,7 +446,6 @@
     "nombre": "Graficación por Computadora",
     "creditos": 6,
     "prerreqs": [
-      "MAT-14201",
       "COM-11114",
       "MAT-14201"
     ],
@@ -602,7 +602,13 @@
     "semestre": 9,
     "nombre": "Emprendimiento",
     "creditos": 6,
-    "prerreqs": [],
+    "prerreqs": [
+      "ADM-12312",
+      "CON-10001",
+      "COM-11308",
+      "COM-23120",
+      "ADM-15561"
+    ],
     "coreqs": [],
     "estado": 0
   },
@@ -611,8 +617,6 @@
     "nombre": "Gestión y Crecimiento del Negocio",
     "creditos": 6,
     "prerreqs": [
-      "COM-23120",
-      "ADM-15561",
       "EST-11102",
       "ECO-11011"
     ],

@@ -149,7 +149,8 @@
     "creditos": 6,
     "prerreqs": [
       "EGN-17122",
-      "EGN-17141"
+      "EGN-17141",
+      "LEN-12701"
     ],
     "coreqs": [
       "LEN-12702"
@@ -259,7 +260,6 @@
     "nombre": "Bases de Datos No Relacionales",
     "creditos": 6,
     "prerreqs": [
-      "ECO-22105",
       "COM-11112",
       "COM-12101"
     ],
@@ -315,7 +315,8 @@
     "creditos": 6,
     "prerreqs": [
       "COM-11101",
-      "EST-24126"
+      "EST-24126",
+      "MAT-14281"
     ],
     "coreqs": [
       "LEN-12722"
@@ -327,7 +328,6 @@
     "nombre": "Comunicación Escrita para Ciencia de Datos",
     "creditos": 2,
     "prerreqs": [
-      "MAT-14281",
       "LEN-12701"
     ],
     "coreqs": [
@@ -607,6 +607,8 @@
     "nombre": "Ciencia de Datos Aplicada II",
     "creditos": 6,
     "prerreqs": [
+      "COM-22108",
+      "COM-23115",
       "COM-23114",
       "ADM-12301"
     ],
@@ -679,7 +681,6 @@
     "nombre": "Contabilidad Administrativa",
     "creditos": 9,
     "prerreqs": [
-      "LEN-12701",
       "CON-10100"
     ],
     "coreqs": [],
@@ -701,7 +702,8 @@
     "creditos": 6,
     "prerreqs": [
       "MAT-24630",
-      "ECO-21104"
+      "ECO-21104",
+      "ECO-22105"
     ],
     "coreqs": [],
     "estado": 0
@@ -790,7 +792,7 @@
     "estado": 0
   },
   "OPTATIVA-1": {
-    "semestre": 11,
+    "semestre": 6,
     "nombre": "Optativa I",
     "creditos": 6,
     "prerreqs": [],
@@ -798,7 +800,7 @@
     "estado": 0
   },
   "OPTATIVA-2": {
-    "semestre": 11,
+    "semestre": 10,
     "nombre": "Optativa II",
     "creditos": 6,
     "prerreqs": [],

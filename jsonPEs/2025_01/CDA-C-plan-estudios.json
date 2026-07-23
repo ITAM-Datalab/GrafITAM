@@ -297,7 +297,8 @@
     "creditos": 6,
     "prerreqs": [
       "COM-16305",
-      "MAT-14281"
+      "MAT-14281",
+      "EST-24126"
     ],
     "coreqs": [
       "LEN-12722"
@@ -309,7 +310,6 @@
     "nombre": "Comunicación Escrita para Ciencia de Datos",
     "creditos": 2,
     "prerreqs": [
-      "EST-24126",
       "LEN-12701"
     ],
     "coreqs": [
@@ -426,7 +426,8 @@
     "creditos": 6,
     "prerreqs": [
       "COM-11308",
-      "COM-23701"
+      "COM-23701",
+      "EST-14103"
     ],
     "coreqs": [],
     "estado": 0
@@ -436,7 +437,6 @@
     "nombre": "Problemas de la Realidad Mexicana Contemporánea",
     "creditos": 6,
     "prerreqs": [
-      "EST-14103",
       "EGN-17161"
     ],
     "coreqs": [],
@@ -520,7 +520,7 @@
     "estado": 0
   },
   "OPTATIVA-1": {
-    "semestre": 9,
+    "semestre": 7,
     "nombre": "Optativa I",
     "creditos": 6,
     "prerreqs": [],
@@ -528,7 +528,7 @@
     "estado": 0
   },
   "OPTATIVA-2": {
-    "semestre": 9,
+    "semestre": 8,
     "nombre": "Optativa II",
     "creditos": 6,
     "prerreqs": [],
@@ -536,7 +536,7 @@
     "estado": 0
   },
   "OPTATIVA-3": {
-    "semestre": 9,
+    "semestre": 8,
     "nombre": "Optativa III",
     "creditos": 6,
     "prerreqs": [],

@@ -152,7 +152,8 @@
     "creditos": 6,
     "prerreqs": [
       "EGN-17122",
-      "EGN-17141"
+      "EGN-17141",
+      "LEN-12701"
     ],
     "coreqs": [
       "LEN-12702"
@@ -164,7 +165,6 @@
     "nombre": "Seminario de Comunicación Escrita",
     "creditos": 2,
     "prerreqs": [
-      "LEN-12701",
       "LEN-12701"
     ],
     "coreqs": [
@@ -329,7 +329,10 @@
     "semestre": 6,
     "nombre": "Bases de Datos No Relacionales",
     "creditos": 6,
-    "prerreqs": [],
+    "prerreqs": [
+      "COM-11112",
+      "COM-12101"
+    ],
     "coreqs": [],
     "estado": 0
   },
@@ -338,8 +341,6 @@
     "nombre": "Estadística Matemática",
     "creditos": 8,
     "prerreqs": [
-      "COM-11112",
-      "COM-12101",
       "EST-24127"
     ],
     "coreqs": [],
@@ -361,7 +362,8 @@
     "creditos": 6,
     "prerreqs": [
       "CON-10100",
-      "MAT-22600"
+      "MAT-22600",
+      "ECO-11104"
     ],
     "coreqs": [],
     "estado": 0
@@ -371,9 +373,9 @@
     "nombre": "Cálculo Actuarial I",
     "creditos": 6,
     "prerreqs": [
-      "ECO-11104",
       "MAT-22600",
-      "ACT-15357"
+      "ACT-15357",
+      "EST-24126"
     ],
     "coreqs": [],
     "estado": 0
@@ -383,7 +385,6 @@
     "nombre": "Álgebra Lineal (Álgebra Lineal II)",
     "creditos": 8,
     "prerreqs": [
-      "EST-24126",
       "MAT-14201",
       "MAT-14281"
     ],
@@ -394,7 +395,9 @@
     "semestre": 7,
     "nombre": "Aprendizaje de Máquina",
     "creditos": 6,
-    "prerreqs": [],
+    "prerreqs": [
+      "COM-12101"
+    ],
     "coreqs": [],
     "estado": 0
   },
@@ -403,9 +406,9 @@
     "nombre": "Visualización de Información",
     "creditos": 6,
     "prerreqs": [
-      "COM-12101",
       "COM-11101",
-      "EST-24126"
+      "EST-24126",
+      "MAT-14281"
     ],
     "coreqs": [
       "LEN-12722"
@@ -417,7 +420,6 @@
     "nombre": "Comunicac. Escrita para Ciencia de Datos",
     "creditos": 2,
     "prerreqs": [
-      "MAT-14281",
       "LEN-12701"
     ],
     "coreqs": [
@@ -429,7 +431,10 @@
     "semestre": 7,
     "nombre": "Tópicos de Negocios II",
     "creditos": 6,
-    "prerreqs": [],
+    "prerreqs": [
+      "ADM-12301",
+      "ADM-15582"
+    ],
     "coreqs": [],
     "estado": 0
   },
@@ -438,8 +443,6 @@
     "nombre": "Métodos Lineales",
     "creditos": 6,
     "prerreqs": [
-      "ADM-12301",
-      "ADM-15582",
       "EST-14103"
     ],
     "coreqs": [],
@@ -484,7 +487,9 @@
     "semestre": 8,
     "nombre": "Inteligencia Artificial",
     "creditos": 8,
-    "prerreqs": [],
+    "prerreqs": [
+      "COM-11112"
+    ],
     "coreqs": [],
     "estado": 0
   },
@@ -493,7 +498,7 @@
     "nombre": "Cómputo Paralelo y en la Nube",
     "creditos": 6,
     "prerreqs": [
-      "COM-11112"
+      "COM-12103"
     ],
     "coreqs": [],
     "estado": 0
@@ -503,7 +508,6 @@
     "nombre": "Inferencia Causal",
     "creditos": 6,
     "prerreqs": [
-      "COM-12103",
       "EST-14103"
     ],
     "coreqs": [],
@@ -535,7 +539,8 @@
     "creditos": 6,
     "prerreqs": [
       "MAT-22600",
-      "EST-14103"
+      "EST-14103",
+      "CON-10100"
     ],
     "coreqs": [],
     "estado": 0
@@ -545,7 +550,6 @@
     "nombre": "Cálculo Númérico I",
     "creditos": 8,
     "prerreqs": [
-      "CON-10100",
       "COM-11302",
       "MAT-14102"
     ],
@@ -556,7 +560,10 @@
     "semestre": 9,
     "nombre": "Minería y Análisis de Datos",
     "creditos": 6,
-    "prerreqs": [],
+    "prerreqs": [
+      "COM-22102",
+      "COM-23701"
+    ],
     "coreqs": [],
     "estado": 0
   },
@@ -565,8 +572,8 @@
     "nombre": "Arquitectura para Grandes Volúmenes de Datos",
     "creditos": 6,
     "prerreqs": [
-      "COM-22102",
-      "COM-23701"
+      "COM-15112",
+      "COM-12103"
     ],
     "coreqs": [],
     "estado": 0
@@ -576,8 +583,8 @@
     "nombre": "Ciencia de Datos Aplicada I",
     "creditos": 4,
     "prerreqs": [
-      "COM-15112",
-      "COM-12103"
+      "COM-23701",
+      "COM-15112"
     ],
     "coreqs": [],
     "estado": 0
@@ -587,8 +594,6 @@
     "nombre": "Administración Cuantitativa de Riesgos",
     "creditos": 6,
     "prerreqs": [
-      "COM-23701",
-      "COM-15112",
       "ACT-15357",
       "EST-14103"
     ],
@@ -667,7 +672,11 @@
     "semestre": 10,
     "nombre": "Estadística Aplicada a la Actuaría",
     "creditos": 6,
-    "prerreqs": [],
+    "prerreqs": [
+      "EST-24124",
+      "EST-14107",
+      "EST-14103"
+    ],
     "coreqs": [],
     "estado": 0
   },
@@ -676,7 +685,6 @@
     "nombre": "Práctica Actuarial y Marco Institucional",
     "creditos": 6,
     "prerreqs": [
-      "EST-14103",
       "ACT-11302",
       "ACT-11303"
     ],

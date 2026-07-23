@@ -503,7 +503,8 @@
     "creditos": 6,
     "prerreqs": [
       "ECO-22105",
-      "MAT-24630"
+      "MAT-24630",
+      "ECO-21104"
     ],
     "coreqs": [],
     "estado": 0
@@ -513,7 +514,6 @@
     "nombre": "Sem. de la Economía de México",
     "creditos": 6,
     "prerreqs": [
-      "ECO-21104",
       "ECO-21104",
       "ECO-22105"
     ],

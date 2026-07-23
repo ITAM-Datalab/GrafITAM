@@ -65,14 +65,17 @@ export default function PlanSelector() {
   }, [planData, userState])
 
   return (
-    <div className="relative flex flex-wrap items-center gap-3 px-4 py-2.5 bg-cream-50 border-b border-cream-300">
+    <div className="relative flex flex-wrap items-center gap-3 px-4 py-2.5 bg-base-cream border-b border-itam-muted/40">
       <div className="flex flex-wrap items-center gap-3">
-        <span className="text-espresso-800 font-semibold text-sm">Plan de Estudios</span>
+        <span className="font-semibold text-sm" style={{ color: '#0D3B2E' }}>
+          Plan de Estudios
+        </span>
 
         <select
           value={selectedProgram}
           onChange={(e) => handleProgramChange(e.target.value)}
-          className="border border-cream-300 rounded px-2 py-1 text-sm bg-white text-espresso-800 focus:outline-none focus:ring-1 focus:ring-espresso-700"
+          className="border border-itam-muted/40 rounded px-2 py-1 text-sm bg-white focus:outline-none focus:ring-1 focus:ring-itam-core"
+          style={{ color: '#0D3B2E' }}
         >
           <option value="">— Programa —</option>
           {programs.map((p) => (
@@ -86,7 +89,8 @@ export default function PlanSelector() {
           value={selectedLetter}
           onChange={(e) => handleLetterChange(e.target.value)}
           disabled={!selectedProgram}
-          className="border border-cream-300 rounded px-2 py-1 text-sm bg-white text-espresso-800 disabled:opacity-40 focus:outline-none focus:ring-1 focus:ring-espresso-700"
+          className="border border-itam-muted/40 rounded px-2 py-1 text-sm bg-white disabled:opacity-40 focus:outline-none focus:ring-1 focus:ring-itam-core"
+          style={{ color: '#0D3B2E' }}
         >
           <option value="">— Generación —</option>
           {letters.map((l) => (
@@ -100,7 +104,8 @@ export default function PlanSelector() {
           <select
             value={selectedArea}
             onChange={(e) => handleAreaChange(e.target.value)}
-            className="border border-cream-300 rounded px-2 py-1 text-sm bg-white text-espresso-800 focus:outline-none focus:ring-1 focus:ring-espresso-700"
+            className="border border-itam-muted/40 rounded px-2 py-1 text-sm bg-white focus:outline-none focus:ring-1 focus:ring-itam-core"
+            style={{ color: '#0D3B2E' }}
           >
             {areas.map((a) => (
               <option key={a} value={a}>
@@ -112,12 +117,16 @@ export default function PlanSelector() {
 
         {activePlanLabel && (
           <>
-            <span className="text-xs text-espresso-700 font-mono bg-cream-200 px-2 py-0.5 rounded">
+            <span
+              className="text-xs font-mono bg-base-bone border border-itam-muted/40 px-2 py-0.5 rounded"
+              style={{ color: '#0D3B2E' }}
+            >
               {activePlanLabel}
             </span>
             <button
               onClick={resetPlan}
-              className="text-xs text-espresso-700 underline opacity-60 hover:opacity-100"
+              className="text-xs underline opacity-60 hover:opacity-100"
+              style={{ color: '#0D3B2E' }}
             >
               Reiniciar
             </button>
@@ -126,7 +135,10 @@ export default function PlanSelector() {
       </div>
 
       {creditProgress && (
-        <span className="block w-full text-center md:absolute md:left-1/2 md:w-auto md:-translate-x-1/2 text-xs text-espresso-800 font-medium pointer-events-none">
+        <span
+          className="block w-full text-center md:absolute md:left-1/2 md:w-auto md:-translate-x-1/2 text-xs font-medium pointer-events-none"
+          style={{ color: '#0D3B2E' }}
+        >
           {creditProgress.approved} / {creditProgress.total} cr. ({creditProgress.pct}%)
         </span>
       )}

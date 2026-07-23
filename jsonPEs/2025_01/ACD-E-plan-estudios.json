@@ -201,7 +201,10 @@
     "semestre": 4,
     "nombre": "Trayectorias en Negocios II: Equipo y Liderazgo",
     "creditos": 2,
-    "prerreqs": [],
+    "prerreqs": [
+      "ADM-15568",
+      "ADM-12107"
+    ],
     "coreqs": [],
     "estado": 0
   },
@@ -210,8 +213,6 @@
     "nombre": "Desarrollo de Habilidades Gerenciales",
     "creditos": 6,
     "prerreqs": [
-      "ADM-15568",
-      "ADM-12107",
       "ADM-12107"
     ],
     "coreqs": [],
@@ -223,7 +224,8 @@
     "creditos": 6,
     "prerreqs": [
       "ADM-15507",
-      "CON-10001"
+      "CON-10001",
+      "ACT-11310"
     ],
     "coreqs": [],
     "estado": 0
@@ -233,7 +235,6 @@
     "nombre": "Derecho Empresarial",
     "creditos": 8,
     "prerreqs": [
-      "ACT-11310",
       "ADM-12107",
       "CON-10001"
     ],
@@ -453,6 +454,7 @@
     "nombre": "Métodos Lineales",
     "creditos": 6,
     "prerreqs": [
+      "EGN-17161",
       "EST-14103",
       "MAT-14201"
     ],
@@ -511,6 +513,7 @@
     "nombre": "Impuestos Corporativos I",
     "creditos": 6,
     "prerreqs": [
+      "ADM-15514",
       "DER-10023"
     ],
     "coreqs": [],
@@ -580,6 +583,8 @@
     "nombre": "Capital Privado y Finanzas Emprendedoras",
     "creditos": 6,
     "prerreqs": [
+      "ADM-15565",
+      "ADM-12312",
       "ADM-15563"
     ],
     "coreqs": [],

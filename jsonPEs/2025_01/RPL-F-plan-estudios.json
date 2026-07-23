@@ -335,6 +335,7 @@
     "nombre": "Política y Gobierno de México",
     "creditos": 6,
     "prerreqs": [
+      "EIN-14102",
       "CSO-10106"
     ],
     "coreqs": [],
@@ -617,7 +618,8 @@
     "creditos": 6,
     "prerreqs": [
       "CSO-10160",
-      "CSO-10111"
+      "CSO-10111",
+      "ECO-11012"
     ],
     "coreqs": [],
     "estado": 0
@@ -627,7 +629,6 @@
     "nombre": "Seminario de Investigación Política",
     "creditos": 6,
     "prerreqs": [
-      "ECO-11012",
       "CSO-10111"
     ],
     "coreqs": [],

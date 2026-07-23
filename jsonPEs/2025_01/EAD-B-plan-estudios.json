@@ -365,7 +365,8 @@
     "creditos": 6,
     "prerreqs": [
       "ECO-22105",
-      "MAT-24630"
+      "MAT-24630",
+      "ECO-21104"
     ],
     "coreqs": [],
     "estado": 0
@@ -375,7 +376,6 @@
     "nombre": "Microeconomía Avanzada II",
     "creditos": 6,
     "prerreqs": [
-      "ECO-21104",
       "ECO-11121"
     ],
     "coreqs": [],
@@ -451,7 +451,8 @@
     "creditos": 7,
     "prerreqs": [
       "ADM-16601",
-      "EST-11104"
+      "EST-11104",
+      "ADM-14401"
     ],
     "coreqs": [],
     "estado": 0
@@ -461,8 +462,6 @@
     "nombre": "Desarrollo Empresarial",
     "creditos": 7,
     "prerreqs": [
-      "ADM-14401",
-      "ADM-16601",
       "ADM-15501",
       "ADM-11013",
       "ADM-11002"
@@ -547,7 +546,8 @@
     "creditos": 6,
     "prerreqs": [
       "ECO-11121",
-      "ECO-13102"
+      "ECO-13102",
+      "ECO-18300"
     ],
     "coreqs": [],
     "estado": 0
@@ -557,7 +557,6 @@
     "nombre": "Desarrollo Económico",
     "creditos": 6,
     "prerreqs": [
-      "ECO-18300",
       "ECO-21104",
       "ECO-15101"
     ],
@@ -579,7 +578,9 @@
     "nombre": "Derecho Empresarial III",
     "creditos": 8,
     "prerreqs": [
-      "DER-10019"
+      "DER-10019",
+      "ADM-14401",
+      "ADM-15501"
     ],
     "coreqs": [],
     "estado": 0
@@ -589,8 +590,6 @@
     "nombre": "Administración y Evaluación de Proyectos",
     "creditos": 6,
     "prerreqs": [
-      "ADM-14401",
-      "ADM-15501",
       "EST-11104"
     ],
     "coreqs": [],
@@ -666,7 +665,7 @@
     "estado": 0
   },
   "OPTATIVA-1": {
-    "semestre": 11,
+    "semestre": 10,
     "nombre": "Optativa I",
     "creditos": 6,
     "prerreqs": [],

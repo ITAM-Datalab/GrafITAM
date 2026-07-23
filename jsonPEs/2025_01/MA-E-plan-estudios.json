@@ -228,7 +228,8 @@
     "creditos": 8,
     "prerreqs": [
       "MAT-14102",
-      "MAT-14310"
+      "MAT-14310",
+      "MAT-14390"
     ],
     "coreqs": [],
     "estado": 0
@@ -238,7 +239,6 @@
     "nombre": "Sistemas Dinámicos I",
     "creditos": 6,
     "prerreqs": [
-      "MAT-14390",
       "MAT-14102",
       "MAT-14310"
     ],
@@ -408,7 +408,7 @@
     "estado": 0
   },
   "OPTATIVA-1": {
-    "semestre": 9,
+    "semestre": 4,
     "nombre": "Optativa I",
     "creditos": 6,
     "prerreqs": [],
@@ -416,7 +416,7 @@
     "estado": 0
   },
   "OPTATIVA-2": {
-    "semestre": 9,
+    "semestre": 5,
     "nombre": "Optativa II",
     "creditos": 6,
     "prerreqs": [],
@@ -424,7 +424,7 @@
     "estado": 0
   },
   "OPTATIVA-3": {
-    "semestre": 9,
+    "semestre": 6,
     "nombre": "Optativa III",
     "creditos": 6,
     "prerreqs": [],
@@ -432,7 +432,7 @@
     "estado": 0
   },
   "OPTATIVA-4": {
-    "semestre": 9,
+    "semestre": 7,
     "nombre": "Optativa IV",
     "creditos": 6,
     "prerreqs": [],
@@ -440,7 +440,7 @@
     "estado": 0
   },
   "OPTATIVA-5": {
-    "semestre": 9,
+    "semestre": 7,
     "nombre": "Optativa V",
     "creditos": 6,
     "prerreqs": [],
@@ -448,7 +448,7 @@
     "estado": 0
   },
   "OPTATIVA-6": {
-    "semestre": 9,
+    "semestre": 8,
     "nombre": "Optativa VI",
     "creditos": 6,
     "prerreqs": [],
@@ -456,7 +456,7 @@
     "estado": 0
   },
   "OPTATIVA-7": {
-    "semestre": 9,
+    "semestre": 8,
     "nombre": "Optativa VII",
     "creditos": 6,
     "prerreqs": [],
@@ -464,7 +464,7 @@
     "estado": 0
   },
   "OPTATIVA-8": {
-    "semestre": 9,
+    "semestre": 8,
     "nombre": "Optativa VIII",
     "creditos": 6,
     "prerreqs": [],
@@ -472,7 +472,7 @@
     "estado": 0
   },
   "OPTATIVA-9": {
-    "semestre": 9,
+    "semestre": 8,
     "nombre": "Optativa IX",
     "creditos": 6,
     "prerreqs": [],

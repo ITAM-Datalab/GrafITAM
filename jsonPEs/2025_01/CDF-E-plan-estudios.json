@@ -149,7 +149,11 @@
     "semestre": 3,
     "nombre": "Fundamentos de Finanzas",
     "creditos": 6,
-    "prerreqs": [],
+    "prerreqs": [
+      "ECO-11101",
+      "ADM-12107",
+      "CON-10001"
+    ],
     "coreqs": [],
     "estado": 0
   },
@@ -158,9 +162,9 @@
     "nombre": "Ideas e Instituciones Políticas y Sociales III",
     "creditos": 6,
     "prerreqs": [
-      "ECO-11101",
-      "ADM-12107",
-      "CON-10001"
+      "EGN-17122",
+      "EGN-17141",
+      "LEN-12701"
     ],
     "coreqs": [
       "LEN-12702"
@@ -172,9 +176,6 @@
     "nombre": "Seminario de Comunicacíon Escrita",
     "creditos": 2,
     "prerreqs": [
-      "EGN-17122",
-      "EGN-17141",
-      "LEN-12701",
       "LEN-12701"
     ],
     "coreqs": [
@@ -594,7 +595,11 @@
     "semestre": 10,
     "nombre": "Métodos Empíricos en Finanzas",
     "creditos": 6,
-    "prerreqs": [],
+    "prerreqs": [
+      "EST-11103",
+      "ADM-15535",
+      "ADM-15571"
+    ],
     "coreqs": [],
     "estado": 0
   },
@@ -603,9 +608,6 @@
     "nombre": "Análisis Financiero de la Empresa",
     "creditos": 6,
     "prerreqs": [
-      "EST-11103",
-      "ADM-15535",
-      "ADM-15571",
       "CON-10011",
       "DMON-15507"
     ],
@@ -639,7 +641,7 @@
     "estado": 0
   },
   "OPTATIVA-1": {
-    "semestre": 11,
+    "semestre": 10,
     "nombre": "Optativa I",
     "creditos": 6,
     "prerreqs": [],
@@ -647,7 +649,7 @@
     "estado": 0
   },
   "OPTATIVA-2": {
-    "semestre": 11,
+    "semestre": 10,
     "nombre": "Optativa II",
     "creditos": 6,
     "prerreqs": [],
@@ -655,7 +657,7 @@
     "estado": 0
   },
   "OPTATIVA-3": {
-    "semestre": 11,
+    "semestre": 10,
     "nombre": "Optativa III",
     "creditos": 6,
     "prerreqs": [],
@@ -663,7 +665,7 @@
     "estado": 0
   },
   "OPTATIVA-4": {
-    "semestre": 11,
+    "semestre": 10,
     "nombre": "Optativa IV",
     "creditos": 6,
     "prerreqs": [],

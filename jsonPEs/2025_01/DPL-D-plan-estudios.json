@@ -694,6 +694,7 @@
     "nombre": "Metodología Política Avanzada",
     "creditos": 9,
     "prerreqs": [
+      "CSO-12042",
       "EST-13101"
     ],
     "coreqs": [],

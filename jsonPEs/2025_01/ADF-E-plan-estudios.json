@@ -109,7 +109,8 @@
     "creditos": 6,
     "prerreqs": [
       "ECO-11101",
-      "ADM-12107"
+      "ADM-12107",
+      "CON-10001"
     ],
     "coreqs": [],
     "estado": 0
@@ -119,7 +120,6 @@
     "nombre": "Cálculo II",
     "creditos": 9,
     "prerreqs": [
-      "CON-10001",
       "MAT-12100"
     ],
     "coreqs": [],
@@ -496,7 +496,8 @@
       "ADM-14401",
       "ADM-16601",
       "CON-10004",
-      "ADM-11013"
+      "ADM-11013",
+      "ADM-11002"
     ],
     "coreqs": [
       "LEN-12714"
@@ -508,7 +509,6 @@
     "nombre": "Comunicación Escrita para Administración",
     "creditos": 2,
     "prerreqs": [
-      "ADM-11002",
       "LEN-12701"
     ],
     "coreqs": [
@@ -542,7 +542,8 @@
     "creditos": 6,
     "prerreqs": [
       "ADM-15514",
-      "MAT-24630"
+      "MAT-24630",
+      "ADM-15522"
     ],
     "coreqs": [],
     "estado": 0
@@ -552,7 +553,6 @@
     "nombre": "Mercadotecnia III",
     "creditos": 6,
     "prerreqs": [
-      "ADM-15522",
       "ADM-16602"
     ],
     "coreqs": [],
@@ -606,7 +606,8 @@
     "creditos": 6,
     "prerreqs": [
       "ADM-15533",
-      "ADM-15535"
+      "ADM-15535",
+      "ADM-15571"
     ],
     "coreqs": [
       "LEN-12757"
@@ -618,7 +619,6 @@
     "nombre": "Comunic. Profesional para Dirección Financiera",
     "creditos": 2,
     "prerreqs": [
-      "ADM-15571",
       "LEN-12702",
       "LEN-12717"
     ],
@@ -633,7 +633,8 @@
     "creditos": 6,
     "prerreqs": [
       "EST-11103",
-      "ADM-15535"
+      "ADM-15535",
+      "ADM-15571"
     ],
     "coreqs": [],
     "estado": 0
@@ -643,7 +644,6 @@
     "nombre": "Seminario de Dirección",
     "creditos": 6,
     "prerreqs": [
-      "ADM-15571",
       "ADM-13101"
     ],
     "coreqs": [
@@ -675,7 +675,7 @@
     "estado": 0
   },
   "OPTATIVA-1": {
-    "semestre": 11,
+    "semestre": 10,
     "nombre": "Optativa I",
     "creditos": 6,
     "prerreqs": [],
@@ -683,7 +683,7 @@
     "estado": 0
   },
   "OPTATIVA-2": {
-    "semestre": 11,
+    "semestre": 10,
     "nombre": "Optativa II",
     "creditos": 6,
     "prerreqs": [],

@@ -67,8 +67,8 @@ Recomendación práctica: pushear directo a `upstream` sin preocuparte por mante
 - `estado` siempre `0` en fuente; el estado real del usuario vive en Zustand.
 - `coreqs`: `[]` o `["{clave de la materia pareja}"]` (ej. `["MAT-14200"]`) — la clave real de la materia con la que debe cursarse simultáneamente, no una bandera genérica — ver `src/algorithms/CLAUDE.md` y `src/data/CLAUDE.md`.
 - Naming: `{PROGRAMA}-{LETRA}-plan-estudios.json` (ej. `CDA-A-plan-estudios.json`), o `{PROGRAMA}-{LETRA}-{AREA-SLUG}-plan-estudios.json` si el plan tiene áreas de concentración (ej. `ACT-D-RIESGOS-FINANCIEROS-plan-estudios.json`) — ver más abajo.
-- **Optativas**: cada plan incluye entradas sintéticas `OPTATIVA-1`, `OPTATIVA-2`, ... (`nombre: "Optativa I"`, `"Optativa II"`, ...) por cada slot de optativa detectado en el PDF (ej. "Optativa de Estadística — 6 créditos", sin clave real). Van sin `prerreqs`/`coreqs`, en `semestre = (máximo semestre real del plan) + 1` — caen solas en su propia columna final del grafo, desconectadas de todo.
-- **Materia N de Área de Concentración**: slots sin clave real dentro de la tabla de semestres (distinto de las áreas de concentración completas descritas abajo) — igual que las optativas en que no tienen `prerreqs`, pero a diferencia de ellas **se quedan en su propio semestre real** (`AREA-{n}`, `n` = el número que ya trae el PDF), porque representan una materia obligatoria de esa etapa del plan, no una optativa libre.
+- **Optativas**: cada plan incluye entradas sintéticas `OPTATIVA-1`, `OPTATIVA-2`, ... (`nombre: "Optativa I"`, `"Optativa II"`, ...) por cada slot de optativa detectado en el PDF (ej. "Optativa de Estadística — 6 créditos", sin clave real). Van sin `prerreqs`/`coreqs`, en su **semestre real** (el que trae el PDF para ese slot, no `max + 1`) — quedan mezcladas con las materias reales de ese semestre en el grafo, no en una columna final aparte. La numeración (`OPTATIVA-1`, `OPTATIVA-2`, ...) es global y secuencial por orden de aparición en el PDF, no reinicia por semestre.
+- **Materia N de Área de Concentración**: slots sin clave real dentro de la tabla de semestres (distinto de las áreas de concentración completas descritas abajo) — igual que las optativas en que no tienen `prerreqs`, y en que **también se quedan en su propio semestre real** (`AREA-{n}`, `n` = el número que ya trae el PDF), porque representan una materia obligatoria de esa etapa del plan, no una optativa libre.
 - Tanto optativas como estos slots cuentan para la barra de progreso de `PlanSelector.tsx` sin ningún cambio de frontend (`loader.ts`, `curriculumStore.ts` y `dagreLayout.ts` ya son genéricos sobre cualquier entrada de `planData`).
 
 ### Planes con múltiples áreas de concentración
@@ -121,12 +121,13 @@ espresso: { 700:'#3E2723', 800:'#2D1B14', 900:'#1A0F0A' }
 
 ## Deuda técnica conocida
 
-- **Clases Tailwind `cream-*`/`espresso-*` no existen.** `PlanSelector.tsx` y el tab-switcher en `App.tsx` usan `bg-cream-50`, `border-cream-300`, `text-espresso-800`, etc. (la paleta de arriba), pero `tailwind.config.js` **no las define** — solo define `itam-dark`, `itam-core`, `itam-muted`, `base-cream`, `base-bone`, `alert-rust`. Esas clases no generan CSS: los elementos quedan sin fondo/borde de color (transparente), aunque el resto del layout funcione. Nadie lo ha corregido porque visualmente pasa casi desapercibido (el fondo de la app ya es claro). Pendiente: o se agregan `cream-*`/`espresso-*` a `tailwind.config.js` con los hex de arriba, o se migran esos componentes a las clases/colores que sí existen (como ya hace `CourseNode.tsx` con estilos inline).
+Ninguna pendiente por ahora. (Resuelto: clases Tailwind `cream-*`/`espresso-*` que no existían en `tailwind.config.js` — `PlanSelector.tsx` y el tab-switcher de `App.tsx` ya migraron a `bg-base-cream`/`border-itam-muted/40` y colores inline `#0D3B2E`, consistentes con la paleta real definida.)
 
 ## Sub-CLAUDEs
 
 - [`src/algorithms/CLAUDE.md`](src/algorithms/CLAUDE.md) — algoritmos de grafo (coreqs, DFS, topología, layout) y de horarios (traslapes, auto-asignación)
 - [`src/components/CLAUDE.md`](src/components/CLAUDE.md) — componentes React y estilos de estado
 - [`src/components/schedule/CLAUDE.md`](src/components/schedule/CLAUDE.md) — pestaña de horario, schema de datos y flujo de importación desde ITACA
+- [`src/components/manual/CLAUDE.md`](src/components/manual/CLAUDE.md) — pestaña de manual de usuario
 - [`src/store/CLAUDE.md`](src/store/CLAUDE.md) — los 2 stores (curriculum y schedule), persistencia, invariantes
 - [`src/data/CLAUDE.md`](src/data/CLAUDE.md) — carga de planes y pipeline PDF→JSON

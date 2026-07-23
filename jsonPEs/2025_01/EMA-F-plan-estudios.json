@@ -306,7 +306,8 @@
     "creditos": 8,
     "prerreqs": [
       "ECO-11021",
-      "MAT-12201"
+      "MAT-12201",
+      "MAT-24210"
     ],
     "coreqs": [],
     "estado": 0
@@ -316,7 +317,6 @@
     "nombre": "Ideas e Instituciones Políticas y Sociales III",
     "creditos": 6,
     "prerreqs": [
-      "MAT-24210",
       "EGN-17122",
       "EGN-17141"
     ],
@@ -359,7 +359,8 @@
     "creditos": 3,
     "prerreqs": [
       "COM-16305",
-      "ECO-11002"
+      "ECO-11002",
+      "EST-14103"
     ],
     "coreqs": [],
     "estado": 0
@@ -369,7 +370,6 @@
     "nombre": "Macroeconomía II",
     "creditos": 6,
     "prerreqs": [
-      "EST-14103",
       "ECO-12011",
       "MAT-24210"
     ],
@@ -609,7 +609,8 @@
     "creditos": 6,
     "prerreqs": [
       "ECO-11023",
-      "ECO-12012"
+      "ECO-12012",
+      "ECO-10522"
     ],
     "coreqs": [],
     "estado": 0
@@ -619,9 +620,9 @@
     "nombre": "Teoría del Consumidor y Productor",
     "creditos": 6,
     "prerreqs": [
-      "ECO-10522",
       "ECO-11023",
-      "ECO-12012"
+      "ECO-12012",
+      "MAT-24100"
     ],
     "coreqs": [],
     "estado": 0
@@ -631,9 +632,9 @@
     "nombre": "Macroeconomía Dinámica I",
     "creditos": 6,
     "prerreqs": [
-      "MAT-24100",
       "ECO-11023",
-      "ECO-12012"
+      "ECO-12012",
+      "MAT-24100"
     ],
     "coreqs": [],
     "estado": 0
@@ -643,7 +644,6 @@
     "nombre": "Estadística Bayesiana",
     "creditos": 6,
     "prerreqs": [
-      "MAT-24100",
       "EST-14103"
     ],
     "coreqs": [],
@@ -665,7 +665,9 @@
     "creditos": 9,
     "prerreqs": [
       "ECO-11023",
-      "ECO-12012"
+      "ECO-12012",
+      "ECO-10522",
+      "ECO-10523"
     ],
     "coreqs": [],
     "estado": 0
@@ -674,10 +676,7 @@
     "semestre": 10,
     "nombre": "Electiva Fundamentos 1",
     "creditos": 6,
-    "prerreqs": [
-      "ECO-10522",
-      "ECO-10523"
-    ],
+    "prerreqs": [],
     "coreqs": [],
     "estado": 0
   },

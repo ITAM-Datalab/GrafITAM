@@ -424,7 +424,8 @@
     "creditos": 6,
     "prerreqs": [
       "MAT-24630",
-      "ECO-21104"
+      "ECO-21104",
+      "ECO-22105"
     ],
     "coreqs": [],
     "estado": 0
@@ -434,7 +435,6 @@
     "nombre": "Contabilidad Administrativa II",
     "creditos": 6,
     "prerreqs": [
-      "ECO-22105",
       "CON-14100"
     ],
     "coreqs": [],
@@ -525,7 +525,7 @@
     "estado": 0
   },
   "OPTATIVA-1": {
-    "semestre": 10,
+    "semestre": 5,
     "nombre": "Optativa I",
     "creditos": 6,
     "prerreqs": [],
@@ -533,7 +533,7 @@
     "estado": 0
   },
   "OPTATIVA-2": {
-    "semestre": 10,
+    "semestre": 6,
     "nombre": "Optativa II",
     "creditos": 6,
     "prerreqs": [],
@@ -541,7 +541,7 @@
     "estado": 0
   },
   "OPTATIVA-3": {
-    "semestre": 10,
+    "semestre": 6,
     "nombre": "Optativa III",
     "creditos": 6,
     "prerreqs": [],
@@ -549,7 +549,7 @@
     "estado": 0
   },
   "OPTATIVA-4": {
-    "semestre": 10,
+    "semestre": 9,
     "nombre": "Optativa IV",
     "creditos": 6,
     "prerreqs": [],
