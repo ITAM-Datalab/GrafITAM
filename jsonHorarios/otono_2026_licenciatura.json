@@ -4035,6 +4035,28 @@
       "salon": "RH210"
     }
   ],
+  "CSO-19073": [
+    {
+      "campus": "RIO HONDO",
+      "crn": "3405",
+      "dias": "LU MI",
+      "grupo": "001",
+      "horario": "16:00-17:30",
+      "nombre": "SEMINARIO DE INV. POLITICA",
+      "profesor": "EMILIO GUTIERREZ FERNANDEZ",
+      "salon": "RH106"
+    },
+    {
+      "campus": "RIO HONDO",
+      "crn": "3406",
+      "dias": "VI",
+      "grupo": "002",
+      "horario": "07:00-10:00",
+      "nombre": "SEMINARIO DE INV. POLITICA",
+      "profesor": "",
+      "salon": "RH308"
+    }
+  ],
   "CSO-19081": [
     {
       "campus": "RIO HONDO",
@@ -4045,28 +4067,6 @@
       "nombre": "SEMINARIO DE INV. POLITICA  A",
       "profesor": "ADRIAN LUCARDI",
       "salon": "RH309"
-    }
-  ],
-  "CSO-19094": [
-    {
-      "campus": "RIO HONDO",
-      "crn": "3391",
-      "dias": "LU MI",
-      "grupo": "001",
-      "horario": "10:00-11:30",
-      "nombre": "SEM. DE INVESTIG. POLITICA A-2",
-      "profesor": "HORACIO ALEJANDRO LARREGUY ARBESU",
-      "salon": "RHSA4"
-    },
-    {
-      "campus": "RIO HONDO",
-      "crn": "3391",
-      "dias": "VI",
-      "grupo": "001",
-      "horario": "08:30-10:00",
-      "nombre": "SEM. DE INVESTIG. POLITICA A-2",
-      "profesor": "HORACIO ALEJANDRO LARREGUY ARBESU",
-      "salon": "RHSA4"
     }
   ],
   "DER-10003": [
@@ -6688,7 +6688,7 @@
       "horario": "08:30-10:00",
       "nombre": "PENSAMIENTO ECONOMICO",
       "profesor": "DIEGO ALEJANDRO DOMINGUEZ LARREA",
-      "salon": "RHB-2"
+      "salon": "RH112"
     }
   ],
   "ECO-10301": [
