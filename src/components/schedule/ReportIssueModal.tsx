@@ -43,6 +43,16 @@ export default function ReportIssueModal() {
   const [carrera, setCarrera] = useState('')
   const [comentario, setComentario] = useState('')
 
+  // Qué campo es obligatorio cambia según el tipo de problema: para "Plan de
+  // estudios no encontrado" no aplica pedir una clave de materia (se pide la
+  // carrera/plan en su lugar), y "Otro problema" solo necesita el comentario.
+  const isValid =
+    tipo === 'plan_faltante'
+      ? carrera.trim() !== ''
+      : tipo === 'otro'
+        ? comentario.trim() !== ''
+        : clave.trim() !== ''
+
   const resetForm = () => {
     setOpen(false)
     setClave('')
@@ -123,7 +133,9 @@ export default function ReportIssueModal() {
               ))}
             </select>
 
-            <label className="block text-xs font-semibold mb-1">Clave de materia</label>
+            <label className="block text-xs font-semibold mb-1">
+              Clave de materia{tipo === 'materia_faltante' || tipo === 'grupo_incorrecto' ? '' : ' (opcional)'}
+            </label>
             <input
               value={clave}
               onChange={(e) => setClave(e.target.value)}
@@ -145,7 +157,9 @@ export default function ReportIssueModal() {
               className="w-full text-xs border border-itam-muted/50 rounded p-2 mb-3"
             />
 
-            <label className="block text-xs font-semibold mb-1">Carrera o plan de estudios (opcional)</label>
+            <label className="block text-xs font-semibold mb-1">
+              Carrera o plan de estudios{tipo === 'plan_faltante' ? '' : ' (opcional)'}
+            </label>
             <input
               value={carrera}
               onChange={(e) => setCarrera(e.target.value)}
@@ -170,7 +184,7 @@ export default function ReportIssueModal() {
             <div className="flex items-center justify-between gap-2">
               <button
                 onClick={handleSubmitGithub}
-                disabled={!clave.trim()}
+                disabled={!isValid}
                 className="text-[10px] underline opacity-60 hover:opacity-100 disabled:opacity-30 whitespace-nowrap"
               >
                 o repórtalo en GitHub
@@ -184,7 +198,7 @@ export default function ReportIssueModal() {
                 </button>
                 <button
                   onClick={handleSubmitGoogleForm}
-                  disabled={!clave.trim()}
+                  disabled={!isValid}
                   className="text-xs px-3 py-1.5 rounded font-semibold disabled:opacity-40"
                   style={{ background: '#1E5E4B', color: '#FCFAF8' }}
                 >

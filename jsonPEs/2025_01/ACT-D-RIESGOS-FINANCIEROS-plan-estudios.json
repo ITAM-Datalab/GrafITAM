@@ -284,7 +284,7 @@
   },
   "ACT-11301": {
     "semestre": 6,
-    "nombre": "Materia Área de Concentración Cálculo Actuarial II",
+    "nombre": "Cálculo Actuarial II",
     "creditos": 6,
     "prerreqs": [
       "EST-14102",
@@ -319,7 +319,8 @@
     "creditos": 8,
     "prerreqs": [
       "COM-11302",
-      "MAT-14102"
+      "MAT-14102",
+      "MAT-14310"
     ],
     "coreqs": [],
     "estado": 0
@@ -329,7 +330,6 @@
     "nombre": "Estadística Matemática",
     "creditos": 8,
     "prerreqs": [
-      "MAT-14310",
       "EST-14102",
       "EST-24104"
     ],
@@ -384,7 +384,7 @@
     "creditos": 6,
     "prerreqs": [
       "ACT-15357",
-      "EST-24104"
+      "EST-14102"
     ],
     "coreqs": [],
     "estado": 0
@@ -413,7 +413,7 @@
   },
   "ACT-14308": {
     "semestre": 8,
-    "nombre": "Materia Área de Concentración Seminario de Investigación Actuarial",
+    "nombre": "Seminario de Investigación Actuarial",
     "creditos": 7,
     "prerreqs": [],
     "coreqs": [],
@@ -426,6 +426,37 @@
     "prerreqs": [
       "ACT-11302",
       "ACT-11303"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "MAT-24210": {
+    "semestre": 6,
+    "nombre": "Sistemas Dinámicos I",
+    "creditos": 6,
+    "prerreqs": [
+      "MAT-14310",
+      "MAT-14102"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "ADM-15582": {
+    "semestre": 8,
+    "nombre": "Finanzas Corporativas Avanzadas",
+    "creditos": 6,
+    "prerreqs": [
+      "ACT-22306"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "ACT-22309": {
+    "semestre": 8,
+    "nombre": "Matemáticas Financieras III",
+    "creditos": 7,
+    "prerreqs": [
+      "ACT-22306"
     ],
     "coreqs": [],
     "estado": 0

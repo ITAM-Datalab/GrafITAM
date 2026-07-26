@@ -94,6 +94,14 @@ OPTATIVA_SLOT_RE = re.compile(r'^Optativas?(\s|$)', re.IGNORECASE)
 # así que se preserva tal cual en vez de renumerar.
 AREA_CONCENTRACION_SLOT_RE = re.compile(r'^Materia\s+(\d+)\s+de\s+\S*rea\s+de\s+[Cc]oncentraci', re.IGNORECASE)
 
+# Renglón placeholder "Materia Área de Concentración" SIN número — a diferencia de
+# AREA_CONCENTRACION_SLOT_RE (que trae un slot real numerado), este es un rótulo que
+# antecede a una materia de tronco común reimpresa dentro de la tabla de un área (ej.
+# ACT-11301 en ACT-G). Al no matchear ninguna rama especial se colaba al nombre de la
+# materia real siguiente ("Materia Área de Concentración Cálculo Actuarial II") — se
+# descarta explícitamente en su lugar.
+AREA_CONCENTRACION_LABEL_RE = re.compile(r'^Materia\s+\S*rea\s+de\s+[Cc]oncentraci[oó]n\s*$', re.IGNORECASE)
+
 # Encabezado de página que abre una sección de área de concentración completa (ej.
 # familia ACT/ECD/ECO/EDF: el PDF reimprime los semestres finales una vez por área —
 # "ÁREA DE CONCENTRACIÓN: SEGUROS", luego "...: ESTADÍSTICA", etc.). Todo lo parseado
@@ -205,11 +213,20 @@ def merge_letter_runs(words: list[dict]) -> str:
     return ' '.join(parts)
 
 
-def detect_column_bounds(pdf) -> dict | None:
+def detect_column_bounds(word_lists) -> dict | None:
     """
-    Detecta los límites de columnas leyendo las palabras de encabezado en la
-    primera página. "Prerrequisito(s)" y "Clave" pueden estar en filas distintas
-    (DER-F/G); "Créditos" puede abreviarse como "Crds." o "Crd." (ACT/DFI/IND).
+    Detecta los límites de columnas leyendo las palabras de encabezado de una o más
+    páginas ya extraídas (`page.extract_words(...)`, una lista por página). "Prerrequisito(s)"
+    y "Clave" pueden estar en filas distintas (DER-F/G); "Créditos" puede abreviarse
+    como "Crds." o "Crd." (ACT/DFI/IND).
+
+    Los PDFs con áreas de concentración (ver AREA_HEADER_RE) reimprimen la tabla
+    completa por cada área con un layout de columnas ligeramente distinto al del
+    tronco común — por eso `parse_pdf` no llama esta función una sola vez para todo
+    el documento, sino una vez por página, para recalibrar cuando cambia el layout
+    (si una página no trae su propio encabezado, `parse_pdf` conserva los límites
+    de la última página que sí lo trajo).
+
     Devuelve {'prereq_x': float, 'materia_x': float, 'credits_x': float}
     """
     CLAVE_RE = re.compile(r'^Clave$', re.IGNORECASE)
@@ -221,8 +238,7 @@ def detect_column_bounds(pdf) -> dict | None:
     clave_word = None
     credits_word = None
 
-    for page in pdf.pages[:2]:
-        words = page.extract_words(x_tolerance=3, y_tolerance=3)
+    for words in word_lists:
         for w in words:
             t = w['text']
             if prereq_word is None and PREREQ_RE.match(t):
@@ -298,7 +314,9 @@ def parse_pdf(pdf_path: Path, pdfplumber) -> dict[str | None, tuple[dict, int]]:
     area_concentracion = current_section['area_concentracion']
 
     with pdfplumber.open(str(pdf_path)) as pdf:
-        col = detect_column_bounds(pdf)
+        col = detect_column_bounds(
+            page.extract_words(x_tolerance=3, y_tolerance=3) for page in pdf.pages[:2]
+        )
         if col is None:
             return {}
 
@@ -328,7 +346,7 @@ def parse_pdf(pdf_path: Path, pdfplumber) -> dict[str | None, tuple[dict, int]]:
         in_optativas = False
         done = False
 
-        for page in pdf.pages:
+        for page_idx, page in enumerate(pdf.pages):
             if done:
                 break
 
@@ -363,6 +381,23 @@ def parse_pdf(pdf_path: Path, pdfplumber) -> dict[str | None, tuple[dict, int]]:
                     pending_prereq_groups = []
                     last_saved_course_id = None
                     last_saved_top = None
+
+                    # La tabla reimpresa de esta área trae su propio encabezado de
+                    # columnas, con un layout ligeramente distinto al del tronco común
+                    # (ver detect_column_bounds) — recalibrar con esta página y la
+                    # siguiente (mismo radio de búsqueda que la detección inicial).
+                    # Si no se encuentra encabezado aquí, se conservan los límites
+                    # vigentes (comportamiento de fallback previo, sin cambios).
+                    area_window = [words]
+                    if page_idx + 1 < len(pdf.pages):
+                        area_window.append(
+                            pdf.pages[page_idx + 1].extract_words(x_tolerance=3, y_tolerance=3)
+                        )
+                    area_col = detect_column_bounds(area_window)
+                    if area_col is not None:
+                        prereq_x = area_col['prereq_x']
+                        materia_x = area_col['materia_x']
+                        credits_x = area_col['credits_x']
 
                     label = m_area_header.group(1).strip()
                     tronco = sections[0][1]
@@ -488,6 +523,11 @@ def parse_pdf(pdf_path: Path, pdfplumber) -> dict[str | None, tuple[dict, int]]:
                                     current_semester,
                                     int(m_cred_area.group()) if m_cred_area else 6,
                                 )
+                            elif AREA_CONCENTRACION_LABEL_RE.match(name_text2):
+                                # Rótulo "Materia Área de Concentración" sin número —
+                                # se descarta, no es continuación del nombre del stub
+                                # abierto (ver AREA_CONCENTRACION_LABEL_RE).
+                                pass
                             else:
                                 m2 = COREQ_MARKER_RE.search(name_text2)
                                 nombre2 = COREQ_MARKER_RE.sub('', name_text2).strip()
@@ -535,6 +575,12 @@ def parse_pdf(pdf_path: Path, pdfplumber) -> dict[str | None, tuple[dict, int]]:
                                 current_semester,
                                 int(m_cred_area.group()) if m_cred_area else 6,
                             )
+                        elif raw and AREA_CONCENTRACION_LABEL_RE.match(raw):
+                            # Rótulo "Materia Área de Concentración" sin número —
+                            # antecede a una materia de tronco reimpresa en la tabla
+                            # de un área; se descarta, no es nombre de la siguiente
+                            # materia (ver AREA_CONCENTRACION_LABEL_RE).
+                            pass
                         elif raw:
                             # El nombre de la SIGUIENTE materia ya empezó a aparecer —
                             # cualquier desborde de aquí en adelante es "hacia adelante",

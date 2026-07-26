@@ -97,8 +97,7 @@
     "creditos": 6,
     "prerreqs": [
       "EGN-17122",
-      "EGN-17141",
-      "LEN-12701"
+      "EGN-17141"
     ],
     "coreqs": [
       "LEN-12702"
@@ -110,6 +109,7 @@
     "nombre": "Seminario de Comunicación Escrita",
     "creditos": 2,
     "prerreqs": [
+      "LEN-12701",
       "LEN-12701"
     ],
     "coreqs": [
@@ -308,7 +308,7 @@
   },
   "ACT-11301": {
     "semestre": 6,
-    "nombre": "Materia Área de Concentración Cálculo Actuarial II",
+    "nombre": "Cálculo Actuarial II",
     "creditos": 6,
     "prerreqs": [
       "EST-14102",
@@ -451,7 +451,7 @@
   },
   "ACT-15353": {
     "semestre": 8,
-    "nombre": "Materia Área de Concentración Práctica Actuarial y Marco Institucional",
+    "nombre": "Práctica Actuarial y Marco Institucional",
     "creditos": 6,
     "prerreqs": [
       "ACT-11302",
@@ -473,6 +473,47 @@
     "coreqs": [
       "ACT-15353"
     ],
+    "estado": 0
+  },
+  "COM-16412": {
+    "semestre": 6,
+    "nombre": "Herramientas Comp. y Productividad Empresarial",
+    "creditos": 9,
+    "prerreqs": [
+      "COM-11302"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "ACT-15354": {
+    "semestre": 8,
+    "nombre": "Matemática Demográfica",
+    "creditos": 6,
+    "prerreqs": [
+      "ACT-11300"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "ACT-11304": {
+    "semestre": 8,
+    "nombre": "Modelos Actuariales II **",
+    "creditos": 6,
+    "prerreqs": [
+      "ACT-11303"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "ECO-11221": {
+    "semestre": 8,
+    "nombre": "Economía de la Incertidumbre",
+    "creditos": 6,
+    "prerreqs": [
+      "ECO-11104",
+      "EST-14101"
+    ],
+    "coreqs": [],
     "estado": 0
   },
   "OPTATIVA-1": {

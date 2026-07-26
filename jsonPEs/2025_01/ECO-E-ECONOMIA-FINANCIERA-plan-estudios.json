@@ -303,12 +303,159 @@
     "estado": 0
   },
   "ECO-13102": {
-    "semestre": 9,
+    "semestre": 8,
     "nombre": "Economía Internacional II",
     "creditos": 6,
     "prerreqs": [
       "ECO-13101",
       "ECO-12201"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "MAT-24630": {
+    "semestre": 5,
+    "nombre": "Matemáticas Aplicadas a la Economía",
+    "creditos": 6,
+    "prerreqs": [
+      "MAT-12102"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "ADM-15501": {
+    "semestre": 5,
+    "nombre": "Finanzas I",
+    "creditos": 7,
+    "prerreqs": [
+      "ECO-21104"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "CON-14100": {
+    "semestre": 5,
+    "nombre": "Contabilidad Administrativa I",
+    "creditos": 9,
+    "prerreqs": [
+      "CON-10100"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "DER-16019": {
+    "semestre": 6,
+    "nombre": "Derecho del Sistema Financiero",
+    "creditos": 6,
+    "prerreqs": [
+      "DER-10113"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "EST-11104": {
+    "semestre": 6,
+    "nombre": "Econometría",
+    "creditos": 6,
+    "prerreqs": [
+      "EST-11102",
+      "MAT-12310"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "ECO-11121": {
+    "semestre": 6,
+    "nombre": "Microeconomía Avanzada I",
+    "creditos": 6,
+    "prerreqs": [
+      "MAT-24630",
+      "ECO-21104"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "ECO-18300": {
+    "semestre": 7,
+    "nombre": "Crecimiento Económico",
+    "creditos": 6,
+    "prerreqs": [
+      "ECO-22105",
+      "MAT-24630"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "ECO-10517": {
+    "semestre": 7,
+    "nombre": "Macroeconometría Aplicada",
+    "creditos": 7,
+    "prerreqs": [
+      "ECO-21104",
+      "EST-11104",
+      "ECO-21104"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "ECO-11122": {
+    "semestre": 7,
+    "nombre": "Microeconomía Avanzada II",
+    "creditos": 6,
+    "prerreqs": [
+      "ECO-22105",
+      "ECO-11121"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "ADM-15582": {
+    "semestre": 8,
+    "nombre": "Finanzas Corporativas Avanzadas",
+    "creditos": 6,
+    "prerreqs": [
+      "ADM-15501"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "ADM-15502": {
+    "semestre": 8,
+    "nombre": "Finanzas II",
+    "creditos": 7,
+    "prerreqs": [
+      "ADM-15501"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "ADM-15503": {
+    "semestre": 9,
+    "nombre": "Finanzas III",
+    "creditos": 6,
+    "prerreqs": [
+      "ADM-15502"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "ADM-15528": {
+    "semestre": 9,
+    "nombre": "Instrumentos Financieros",
+    "creditos": 6,
+    "prerreqs": [
+      "ADM-15502"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "ECO-12121": {
+    "semestre": 9,
+    "nombre": "Macroeconomía Avanzada",
+    "creditos": 6,
+    "prerreqs": [
+      "ECO-11121",
+      "ECO-13102"
     ],
     "coreqs": [],
     "estado": 0
@@ -340,6 +487,14 @@
   "OPTATIVA-4": {
     "semestre": 9,
     "nombre": "Optativa IV",
+    "creditos": 6,
+    "prerreqs": [],
+    "coreqs": [],
+    "estado": 0
+  },
+  "OPTATIVA-5": {
+    "semestre": 6,
+    "nombre": "Optativa V",
     "creditos": 6,
     "prerreqs": [],
     "coreqs": [],

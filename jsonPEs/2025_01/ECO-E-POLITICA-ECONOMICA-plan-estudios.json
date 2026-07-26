@@ -303,12 +303,133 @@
     "estado": 0
   },
   "ECO-13102": {
-    "semestre": 9,
+    "semestre": 8,
     "nombre": "Economía Internacional II",
     "creditos": 6,
     "prerreqs": [
+      "EST-11104",
       "ECO-13101",
       "ECO-12201"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "ECO-15110": {
+    "semestre": 5,
+    "nombre": "Evaluación de Proyectos",
+    "creditos": 6,
+    "prerreqs": [
+      "ECO-21104",
+      "ECO-22105"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "MAT-24630": {
+    "semestre": 5,
+    "nombre": "Matemáticas Aplicadas a la Economía",
+    "creditos": 6,
+    "prerreqs": [
+      "MAT-12102"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "EST-11104": {
+    "semestre": 6,
+    "nombre": "Econometría",
+    "creditos": 6,
+    "prerreqs": [
+      "EST-11102",
+      "MAT-12310"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "ECO-11121": {
+    "semestre": 6,
+    "nombre": "Microeconomía Avanzada I",
+    "creditos": 6,
+    "prerreqs": [
+      "MAT-24630",
+      "ECO-21104"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "ECO-18300": {
+    "semestre": 7,
+    "nombre": "Crecimiento Económico",
+    "creditos": 6,
+    "prerreqs": [
+      "ECO-22105",
+      "MAT-24630"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "ECO-10517": {
+    "semestre": 7,
+    "nombre": "Macroeconometría Aplicada",
+    "creditos": 7,
+    "prerreqs": [
+      "ECO-21104",
+      "EST-11104",
+      "ECO-21104"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "ECO-11122": {
+    "semestre": 7,
+    "nombre": "Microeconomía Avanzada II",
+    "creditos": 6,
+    "prerreqs": [
+      "ECO-22105",
+      "ECO-11121"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "ECO-14303": {
+    "semestre": 8,
+    "nombre": "Economía de la Regulación",
+    "creditos": 6,
+    "prerreqs": [
+      "ECO-14301"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "ECO-10516": {
+    "semestre": 8,
+    "nombre": "Microeconometría Aplicada",
+    "creditos": 7,
+    "prerreqs": [
+      "ECO-21104",
+      "ECO-22105"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "ECO-15111": {
+    "semestre": 9,
+    "nombre": "Economía Política",
+    "creditos": 6,
+    "prerreqs": [
+      "ECO-21104",
+      "ECO-22105"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "ECO-12121": {
+    "semestre": 9,
+    "nombre": "Macroeconomía Avanzada",
+    "creditos": 6,
+    "prerreqs": [
+      "ECO-11121",
+      "ECO-13102"
     ],
     "coreqs": [],
     "estado": 0
@@ -340,6 +461,38 @@
   "OPTATIVA-4": {
     "semestre": 9,
     "nombre": "Optativa IV",
+    "creditos": 6,
+    "prerreqs": [],
+    "coreqs": [],
+    "estado": 0
+  },
+  "OPTATIVA-5": {
+    "semestre": 5,
+    "nombre": "Optativa V",
+    "creditos": 6,
+    "prerreqs": [],
+    "coreqs": [],
+    "estado": 0
+  },
+  "OPTATIVA-6": {
+    "semestre": 6,
+    "nombre": "Optativa VI",
+    "creditos": 6,
+    "prerreqs": [],
+    "coreqs": [],
+    "estado": 0
+  },
+  "OPTATIVA-7": {
+    "semestre": 6,
+    "nombre": "Optativa VII",
+    "creditos": 6,
+    "prerreqs": [],
+    "coreqs": [],
+    "estado": 0
+  },
+  "OPTATIVA-8": {
+    "semestre": 9,
+    "nombre": "Optativa VIII",
     "creditos": 6,
     "prerreqs": [],
     "coreqs": [],
