@@ -3,14 +3,14 @@
     "slug": "verano_2026_licenciatura",
     "label": "VERANO 2026 LICENCIATURA",
     "sCode": "3007",
-    "scrapedAt": "2026-07-25T09:59:23.467897+00:00",
+    "scrapedAt": "2026-07-26T12:04:03.300805+00:00",
     "materiasConGrupos": 46
   },
   {
     "slug": "otono_2026_licenciatura",
     "label": "OTOÑO 2026 LICENCIATURA",
     "sCode": "3077",
-    "scrapedAt": "2026-07-25T10:03:25.176300+00:00",
+    "scrapedAt": "2026-07-26T12:08:01.862911+00:00",
     "materiasConGrupos": 527
   }
 ]
