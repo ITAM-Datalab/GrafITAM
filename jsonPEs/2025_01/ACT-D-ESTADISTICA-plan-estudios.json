@@ -255,7 +255,7 @@
     "creditos": 6,
     "prerreqs": [
       "MAT-22600",
-      "ACT-15357"
+      "EST-14101"
     ],
     "coreqs": [],
     "estado": 0
@@ -265,7 +265,7 @@
     "nombre": "Algorítmica y Programación",
     "creditos": 6,
     "prerreqs": [
-      "EST-14101",
+      "ACT-15357",
       "MAT-14300",
       "COM-16301"
     ],
@@ -284,7 +284,7 @@
   },
   "ACT-11301": {
     "semestre": 6,
-    "nombre": "Materia Área de Concentración Cálculo Actuarial II",
+    "nombre": "Cálculo Actuarial II",
     "creditos": 6,
     "prerreqs": [
       "EST-14102",
@@ -384,7 +384,7 @@
     "creditos": 6,
     "prerreqs": [
       "ACT-15357",
-      "EST-24104"
+      "EST-14103"
     ],
     "coreqs": [],
     "estado": 0
@@ -413,7 +413,7 @@
   },
   "ACT-14308": {
     "semestre": 8,
-    "nombre": "Materia Área de Concentración Seminario de Investigación Actuarial",
+    "nombre": "Seminario de Investigación Actuarial",
     "creditos": 7,
     "prerreqs": [],
     "coreqs": [],
@@ -426,6 +426,26 @@
     "prerreqs": [
       "ACT-11302",
       "ACT-11303"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "EST-24107": {
+    "semestre": 6,
+    "nombre": "Simulación",
+    "creditos": 6,
+    "prerreqs": [
+      "EST-14102"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "EST-25146": {
+    "semestre": 8,
+    "nombre": "Econometría Financiera Actuarial",
+    "creditos": 6,
+    "prerreqs": [
+      "EST-24105"
     ],
     "coreqs": [],
     "estado": 0

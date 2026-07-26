@@ -308,7 +308,7 @@
   },
   "ACT-11301": {
     "semestre": 6,
-    "nombre": "Materia Área de Concentración Cálculo Actuarial II",
+    "nombre": "Cálculo Actuarial II",
     "creditos": 6,
     "prerreqs": [
       "EST-14102",
@@ -418,7 +418,7 @@
   },
   "ACT-25354": {
     "semestre": 7,
-    "nombre": "Administración Cuantitativa de Riesgos",
+    "nombre": "Administración Cuantitativa de Riesgos **",
     "creditos": 6,
     "prerreqs": [
       "ACT-15357",
@@ -429,7 +429,7 @@
   },
   "ACT-22306": {
     "semestre": 7,
-    "nombre": "Matemáticas Financieras II",
+    "nombre": "Matemáticas Financieras II **",
     "creditos": 6,
     "prerreqs": [
       "MAT-22600",
@@ -451,7 +451,7 @@
   },
   "ACT-15353": {
     "semestre": 8,
-    "nombre": "Materia Área de Concentración Práctica Actuarial y Marco Institucional",
+    "nombre": "Práctica Actuarial y Marco Institucional",
     "creditos": 6,
     "prerreqs": [
       "ACT-11302",
@@ -473,6 +473,37 @@
     "coreqs": [
       "ACT-15353"
     ],
+    "estado": 0
+  },
+  "MAT-24210": {
+    "semestre": 6,
+    "nombre": "Sistemas Dinámicos I",
+    "creditos": 6,
+    "prerreqs": [
+      "MAT-14310",
+      "MAT-14102"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "ADM-15582": {
+    "semestre": 8,
+    "nombre": "Finanzas Corporativas Avanzadas",
+    "creditos": 6,
+    "prerreqs": [
+      "ACT-22306"
+    ],
+    "coreqs": [],
+    "estado": 0
+  },
+  "ACT-22309": {
+    "semestre": 8,
+    "nombre": "Matemáticas Financieras III **",
+    "creditos": 7,
+    "prerreqs": [
+      "ACT-22306"
+    ],
+    "coreqs": [],
     "estado": 0
   },
   "OPTATIVA-1": {

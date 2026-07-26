@@ -2,7 +2,8 @@ name: Scrape horarios ITACA
 
 on:
   schedule:
-    - cron: '17 8 * * *' # diario, 08:17 UTC (~02:17 hora CDMX)
+    - cron: '0 11 * * *' # diario, 11:00 UTC (05:00 CDMX)
+    - cron: '0 23 * * *' # diario, 23:00 UTC (17:00 CDMX)
   workflow_dispatch:
 
 permissions:
