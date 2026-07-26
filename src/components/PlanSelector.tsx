@@ -65,7 +65,7 @@ export default function PlanSelector() {
   }, [planData, userState])
 
   return (
-    <div className="relative flex flex-wrap items-center gap-3 px-4 py-2.5 bg-base-cream border-b border-itam-muted/40">
+    <div className="flex flex-col gap-2 md:grid md:grid-cols-[1fr_auto_1fr] md:items-center md:gap-3 px-4 py-2.5 bg-base-cream border-b border-itam-muted/40">
       <div className="flex flex-wrap items-center gap-3">
         <span className="font-semibold text-sm" style={{ color: '#0D3B2E' }}>
           Plan de Estudios
@@ -136,7 +136,7 @@ export default function PlanSelector() {
 
       {creditProgress && (
         <span
-          className="block w-full text-center md:absolute md:left-1/2 md:w-auto md:-translate-x-1/2 text-xs font-medium pointer-events-none"
+          className="text-center text-xs font-medium"
           style={{ color: '#0D3B2E' }}
         >
           {creditProgress.approved} / {creditProgress.total} cr. ({creditProgress.pct}%)
@@ -144,7 +144,7 @@ export default function PlanSelector() {
       )}
 
       {creditProgress && (
-        <div className="ml-auto">
+        <div className="flex justify-center md:justify-end">
           <button
             onClick={toggleShowAvailable}
             className="text-xs px-3 py-0.5 rounded-full border transition-colors"
