@@ -1,6 +1,7 @@
 import { useState } from 'react'
 
-const GITHUB_REPO = 'ITAM-Datalab/GrafITAM'
+const MAKE_WEBHOOK_URL = import.meta.env.VITE_MAKE_WEBHOOK_URL as string | undefined
+const MAKE_WEBHOOK_API_KEY = import.meta.env.VITE_MAKE_WEBHOOK_API_KEY as string | undefined
 
 // Form "Reportar Problema - GrafItam" (https://forms.gle/kG7GuWgdZoAYrye3A). No
 // requiere inicio de sesión — es la opción por default para reportar sin cuenta
@@ -34,6 +35,30 @@ const TIPO_FORM_OPTION: Record<TipoProblema, string | null> = {
   otro: null,
 }
 
+type SubmitState = 'idle' | 'submitting' | 'success' | 'error'
+
+function buildIssueContent(
+  tipo: TipoProblema,
+  clave: string,
+  nombre: string,
+  grupo: string,
+  carrera: string,
+  comentario: string,
+) {
+  const title = `[Reporte] ${TIPO_LABELS[tipo]}${clave ? ` — ${clave}` : ''}`
+  const body = [
+    `**Tipo de problema:** ${TIPO_LABELS[tipo]}`,
+    `**Clave de materia:** ${clave || '(no especificada)'}`,
+    `**Nombre de materia:** ${nombre || '(no especificado)'}`,
+    `**Grupo/CRN:** ${grupo || '(no especificado)'}`,
+    `**Carrera o plan de estudios:** ${carrera || '(no especificado)'}`,
+    '',
+    '**Comentario:**',
+    comentario || '(sin comentario)',
+  ].join('\n')
+  return { title, body }
+}
+
 export default function ReportIssueModal() {
   const [open, setOpen] = useState(false)
   const [tipo, setTipo] = useState<TipoProblema>('materia_faltante')
@@ -42,6 +67,7 @@ export default function ReportIssueModal() {
   const [grupo, setGrupo] = useState('')
   const [carrera, setCarrera] = useState('')
   const [comentario, setComentario] = useState('')
+  const [submitState, setSubmitState] = useState<SubmitState>('idle')
 
   // Qué campo es obligatorio cambia según el tipo de problema: para "Plan de
   // estudios no encontrado" no aplica pedir una clave de materia (se pide la
@@ -60,6 +86,7 @@ export default function ReportIssueModal() {
     setGrupo('')
     setCarrera('')
     setComentario('')
+    setSubmitState('idle')
   }
 
   const handleSubmitGoogleForm = () => {
@@ -85,22 +112,24 @@ export default function ReportIssueModal() {
     resetForm()
   }
 
-  const handleSubmitGithub = () => {
-    const title = `[Reporte] ${TIPO_LABELS[tipo]}${clave ? ` — ${clave}` : ''}`
-    const body = [
-      `**Tipo de problema:** ${TIPO_LABELS[tipo]}`,
-      `**Clave de materia:** ${clave || '(no especificada)'}`,
-      `**Nombre de materia:** ${nombre || '(no especificado)'}`,
-      `**Grupo/CRN:** ${grupo || '(no especificado)'}`,
-      `**Carrera o plan de estudios:** ${carrera || '(no especificado)'}`,
-      '',
-      '**Comentario:**',
-      comentario || '(sin comentario)',
-    ].join('\n')
-
-    const url = `https://github.com/${GITHUB_REPO}/issues/new?title=${encodeURIComponent(title)}&body=${encodeURIComponent(body)}`
-    window.open(url, '_blank', 'noopener,noreferrer')
-    resetForm()
+  const handleSubmit = async () => {
+    const { title, body } = buildIssueContent(tipo, clave, nombre, grupo, carrera, comentario)
+    setSubmitState('submitting')
+    try {
+      const response = await fetch(MAKE_WEBHOOK_URL ?? '', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'x-make-apikey': MAKE_WEBHOOK_API_KEY ?? '',
+        },
+        body: JSON.stringify({ title, body, tipo, clave }),
+      })
+      if (!response.ok) throw new Error(`Webhook respondió ${response.status}`)
+      setSubmitState('success')
+      setTimeout(resetForm, 1500)
+    } catch {
+      setSubmitState('error')
+    }
   }
 
   return (
@@ -177,34 +206,45 @@ export default function ReportIssueModal() {
             />
 
             <p className="text-[10px] opacity-60 mb-3">
-              Al enviar se abre una pestaña nueva con el formulario ya prellenado — hace falta darle clic a
-              "Enviar" ahí para que quede registrado. No necesitas cuenta de Google ni de GitHub.
+              Al enviar se crea el reporte directamente — no necesitas cuenta de Google ni de GitHub.
             </p>
 
-            <div className="flex items-center justify-between gap-2">
-              <button
-                onClick={handleSubmitGithub}
-                disabled={!isValid}
-                className="text-[10px] underline opacity-60 hover:opacity-100 disabled:opacity-30 whitespace-nowrap"
-              >
-                o repórtalo en GitHub
-              </button>
-              <div className="flex gap-2">
-                <button
-                  onClick={() => setOpen(false)}
-                  className="text-xs px-3 py-1.5 rounded border border-itam-muted/50"
-                >
-                  Cancelar
-                </button>
+            {submitState === 'success' && (
+              <p className="text-xs mb-3 font-semibold" style={{ color: '#1E5E4B' }}>
+                ¡Reporte enviado! Gracias por avisar.
+              </p>
+            )}
+
+            {submitState === 'error' && (
+              <div className="mb-3">
+                <p className="text-xs mb-2" style={{ color: '#8C5E58' }}>
+                  No se pudo enviar automáticamente. Intenta reportarlo por Google Form.
+                </p>
                 <button
                   onClick={handleSubmitGoogleForm}
                   disabled={!isValid}
-                  className="text-xs px-3 py-1.5 rounded font-semibold disabled:opacity-40"
-                  style={{ background: '#1E5E4B', color: '#FCFAF8' }}
+                  className="text-[10px] underline opacity-70 hover:opacity-100 disabled:opacity-30"
                 >
-                  Enviar reporte
+                  Reportar por Google Form
                 </button>
               </div>
+            )}
+
+            <div className="flex items-center justify-end gap-2">
+              <button
+                onClick={() => setOpen(false)}
+                className="text-xs px-3 py-1.5 rounded border border-itam-muted/50"
+              >
+                Cancelar
+              </button>
+              <button
+                onClick={handleSubmit}
+                disabled={!isValid || submitState === 'submitting'}
+                className="text-xs px-3 py-1.5 rounded font-semibold disabled:opacity-40"
+                style={{ background: '#1E5E4B', color: '#FCFAF8' }}
+              >
+                {submitState === 'submitting' ? 'Enviando...' : 'Enviar reporte'}
+              </button>
             </div>
           </div>
         </div>
