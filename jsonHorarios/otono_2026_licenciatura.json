@@ -2319,6 +2319,26 @@
       "nombre": "FUNDAMENTOS DE PROGRAMACION",
       "profesor": "SILVIA RIOS MAGOS",
       "salon": "RHCC101"
+    },
+    {
+      "campus": "RIO HONDO",
+      "crn": "3413",
+      "dias": "MA JU",
+      "grupo": "007",
+      "horario": "07:00-08:30",
+      "nombre": "FUNDAMENTOS DE PROGRAMACION",
+      "profesor": "ALBERTO ISAAC RAMIREZ PEREZ",
+      "salon": "RHCC302"
+    },
+    {
+      "campus": "RIO HONDO",
+      "crn": "3414",
+      "dias": "LU MI",
+      "grupo": "008",
+      "horario": "08:30-10:00",
+      "nombre": "FUNDAMENTOS DE PROGRAMACION",
+      "profesor": "IRMA LOZANO MENDICUTI",
+      "salon": "RHCC302"
     }
   ],
   "COM-14117": [
@@ -2553,7 +2573,7 @@
       "grupo": "006",
       "horario": "10:00-11:30",
       "nombre": "RAZONAMIENTO ALGORITMICO",
-      "profesor": "",
+      "profesor": "TERESITA SOLA TREJO",
       "salon": "RHCC201"
     },
     {
@@ -2635,6 +2655,26 @@
       "nombre": "RAZONAMIENTO ALGORITMICO",
       "profesor": "ISABEL ESPINO GUTIERREZ",
       "salon": "RHCC201"
+    },
+    {
+      "campus": "RIO HONDO",
+      "crn": "3415",
+      "dias": "LU MI",
+      "grupo": "015",
+      "horario": "07:00-08:30",
+      "nombre": "RAZONAMIENTO ALGORITMICO",
+      "profesor": "MARIA DE LOURDES ALICIA DOMENZAIN ORTEGA",
+      "salon": "RHCC302"
+    },
+    {
+      "campus": "RIO HONDO",
+      "crn": "3416",
+      "dias": "LU MI",
+      "grupo": "016",
+      "horario": "10:30-12:00",
+      "nombre": "RAZONAMIENTO ALGORITMICO",
+      "profesor": "FERNANDO PURON CONTRERAS",
+      "salon": "RHCC202"
     }
   ],
   "COM-16307": [
@@ -10519,10 +10559,40 @@
       "crn": "2738",
       "dias": "MA JU",
       "grupo": "032",
+      "horario": "11:30-13:00",
+      "nombre": "ESTRATEGIAS DE COMUNIC ESCRITA",
+      "profesor": "CLAUDIA SOLEDAD SAAVEDRA MENDEZ",
+      "salon": "PF101"
+    },
+    {
+      "campus": "RIO HONDO",
+      "crn": "3417",
+      "dias": "MA JU",
+      "grupo": "033",
       "horario": "13:00-14:30",
       "nombre": "ESTRATEGIAS DE COMUNIC ESCRITA",
       "profesor": "CLAUDIA SOLEDAD SAAVEDRA MENDEZ",
       "salon": "PF108"
+    },
+    {
+      "campus": "RIO HONDO",
+      "crn": "3418",
+      "dias": "MA JU",
+      "grupo": "034",
+      "horario": "13:00-14:30",
+      "nombre": "ESTRATEGIAS DE COMUNIC ESCRITA",
+      "profesor": "",
+      "salon": "PF101"
+    },
+    {
+      "campus": "RIO HONDO",
+      "crn": "3419",
+      "dias": "MA JU",
+      "grupo": "035",
+      "horario": "16:00-17:30",
+      "nombre": "ESTRATEGIAS DE COMUNIC ESCRITA",
+      "profesor": "REBECCA SOTO BUSTAMANTE",
+      "salon": "RH314"
     }
   ],
   "LEN-12702": [
@@ -11253,7 +11323,7 @@
       "grupo": "003",
       "horario": "19:00-20:00",
       "nombre": "COMUNIC. PROFESIONAL PARA ECON",
-      "profesor": "",
+      "profesor": "EDUARDO JOSE PABLO MARTIN GARCIA CORREA",
       "salon": "RHACERV"
     },
     {
