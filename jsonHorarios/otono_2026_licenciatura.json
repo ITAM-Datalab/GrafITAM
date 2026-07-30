@@ -11067,30 +11067,6 @@
       "salon": "RH205"
     }
   ],
-  "LEN-12724": [
-    {
-      "campus": "RIO HONDO",
-      "crn": "3378",
-      "dias": "JU",
-      "grupo": "001",
-      "horario": "18:00-19:00",
-      "nombre": "COM. ESCRITA PARA ING EN COMP.",
-      "profesor": "JESUS ADRIAN FERNANDEZ REYES",
-      "salon": "PF103"
-    }
-  ],
-  "LEN-12725": [
-    {
-      "campus": "RIO HONDO",
-      "crn": "3380",
-      "dias": "MI",
-      "grupo": "001",
-      "horario": "18:00-19:00",
-      "nombre": "COM. ESCRITA PARA ING MECATRO.",
-      "profesor": "JESUS ADRIAN FERNANDEZ REYES",
-      "salon": "PF102"
-    }
-  ],
   "LEN-12726": [
     {
       "campus": "RIO HONDO",
@@ -11149,18 +11125,6 @@
       "nombre": "COM ESCR  ING MECATR Y ROBOTIC",
       "profesor": "JESUS ADRIAN FERNANDEZ REYES",
       "salon": "PF102"
-    }
-  ],
-  "LEN-12732": [
-    {
-      "campus": "RIO HONDO",
-      "crn": "3123",
-      "dias": "JU",
-      "grupo": "001",
-      "horario": "17:00-18:00",
-      "nombre": "COM ESCRIT ING IND Y SIST INTE",
-      "profesor": "JESUS ADRIAN FERNANDEZ REYES",
-      "salon": "PF107"
     }
   ],
   "LEN-12733": [
@@ -11785,6 +11749,16 @@
       "nombre": "CALCULO EN UNA VARIABLE",
       "profesor": "JORGE RIVERA NORIEGA",
       "salon": "RH209"
+    },
+    {
+      "campus": "RIO HONDO",
+      "crn": "3412",
+      "dias": "LU MI VI",
+      "grupo": "008",
+      "horario": "12:30-14:00",
+      "nombre": "CALCULO EN UNA VARIABLE",
+      "profesor": "",
+      "salon": "PF108"
     }
   ],
   "MAT-12221": [
