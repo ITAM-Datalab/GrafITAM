@@ -1903,18 +1903,6 @@
       "salon": "RH206"
     }
   ],
-  "CLE-10603": [
-    {
-      "campus": "RIO HONDO",
-      "crn": "3121",
-      "dias": "MA",
-      "grupo": "001",
-      "horario": "14:30-16:00",
-      "nombre": "ESTUDIA CON EXITO EN EL ITAM",
-      "profesor": "MARCELA RABADAN GALLARDO",
-      "salon": "RHCUBIC"
-    }
-  ],
   "COM-11102": [
     {
       "campus": "RIO HONDO",
@@ -2675,6 +2663,26 @@
       "nombre": "RAZONAMIENTO ALGORITMICO",
       "profesor": "FERNANDO PURON CONTRERAS",
       "salon": "RHCC202"
+    },
+    {
+      "campus": "RIO HONDO",
+      "crn": "3428",
+      "dias": "LU MI",
+      "grupo": "017",
+      "horario": "16:00-17:30",
+      "nombre": "RAZONAMIENTO ALGORITMICO",
+      "profesor": "",
+      "salon": "RHCC302"
+    },
+    {
+      "campus": "RIO HONDO",
+      "crn": "3429",
+      "dias": "MA JU",
+      "grupo": "018",
+      "horario": "16:00-17:30",
+      "nombre": "RAZONAMIENTO ALGORITMICO",
+      "profesor": "",
+      "salon": "RHCC102"
     }
   ],
   "COM-16307": [
