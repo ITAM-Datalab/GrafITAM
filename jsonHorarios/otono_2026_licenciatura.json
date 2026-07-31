@@ -1903,6 +1903,18 @@
       "salon": "RH206"
     }
   ],
+  "CLE-10603": [
+    {
+      "campus": "RIO HONDO",
+      "crn": "3121",
+      "dias": "MA",
+      "grupo": "001",
+      "horario": "14:30-16:00",
+      "nombre": "ESTUDIA CON EXITO EN EL ITAM",
+      "profesor": "MARCELA RABADAN GALLARDO",
+      "salon": "RHCUBIC"
+    }
+  ],
   "COM-11102": [
     {
       "campus": "RIO HONDO",
