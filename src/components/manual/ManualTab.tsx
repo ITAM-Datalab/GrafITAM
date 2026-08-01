@@ -32,7 +32,9 @@ export default function ManualTab() {
           <p>
             El plan de estudios de tu carrera, como un grafo: cada materia es una tarjeta y las flechas muestran
             qué prerrequisitos necesita. Marca lo que ya cursaste, planea semestres futuros, y arma tu horario con
-            los grupos reales de cada periodo.
+            los grupos reales de cada periodo — usa las pestañas de arriba (<strong className="font-semibold">Plan
+            de Estudios</strong> y <strong className="font-semibold">Planear Horario</strong>) para moverte entre
+            las dos vistas.
           </p>
         </Section>
 
@@ -44,6 +46,14 @@ export default function ManualTab() {
             selector aparece para elegirla.
           </p>
           <p>La barra de progreso muestra tus créditos aprobados sobre el total del plan.</p>
+        </Section>
+
+        <Section title='¿Qué hace el botón "Disponibles"?'>
+          <p>
+            Al activarlo, las materias que ya puedes cursar — todos sus prerrequisitos están aprobados, y todavía
+            no la marcaste ni como aprobada ni como planeada — se resaltan con borde verde en el grafo. Útil para
+            ver de un vistazo qué opciones tienes para el próximo semestre.
+          </p>
         </Section>
 
         <Section title="¿Cómo marco una materia como aprobada o planeada?">
@@ -95,8 +105,10 @@ export default function ManualTab() {
 
         <Section title="¿Por qué una flecha se ve punteada?">
           <p>
-            Una flecha punteada color rust avisa que planeaste una materia en un semestre igual o anterior al de
-            uno de sus prerrequisitos. Corrige el semestre de alguna de las dos materias para resolverlo.
+            Una flecha punteada color rust avisa que, según los datos del plan, una materia está programada en un
+            semestre igual o anterior al de uno de sus prerrequisitos — una inconsistencia en el plan de estudios,
+            no algo que tú hayas causado, y hoy no hay forma de corregirla desde la app. Repórtala con el botón
+            "Reporta un problema" para que la revisemos.
           </p>
         </Section>
 
@@ -107,16 +119,42 @@ export default function ManualTab() {
             fuera de tu plan (ej. una optativa libre), agrégala con el buscador del sidebar.
           </p>
           <p>
-            "Auto-asignar horario sin traslapes" arma una combinación válida por ti. Puedes guardar varias
-            opciones ("Opción A", "Opción B"...) y exportar cualquiera a Excel.
+            Si dos grupos que elegiste chocan de horario, la fila se marca con "Traslapa con tu selección actual"
+            — el aviso aparece desde antes de elegir, no solo después. "Auto-asignar horario sin traslapes" arma
+            una combinación válida por ti.
+          </p>
+          <p>
+            Puedes guardar varias combinaciones con nombre (ej. "Opción A", "Opción B"... útil si un grupo se
+            cierra y necesitas rearmar sin perder la anterior) y renombrar, duplicar o eliminar cada una desde la
+            barra de opciones. "Descargar horario (Excel)" exporta todas tus opciones guardadas, una por hoja.
+          </p>
+          <p>
+            "Limpiar horario" borra todos los horarios guardados del periodo activo (no se puede deshacer) — es
+            distinto de "Reiniciar" en la pestaña Plan de Estudios, ver abajo.
+          </p>
+        </Section>
+
+        <Section title="¿Se guarda mi progreso?">
+          <p>
+            Sí, automáticamente en este navegador — no hace falta guardar nada a mano. Si cambias de navegador,
+            de dispositivo, o borras los datos de navegación, no vas a ver tu progreso ahí: vive solo en este
+            navegador.
+          </p>
+        </Section>
+
+        <Section title='¿Qué hace el botón "Reiniciar"?'>
+          <p>
+            Borra todas las aprobaciones y planeaciones del plan de estudios activo (no se puede deshacer). No
+            afecta tu horario guardado — son independientes, así que si también quieres empezar de cero ahí, usa
+            "Limpiar horario" en la pestaña Planear Horario.
           </p>
         </Section>
 
         <Section title="No encuentro mi materia, grupo o plan — ¿qué hago?">
           <p>
-            Usa el botón "¿No encuentras tu materia, grupo o plan?" (junto a las pestañas, arriba) y da clic en
-            "Enviar reporte": abre un formulario prellenado que revisamos directamente — no necesitas cuenta de
-            Google ni de GitHub. Si prefieres, el link "o repórtalo en GitHub" abre el reporte ahí en su lugar.
+            Usa el botón "Reporta un problema" (junto a las pestañas, arriba), llena el formulario y da clic en
+            "Enviar reporte": va directo a revisión, sin necesitar cuenta de Google ni de GitHub. Si el envío
+            falla, aparece la opción de reportarlo por Google Form en su lugar.
           </p>
           <p>
             Los datos se extraen automáticamente de los PDFs oficiales del ITAM, así que ocasionalmente puede

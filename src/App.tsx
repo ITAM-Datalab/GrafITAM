@@ -12,7 +12,7 @@ export default function App() {
   const activePlan = useCurriculumStore((s) => s.activePlan)
   const planData = useCurriculumStore((s) => s.planData)
   const loadPlan = useCurriculumStore((s) => s.loadPlan)
-  const [tab, setTab] = useState<'plan' | 'horario' | 'manual'>('plan')
+  const [tab, setTab] = useState<'plan' | 'horario' | 'manual'>('manual')
 
   useEffect(() => {
     if (activePlan && !planData) {
@@ -47,6 +47,16 @@ export default function App() {
         <PlanSelector />
         <div className="flex flex-wrap gap-1 px-4 bg-base-cream border-b border-itam-muted/40">
           <button
+            onClick={() => setTab('manual')}
+            className="text-sm px-3 py-2 font-semibold border-b-2 transition-colors"
+            style={{
+              borderColor: tab === 'manual' ? '#1E5E4B' : 'transparent',
+              color: tab === 'manual' ? '#1E5E4B' : 'rgba(13, 59, 46, 0.65)',
+            }}
+          >
+            Manual
+          </button>
+          <button
             onClick={() => setTab('plan')}
             className="text-sm px-3 py-2 font-semibold border-b-2 transition-colors"
             style={{
@@ -65,16 +75,6 @@ export default function App() {
             }}
           >
             Planear Horario
-          </button>
-          <button
-            onClick={() => setTab('manual')}
-            className="text-sm px-3 py-2 font-semibold border-b-2 transition-colors"
-            style={{
-              borderColor: tab === 'manual' ? '#1E5E4B' : 'transparent',
-              color: tab === 'manual' ? '#1E5E4B' : 'rgba(13, 59, 46, 0.65)',
-            }}
-          >
-            Manual
           </button>
           <div className="ml-auto flex items-center py-1">
             <ReportIssueModal />
