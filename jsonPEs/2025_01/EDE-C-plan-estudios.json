@@ -668,7 +668,7 @@
     "estado": 0
   },
   "ECO-12121": {
-    "semestre": 10,
+    "semestre": 11,
     "nombre": "Macroeconomía Avanzada",
     "creditos": 6,
     "prerreqs": [
@@ -679,7 +679,7 @@
     "estado": 0
   },
   "ECO-15111": {
-    "semestre": 10,
+    "semestre": 11,
     "nombre": "Economía Política",
     "creditos": 6,
     "prerreqs": [
@@ -690,19 +690,17 @@
     "estado": 0
   },
   "DER-11907": {
-    "semestre": 10,
+    "semestre": 11,
     "nombre": "Técnicas de Argumentación Jurídica",
     "creditos": 6,
     "prerreqs": [
       "DER-13607"
     ],
-    "coreqs": [
-      "ECO-10204"
-    ],
+    "coreqs": [],
     "estado": 0
   },
   "DER-17703": {
-    "semestre": 10,
+    "semestre": 11,
     "nombre": "Derecho Fiscal I",
     "creditos": 8,
     "prerreqs": [
@@ -713,7 +711,7 @@
     "estado": 0
   },
   "DER-18701": {
-    "semestre": 10,
+    "semestre": 11,
     "nombre": "Derecho Internacional Público",
     "creditos": 6,
     "prerreqs": [
@@ -723,7 +721,7 @@
     "estado": 0
   },
   "DER-11805": {
-    "semestre": 10,
+    "semestre": 11,
     "nombre": "Filosofía del Derecho",
     "creditos": 6,
     "prerreqs": [
@@ -733,7 +731,7 @@
     "estado": 0
   },
   "DER-16702": {
-    "semestre": 10,
+    "semestre": 11,
     "nombre": "Der. Mercantil III",
     "creditos": 6,
     "prerreqs": [
@@ -743,7 +741,7 @@
     "estado": 0
   },
   "DER-18802": {
-    "semestre": 10,
+    "semestre": 12,
     "nombre": "Derecho Internacional Privado",
     "creditos": 6,
     "prerreqs": [
@@ -753,7 +751,7 @@
     "estado": 0
   },
   "DER-17804": {
-    "semestre": 10,
+    "semestre": 12,
     "nombre": "Derecho Fiscal II",
     "creditos": 8,
     "prerreqs": [
@@ -763,16 +761,14 @@
     "estado": 0
   },
   "ECO-10204": {
-    "semestre": 10,
+    "semestre": 12,
     "nombre": "Seminario de Inv. Económica (1)",
     "creditos": 9,
     "prerreqs": [
       "ECO-22105",
       "ECO-21104"
     ],
-    "coreqs": [
-      "DER-11907"
-    ],
+    "coreqs": [],
     "estado": 0
   }
 }

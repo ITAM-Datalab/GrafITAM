@@ -605,7 +605,7 @@
     "estado": 0
   },
   "ECO-10204": {
-    "semestre": 10,
+    "semestre": 11,
     "nombre": "Seminario de Investig. Econ. I (3)",
     "creditos": 9,
     "prerreqs": [
@@ -616,7 +616,7 @@
     "estado": 0
   },
   "IIO-16180": {
-    "semestre": 10,
+    "semestre": 11,
     "nombre": "Seminario de Titulación",
     "creditos": 6,
     "prerreqs": [
@@ -627,7 +627,7 @@
     "estado": 0
   },
   "ECO-10516": {
-    "semestre": 10,
+    "semestre": 11,
     "nombre": "Microeconometría Aplicada",
     "creditos": 7,
     "prerreqs": [
@@ -638,7 +638,7 @@
     "estado": 0
   },
   "ADM-16644": {
-    "semestre": 10,
+    "semestre": 11,
     "nombre": "Modelos de Mercadotecnia",
     "creditos": 6,
     "prerreqs": [
@@ -649,7 +649,7 @@
     "estado": 0
   },
   "ADM-15582": {
-    "semestre": 10,
+    "semestre": 11,
     "nombre": "Finanzas Corporativas Avanzadas",
     "creditos": 6,
     "prerreqs": [

@@ -773,7 +773,7 @@
     "estado": 0
   },
   "ECO-14208": {
-    "semestre": 10,
+    "semestre": 11,
     "nombre": "Económico del Derecho II",
     "creditos": 6,
     "prerreqs": [
@@ -786,7 +786,7 @@
     "estado": 0
   },
   "DER-17702": {
-    "semestre": 10,
+    "semestre": 11,
     "nombre": "Administrativo II",
     "creditos": 6,
     "prerreqs": [
@@ -797,7 +797,7 @@
     "estado": 0
   },
   "EIN-17403": {
-    "semestre": 10,
+    "semestre": 11,
     "nombre": "China y Sudeste Asiático",
     "creditos": 6,
     "prerreqs": [
@@ -807,7 +807,7 @@
     "estado": 0
   },
   "ADM-11013": {
-    "semestre": 10,
+    "semestre": 11,
     "nombre": "Internacional",
     "creditos": 6,
     "prerreqs": [
@@ -817,7 +817,7 @@
     "estado": 0
   },
   "CSO-14021": {
-    "semestre": 10,
+    "semestre": 11,
     "nombre": "Comparada I",
     "creditos": 6,
     "prerreqs": [
@@ -827,7 +827,7 @@
     "estado": 0
   },
   "LEN-12711": {
-    "semestre": 10,
+    "semestre": 11,
     "nombre": "Escrita para Derecho",
     "creditos": 2,
     "prerreqs": [
@@ -840,7 +840,7 @@
     "estado": 0
   },
   "DER-17806": {
-    "semestre": 10,
+    "semestre": 11,
     "nombre": "Fiscal II",
     "creditos": 6,
     "prerreqs": [
@@ -851,7 +851,7 @@
     "estado": 0
   },
   "DER-15704": {
-    "semestre": 10,
+    "semestre": 11,
     "nombre": "Constitucionales",
     "creditos": 8,
     "prerreqs": [
@@ -862,7 +862,7 @@
     "estado": 0
   },
   "EIN-16402": {
-    "semestre": 10,
+    "semestre": 12,
     "nombre": "Contemporánea",
     "creditos": 6,
     "prerreqs": [],
@@ -870,7 +870,7 @@
     "estado": 0
   },
   "EIN-19414": {
-    "semestre": 10,
+    "semestre": 12,
     "nombre": "Oriente",
     "creditos": 6,
     "prerreqs": [],
@@ -878,7 +878,7 @@
     "estado": 0
   },
   "DER-11119": {
-    "semestre": 10,
+    "semestre": 12,
     "nombre": "del Derecho",
     "creditos": 9,
     "prerreqs": [
@@ -888,7 +888,7 @@
     "estado": 0
   },
   "DER-11907": {
-    "semestre": 10,
+    "semestre": 12,
     "nombre": "Seminario Filosofía del Derecho de Argumentación Jurídica",
     "creditos": 6,
     "prerreqs": [
@@ -901,7 +901,7 @@
     "estado": 0
   },
   "DER-11120": {
-    "semestre": 10,
+    "semestre": 12,
     "nombre": "de Disertación Jurídica en Técnicas de Argumentación Jurídica",
     "creditos": 2,
     "prerreqs": [
@@ -912,7 +912,7 @@
     "estado": 0
   },
   "LEN-12751": {
-    "semestre": 10,
+    "semestre": 12,
     "nombre": "Profesional para Derecho",
     "creditos": 2,
     "prerreqs": [

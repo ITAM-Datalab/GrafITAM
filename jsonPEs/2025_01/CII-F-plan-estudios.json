@@ -631,8 +631,8 @@
     "estado": 0
   },
   "CON-11001": {
-    "semestre": 10,
-    "nombre": "ONCEAVO SEMESTRE Auditoría de Estados Financieros",
+    "semestre": 11,
+    "nombre": "Auditoría de Estados Financieros",
     "creditos": 6,
     "prerreqs": [
       "CON-11013"
@@ -641,7 +641,7 @@
     "estado": 0
   },
   "CON-10005": {
-    "semestre": 10,
+    "semestre": 11,
     "nombre": "Análisis Financiero de la Empresa",
     "creditos": 6,
     "prerreqs": [
@@ -652,7 +652,7 @@
     "estado": 0
   },
   "IIO-14180": {
-    "semestre": 10,
+    "semestre": 11,
     "nombre": "Administración y Evaluación de Proyectos",
     "creditos": 6,
     "prerreqs": [
@@ -662,7 +662,7 @@
     "estado": 0
   },
   "IIO-14193": {
-    "semestre": 10,
+    "semestre": 11,
     "nombre": "Ingenieria de Procesos de Negocios",
     "creditos": 6,
     "prerreqs": [
@@ -673,7 +673,7 @@
     "estado": 0
   },
   "CON-18002": {
-    "semestre": 10,
+    "semestre": 11,
     "nombre": "Estrategia y Control de Riesgos",
     "creditos": 6,
     "prerreqs": [
@@ -683,7 +683,7 @@
     "estado": 0
   },
   "ADM-15503": {
-    "semestre": 10,
+    "semestre": 11,
     "nombre": "Finanzas III",
     "creditos": 6,
     "prerreqs": [

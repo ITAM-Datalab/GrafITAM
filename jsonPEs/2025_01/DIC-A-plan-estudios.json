@@ -661,7 +661,7 @@
     "estado": 0
   },
   "COM-23116": {
-    "semestre": 10,
+    "semestre": 11,
     "nombre": "Ciencia de Datos Aplicada II",
     "creditos": 6,
     "prerreqs": [
@@ -676,7 +676,7 @@
     "estado": 0
   },
   "LEN-12762": {
-    "semestre": 10,
+    "semestre": 11,
     "nombre": "Comunicación Profesional para Ciencia de Datos",
     "creditos": 2,
     "prerreqs": [
@@ -690,7 +690,7 @@
     "estado": 0
   },
   "SDI-13782": {
-    "semestre": 10,
+    "semestre": 11,
     "nombre": "Diseño y Arquitectura de Redes",
     "creditos": 8,
     "prerreqs": [
@@ -700,7 +700,7 @@
     "estado": 0
   },
   "SDI-24810": {
-    "semestre": 10,
+    "semestre": 11,
     "nombre": "Sistemas de Comercio Electrónico",
     "creditos": 8,
     "prerreqs": [
@@ -712,7 +712,7 @@
     "estado": 0
   },
   "LEN-12764": {
-    "semestre": 10,
+    "semestre": 11,
     "nombre": "Comunic. Profes. Para Ing. en Comp.",
     "creditos": 2,
     "prerreqs": [
@@ -725,7 +725,7 @@
     "estado": 0
   },
   "SDI-15816": {
-    "semestre": 10,
+    "semestre": 11,
     "nombre": "Seminario de Titulación",
     "creditos": 4,
     "prerreqs": [],

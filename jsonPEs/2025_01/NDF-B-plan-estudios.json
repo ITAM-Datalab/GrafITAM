@@ -568,8 +568,8 @@
     "estado": 0
   },
   "CON-15002": {
-    "semestre": 10,
-    "nombre": "ONCEAVO SEMESTRE Impuestos Corporativos II",
+    "semestre": 11,
+    "nombre": "Impuestos Corporativos II",
     "creditos": 6,
     "prerreqs": [
       "CON-15001"
@@ -578,7 +578,7 @@
     "estado": 0
   },
   "ADM-15517": {
-    "semestre": 10,
+    "semestre": 11,
     "nombre": "Métodos Empíricos en Finanzas",
     "creditos": 6,
     "prerreqs": [
@@ -590,7 +590,7 @@
     "estado": 0
   },
   "ADM-15534": {
-    "semestre": 10,
+    "semestre": 11,
     "nombre": "Modelos Financieros II",
     "creditos": 6,
     "prerreqs": [
@@ -602,7 +602,7 @@
     "estado": 0
   },
   "IIO-16180": {
-    "semestre": 10,
+    "semestre": 11,
     "nombre": "Seminario de Titulación",
     "creditos": 6,
     "prerreqs": [
@@ -613,7 +613,7 @@
     "estado": 0
   },
   "OPTATIVA-1": {
-    "semestre": 10,
+    "semestre": 11,
     "nombre": "Optativa I",
     "creditos": 6,
     "prerreqs": [],

@@ -595,7 +595,7 @@
     "estado": 0
   },
   "ECO-10202": {
-    "semestre": 10,
+    "semestre": 11,
     "nombre": "Seminario de Inv. Económica II",
     "creditos": 6,
     "prerreqs": [
@@ -605,7 +605,7 @@
     "estado": 0
   },
   "OPTATIVA-1": {
-    "semestre": 10,
+    "semestre": 11,
     "nombre": "Optativa I",
     "creditos": 6,
     "prerreqs": [],
@@ -613,7 +613,7 @@
     "estado": 0
   },
   "OPTATIVA-2": {
-    "semestre": 10,
+    "semestre": 11,
     "nombre": "Optativa II",
     "creditos": 6,
     "prerreqs": [],
@@ -621,7 +621,7 @@
     "estado": 0
   },
   "OPTATIVA-3": {
-    "semestre": 10,
+    "semestre": 11,
     "nombre": "Optativa III",
     "creditos": 6,
     "prerreqs": [],
@@ -629,7 +629,7 @@
     "estado": 0
   },
   "OPTATIVA-4": {
-    "semestre": 10,
+    "semestre": 11,
     "nombre": "Optativa IV",
     "creditos": 6,
     "prerreqs": [],

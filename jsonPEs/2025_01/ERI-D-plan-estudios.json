@@ -644,7 +644,7 @@
     "estado": 0
   },
   "ECO-10204": {
-    "semestre": 10,
+    "semestre": 11,
     "nombre": "Seminario de Investig. Econ. I",
     "creditos": 9,
     "prerreqs": [
@@ -657,7 +657,7 @@
     "estado": 0
   },
   "LEN-12758": {
-    "semestre": 10,
+    "semestre": 11,
     "nombre": "Comunicac. Profesional para Eco.",
     "creditos": 2,
     "prerreqs": [
@@ -670,7 +670,7 @@
     "estado": 0
   },
   "ECO-12121": {
-    "semestre": 10,
+    "semestre": 11,
     "nombre": "Macroeconomía Avanzada",
     "creditos": 6,
     "prerreqs": [
@@ -682,7 +682,7 @@
     "estado": 0
   },
   "EIN-17304": {
-    "semestre": 10,
+    "semestre": 11,
     "nombre": "Formul. de la Polít. Ext.de México",
     "creditos": 6,
     "prerreqs": [
@@ -694,7 +694,7 @@
     "estado": 0
   },
   "LEN-12761": {
-    "semestre": 10,
+    "semestre": 11,
     "nombre": "Comunicac. Prof. para Rel. Int.",
     "creditos": 2,
     "prerreqs": [
@@ -707,7 +707,7 @@
     "estado": 0
   },
   "OPTATIVA-1": {
-    "semestre": 10,
+    "semestre": 11,
     "nombre": "Optativa I",
     "creditos": 6,
     "prerreqs": [],
@@ -715,7 +715,7 @@
     "estado": 0
   },
   "OPTATIVA-2": {
-    "semestre": 10,
+    "semestre": 11,
     "nombre": "Optativa II",
     "creditos": 6,
     "prerreqs": [],
@@ -723,7 +723,7 @@
     "estado": 0
   },
   "OPTATIVA-3": {
-    "semestre": 10,
+    "semestre": 11,
     "nombre": "Optativa III",
     "creditos": 6,
     "prerreqs": [],

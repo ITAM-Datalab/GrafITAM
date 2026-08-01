@@ -705,8 +705,8 @@
     "estado": 0
   },
   "ADM-11018": {
-    "semestre": 10,
-    "nombre": "ONCEAVO SEMESTRE Seminario de Dirección",
+    "semestre": 11,
+    "nombre": "Seminario de Dirección",
     "creditos": 6,
     "prerreqs": [
       "ADM-13101"
@@ -717,7 +717,7 @@
     "estado": 0
   },
   "LEN-12754": {
-    "semestre": 10,
+    "semestre": 11,
     "nombre": "Com. Profesional para Administración",
     "creditos": 2,
     "prerreqs": [
@@ -730,7 +730,7 @@
     "estado": 0
   },
   "ADM-16603": {
-    "semestre": 10,
+    "semestre": 11,
     "nombre": "Mercadotecnia III",
     "creditos": 6,
     "prerreqs": [
@@ -740,7 +740,7 @@
     "estado": 0
   },
   "CON-15125": {
-    "semestre": 10,
+    "semestre": 11,
     "nombre": "Contabilidad Fiscal",
     "creditos": 6,
     "prerreqs": [
@@ -751,7 +751,7 @@
     "estado": 0
   },
   "ECO-14501": {
-    "semestre": 10,
+    "semestre": 11,
     "nombre": "Economía de la Empresa",
     "creditos": 6,
     "prerreqs": [
@@ -763,7 +763,7 @@
     "estado": 0
   },
   "SDI-15816": {
-    "semestre": 10,
+    "semestre": 11,
     "nombre": "Seminario de Titulación",
     "creditos": 4,
     "prerreqs": [],
