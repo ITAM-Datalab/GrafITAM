@@ -5,6 +5,7 @@ import ScheduleTab from './components/schedule/ScheduleTab'
 import ReportIssueModal from './components/schedule/ReportIssueModal'
 import ManualTab from './components/manual/ManualTab'
 import { useCurriculumStore } from './store/curriculumStore'
+import { trackEvent } from './lib/analytics'
 import bgDesktop from './assets/bg-desktop.png'
 import bgMobile from './assets/bg-mobile.png'
 
@@ -47,7 +48,10 @@ export default function App() {
         <PlanSelector />
         <div className="flex flex-wrap gap-1 px-4 bg-base-cream border-b border-itam-muted/40">
           <button
-            onClick={() => setTab('manual')}
+            onClick={() => {
+              setTab('manual')
+              trackEvent('/tab/manual', 'Tab: Manual')
+            }}
             className="text-sm px-3 py-2 font-semibold border-b-2 transition-colors"
             style={{
               borderColor: tab === 'manual' ? '#1E5E4B' : 'transparent',
@@ -57,7 +61,10 @@ export default function App() {
             Manual
           </button>
           <button
-            onClick={() => setTab('plan')}
+            onClick={() => {
+              setTab('plan')
+              trackEvent('/tab/plan', 'Tab: Plan de Estudios')
+            }}
             className="text-sm px-3 py-2 font-semibold border-b-2 transition-colors"
             style={{
               borderColor: tab === 'plan' ? '#1E5E4B' : 'transparent',
@@ -67,7 +74,10 @@ export default function App() {
             Plan de Estudios
           </button>
           <button
-            onClick={() => setTab('horario')}
+            onClick={() => {
+              setTab('horario')
+              trackEvent('/tab/horario', 'Tab: Planear Horario')
+            }}
             className="text-sm px-3 py-2 font-semibold border-b-2 transition-colors"
             style={{
               borderColor: tab === 'horario' ? '#1E5E4B' : 'transparent',
