@@ -139,7 +139,7 @@ export default function ReportIssueModal() {
         className="text-xs font-semibold rounded px-3 py-1.5 whitespace-nowrap shadow-sm"
         style={{ background: '#8C5E58', color: '#FCFAF8' }}
       >
-        ¿No encuentras tu materia, grupo o plan?
+        Reporta un problema
       </button>
 
       {open && (
