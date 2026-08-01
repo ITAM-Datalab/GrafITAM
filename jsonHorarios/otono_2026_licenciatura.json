@@ -3169,7 +3169,7 @@
       "grupo": "005",
       "horario": "16:00-17:30",
       "nombre": "CONTABILIDAD, I",
-      "profesor": "",
+      "profesor": "EDGAR DE LA ROSA CABELLO",
       "salon": "RHB-5"
     },
     {
@@ -3189,7 +3189,7 @@
       "grupo": "007",
       "horario": "17:30-19:00",
       "nombre": "CONTABILIDAD, I",
-      "profesor": "",
+      "profesor": "EDGAR DE LA ROSA CABELLO",
       "salon": "RHB-5"
     }
   ],
@@ -3253,7 +3253,7 @@
       "grupo": "005",
       "horario": "16:00-17:30",
       "nombre": "FUNDAMEN. DE CONTABILID FINANC",
-      "profesor": "",
+      "profesor": "EDGAR DE LA ROSA CABELLO",
       "salon": "RHB-5"
     },
     {
@@ -3273,7 +3273,7 @@
       "grupo": "007",
       "horario": "17:30-19:00",
       "nombre": "FUNDAMEN. DE CONTABILID FINANC",
-      "profesor": "",
+      "profesor": "EDGAR DE LA ROSA CABELLO",
       "salon": "RHB-5"
     }
   ],
@@ -4153,7 +4153,7 @@
       "grupo": "002",
       "horario": "07:00-10:00",
       "nombre": "SEMINARIO DE INV. POLITICA",
-      "profesor": "",
+      "profesor": "RAISSA FABREGAS ROBLES GIL",
       "salon": "RH308"
     }
   ],
@@ -5639,7 +5639,7 @@
       "grupo": "001",
       "horario": "19:00-20:30",
       "nombre": "BIENES Y DERECHOS REALES",
-      "profesor": "",
+      "profesor": "DENNIA ALINE TREJO PEREA",
       "salon": "RHB-4"
     },
     {
@@ -5851,7 +5851,7 @@
       "grupo": "001",
       "horario": "07:00-08:30",
       "nombre": "DELITOS",
-      "profesor": "MARIA GUADALUPE ADRIANA ORTEGA ORTIZ",
+      "profesor": "LUCIA ISABEL MOTA CASILLAS",
       "salon": "RHB-3"
     },
     {
@@ -7943,7 +7943,7 @@
       "grupo": "002",
       "horario": "07:00-10:00",
       "nombre": "DESARROLLO ECONOMICO I",
-      "profesor": "",
+      "profesor": "RAISSA FABREGAS ROBLES GIL",
       "salon": "RH308"
     }
   ],
@@ -9777,7 +9777,7 @@
       "crn": "2598",
       "dias": "MI",
       "grupo": "001",
-      "horario": "16:00-19:01",
+      "horario": "16:00-19:00",
       "nombre": "AUTOMAT. Y CONTROL DE PROCESOS",
       "profesor": "BRUNO ALEJANDRO ORSATTI SANCHEZ",
       "salon": "RHLMINT"
@@ -9811,7 +9811,7 @@
       "grupo": "002",
       "horario": "17:30-19:30",
       "nombre": "TALLER PROGR DE DISPOS DE ING.",
-      "profesor": "",
+      "profesor": "ALEJANDRO TERAN SOMOHANO",
       "salon": "RHPACE"
     }
   ],
@@ -9824,7 +9824,7 @@
       "horario": "17:30-19:00",
       "nombre": "DISEÑO Y DES. DE PRODUCTO",
       "profesor": "SERGIO ROMERO HERNANDEZ",
-      "salon": "RHLMINT"
+      "salon": "RHPACE"
     }
   ],
   "IIO-12182": [
@@ -9996,7 +9996,7 @@
       "horario": "17:30-19:00",
       "nombre": "ING. DE PROCESOS DE NEGOCIOS",
       "profesor": "ELIAS HERIBERTO ARIAS NAVA",
-      "salon": "RHPACE"
+      "salon": "RHLMINT"
     },
     {
       "campus": "RIO HONDO",
@@ -11469,6 +11469,38 @@
       "salon": "RH107"
     }
   ],
+  "MAT-12101": [
+    {
+      "campus": "RIO HONDO",
+      "crn": "3431",
+      "dias": "LU MI VI",
+      "grupo": "001",
+      "horario": "08:30-10:00",
+      "nombre": "CALCULO, II",
+      "profesor": "FRANCISCO FERNANDO NOREÑA VILLARIAS",
+      "salon": "RH209"
+    },
+    {
+      "campus": "RIO HONDO",
+      "crn": "3432",
+      "dias": "LU MI VI",
+      "grupo": "002",
+      "horario": "09:00-10:30",
+      "nombre": "CALCULO, II",
+      "profesor": "LEOBARDO FERNANDEZ ROMAN",
+      "salon": "RHSA3"
+    },
+    {
+      "campus": "RIO HONDO",
+      "crn": "3433",
+      "dias": "LU MI VI",
+      "grupo": "003",
+      "horario": "17:30-19:00",
+      "nombre": "CALCULO, II",
+      "profesor": "SHARON MAGALI VALVERDE ESPARZA",
+      "salon": "RH305"
+    }
+  ],
   "MAT-12102": [
     {
       "campus": "RIO HONDO",
@@ -12915,7 +12947,7 @@
       "grupo": "001",
       "horario": "07:00-09:00",
       "nombre": "SEÑALES Y SISTEMAS",
-      "profesor": "",
+      "profesor": "DIEGO ALEXIS MARTINEZ VELASCO",
       "salon": "RHLSIST"
     }
   ],
@@ -13117,7 +13149,7 @@
       "grupo": "001",
       "horario": "07:00-08:00",
       "nombre": "SEÑALES Y SISTEMAS",
-      "profesor": "",
+      "profesor": "DIEGO ALEXIS MARTINEZ VELASCO",
       "salon": "RHLSIST"
     }
   ],
@@ -13163,7 +13195,7 @@
       "grupo": "001",
       "horario": "12:00-14:00",
       "nombre": "SISTS.DE COMERCIO ELECTRONICO",
-      "profesor": "",
+      "profesor": "RAFAEL GREGORIO GAMBOA HIRALES",
       "salon": "RHPACE"
     }
   ],
