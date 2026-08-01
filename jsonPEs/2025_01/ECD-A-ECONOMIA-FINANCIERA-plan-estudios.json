@@ -608,7 +608,7 @@
     "creditos": 6,
     "prerreqs": [
       "COM-23114",
-      "ADM-12301"
+      "ADM-15501"
     ],
     "coreqs": [
       "LEN-12762"
