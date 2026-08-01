@@ -583,8 +583,8 @@
     "estado": 0
   },
   "CSO-19075": {
-    "semestre": 10,
-    "nombre": "ONCEAVO SEMESTRE Seminario de Titulación I",
+    "semestre": 11,
+    "nombre": "Seminario de Titulación I",
     "creditos": 9,
     "prerreqs": [
       "CSO-17041"
@@ -593,7 +593,7 @@
     "estado": 0
   },
   "CSO-19076": {
-    "semestre": 10,
+    "semestre": 11,
     "nombre": "Seminario de Titulación II",
     "creditos": 9,
     "prerreqs": [

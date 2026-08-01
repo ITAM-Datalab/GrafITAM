@@ -813,7 +813,7 @@
     "estado": 0
   },
   "ECO-14208": {
-    "semestre": 10,
+    "semestre": 11,
     "nombre": "Análisis Económico del Derecho II",
     "creditos": 6,
     "prerreqs": [
@@ -826,7 +826,7 @@
     "estado": 0
   },
   "DER-17702": {
-    "semestre": 10,
+    "semestre": 11,
     "nombre": "Derecho Administrativo II",
     "creditos": 6,
     "prerreqs": [
@@ -837,7 +837,7 @@
     "estado": 0
   },
   "EIN-17403": {
-    "semestre": 10,
+    "semestre": 11,
     "nombre": "Japón, China y Sudeste Asiático",
     "creditos": 6,
     "prerreqs": [
@@ -847,7 +847,7 @@
     "estado": 0
   },
   "ADM-11013": {
-    "semestre": 10,
+    "semestre": 11,
     "nombre": "Administración Internacional",
     "creditos": 6,
     "prerreqs": [
@@ -857,7 +857,7 @@
     "estado": 0
   },
   "CSO-14021": {
-    "semestre": 10,
+    "semestre": 11,
     "nombre": "Política Comparada I",
     "creditos": 6,
     "prerreqs": [
@@ -867,7 +867,7 @@
     "estado": 0
   },
   "LEN-12711": {
-    "semestre": 10,
+    "semestre": 11,
     "nombre": "Comunicación Escrita para Derecho",
     "creditos": 2,
     "prerreqs": [
@@ -880,7 +880,7 @@
     "estado": 0
   },
   "DER-17806": {
-    "semestre": 10,
+    "semestre": 11,
     "nombre": "Derecho Fiscal II",
     "creditos": 6,
     "prerreqs": [
@@ -891,7 +891,7 @@
     "estado": 0
   },
   "DER-15704": {
-    "semestre": 10,
+    "semestre": 11,
     "nombre": "Procedimientos Constitucionales",
     "creditos": 8,
     "prerreqs": [
@@ -902,7 +902,7 @@
     "estado": 0
   },
   "EIN-16402": {
-    "semestre": 10,
+    "semestre": 12,
     "nombre": "Europa Contemporánea",
     "creditos": 6,
     "prerreqs": [],
@@ -910,7 +910,7 @@
     "estado": 0
   },
   "EIN-19414": {
-    "semestre": 10,
+    "semestre": 12,
     "nombre": "Medio Oriente",
     "creditos": 6,
     "prerreqs": [],
@@ -918,7 +918,7 @@
     "estado": 0
   },
   "DER-11119": {
-    "semestre": 10,
+    "semestre": 12,
     "nombre": "Filosofía del Derecho",
     "creditos": 9,
     "prerreqs": [
@@ -928,7 +928,7 @@
     "estado": 0
   },
   "DER-11907": {
-    "semestre": 10,
+    "semestre": 12,
     "nombre": "Seminario Filosofía del Derecho Técnicas de Argumentación Jurídica",
     "creditos": 6,
     "prerreqs": [
@@ -941,7 +941,7 @@
     "estado": 0
   },
   "DER-11120": {
-    "semestre": 10,
+    "semestre": 12,
     "nombre": "Taller de Disertación Jurídica en Técnicas de Argumentación Jurídica",
     "creditos": 2,
     "prerreqs": [
@@ -952,7 +952,7 @@
     "estado": 0
   },
   "LEN-12751": {
-    "semestre": 10,
+    "semestre": 12,
     "nombre": "Comunicación Profesional para Derecho",
     "creditos": 2,
     "prerreqs": [

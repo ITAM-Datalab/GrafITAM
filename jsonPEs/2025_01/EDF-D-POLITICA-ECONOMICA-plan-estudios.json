@@ -576,7 +576,7 @@
     "estado": 0
   },
   "ECO-10204": {
-    "semestre": 10,
+    "semestre": 11,
     "nombre": "Seminario de Investig. Econ. I (2)",
     "creditos": 9,
     "prerreqs": [
@@ -589,7 +589,7 @@
     "estado": 0
   },
   "LEN-12758": {
-    "semestre": 10,
+    "semestre": 11,
     "nombre": "Comunicación Profesional para Economía",
     "creditos": 2,
     "prerreqs": [
@@ -602,7 +602,7 @@
     "estado": 0
   },
   "CON-15002": {
-    "semestre": 10,
+    "semestre": 11,
     "nombre": "Impuestos Corporativos II",
     "creditos": 6,
     "prerreqs": [
@@ -612,7 +612,7 @@
     "estado": 0
   },
   "ADM-15517": {
-    "semestre": 10,
+    "semestre": 11,
     "nombre": "Métodos Empíricos en Finanzas",
     "creditos": 6,
     "prerreqs": [
@@ -726,7 +726,7 @@
     "estado": 0
   },
   "ECO-10516": {
-    "semestre": 10,
+    "semestre": 11,
     "nombre": "Microeconometría aplicada",
     "creditos": 7,
     "prerreqs": [
@@ -738,7 +738,7 @@
     "estado": 0
   },
   "ECO-15111": {
-    "semestre": 10,
+    "semestre": 11,
     "nombre": "Economía Política",
     "creditos": 6,
     "prerreqs": [
@@ -749,100 +749,12 @@
     "estado": 0
   },
   "ECO-14303": {
-    "semestre": 10,
+    "semestre": 11,
     "nombre": "Economía de la regulación",
     "creditos": 6,
     "prerreqs": [
       "ECO-14301"
     ],
-    "coreqs": [],
-    "estado": 0
-  },
-  "AREA-1": {
-    "semestre": 5,
-    "nombre": "Materia 1 de Área de Concentración",
-    "creditos": 6,
-    "prerreqs": [],
-    "coreqs": [],
-    "estado": 0
-  },
-  "AREA-2": {
-    "semestre": 6,
-    "nombre": "Materia 2 de Área de Concentración",
-    "creditos": 7,
-    "prerreqs": [],
-    "coreqs": [],
-    "estado": 0
-  },
-  "AREA-3": {
-    "semestre": 6,
-    "nombre": "Materia 3 de Área de Concentración",
-    "creditos": 6,
-    "prerreqs": [],
-    "coreqs": [],
-    "estado": 0
-  },
-  "AREA-4": {
-    "semestre": 7,
-    "nombre": "Materia 4 de Área de Concentración",
-    "creditos": 7,
-    "prerreqs": [],
-    "coreqs": [],
-    "estado": 0
-  },
-  "AREA-5": {
-    "semestre": 7,
-    "nombre": "Materia 5 de Área de Concentración",
-    "creditos": 6,
-    "prerreqs": [],
-    "coreqs": [],
-    "estado": 0
-  },
-  "AREA-6": {
-    "semestre": 8,
-    "nombre": "Materia 6 de Área de Concentración",
-    "creditos": 6,
-    "prerreqs": [],
-    "coreqs": [],
-    "estado": 0
-  },
-  "AREA-7": {
-    "semestre": 10,
-    "nombre": "Materia 7 de Área de Concentración",
-    "creditos": 6,
-    "prerreqs": [],
-    "coreqs": [],
-    "estado": 0
-  },
-  "AREA-8": {
-    "semestre": 10,
-    "nombre": "Materia 8 de Área de Concentración",
-    "creditos": 6,
-    "prerreqs": [],
-    "coreqs": [],
-    "estado": 0
-  },
-  "AREA-9": {
-    "semestre": 10,
-    "nombre": "Materia 9 de Área de Concentración",
-    "creditos": 6,
-    "prerreqs": [],
-    "coreqs": [],
-    "estado": 0
-  },
-  "AREA-10": {
-    "semestre": 10,
-    "nombre": "Materia 10 de Área de Concentración",
-    "creditos": 7,
-    "prerreqs": [],
-    "coreqs": [],
-    "estado": 0
-  },
-  "AREA-11": {
-    "semestre": 10,
-    "nombre": "Materia 11 de Área de Concentración",
-    "creditos": 6,
-    "prerreqs": [],
     "coreqs": [],
     "estado": 0
   }

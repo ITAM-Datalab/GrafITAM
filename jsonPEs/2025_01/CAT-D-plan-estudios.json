@@ -568,9 +568,7 @@
       "ACT-15358",
       "CON-15002"
     ],
-    "coreqs": [
-      "ACT-15353"
-    ],
+    "coreqs": [],
     "estado": 0
   },
   "CON-12002": {
@@ -595,8 +593,8 @@
     "estado": 0
   },
   "CON-10005": {
-    "semestre": 10,
-    "nombre": "ONCEAVO SEMESTRE Análisis Financiero de la Empresa",
+    "semestre": 11,
+    "nombre": "Análisis Financiero de la Empresa",
     "creditos": 6,
     "prerreqs": [
       "CON-10011",
@@ -606,20 +604,18 @@
     "estado": 0
   },
   "ACT-15353": {
-    "semestre": 10,
+    "semestre": 11,
     "nombre": "Práctica Actuarial y Marco Institucional",
     "creditos": 6,
     "prerreqs": [
       "ACT-11303",
       "ACT-11302"
     ],
-    "coreqs": [
-      "CON-15003"
-    ],
+    "coreqs": [],
     "estado": 0
   },
   "ACT-15359": {
-    "semestre": 10,
+    "semestre": 11,
     "nombre": "Beneficios de Pensiones y Seguridad Social",
     "creditos": 6,
     "prerreqs": [
@@ -629,7 +625,7 @@
     "estado": 0
   },
   "ACT-22309": {
-    "semestre": 10,
+    "semestre": 11,
     "nombre": "Matemáticas Financieras III",
     "creditos": 8,
     "prerreqs": [
@@ -639,7 +635,7 @@
     "estado": 0
   },
   "CON-12003": {
-    "semestre": 10,
+    "semestre": 11,
     "nombre": "Administración Estrategica de Costos",
     "creditos": 6,
     "prerreqs": [
@@ -649,7 +645,7 @@
     "estado": 0
   },
   "ACT-13307": {
-    "semestre": 10,
+    "semestre": 11,
     "nombre": "Estadística Aplicada a la Actuaria",
     "creditos": 6,
     "prerreqs": [
@@ -668,7 +664,7 @@
     "estado": 0
   },
   "OPTATIVA-2": {
-    "semestre": 10,
+    "semestre": 11,
     "nombre": "Optativa II",
     "creditos": 6,
     "prerreqs": [],

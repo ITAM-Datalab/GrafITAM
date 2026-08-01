@@ -46,7 +46,14 @@ def ensure_pdfplumber():
         return pdfplumber
 
 
-COURSE_CODE_RE = re.compile(r'[A-Z]{2,4}-?\d{5}')
+# El prefijo acepta '0' además de letras (ej. "EC0-21104", "CS0-16049") porque el
+# PDF de ECD-A trae ese typo (cero en vez de letra O) en al menos dos claves — sin
+# esto la fila/prerreq entero se pierde en silencio. Se exige al menos una letra
+# real en el prefijo (ver extract_codes_from_text) para no matchear un prefijo
+# puramente numérico por error; el '0' se normaliza a 'O' en normalize_code.
+COURSE_CODE_RE = re.compile(r'[A-Z0]{2,4}-?\d{5}')
+COURSE_CODE_PARTS_RE = re.compile(r'^([A-Z0]{2,4})-?(\d{5})$')
+COURSE_PREFIX_HAS_LETTER_RE = re.compile(r'[A-Z]')
 
 # Piso esperado de materias reales por plan (sin contar optativas sintéticas) — si un
 # PDF genera menos, probablemente el parseo falló en algo (columnas corridas, formato
@@ -57,6 +64,8 @@ SEMESTER_MAP = {
     'PRIMER': 1, 'SEGUNDO': 2, 'TERCER': 3, 'CUARTO': 4, 'QUINTO': 5,
     'SEXTO': 6, 'SÉPTIMO': 7, 'SEPTIMO': 7, 'SÉPTIMO': 7,
     'OCTAVO': 8, 'NOVENO': 9, 'DÉCIMO': 10, 'DECIMO': 10,
+    'ONCEAVO': 11, 'UNDÉCIMO': 11, 'UNDECIMO': 11,
+    'DOCEAVO': 12, 'DUODÉCIMO': 12, 'DUODECIMO': 12,
 }
 
 END_OF_PLAN_RE = re.compile(
@@ -73,7 +82,8 @@ END_OF_PLAN_RE = re.compile(
 INLINE_FOOTNOTE_RE = re.compile(r'^\**\s*Ver\s+notas', re.IGNORECASE)
 
 SEMESTER_RE = re.compile(
-    r'(PRIMER|SEGUNDO|TERCER|CUARTO|QUINTO|SEXTO|S[ÉE]PTIMO|OCTAVO|NOVENO|D[ÉE]CIMO)\s+SEMESTRE',
+    r'(PRIMER|SEGUNDO|TERCER|CUARTO|QUINTO|SEXTO|S[ÉE]PTIMO|OCTAVO|NOVENO|D[ÉE]CIMO'
+    r'|ONCEAVO|UND[ÉE]CIMO|DOCEAVO|DUOD[ÉE]CIMO)\s+SEMESTRE',
     re.IGNORECASE
 )
 
@@ -115,14 +125,27 @@ COREQ_MARKER_RE = re.compile(r'\(\s*([A-Z])\s*\)')
 
 
 def normalize_code(code: str) -> str:
-    """Normaliza MAT12201 → MAT-12201 (agrega guión si falta)."""
-    return re.sub(r'^([A-Z]{2,4})(\d{5})$', r'\1-\2', code)
+    """Normaliza MAT12201 → MAT-12201 (agrega guión si falta) y corrige el typo
+    '0' por 'O' en el prefijo (ej. EC0-21104 → ECO-21104, CS0-16049 → CSO-16049)."""
+    m = COURSE_CODE_PARTS_RE.match(code)
+    if not m:
+        return code
+    prefix, digits = m.groups()
+    return f"{prefix.replace('0', 'O')}-{digits}"
 
 
 def extract_codes_from_text(text: str) -> list[str]:
-    """Extrae todos los códigos de materia de un string, normalizando sin-guión."""
+    """Extrae todos los códigos de materia de un string, normalizando sin-guión y
+    el typo 0/O del prefijo. Descarta matches cuyo prefijo no tenga ninguna letra
+    real (evita falsos positivos puramente numéricos, ya que COURSE_CODE_RE ahora
+    también acepta '0' en esa posición)."""
     raw = COURSE_CODE_RE.findall(text)
-    return [normalize_code(c) for c in raw]
+    valid = []
+    for c in raw:
+        m = COURSE_CODE_PARTS_RE.match(c)
+        if m and COURSE_PREFIX_HAS_LETTER_RE.search(m.group(1)):
+            valid.append(c)
+    return [normalize_code(c) for c in valid]
 
 
 _ROMAN_NUMERALS = [(50, 'L'), (40, 'XL'), (10, 'X'), (9, 'IX'), (5, 'V'), (4, 'IV'), (1, 'I')]
@@ -407,7 +430,17 @@ def parse_pdf(pdf_path: Path, pdfplumber) -> dict[str | None, tuple[dict, int]]:
                         list, {k: list(v) for k, v in tronco['coreq_groups'].items()}
                     )
                     new_section['optativa_credits'] = list(tronco['optativa_credits'])
-                    new_section['area_concentracion'] = dict(tronco['area_concentracion'])
+                    # A diferencia de optativa_credits (slots que siguen sin resolver
+                    # sin importar el área), area_concentracion NO se hereda: los
+                    # slots "Materia N de Área de Concentración" del tronco común
+                    # representan un placeholder que la tabla propia de cada área
+                    # siempre rellena con una materia real bajo su propia clave — si
+                    # se heredara, el placeholder del tronco quedaría como entrada
+                    # fantasma duplicada junto a la materia real (bug confirmado en
+                    # ECD-A: AREA-1..11 aparecían junto a CON-14100/ADM-15501/etc.).
+                    # _new_section() ya arranca esto vacío; si algún área SÍ repite
+                    # un placeholder sin resolver dentro de su propia tabla, la fila
+                    # se sigue parseando normalmente y se agrega aquí igual.
                     sections.append((label, new_section))
 
                     current_section = new_section

@@ -651,8 +651,8 @@
     "estado": 0
   },
   "ECO-10204": {
-    "semestre": 10,
-    "nombre": "ONCEAVO SEMESTRE Seminario de Investig. Econ. I (2)",
+    "semestre": 11,
+    "nombre": "Seminario de Investig. Econ. I (2)",
     "creditos": 9,
     "prerreqs": [
       "ECO-22105",
@@ -664,7 +664,7 @@
     "estado": 0
   },
   "LEN-12758": {
-    "semestre": 10,
+    "semestre": 11,
     "nombre": "Comunicación Profesional para Economía",
     "creditos": 2,
     "prerreqs": [
@@ -677,7 +677,7 @@
     "estado": 0
   },
   "ECO-17100": {
-    "semestre": 10,
+    "semestre": 11,
     "nombre": "Historia Económica de México",
     "creditos": 6,
     "prerreqs": [
@@ -688,7 +688,7 @@
     "estado": 0
   },
   "ADM-11018": {
-    "semestre": 10,
+    "semestre": 11,
     "nombre": "Seminario de Dirección",
     "creditos": 7,
     "prerreqs": [
@@ -700,7 +700,7 @@
     "estado": 0
   },
   "LEN-12754": {
-    "semestre": 10,
+    "semestre": 11,
     "nombre": "Comunicación Profesional para Administración",
     "creditos": 2,
     "prerreqs": [
@@ -713,7 +713,7 @@
     "estado": 0
   },
   "IIO-13150": {
-    "semestre": 10,
+    "semestre": 11,
     "nombre": "Modelado y Optimización I",
     "creditos": 6,
     "prerreqs": [
@@ -724,7 +724,7 @@
     "estado": 0
   },
   "CON-15125": {
-    "semestre": 10,
+    "semestre": 11,
     "nombre": "Contabilidad Fiscal",
     "creditos": 6,
     "prerreqs": [
@@ -735,7 +735,7 @@
     "estado": 0
   },
   "OPTATIVA-1": {
-    "semestre": 10,
+    "semestre": 11,
     "nombre": "Optativa I",
     "creditos": 6,
     "prerreqs": [],

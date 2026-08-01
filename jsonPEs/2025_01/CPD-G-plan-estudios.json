@@ -802,7 +802,7 @@
     "estado": 0
   },
   "CON-15002": {
-    "semestre": 10,
+    "semestre": 11,
     "nombre": "Corporativos II",
     "creditos": 6,
     "prerreqs": [
@@ -812,7 +812,7 @@
     "estado": 0
   },
   "ECO-14208": {
-    "semestre": 10,
+    "semestre": 11,
     "nombre": "Económico del Derecho II",
     "creditos": 6,
     "prerreqs": [
@@ -825,7 +825,7 @@
     "estado": 0
   },
   "LEN-12711": {
-    "semestre": 10,
+    "semestre": 11,
     "nombre": "Escrita para Derecho",
     "creditos": 2,
     "prerreqs": [
@@ -838,7 +838,7 @@
     "estado": 0
   },
   "DER-15704": {
-    "semestre": 10,
+    "semestre": 11,
     "nombre": "Constitucionales",
     "creditos": 8,
     "prerreqs": [
@@ -849,7 +849,7 @@
     "estado": 0
   },
   "CON-18002": {
-    "semestre": 10,
+    "semestre": 11,
     "nombre": "y Control de Riesgos",
     "creditos": 6,
     "prerreqs": [
@@ -859,7 +859,7 @@
     "estado": 0
   },
   "CON-12003": {
-    "semestre": 10,
+    "semestre": 11,
     "nombre": "Estratégica de Costos",
     "creditos": 6,
     "prerreqs": [
@@ -869,7 +869,7 @@
     "estado": 0
   },
   "CON-15003": {
-    "semestre": 10,
+    "semestre": 12,
     "nombre": "para Personas Físicas",
     "creditos": 6,
     "prerreqs": [
@@ -881,7 +881,7 @@
     "estado": 0
   },
   "LEN-12756": {
-    "semestre": 10,
+    "semestre": 12,
     "nombre": "Profesional para Contaduría Pública y Est. Fin.",
     "creditos": 2,
     "prerreqs": [
@@ -894,7 +894,7 @@
     "estado": 0
   },
   "CON-11001": {
-    "semestre": 10,
+    "semestre": 12,
     "nombre": "de Estados Financieros",
     "creditos": 6,
     "prerreqs": [
@@ -904,7 +904,7 @@
     "estado": 0
   },
   "DER-11119": {
-    "semestre": 10,
+    "semestre": 12,
     "nombre": "del Derecho",
     "creditos": 9,
     "prerreqs": [
@@ -914,7 +914,7 @@
     "estado": 0
   },
   "DER-11907": {
-    "semestre": 10,
+    "semestre": 12,
     "nombre": "Seminario Filosofía del Derecho de Argumentación Jurídica",
     "creditos": 6,
     "prerreqs": [
@@ -927,7 +927,7 @@
     "estado": 0
   },
   "DER-11120": {
-    "semestre": 10,
+    "semestre": 12,
     "nombre": "Taller de Disertación Jurídica en Técnicas de Argumentación",
     "creditos": 2,
     "prerreqs": [
@@ -938,7 +938,7 @@
     "estado": 0
   },
   "LEN-12751": {
-    "semestre": 10,
+    "semestre": 12,
     "nombre": "Jurídica Profesional para Derecho",
     "creditos": 2,
     "prerreqs": [
@@ -951,7 +951,7 @@
     "estado": 0
   },
   "OPTATIVA-1": {
-    "semestre": 10,
+    "semestre": 12,
     "nombre": "Optativa I",
     "creditos": 6,
     "prerreqs": [],
@@ -959,7 +959,7 @@
     "estado": 0
   },
   "OPTATIVA-2": {
-    "semestre": 10,
+    "semestre": 12,
     "nombre": "Optativa II",
     "creditos": 6,
     "prerreqs": [],

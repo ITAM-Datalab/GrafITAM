@@ -822,7 +822,7 @@
     "estado": 0
   },
   "ECO-18300": {
-    "semestre": 10,
+    "semestre": 11,
     "nombre": "Crecimiento Económico",
     "creditos": 6,
     "prerreqs": [
@@ -834,7 +834,7 @@
     "estado": 0
   },
   "ECO-11122": {
-    "semestre": 10,
+    "semestre": 11,
     "nombre": "Microeconomía Avanzada II",
     "creditos": 6,
     "prerreqs": [
@@ -844,7 +844,7 @@
     "estado": 0
   },
   "ECO-14208": {
-    "semestre": 10,
+    "semestre": 11,
     "nombre": "Análisis Económico del Derecho II",
     "creditos": 6,
     "prerreqs": [
@@ -857,7 +857,7 @@
     "estado": 0
   },
   "LEN-12711": {
-    "semestre": 10,
+    "semestre": 11,
     "nombre": "Comunicación Escrita para Derecho",
     "creditos": 2,
     "prerreqs": [
@@ -870,7 +870,7 @@
     "estado": 0
   },
   "ECO-10516": {
-    "semestre": 10,
+    "semestre": 11,
     "nombre": "Microeconometría Aplicada",
     "creditos": 7,
     "prerreqs": [
@@ -881,7 +881,7 @@
     "estado": 0
   },
   "ECO-17100": {
-    "semestre": 10,
+    "semestre": 11,
     "nombre": "Historia Económica de México",
     "creditos": 6,
     "prerreqs": [
@@ -892,7 +892,7 @@
     "estado": 0
   },
   "DER-15704": {
-    "semestre": 10,
+    "semestre": 11,
     "nombre": "Procedimientos Constitucionales",
     "creditos": 8,
     "prerreqs": [
@@ -903,7 +903,7 @@
     "estado": 0
   },
   "DER-17806": {
-    "semestre": 10,
+    "semestre": 12,
     "nombre": "Derecho Fiscal II",
     "creditos": 6,
     "prerreqs": [
@@ -914,7 +914,7 @@
     "estado": 0
   },
   "DER-11119": {
-    "semestre": 10,
+    "semestre": 12,
     "nombre": "Filosofía del Derecho",
     "creditos": 9,
     "prerreqs": [
@@ -924,7 +924,7 @@
     "estado": 0
   },
   "DER-11907": {
-    "semestre": 10,
+    "semestre": 12,
     "nombre": "Técnicas de Argumentación Jurídica",
     "creditos": 6,
     "prerreqs": [
@@ -937,7 +937,7 @@
     "estado": 0
   },
   "DER-11120": {
-    "semestre": 10,
+    "semestre": 12,
     "nombre": "Taller de Disertación Jurídica en Técnicas de Argumentación Jurídica",
     "creditos": 2,
     "prerreqs": [
@@ -948,7 +948,7 @@
     "estado": 0
   },
   "LEN-12751": {
-    "semestre": 10,
+    "semestre": 12,
     "nombre": "Comunicación Profesional para Derecho",
     "creditos": 2,
     "prerreqs": [
@@ -961,7 +961,7 @@
     "estado": 0
   },
   "ECO-14303": {
-    "semestre": 10,
+    "semestre": 12,
     "nombre": "Economía de la Regulación",
     "creditos": 6,
     "prerreqs": [
@@ -971,7 +971,7 @@
     "estado": 0
   },
   "ECO-12121": {
-    "semestre": 10,
+    "semestre": 12,
     "nombre": "Macroeconomía Avanzada",
     "creditos": 6,
     "prerreqs": [
@@ -983,7 +983,7 @@
     "estado": 0
   },
   "ECO-10204": {
-    "semestre": 10,
+    "semestre": 12,
     "nombre": "Seminario de Inv. Económica (1)",
     "creditos": 9,
     "prerreqs": [
@@ -996,7 +996,7 @@
     "estado": 0
   },
   "LEN-12758": {
-    "semestre": 10,
+    "semestre": 12,
     "nombre": "Comunicación Profesional para Economía",
     "creditos": 2,
     "prerreqs": [

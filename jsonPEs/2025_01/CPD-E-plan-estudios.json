@@ -661,8 +661,8 @@
     "estado": 0
   },
   "CON-11013": {
-    "semestre": 10,
-    "nombre": "ONCEAVO SEMESTRE Contraloría",
+    "semestre": 11,
+    "nombre": "Contraloría",
     "creditos": 6,
     "prerreqs": [
       "CON-10004"
@@ -671,19 +671,17 @@
     "estado": 0
   },
   "DER-11907": {
-    "semestre": 10,
+    "semestre": 11,
     "nombre": "Técnicas de Argumentación Jurídica",
     "creditos": 6,
     "prerreqs": [
       "DER-13607"
     ],
-    "coreqs": [
-      "CON-15003"
-    ],
+    "coreqs": [],
     "estado": 0
   },
   "DER-17804": {
-    "semestre": 10,
+    "semestre": 11,
     "nombre": "Derecho Fiscal II",
     "creditos": 8,
     "prerreqs": [
@@ -693,7 +691,7 @@
     "estado": 0
   },
   "DER-16702": {
-    "semestre": 10,
+    "semestre": 11,
     "nombre": "Derecho Mercantil III",
     "creditos": 6,
     "prerreqs": [
@@ -703,7 +701,7 @@
     "estado": 0
   },
   "DER-19602": {
-    "semestre": 10,
+    "semestre": 11,
     "nombre": "Derecho Laboral II",
     "creditos": 6,
     "prerreqs": [
@@ -713,7 +711,7 @@
     "estado": 0
   },
   "CON-15002": {
-    "semestre": 10,
+    "semestre": 11,
     "nombre": "Impuestos Corporativos II",
     "creditos": 6,
     "prerreqs": [
@@ -723,19 +721,17 @@
     "estado": 0
   },
   "CON-15003": {
-    "semestre": 10,
-    "nombre": "DOCEAVO SEMESTRE Impuestos para Personas Físicas",
+    "semestre": 12,
+    "nombre": "Impuestos para Personas Físicas",
     "creditos": 6,
     "prerreqs": [
       "CON-15002"
     ],
-    "coreqs": [
-      "DER-11907"
-    ],
+    "coreqs": [],
     "estado": 0
   },
   "CON-11001": {
-    "semestre": 10,
+    "semestre": 12,
     "nombre": "Auditoría de Estados Financieros",
     "creditos": 6,
     "prerreqs": [
@@ -745,7 +741,7 @@
     "estado": 0
   },
   "CON-10005": {
-    "semestre": 10,
+    "semestre": 12,
     "nombre": "Análisis Financiero de la Empresa",
     "creditos": 6,
     "prerreqs": [
@@ -756,7 +752,7 @@
     "estado": 0
   },
   "DER-11805": {
-    "semestre": 10,
+    "semestre": 12,
     "nombre": "Filosofía del Derecho",
     "creditos": 6,
     "prerreqs": [
@@ -766,7 +762,7 @@
     "estado": 0
   },
   "OPTATIVA-1": {
-    "semestre": 10,
+    "semestre": 12,
     "nombre": "Optativa I",
     "creditos": 6,
     "prerreqs": [],
@@ -774,7 +770,7 @@
     "estado": 0
   },
   "OPTATIVA-2": {
-    "semestre": 10,
+    "semestre": 12,
     "nombre": "Optativa II",
     "creditos": 6,
     "prerreqs": [],

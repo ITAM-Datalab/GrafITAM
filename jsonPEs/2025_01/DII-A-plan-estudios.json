@@ -739,7 +739,7 @@
     "estado": 0
   },
   "IIO-14180": {
-    "semestre": 10,
+    "semestre": 11,
     "nombre": "Admón. y Eval. De Proyectos",
     "creditos": 6,
     "prerreqs": [
@@ -749,7 +749,7 @@
     "estado": 0
   },
   "LEN-12767": {
-    "semestre": 10,
+    "semestre": 11,
     "nombre": "Comunicación Profesional para Ing. Industrial",
     "creditos": 2,
     "prerreqs": [
@@ -762,7 +762,7 @@
     "estado": 0
   },
   "IIO-12180": {
-    "semestre": 10,
+    "semestre": 11,
     "nombre": "Diseño y Desarrollo de Producto",
     "creditos": 6,
     "prerreqs": [
@@ -775,7 +775,7 @@
     "estado": 0
   },
   "IIO-16180": {
-    "semestre": 10,
+    "semestre": 11,
     "nombre": "Seminario de Titulación",
     "creditos": 6,
     "prerreqs": [],

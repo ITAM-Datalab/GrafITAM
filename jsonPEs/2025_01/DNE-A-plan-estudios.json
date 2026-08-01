@@ -661,7 +661,7 @@
     "estado": 0
   },
   "IIO-14193": {
-    "semestre": 10,
+    "semestre": 11,
     "nombre": "Ingeniería de Procesos de Negocios",
     "creditos": 6,
     "prerreqs": [
@@ -671,7 +671,7 @@
     "estado": 0
   },
   "LEN-12762": {
-    "semestre": 10,
+    "semestre": 11,
     "nombre": "Comunicación Profesional para Ciencia de Datos",
     "creditos": 2,
     "prerreqs": [
@@ -684,7 +684,7 @@
     "estado": 0
   },
   "COM-23116": {
-    "semestre": 10,
+    "semestre": 11,
     "nombre": "Ciencia de Datos Aplicada II",
     "creditos": 6,
     "prerreqs": [
@@ -700,7 +700,7 @@
     "estado": 0
   },
   "DER-10114": {
-    "semestre": 10,
+    "semestre": 11,
     "nombre": "Seminario de Legalidad y Ética en Ciencia de Datos",
     "creditos": 4,
     "prerreqs": [],
@@ -708,7 +708,7 @@
     "estado": 0
   },
   "ADM-16644": {
-    "semestre": 10,
+    "semestre": 11,
     "nombre": "Modelos de Mercadotecnía",
     "creditos": 6,
     "prerreqs": [
@@ -718,7 +718,7 @@
     "estado": 0
   },
   "ADM-15593": {
-    "semestre": 10,
+    "semestre": 11,
     "nombre": "Ingeniería Financiera",
     "creditos": 6,
     "prerreqs": [
@@ -728,7 +728,7 @@
     "estado": 0
   },
   "IIO-16180": {
-    "semestre": 10,
+    "semestre": 11,
     "nombre": "Seminario de Titulación",
     "creditos": 6,
     "prerreqs": [
