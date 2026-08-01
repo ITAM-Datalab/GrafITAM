@@ -1,6 +1,7 @@
 import { useMemo, useState } from 'react'
 import { programIndex, areasByPlan, parseFilename, buildPlanFilename } from '../data/planIndex'
 import { useCurriculumStore } from '../store/curriculumStore'
+import { trackEvent } from '../lib/analytics'
 
 export default function PlanSelector() {
   const programs = useMemo(() => Object.keys(programIndex).sort(), [])
@@ -27,6 +28,7 @@ export default function PlanSelector() {
     setSelectedProgram(program)
     setSelectedLetter('')
     setSelectedArea('')
+    trackEvent('/plan/program', program)
   }
 
   const handleLetterChange = (letter: string) => {
@@ -39,16 +41,22 @@ export default function PlanSelector() {
       // No dejar el plan a medio elegir: se auto-selecciona la primera área,
       // el tercer <select> queda disponible para cambiarla después.
       setSelectedArea(planAreas[0])
-      loadPlan(buildPlanFilename(selectedProgram, letter, planAreas[0]))
+      const filename = buildPlanFilename(selectedProgram, letter, planAreas[0])
+      loadPlan(filename)
+      trackEvent('/plan/select', filename.replace('-plan-estudios.json', ''))
     } else {
-      loadPlan(buildPlanFilename(selectedProgram, letter))
+      const filename = buildPlanFilename(selectedProgram, letter)
+      loadPlan(filename)
+      trackEvent('/plan/select', filename.replace('-plan-estudios.json', ''))
     }
   }
 
   const handleAreaChange = (area: string) => {
     setSelectedArea(area)
     if (!area || !selectedProgram || !selectedLetter) return
-    loadPlan(buildPlanFilename(selectedProgram, selectedLetter, area))
+    const filename = buildPlanFilename(selectedProgram, selectedLetter, area)
+    loadPlan(filename)
+    trackEvent('/plan/select', filename.replace('-plan-estudios.json', ''))
   }
 
   const activePlanLabel = activePlan?.replace('-plan-estudios.json', '') ?? null

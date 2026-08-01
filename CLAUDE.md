@@ -136,3 +136,4 @@ Ninguna pendiente por ahora. (Resuelto: clases Tailwind `cream-*`/`espresso-*` q
 - [`src/components/manual/CLAUDE.md`](src/components/manual/CLAUDE.md) — pestaña de manual de usuario
 - [`src/store/CLAUDE.md`](src/store/CLAUDE.md) — los 2 stores (curriculum y schedule), persistencia, invariantes
 - [`src/data/CLAUDE.md`](src/data/CLAUDE.md) — carga de planes y pipeline PDF→JSON
+- [`src/lib/CLAUDE.md`](src/lib/CLAUDE.md) — analytics (GoatCounter)
