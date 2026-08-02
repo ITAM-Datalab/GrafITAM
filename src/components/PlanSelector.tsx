@@ -2,6 +2,8 @@ import { useMemo, useState } from 'react'
 import { programIndex, areasByPlan, parseFilename, buildPlanFilename } from '../data/planIndex'
 import { useCurriculumStore } from '../store/curriculumStore'
 import { trackEvent } from '../lib/analytics'
+import PlanSearchBar from './PlanSearchBar'
+import type { PlanMeta } from '../types/curriculum'
 
 export default function PlanSelector() {
   const programs = useMemo(() => Object.keys(programIndex).sort(), [])
@@ -12,6 +14,7 @@ export default function PlanSelector() {
   const [selectedProgram, setSelectedProgram] = useState(() => activeMeta?.program ?? '')
   const [selectedLetter, setSelectedLetter] = useState(() => activeMeta?.letter ?? '')
   const [selectedArea, setSelectedArea] = useState(() => activeMeta?.area ?? '')
+  const [searchMode, setSearchMode] = useState(false)
 
   const loadPlan = useCurriculumStore((s) => s.loadPlan)
   const resetPlan = useCurriculumStore((s) => s.resetPlan)
@@ -59,6 +62,14 @@ export default function PlanSelector() {
     trackEvent('/plan/select', filename.replace('-plan-estudios.json', ''))
   }
 
+  const handleSearchSelect = (meta: PlanMeta) => {
+    setSelectedProgram(meta.program)
+    setSelectedLetter(meta.letter)
+    setSelectedArea(meta.area ?? '')
+    loadPlan(buildPlanFilename(meta.program, meta.letter, meta.area))
+    setSearchMode(false)
+  }
+
   const activePlanLabel = activePlan?.replace('-plan-estudios.json', '') ?? null
 
   const creditProgress = useMemo(() => {
@@ -79,48 +90,54 @@ export default function PlanSelector() {
           Plan de Estudios
         </span>
 
-        <select
-          value={selectedProgram}
-          onChange={(e) => handleProgramChange(e.target.value)}
-          className="border border-itam-muted/40 rounded px-2 py-1 text-sm bg-white focus:outline-none focus:ring-1 focus:ring-itam-core"
-          style={{ color: '#0D3B2E' }}
-        >
-          <option value="">— Programa —</option>
-          {programs.map((p) => (
-            <option key={p} value={p}>
-              {p}
-            </option>
-          ))}
-        </select>
+        {searchMode ? (
+          <PlanSearchBar onSelect={handleSearchSelect} />
+        ) : (
+          <>
+            <select
+              value={selectedProgram}
+              onChange={(e) => handleProgramChange(e.target.value)}
+              className="border border-itam-muted/40 rounded px-2 py-1 text-sm bg-white focus:outline-none focus:ring-1 focus:ring-itam-core"
+              style={{ color: '#0D3B2E' }}
+            >
+              <option value="">— Programa —</option>
+              {programs.map((p) => (
+                <option key={p} value={p}>
+                  {p}
+                </option>
+              ))}
+            </select>
 
-        <select
-          value={selectedLetter}
-          onChange={(e) => handleLetterChange(e.target.value)}
-          disabled={!selectedProgram}
-          className="border border-itam-muted/40 rounded px-2 py-1 text-sm bg-white disabled:opacity-40 focus:outline-none focus:ring-1 focus:ring-itam-core"
-          style={{ color: '#0D3B2E' }}
-        >
-          <option value="">— Generación —</option>
-          {letters.map((l) => (
-            <option key={l} value={l}>
-              {l}
-            </option>
-          ))}
-        </select>
+            <select
+              value={selectedLetter}
+              onChange={(e) => handleLetterChange(e.target.value)}
+              disabled={!selectedProgram}
+              className="border border-itam-muted/40 rounded px-2 py-1 text-sm bg-white disabled:opacity-40 focus:outline-none focus:ring-1 focus:ring-itam-core"
+              style={{ color: '#0D3B2E' }}
+            >
+              <option value="">— Generación —</option>
+              {letters.map((l) => (
+                <option key={l} value={l}>
+                  {l}
+                </option>
+              ))}
+            </select>
 
-        {areas.length > 0 && (
-          <select
-            value={selectedArea}
-            onChange={(e) => handleAreaChange(e.target.value)}
-            className="border border-itam-muted/40 rounded px-2 py-1 text-sm bg-white focus:outline-none focus:ring-1 focus:ring-itam-core"
-            style={{ color: '#0D3B2E' }}
-          >
-            {areas.map((a) => (
-              <option key={a} value={a}>
-                {a}
-              </option>
-            ))}
-          </select>
+            {areas.length > 0 && (
+              <select
+                value={selectedArea}
+                onChange={(e) => handleAreaChange(e.target.value)}
+                className="border border-itam-muted/40 rounded px-2 py-1 text-sm bg-white focus:outline-none focus:ring-1 focus:ring-itam-core"
+                style={{ color: '#0D3B2E' }}
+              >
+                {areas.map((a) => (
+                  <option key={a} value={a}>
+                    {a}
+                  </option>
+                ))}
+              </select>
+            )}
+          </>
         )}
 
         {activePlanLabel && (
@@ -140,6 +157,22 @@ export default function PlanSelector() {
             </button>
           </>
         )}
+
+        <button
+          onClick={() => {
+            setSearchMode((v) => !v)
+            if (!searchMode) trackEvent('/plan/search-open', '')
+          }}
+          className="text-xs px-3 py-0.5 rounded-full border transition-colors"
+          style={{
+            background: searchMode ? '#22C55E' : 'transparent',
+            color: searchMode ? '#fff' : '#3E2723',
+            borderColor: searchMode ? '#22C55E' : '#DDD4A8',
+            fontWeight: searchMode ? 600 : 400,
+          }}
+        >
+          {searchMode ? 'Ver selects' : 'Buscar plan'}
+        </button>
       </div>
 
       {creditProgress && (
