@@ -45,6 +45,13 @@ export default function ManualTab() {
             <strong className="font-semibold">áreas de concentración</strong> (ej. Actuaría, Economía), un tercer
             selector aparece para elegirla.
           </p>
+          <p>
+            Si no recuerdas tu código de programa, usa el botón{' '}
+            <strong className="font-semibold">&quot;Buscar plan&quot;</strong> — cambia a un buscador de texto libre
+            donde puedes escribir el nombre de tu carrera, un área de concentración o tu generación de ingreso (ej.
+            "actuaria", "riesgos financieros" o "2019"). Al elegir un resultado, la vista regresa sola a los
+            selectores con tu plan ya cargado.
+          </p>
           <p>La barra de progreso muestra tus créditos aprobados sobre el total del plan.</p>
         </Section>
 

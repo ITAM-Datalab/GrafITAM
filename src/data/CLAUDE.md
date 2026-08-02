@@ -29,7 +29,26 @@ Los 232 JSONs quedan embebidos en el bundle JS. No hay fetch en runtime.
 
 ### `planIndex.ts`
 
-Barrel que re-exporta `programIndex`, `areasByPlan`, `allPlanMetas`, `parseFilename` y `buildPlanFilename` de `loader.ts`. Consumido por `PlanSelector.tsx`.
+Barrel que re-exporta `programIndex`, `areasByPlan`, `allPlanMetas`, `parseFilename` y `buildPlanFilename` de `loader.ts`, más `programNames` y `planGenerations` (ver abajo). Consumido por `PlanSelector.tsx` y `PlanSearchBar.tsx`.
+
+---
+
+## `programNames.ts` / `planGenerations.ts`
+
+Dos mapas **estáticos y curados a mano** — `Record<programa, nombreCompleto>` (81 entradas) y `Record<"programa-letra", textoDeGeneración>` (199 entradas) — que alimentan el buscador libre de `PlanSearchBar.tsx` (ver `src/components/CLAUDE.md`). A diferencia de todo lo demás en esta carpeta, **no se regeneran** con `txt_json.py` ni con ningún otro script en cada corrida — son el resultado de una extracción única, revisada entrada por entrada, y viven en git como cualquier archivo de código fuente.
+
+**Por qué existen**: los 81 códigos de programa (`ACT`, `AAC`, `CDA`, ...) son acrónimos opacos — ningún JSON de `jsonPEs/` ni ningún otro dato del repo trae el nombre real de la carrera. La única fuente de verdad es la página 1 de cada PDF en `2025_01/`, que trae el título oficial (ej. `LICENCIATURA EN ACTUARÍA`, `PLAN CONJUNTO PARA LAS LICENCIATURAS EN ADMINISTRACIÓN Y ACTUARÍA`) y, justo debajo, el rango real de generación de ingreso (ej. `PARA ALUMNOS QUE INGRESARON DE VERANO 2015 A PRIMAVERA 2019` — lo que un estudiante entiende por "generación"; la UI le llama así hoy a la letra de plan, que no es lo mismo).
+
+**Por qué son estáticos en vez de parte del pipeline**: los nombres de carrera y las generaciones no cambian con cada corrida de `txt_json.py` (a diferencia de materias/prerreqs, que sí). Automatizar la extracción en cada build habría significado cargar con la fragilidad del parseo de texto de PDF (ver quirks de `parse_pdf` abajo) para un dato que en la práctica nunca cambia — mejor extraerlo una vez con un script desechable, revisarlo a mano, y commitear el resultado ya limpio.
+
+**Correcciones manuales aplicadas** sobre el texto crudo extraído (glitches de espaciado de fuente del PDF o de continuación en dos líneas, no errores de la extracción en sí):
+- Palabras partidas por espaciado: `COM` ("C OMPUTACION"→"Computación"), `RI` ("RELACI ONES"→"Relaciones"), `MCT` ("ME CATRÓNICA"→"Mecatrónica"), `MIC` ("INGENIE RÍA"→"Ingeniería"), `EMA` ("MATEMÁTICAS A PLICADAS"→"Matemáticas Aplicadas").
+- Acentos faltantes en el PDF fuente: `AII`, `CII` ("Ingenieria"→"Ingeniería").
+- Carácter suelto `´` al inicio del título: `CEF`.
+- Palabra duplicada en el PDF fuente: `ACT-F` ("INGRESARON DE DE OTOÑO"→un solo "DE").
+- Generación truncada por continuar en una segunda línea que el script de una sola línea no capturaba: `COM-G`, `DPL-D`, `RPL-C`, `EAD-B`, `ECO-E`, `ECO-F`.
+
+Si algún día se agregan PDFs nuevos a `2025_01/` (programa o letra nueva), estos dos archivos necesitan una entrada nueva a mano — no hay automatización que los detecte ni los regenere.
 
 ---
 
