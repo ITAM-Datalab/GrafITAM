@@ -7,6 +7,121 @@
   </head>
   <body>
     <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+
+    <!-- ============================================================
+         INSTRUMENTACIÓN TEMPORAL DE DIAGNÓSTICO — pantalla en blanco iOS Safari.
+         Agregado 2026-08-01 para capturar el error real de JS que solo ocurre
+         en WebKit/JavaScriptCore de iOS (Safari y Chrome-iOS), no reproducible
+         en Chrome de escritorio con el mismo bundle.
+         Debe ir en un <script> plano (NO type="module", NO defer/async) y
+         ANTES del <script type="module" src="/src/main.tsx">: si el módulo
+         principal falla al parsear/evaluar (p.ej. sintaxis no soportada por
+         JavaScriptCore), este script YA debe estar registrado para atraparlo,
+         porque el propio main.tsx nunca llegaría a ejecutar su propio catch.
+         BORRAR este bloque completo (y el bloque equivalente marcado
+         "DIAGNÓSTICO TEMPORAL" en src/main.tsx) en cuanto se identifique
+         y arregle el bug real. Idealmente en un commit propio y aislado
+         para poder revertirlo con un solo `git revert`.
+         ============================================================ -->
+    <script>
+      (function () {
+        var containerId = '__grafitam_diag_overlay__'
+        window.__diagErrorReported = false
+
+        function esc(s) {
+          return String(s)
+            .replace(/&/g, '&amp;')
+            .replace(/</g, '&lt;')
+            .replace(/>/g, '&gt;')
+        }
+
+        function ensureContainer() {
+          var el = document.getElementById(containerId)
+          if (el) return el
+          el = document.createElement('div')
+          el.id = containerId
+          el.style.cssText = [
+            'position:fixed',
+            'top:0', 'left:0', 'right:0', 'bottom:0',
+            'z-index:2147483647',
+            'background:#fffdf5',
+            'color:#111111',
+            'padding:16px',
+            'overflow:auto',
+            '-webkit-overflow-scrolling:touch',
+            'font-family:Menlo,monospace',
+            'font-size:13px',
+            'line-height:1.4',
+            'white-space:pre-wrap',
+            'word-break:break-word',
+            'box-sizing:border-box'
+          ].join(';')
+          var header = document.createElement('div')
+          header.style.cssText = 'font-weight:bold;margin-bottom:12px;border-bottom:2px solid #111;padding-bottom:8px;'
+          header.innerHTML =
+            'DIAGNOSTICO TEMPORAL GrafITAM<br/>' +
+            'UA: ' + esc(navigator.userAgent) + '<br/>' +
+            'hora: ' + esc(new Date().toString())
+          el.appendChild(header)
+          document.body.appendChild(el)
+          return el
+        }
+
+        function report(title, details) {
+          window.__diagErrorReported = true
+          try {
+            var el = ensureContainer()
+            var block = document.createElement('div')
+            block.style.cssText = 'margin-bottom:16px;border-bottom:1px solid #ccc;padding-bottom:12px;'
+            block.innerHTML =
+              '<div style="font-weight:bold;color:#b00020;margin-bottom:6px;">' + esc(title) + '</div>' +
+              '<div>' + esc(details) + '</div>'
+            el.appendChild(block)
+          } catch (e) {
+            try { document.title = 'ERROR: ' + title } catch (e2) {}
+          }
+        }
+        window.__diagReport = report
+
+        window.addEventListener('error', function (event) {
+          var err = event.error
+          var details =
+            'message: ' + (event.message || '(sin mensaje)') + '\n' +
+            'file: ' + (event.filename || '?') + ':' + (event.lineno || '?') + ':' + (event.colno || '?') + '\n' +
+            'stack:\n' + (err && err.stack ? err.stack : '(no disponible)')
+          report('window.onerror', details)
+        })
+
+        window.addEventListener('unhandledrejection', function (event) {
+          var reason = event.reason
+          var details =
+            (reason && reason.message ? reason.message : String(reason)) + '\n' +
+            'stack:\n' + (reason && reason.stack ? reason.stack : '(no disponible)')
+          report('unhandledrejection', details)
+        })
+
+        // Watchdog: si en 6s nadie reportó un error pero #root sigue vacío,
+        // React nunca montó nada y tampoco disparó ningún evento capturable
+        // (posible falla de red al cargar el módulo bajo /GrafITAM/, CSP, etc.)
+        setTimeout(function () {
+          var root = document.getElementById('root')
+          if (!window.__diagErrorReported && root && root.childNodes.length === 0) {
+            report(
+              'WATCHDOG: #root sigue vacío tras 6s, sin errores capturados',
+              'React nunca montó nada y no se disparó window.onerror ni unhandledrejection. ' +
+              'Revisa si /src/main.tsx (o su bundle bajo /GrafITAM/) cargó correctamente, ' +
+              'o si algo bloqueó su ejecución silenciosamente.'
+            )
+          }
+        }, 6000)
+      })()
+    </script>
+    <!-- FIN instrumentación temporal -->
+
+    <script
+      type="module"
+      src="/src/main.tsx"
+      onerror="window.__diagReport && window.__diagReport('script[type=module] falló al CARGAR', 'src=' + this.src + ' — esto es un fallo de red/404/MIME, no un error de JS dentro del módulo. Revisa la ruta bajo el base /GrafITAM/.')"
+    ></script>
   </body>
 </html>
