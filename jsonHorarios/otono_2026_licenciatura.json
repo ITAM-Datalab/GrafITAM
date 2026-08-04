@@ -3190,7 +3190,7 @@
       "horario": "17:30-19:00",
       "nombre": "CONTABILIDAD, I",
       "profesor": "EDGAR DE LA ROSA CABELLO",
-      "salon": "RHB-5"
+      "salon": "RHSA4"
     }
   ],
   "CON-10106": [
@@ -3274,7 +3274,7 @@
       "horario": "17:30-19:00",
       "nombre": "FUNDAMEN. DE CONTABILID FINANC",
       "profesor": "EDGAR DE LA ROSA CABELLO",
-      "salon": "RHB-5"
+      "salon": "RHSA4"
     }
   ],
   "CON-10111": [
@@ -11811,6 +11811,16 @@
       "nombre": "CALCULO EN UNA VARIABLE",
       "profesor": "",
       "salon": "PF108"
+    },
+    {
+      "campus": "RIO HONDO",
+      "crn": "3434",
+      "dias": "LU MI VI",
+      "grupo": "009",
+      "horario": "10:00-11:30",
+      "nombre": "CALCULO EN UNA VARIABLE",
+      "profesor": "",
+      "salon": "RHB-5"
     }
   ],
   "MAT-12221": [
