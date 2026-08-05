@@ -11437,6 +11437,28 @@
       "salon": "RH105"
     }
   ],
+  "MAT-11101": [
+    {
+      "campus": "RIO HONDO",
+      "crn": "3436",
+      "dias": "LU MI",
+      "grupo": "001",
+      "horario": "16:00-18:00",
+      "nombre": "MATEMATICAS, II",
+      "profesor": "HERICA SANCHEZ LARIOS",
+      "salon": "RH107"
+    },
+    {
+      "campus": "RIO HONDO",
+      "crn": "3437",
+      "dias": "MA",
+      "grupo": "002",
+      "horario": "16:00-18:00",
+      "nombre": "MATEMATICAS, II",
+      "profesor": "",
+      "salon": "PF105"
+    }
+  ],
   "MAT-11310": [
     {
       "campus": "RIO HONDO",
