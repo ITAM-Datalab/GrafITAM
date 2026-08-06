@@ -4637,6 +4637,16 @@
       "nombre": "DERECHO CORPORATIVO",
       "profesor": "LUZ DEL CARMEN CARRILLO CAREAGA",
       "salon": "RH307"
+    },
+    {
+      "campus": "RIO HONDO",
+      "crn": "3438",
+      "dias": "MA JU",
+      "grupo": "002",
+      "horario": "19:00-21:00",
+      "nombre": "DERECHO CORPORATIVO",
+      "profesor": "ALFONSO PASAPERA MORA",
+      "salon": "RH102"
     }
   ],
   "DER-10113": [
@@ -5673,6 +5683,18 @@
       "nombre": "PERSONAS Y FAMILIA",
       "profesor": "JORGE LUIS ZAPATA MEJIA",
       "salon": "RHSA2"
+    }
+  ],
+  "DER-13203": [
+    {
+      "campus": "RIO HONDO",
+      "crn": "3439",
+      "dias": "LU MI",
+      "grupo": "001",
+      "horario": "16:00-17:30",
+      "nombre": "NEGOCIO JURIDICO Y PERSONAS",
+      "profesor": "SOFIA DEL CARMEN TREVIÑO FERNANDEZ",
+      "salon": "RHB-3"
     }
   ],
   "DER-13403": [
@@ -8345,6 +8367,16 @@
       "nombre": "IDEAS E INST. POL. Y SOC. II",
       "profesor": "JOSE RAFAEL GONZALEZ DIAZ",
       "salon": "RH205"
+    },
+    {
+      "campus": "",
+      "crn": "2826",
+      "dias": "LU MI VI",
+      "grupo": "005",
+      "horario": "17:00-18:00",
+      "nombre": "IDEAS E INST. POL. Y SOC. II",
+      "profesor": "JOSE RAFAEL GONZALEZ DIAZ",
+      "salon": ""
     },
     {
       "campus": "RIO HONDO",
@@ -11451,7 +11483,7 @@
     {
       "campus": "RIO HONDO",
       "crn": "3437",
-      "dias": "MA",
+      "dias": "MA JU",
       "grupo": "002",
       "horario": "16:00-18:00",
       "nombre": "MATEMATICAS, II",
