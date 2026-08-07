@@ -324,7 +324,7 @@
       "horario": "08:00-11:30",
       "nombre": "METODOS DE PRONOSTICO",
       "profesor": "KRZYSZTOF ZAREMBA",
-      "salon": "PF103"
+      "salon": "RH108"
     }
   ],
   "ADM-11018": [
@@ -368,7 +368,7 @@
       "horario": "08:00-11:30",
       "nombre": "PRONOSTICOS DE NEGOCIOS",
       "profesor": "KRZYSZTOF ZAREMBA",
-      "salon": "PF103"
+      "salon": "RH108"
     }
   ],
   "ADM-11120": [
@@ -6778,7 +6778,7 @@
       "horario": "07:00-10:00",
       "nombre": "SEM. DE INVEST. ECONOMICA II",
       "profesor": "CARLO EDUARDO ALCARAZ PRIBAZ",
-      "salon": "RH317"
+      "salon": "PF103"
     }
   ],
   "ECO-10204": [
@@ -6810,7 +6810,7 @@
       "horario": "07:00-10:00",
       "nombre": "SEMINARIO DE INV. ECONOMICA",
       "profesor": "CARLO EDUARDO ALCARAZ PRIBAZ",
-      "salon": "RH317"
+      "salon": "PF103"
     },
     {
       "campus": "RIO HONDO",
@@ -6876,7 +6876,7 @@
       "horario": "08:30-10:00",
       "nombre": "MICROECONOMETRIA APLICADA",
       "profesor": "SHAUN DAVID MCRAE",
-      "salon": "PF104"
+      "salon": "PF"
     }
   ],
   "ECO-10517": [
@@ -6898,7 +6898,7 @@
       "horario": "07:00-10:00",
       "nombre": "MACROECONOMETRIA APLICADA",
       "profesor": "ALEXIS CAPDEVIELLE HARRISON",
-      "salon": "RH317"
+      "salon": "RH108"
     },
     {
       "campus": "RIO HONDO",
@@ -6908,7 +6908,7 @@
       "horario": "07:00-10:00",
       "nombre": "MACROECONOMETRIA APLICADA",
       "profesor": "ERNESTO JAVIER CORDERO ARROYO",
-      "salon": "RH317"
+      "salon": "RH108"
     }
   ],
   "ECO-10521": [
@@ -7410,7 +7410,7 @@
       "horario": "08:30-10:00",
       "nombre": "MICROECONOMIA AVANZADA II",
       "profesor": "TRIDIB  SHARMA",
-      "salon": "RH108"
+      "salon": "RH317"
     },
     {
       "campus": "RIO HONDO",
@@ -7420,7 +7420,7 @@
       "horario": "10:00-11:30",
       "nombre": "MICROECONOMIA AVANZADA II",
       "profesor": "TRIDIB  SHARMA",
-      "salon": "RH108"
+      "salon": "RH317"
     }
   ],
   "ECO-11227": [
@@ -7816,7 +7816,7 @@
       "horario": "10:00-11:30",
       "nombre": "ECONOMIA DE LA REGULACION",
       "profesor": "SHAUN DAVID MCRAE",
-      "salon": "PF107"
+      "salon": "PF103"
     }
   ],
   "ECO-14501": [
@@ -7852,7 +7852,7 @@
       "horario": "10:00-11:30",
       "nombre": "FINANZAS PUBLICAS",
       "profesor": "RICARDO SERGIO FADL KURI",
-      "salon": "RH317"
+      "salon": "PF107"
     },
     {
       "campus": "RIO HONDO",
@@ -7874,7 +7874,7 @@
       "horario": "08:30-10:00",
       "nombre": "EVALUACION DE PROYECTOS",
       "profesor": "RICARDO SERGIO FADL KURI",
-      "salon": "RH213"
+      "salon": "PF104"
     }
   ],
   "ECO-15111": [
@@ -10339,6 +10339,18 @@
       "salon": "RH314"
     }
   ],
+  "LEN-10132": [
+    {
+      "campus": "RIO HONDO",
+      "crn": "3450",
+      "dias": "MA",
+      "grupo": "008",
+      "horario": "12:00-13:00",
+      "nombre": "SEM. DE COMUNICACION ESCRITA",
+      "profesor": "",
+      "salon": "RH201"
+    }
+  ],
   "LEN-12701": [
     {
       "campus": "RIO HONDO",
@@ -11523,6 +11535,36 @@
       "nombre": "MATEMATICAS, I",
       "profesor": "YOLANDA ISABEL PRETELIN MUÑOZ DE COTE",
       "salon": "RH105"
+    },
+    {
+      "campus": "RIO HONDO",
+      "crn": "3447",
+      "dias": "LU MI VI",
+      "grupo": "002",
+      "horario": "08:00-09:30",
+      "nombre": "MATEMATICAS, I",
+      "profesor": "YOLANDA ISABEL PRETELIN MUÑOZ DE COTE",
+      "salon": "RH107"
+    },
+    {
+      "campus": "RIO HONDO",
+      "crn": "3448",
+      "dias": "LU MI VI",
+      "grupo": "003",
+      "horario": "10:00-11:30",
+      "nombre": "MATEMATICAS, I",
+      "profesor": "RITA EUGENIA MALDONADO LOZANO",
+      "salon": "RH111"
+    },
+    {
+      "campus": "RIO HONDO",
+      "crn": "3449",
+      "dias": "LU MI VI",
+      "grupo": "004",
+      "horario": "11:30-13:00",
+      "nombre": "MATEMATICAS, I",
+      "profesor": "LYSETTE FELIX FELIX",
+      "salon": "RH111"
     }
   ],
   "MAT-11101": [
