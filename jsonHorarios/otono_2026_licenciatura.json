@@ -40,7 +40,7 @@
       "horario": "19:00-20:30",
       "nombre": "CALCULO ACTUARIAL II",
       "profesor": "ERIKA GEORGINA CHAVEZ PIEDRA BUENA",
-      "salon": "RH110"
+      "salon": "RH313"
     },
     {
       "campus": "RIO HONDO",
@@ -62,7 +62,7 @@
       "horario": "07:00-08:30",
       "nombre": "CALCULO ACTUARIAL III",
       "profesor": "DAVID RUELAS RODRIGUEZ",
-      "salon": "RH301"
+      "salon": "RHB-2"
     }
   ],
   "ACT-11303": [
@@ -74,7 +74,7 @@
       "horario": "19:00-20:30",
       "nombre": "MODELOS ACTUARIALES I",
       "profesor": "SERGIO GARCIA ALQUICIRA",
-      "salon": "RH313"
+      "salon": "RH110"
     }
   ],
   "ACT-11310": [
@@ -96,7 +96,7 @@
       "horario": "08:30-10:00",
       "nombre": "INTROD. AL CALCULO ACTUARIAL",
       "profesor": "ERNESTO ANTONIO GOMEZ VELAZQUEZ",
-      "salon": "RH301"
+      "salon": "RH105"
     }
   ],
   "ACT-13307": [
@@ -176,7 +176,7 @@
       "horario": "07:00-08:30",
       "nombre": "SISTEMAS DE SEGUROS",
       "profesor": "ERNESTO ANTONIO GOMEZ VELAZQUEZ",
-      "salon": "RHB-2"
+      "salon": "RH301"
     }
   ],
   "ACT-15360": [
@@ -476,7 +476,7 @@
       "horario": "08:30-10:00",
       "nombre": "ESTRATEGIA DE NEGOCIOS I",
       "profesor": "ANTONIO RODOLFO LLORET CARRILLO",
-      "salon": "RH111"
+      "salon": "RH312"
     },
     {
       "campus": "RIO HONDO",
@@ -486,7 +486,7 @@
       "horario": "13:00-14:30",
       "nombre": "ESTRATEGIA DE NEGOCIOS I",
       "profesor": "ANTONIO RODOLFO LLORET CARRILLO",
-      "salon": "RHSA3"
+      "salon": "RH104"
     },
     {
       "campus": "RIO HONDO",
@@ -732,7 +732,7 @@
       "horario": "08:30-10:00",
       "nombre": "NEGOCS EN ACCION: DIS DE PROD",
       "profesor": "CLAUDIA NOEMI GONZALEZ BRAMBILA",
-      "salon": "RH312"
+      "salon": "RH111"
     }
   ],
   "ADM-14401": [
@@ -1777,76 +1777,6 @@
       "salon": "PF104"
     }
   ],
-  "CLE-10201": [
-    {
-      "campus": "RIO HONDO",
-      "crn": "3104",
-      "dias": "MA JU",
-      "grupo": "001",
-      "horario": "16:00-19:00",
-      "nombre": "INGLES INTENSIVO",
-      "profesor": "",
-      "salon": "PF108"
-    }
-  ],
-  "CLE-10202": [
-    {
-      "campus": "RIO HONDO",
-      "crn": "3105",
-      "dias": "MA JU",
-      "grupo": "001",
-      "horario": "10:00-12:00",
-      "nombre": "INGLES AVANZADO",
-      "profesor": "MARIA GRACE  NOBILE",
-      "salon": "RH203"
-    }
-  ],
-  "CLE-10311": [
-    {
-      "campus": "RIO HONDO",
-      "crn": "3106",
-      "dias": "MA JU",
-      "grupo": "001",
-      "horario": "12:00-14:00",
-      "nombre": "FRANCES, I",
-      "profesor": "TOUFIK CHAIBAT",
-      "salon": "RH203"
-    }
-  ],
-  "CLE-10312": [
-    {
-      "campus": "RIO HONDO",
-      "crn": "3108",
-      "dias": "LU MI",
-      "grupo": "001",
-      "horario": "12:00-14:00",
-      "nombre": "FRANCES II",
-      "profesor": "",
-      "salon": "PF106"
-    }
-  ],
-  "CLE-10331": [
-    {
-      "campus": "RIO HONDO",
-      "crn": "3109",
-      "dias": "LU MI",
-      "grupo": "001",
-      "horario": "12:00-14:00",
-      "nombre": "ALEMAN, I",
-      "profesor": "",
-      "salon": "RH211"
-    },
-    {
-      "campus": "RIO HONDO",
-      "crn": "3110",
-      "dias": "MA JU",
-      "grupo": "002",
-      "horario": "12:00-14:00",
-      "nombre": "ALEMAN, I",
-      "profesor": "",
-      "salon": "RH204"
-    }
-  ],
   "CLE-10516": [
     {
       "campus": "RIO HONDO",
@@ -2087,18 +2017,6 @@
       "salon": "RHCC101"
     }
   ],
-  "COM-11117": [
-    {
-      "campus": "RIO HONDO",
-      "crn": "2998",
-      "dias": "LU MI",
-      "grupo": "001",
-      "horario": "18:00-19:30",
-      "nombre": "INTROD AL DESARROLLO WEB",
-      "profesor": "FABIAN ORDUÑA FERREIRA",
-      "salon": "RHCC102"
-    }
-  ],
   "COM-11302": [
     {
       "campus": "RIO HONDO",
@@ -2119,7 +2037,7 @@
       "grupo": "001",
       "horario": "07:00-09:00",
       "nombre": "INTR. A LA INTELIGENC ARTIFIC",
-      "profesor": "JUAN SALVADOR MARMOL YAHYA",
+      "profesor": "PAULINA BUSTOS ARELLANO",
       "salon": "PF101"
     },
     {
@@ -2233,16 +2151,6 @@
       "nombre": "FUENTES DE DATOS EMPRESARIALES",
       "profesor": "ISRAEL LOPEZ AVILA",
       "salon": "PF101"
-    },
-    {
-      "campus": "RIO HONDO",
-      "crn": "2972",
-      "dias": "MA JU",
-      "grupo": "002",
-      "horario": "17:30-19:30",
-      "nombre": "FUENTES DE DATOS EMPRESARIALES",
-      "profesor": "ISRAEL LOPEZ AVILA",
-      "salon": "RHCC102"
     }
   ],
   "COM-14105": [
@@ -2385,18 +2293,6 @@
       "nombre": "CCIA DATOS Y TRANSF DE LA SOC",
       "profesor": "CARLOS FERNANDO ESPONDA DARLINGTON",
       "salon": "RH108"
-    }
-  ],
-  "COM-16203": [
-    {
-      "campus": "RIO HONDO",
-      "crn": "2980",
-      "dias": "LU MI",
-      "grupo": "001",
-      "horario": "18:00-20:00",
-      "nombre": "DES. DE APLICACS. INFORMATICAS",
-      "profesor": "FABIAN ORDUÑA FERREIRA",
-      "salon": "RHCC102"
     }
   ],
   "COM-16301": [
@@ -2821,7 +2717,7 @@
       "grupo": "001",
       "horario": "07:00-09:00",
       "nombre": "INTELIGENCIA  ARTIFICIAL",
-      "profesor": "JUAN SALVADOR MARMOL YAHYA",
+      "profesor": "PAULINA BUSTOS ARELLANO",
       "salon": "PF101"
     },
     {
@@ -3085,16 +2981,6 @@
       "nombre": "COMBINACION DE NEGOCIOS",
       "profesor": "VIRGINIA KALIS LETAYF",
       "salon": "RH112"
-    },
-    {
-      "campus": "RIO HONDO",
-      "crn": "2648",
-      "dias": "MA",
-      "grupo": "003",
-      "horario": "07:00-10:00",
-      "nombre": "COMBINACION DE NEGOCIOS",
-      "profesor": "BENITO REVAH MEYOHAS",
-      "salon": "RHB-5"
     }
   ],
   "CON-10005": [
@@ -3371,16 +3257,6 @@
       "nombre": "FUSIONES Y ADQUISICIONES",
       "profesor": "VIRGINIA KALIS LETAYF",
       "salon": "RH112"
-    },
-    {
-      "campus": "RIO HONDO",
-      "crn": "2656",
-      "dias": "MA",
-      "grupo": "003",
-      "horario": "07:00-10:00",
-      "nombre": "FUSIONES Y ADQUISICIONES",
-      "profesor": "BENITO REVAH MEYOHAS",
-      "salon": "RHB-5"
     }
   ],
   "CON-11013": [
@@ -4064,13 +3940,23 @@
   "CSO-15043": [
     {
       "campus": "RIO HONDO",
-      "crn": "3058",
-      "dias": "VI",
-      "grupo": "001",
-      "horario": "07:00-10:00",
+      "crn": "3455",
+      "dias": "LU MI",
+      "grupo": "002",
+      "horario": "10:00-11:30",
       "nombre": "ECONOMIA POLITICA II",
-      "profesor": "MANETT ROCIO VARGAS GARCIA",
-      "salon": "RH113"
+      "profesor": "HORACIO ALEJANDRO LARREGUY ARBESU",
+      "salon": "RHSA4"
+    },
+    {
+      "campus": "RIO HONDO",
+      "crn": "3455",
+      "dias": "VI",
+      "grupo": "002",
+      "horario": "08:30-10:00",
+      "nombre": "ECONOMIA POLITICA II",
+      "profesor": "HORACIO ALEJANDRO LARREGUY ARBESU",
+      "salon": "RHSA4"
     }
   ],
   "CSO-16042": [
@@ -4131,18 +4017,6 @@
       "nombre": "METODOL. POL. AVANZADA",
       "profesor": "EDUARDO CLARK GARCIA DOBARGANES",
       "salon": "RH308"
-    }
-  ],
-  "CSO-18045": [
-    {
-      "campus": "RIO HONDO",
-      "crn": "3073",
-      "dias": "MI",
-      "grupo": "001",
-      "horario": "17:00-20:00",
-      "nombre": "SISTS. DE INTELIGENCIA ESTRATE",
-      "profesor": "JORGE ENRIQUE TELLO PEON",
-      "salon": "RH210"
     }
   ],
   "CSO-19073": [
@@ -4446,36 +4320,6 @@
   "DER-10016": [
     {
       "campus": "RIO HONDO",
-      "crn": "3216",
-      "dias": "LU",
-      "grupo": "001",
-      "horario": "07:00-09:00",
-      "nombre": "INTROD. AL DERECHO CORPORATIVO",
-      "profesor": "ROXANA PEREZ ARCE VALLE",
-      "salon": "RHSA1"
-    },
-    {
-      "campus": "RIO HONDO",
-      "crn": "3216",
-      "dias": "MI",
-      "grupo": "001",
-      "horario": "07:00-09:30",
-      "nombre": "INTROD. AL DERECHO CORPORATIVO",
-      "profesor": "ROXANA PEREZ ARCE VALLE",
-      "salon": "RHSA1"
-    },
-    {
-      "campus": "RIO HONDO",
-      "crn": "3217",
-      "dias": "LU",
-      "grupo": "002",
-      "horario": "09:00-11:00",
-      "nombre": "INTROD. AL DERECHO CORPORATIVO",
-      "profesor": "INES VARGAS CHRISTLIEB",
-      "salon": "RHLI1"
-    },
-    {
-      "campus": "RIO HONDO",
       "crn": "3217",
       "dias": "MI",
       "grupo": "002",
@@ -4486,43 +4330,13 @@
     },
     {
       "campus": "RIO HONDO",
-      "crn": "3218",
-      "dias": "MA",
-      "grupo": "003",
+      "crn": "3217",
+      "dias": "LU",
+      "grupo": "002",
       "horario": "09:00-11:00",
       "nombre": "INTROD. AL DERECHO CORPORATIVO",
-      "profesor": "FRANCO ALBERTO DEL VALLE PRADO",
-      "salon": "RHSA1"
-    },
-    {
-      "campus": "RIO HONDO",
-      "crn": "3218",
-      "dias": "JU",
-      "grupo": "003",
-      "horario": "09:00-11:30",
-      "nombre": "INTROD. AL DERECHO CORPORATIVO",
-      "profesor": "FRANCO ALBERTO DEL VALLE PRADO",
-      "salon": "RHSA1"
-    },
-    {
-      "campus": "RIO HONDO",
-      "crn": "3219",
-      "dias": "LU",
-      "grupo": "004",
-      "horario": "19:00-21:00",
-      "nombre": "INTROD. AL DERECHO CORPORATIVO",
-      "profesor": "MARIA CRISTINA GARCIA BARRAGAN DE LA PEÑA",
-      "salon": "RH311"
-    },
-    {
-      "campus": "RIO HONDO",
-      "crn": "3219",
-      "dias": "MI",
-      "grupo": "004",
-      "horario": "19:00-21:30",
-      "nombre": "INTROD. AL DERECHO CORPORATIVO",
-      "profesor": "MARIA CRISTINA GARCIA BARRAGAN DE LA PEÑA",
-      "salon": "RH311"
+      "profesor": "INES VARGAS CHRISTLIEB",
+      "salon": "RHLI1"
     }
   ],
   "DER-10017": [
@@ -4945,28 +4759,6 @@
       "salon": "RH309"
     }
   ],
-  "DER-11106": [
-    {
-      "campus": "RIO HONDO",
-      "crn": "2898",
-      "dias": "JU",
-      "grupo": "001",
-      "horario": "11:30-14:30",
-      "nombre": "METODOL. DE LA DISERTAC JURID.",
-      "profesor": "ROMAIN SYLVAIN JEAN GENIEZ",
-      "salon": "RH201"
-    },
-    {
-      "campus": "RIO HONDO",
-      "crn": "2899",
-      "dias": "VI",
-      "grupo": "002",
-      "horario": "07:00-10:00",
-      "nombre": "METODOL. DE LA DISERTAC JURID.",
-      "profesor": "ROMAIN SYLVAIN JEAN GENIEZ",
-      "salon": "RHSA2"
-    }
-  ],
   "DER-11109": [
     {
       "campus": "RIO HONDO",
@@ -5016,16 +4808,6 @@
     }
   ],
   "DER-11113": [
-    {
-      "campus": "RIO HONDO",
-      "crn": "3086",
-      "dias": "LU",
-      "grupo": "001",
-      "horario": "19:00-21:00",
-      "nombre": "TALLER DISERT JUR CONSTITU. II",
-      "profesor": "MARIO ALBERTO GARCIA ACEVEDO",
-      "salon": "PF102"
-    },
     {
       "campus": "RIO HONDO",
       "crn": "3087",
@@ -5355,18 +5137,6 @@
       "salon": "RH309"
     }
   ],
-  "DER-11123": [
-    {
-      "campus": "RIO HONDO",
-      "crn": "3241",
-      "dias": "VI",
-      "grupo": "001",
-      "horario": "12:00-14:00",
-      "nombre": "CONCURSOS INTERNAC. (CLINICA)",
-      "profesor": "HANNAH BIRKENKOTTER",
-      "salon": "RH313"
-    }
-  ],
   "DER-11124": [
     {
       "campus": "RIO HONDO",
@@ -5377,18 +5147,6 @@
       "nombre": "CONCURSOS INTERNACIONALES II",
       "profesor": "HANNAH BIRKENKOTTER",
       "salon": "RH313"
-    }
-  ],
-  "DER-11125": [
-    {
-      "campus": "RIO HONDO",
-      "crn": "3399",
-      "dias": "VI",
-      "grupo": "001",
-      "horario": "11:00-14:00",
-      "nombre": "CONCURSOS INTERNACIONALES",
-      "profesor": "HANNAH BIRKENKOTTER",
-      "salon": "RHCUBIC"
     }
   ],
   "DER-11202": [
@@ -5472,16 +5230,6 @@
   "DER-11400": [
     {
       "campus": "RIO HONDO",
-      "crn": "3078",
-      "dias": "LU",
-      "grupo": "001",
-      "horario": "19:00-21:00",
-      "nombre": "TALLER ESCRIT. P/ DER PUBLICO",
-      "profesor": "MARIO ALBERTO GARCIA ACEVEDO",
-      "salon": "PF102"
-    },
-    {
-      "campus": "RIO HONDO",
       "crn": "3079",
       "dias": "LU",
       "grupo": "002",
@@ -5501,16 +5249,6 @@
       "nombre": "FILOSOFIA DEL DERECHO",
       "profesor": "RODOLFO DARIO VAZQUEZ CARDOZO",
       "salon": "RH314"
-    },
-    {
-      "campus": "RIO HONDO",
-      "crn": "3200",
-      "dias": "LU MI",
-      "grupo": "002",
-      "horario": "16:00-17:30",
-      "nombre": "FILOSOFIA DEL DERECHO",
-      "profesor": "GUILHERME VASCONCELOS VILACA",
-      "salon": "RH301"
     }
   ],
   "DER-11907": [
@@ -6150,16 +5888,6 @@
   "DER-15403": [
     {
       "campus": "RIO HONDO",
-      "crn": "3076",
-      "dias": "MA JU",
-      "grupo": "001",
-      "horario": "08:30-10:00",
-      "nombre": "DERECHO CONSTITUCIONAL I",
-      "profesor": "ANA MICAELA ALTERIO",
-      "salon": "RH211"
-    },
-    {
-      "campus": "RIO HONDO",
       "crn": "3077",
       "dias": "MA JU",
       "grupo": "002",
@@ -6477,18 +6205,6 @@
       "salon": "RHCUBIC"
     }
   ],
-  "DER-17064": [
-    {
-      "campus": "RIO HONDO",
-      "crn": "3255",
-      "dias": "MI",
-      "grupo": "001",
-      "horario": "16:00-18:00",
-      "nombre": "CLINICA EN DERECHO Y POL PUBL",
-      "profesor": "",
-      "salon": "RHCUBIC"
-    }
-  ],
   "DER-17601": [
     {
       "campus": "RIO HONDO",
@@ -6589,28 +6305,6 @@
       "nombre": "DERECHO FISCAL I",
       "profesor": "FERNANDO BUENO AJA",
       "salon": "RH310"
-    }
-  ],
-  "DER-18041": [
-    {
-      "campus": "RIO HONDO",
-      "crn": "3238",
-      "dias": "LU MI",
-      "grupo": "001",
-      "horario": "16:00-17:30",
-      "nombre": "CDNIA. GLOBAL Y DH EN CONTEXTO",
-      "profesor": "GISELA ADRIANA CARMONA RODRIGUEZ",
-      "salon": "RH308"
-    },
-    {
-      "campus": "RIO HONDO",
-      "crn": "3238",
-      "dias": "LU MI",
-      "grupo": "001",
-      "horario": "16:00-17:30",
-      "nombre": "CDNIA. GLOBAL Y DH EN CONTEXTO",
-      "profesor": "TANIA GABRIELA RODRIGUEZ HUERTA",
-      "salon": "RH308"
     }
   ],
   "DER-18044": [
@@ -6836,13 +6530,13 @@
     },
     {
       "campus": "RIO HONDO",
-      "crn": "3264",
-      "dias": "JU",
-      "grupo": "002",
-      "horario": "08:30-10:00",
+      "crn": "3451",
+      "dias": "LU MI",
+      "grupo": "003",
+      "horario": "11:30-13:00",
       "nombre": "PENSAMIENTO ECONOMICO",
-      "profesor": "DIEGO ALEJANDRO DOMINGUEZ LARREA",
-      "salon": "RH112"
+      "profesor": "FELIX VELEZ FERNANDEZ VARELA",
+      "salon": "RH317"
     }
   ],
   "ECO-10301": [
@@ -6870,13 +6564,13 @@
     },
     {
       "campus": "RIO HONDO",
-      "crn": "3267",
-      "dias": "MA JU",
-      "grupo": "002",
-      "horario": "08:30-10:00",
+      "crn": "3452",
+      "dias": "LU MI",
+      "grupo": "003",
+      "horario": "10:00-11:30",
       "nombre": "MICROECONOMETRIA APLICADA",
-      "profesor": "SHAUN DAVID MCRAE",
-      "salon": "PF"
+      "profesor": "MAURICIO TOMAS ROMERO LONDOÑO",
+      "salon": "RH301"
     }
   ],
   "ECO-10517": [
@@ -7911,6 +7605,26 @@
       "nombre": "HISTORIA ECONOMICA DE MEXICO",
       "profesor": "CHRISTINA CORNEJO VAN LUIT",
       "salon": "RH317"
+    },
+    {
+      "campus": "RIO HONDO",
+      "crn": "3453",
+      "dias": "MA JU",
+      "grupo": "002",
+      "horario": "17:30-19:00",
+      "nombre": "HISTORIA ECONOMICA DE MEXICO",
+      "profesor": "FELIX VELEZ FERNANDEZ VARELA",
+      "salon": "RH106"
+    },
+    {
+      "campus": "RIO HONDO",
+      "crn": "3454",
+      "dias": "JU",
+      "grupo": "003",
+      "horario": "11:30-14:30",
+      "nombre": "HISTORIA ECONOMICA DE MEXICO",
+      "profesor": "MOISES TIKTIN NICKIN",
+      "salon": "RHB-5"
     }
   ],
   "ECO-17103": [
@@ -8049,18 +7763,6 @@
       "salon": "RH113"
     }
   ],
-  "ECO-21112": [
-    {
-      "campus": "RIO HONDO",
-      "crn": "3411",
-      "dias": "LU MI",
-      "grupo": "001",
-      "horario": "11:30-13:00",
-      "nombre": "EQUILIBRIO GENERAL",
-      "profesor": "LEVENT ULKU",
-      "salon": "RH310"
-    }
-  ],
   "ECO-21113": [
     {
       "campus": "RIO HONDO",
@@ -8071,18 +7773,6 @@
       "nombre": "TEORIA DE JUEGOS",
       "profesor": "ROMANS PANCS",
       "salon": "RH308"
-    }
-  ],
-  "ECO-21227": [
-    {
-      "campus": "RIO HONDO",
-      "crn": "3368",
-      "dias": "LU MI",
-      "grupo": "001",
-      "horario": "11:30-13:00",
-      "nombre": "SEMINARIO DE TEO. DE DECISION",
-      "profesor": "LEVENT ULKU",
-      "salon": "RH310"
     }
   ],
   "ECO-22105": [
@@ -8320,16 +8010,6 @@
     },
     {
       "campus": "RIO HONDO",
-      "crn": "2820",
-      "dias": "LU MI VI",
-      "grupo": "015",
-      "horario": "17:00-18:00",
-      "nombre": "IDEAS E INST. POL. Y SOC. I",
-      "profesor": "JAVIER ARTURO VELAZQUEZ GALVAN",
-      "salon": "RH205"
-    },
-    {
-      "campus": "RIO HONDO",
       "crn": "2821",
       "dias": "LU MI VI",
       "grupo": "016",
@@ -8389,16 +8069,6 @@
       "nombre": "IDEAS E INST. POL. Y SOC. II",
       "profesor": "JOSE RAFAEL GONZALEZ DIAZ",
       "salon": "RH205"
-    },
-    {
-      "campus": "",
-      "crn": "2826",
-      "dias": "LU MI VI",
-      "grupo": "005",
-      "horario": "17:00-18:00",
-      "nombre": "IDEAS E INST. POL. Y SOC. II",
-      "profesor": "JOSE RAFAEL GONZALEZ DIAZ",
-      "salon": ""
     },
     {
       "campus": "RIO HONDO",
@@ -8783,16 +8453,6 @@
       "nombre": "PROB. DE LA CIV. CONTEMP., I",
       "profesor": "JAVIER ESPINO MARTIN",
       "salon": "RH207"
-    },
-    {
-      "campus": "RIO HONDO",
-      "crn": "2955",
-      "dias": "LU MI VI",
-      "grupo": "027",
-      "horario": "09:00-10:00",
-      "nombre": "PROB. DE LA CIV. CONTEMP., I",
-      "profesor": "",
-      "salon": "RH205"
     }
   ],
   "EGN-17142": [
@@ -8855,16 +8515,6 @@
       "nombre": "PROB. DE LA CIV. CONTEMP., II",
       "profesor": "JOSE PANTALEON DOMINGUEZ ESPONDA",
       "salon": "RH206"
-    },
-    {
-      "campus": "RIO HONDO",
-      "crn": "2956",
-      "dias": "LU MI VI",
-      "grupo": "007",
-      "horario": "13:00-14:00",
-      "nombre": "PROB. DE LA CIV. CONTEMP., II",
-      "profesor": "",
-      "salon": "RH206"
     }
   ],
   "EGN-17161": [
@@ -8887,16 +8537,6 @@
       "nombre": "HISTORIA SOC.-POL. DE MEXICO",
       "profesor": "VICTOR ALBERTO VILLAVICENCIO NAVARRO",
       "salon": "RH207"
-    },
-    {
-      "campus": "RIO HONDO",
-      "crn": "2957",
-      "dias": "MA JU",
-      "grupo": "003",
-      "horario": "16:00-17:30",
-      "nombre": "HISTORIA SOC.-POL. DE MEXICO",
-      "profesor": "",
-      "salon": "RH206"
     }
   ],
   "EGN-17162": [
@@ -8937,8 +8577,18 @@
       "grupo": "004",
       "horario": "10:00-11:30",
       "nombre": "PROBLEMAS DE LA REALIDAD MEX.",
-      "profesor": "",
+      "profesor": "MARIA DE LOURDES IBARRA Y HERRERIAS",
       "salon": "RH208"
+    },
+    {
+      "campus": "RIO HONDO",
+      "crn": "3456",
+      "dias": "MA JU",
+      "grupo": "005",
+      "horario": "16:00-17:30",
+      "nombre": "PROBLEMAS DE LA REALIDAD MEX.",
+      "profesor": "ARTURO PELAEZ GALVEZ",
+      "salon": "RH206"
     }
   ],
   "EIN-11101": [
@@ -9115,18 +8765,6 @@
       "salon": "RH303"
     }
   ],
-  "EIN-17403": [
-    {
-      "campus": "RIO HONDO",
-      "crn": "2934",
-      "dias": "MA JU",
-      "grupo": "001",
-      "horario": "08:30-10:00",
-      "nombre": "JAPON, CHINA Y EL SUDESTE ASIA",
-      "profesor": "FILIBERTO VICTOR KERBER PALMA",
-      "salon": "PF106"
-    }
-  ],
   "EIN-18602": [
     {
       "campus": "RIO HONDO",
@@ -9149,28 +8787,6 @@
       "salon": "PF106"
     }
   ],
-  "EIN-19132": [
-    {
-      "campus": "RIO HONDO",
-      "crn": "2940",
-      "dias": "LU MI",
-      "grupo": "001",
-      "horario": "16:00-17:30",
-      "nombre": "CIUDADANIA GLOBAL Y DER. HUM.",
-      "profesor": "GISELA ADRIANA CARMONA RODRIGUEZ",
-      "salon": "RH308"
-    },
-    {
-      "campus": "RIO HONDO",
-      "crn": "2940",
-      "dias": "LU MI",
-      "grupo": "001",
-      "horario": "16:00-17:30",
-      "nombre": "CIUDADANIA GLOBAL Y DER. HUM.",
-      "profesor": "TANIA GABRIELA RODRIGUEZ HUERTA",
-      "salon": "RH308"
-    }
-  ],
   "EIN-19140": [
     {
       "campus": "RIO HONDO",
@@ -9191,7 +8807,7 @@
       "grupo": "001",
       "horario": "16:00-19:00",
       "nombre": "MEDIO ORIENTE",
-      "profesor": "",
+      "profesor": "ANGEL/RABIH RAYES EL-KANTAR",
       "salon": "PF106"
     }
   ],
@@ -10027,7 +9643,7 @@
       "grupo": "001",
       "horario": "18:00-21:00",
       "nombre": "ADMON. Y EVALUA. DE PROYECTOS",
-      "profesor": "GRACIELA BARCENAS PEREZ",
+      "profesor": "GUILLERMO ABDEL MUSIK ASALI",
       "salon": "RHLMINT"
     },
     {
@@ -10059,7 +9675,7 @@
       "grupo": "002",
       "horario": "07:00-08:30",
       "nombre": "ING. DE PROCESOS DE NEGOCIOS",
-      "profesor": "ANA KARINA MIRANDA FLORES",
+      "profesor": "",
       "salon": "RHPACE"
     }
   ],
@@ -10072,16 +9688,6 @@
       "horario": "18:00-20:00",
       "nombre": "ADMON. CADENA DE SUMINISTRO",
       "profesor": "ALEJANDRO TERAN CASTELLANOS",
-      "salon": "RH307"
-    },
-    {
-      "campus": "RIO HONDO",
-      "crn": "2620",
-      "dias": "LU MI",
-      "grupo": "002",
-      "horario": "16:00-18:00",
-      "nombre": "ADMON. CADENA DE SUMINISTRO",
-      "profesor": "GUILLERMO ABDEL MUSIK ASALI",
       "salon": "RH307"
     }
   ],
@@ -10195,18 +9801,6 @@
       "salon": "RHLCMAT"
     }
   ],
-  "IIO-15170": [
-    {
-      "campus": "RIO HONDO",
-      "crn": "2628",
-      "dias": "MA JU",
-      "grupo": "001",
-      "horario": "16:00-17:30",
-      "nombre": "DISEÑO ASISTIDO POR COMPUTAD.",
-      "profesor": "SERGIO ROMERO HERNANDEZ",
-      "salon": "RHPACE"
-    }
-  ],
   "IIO-15174": [
     {
       "campus": "RIO HONDO",
@@ -10216,28 +9810,6 @@
       "horario": "08:30-10:00",
       "nombre": "CINEMATICA Y DINAMICA",
       "profesor": "THOMAS MARTIN RUDOLF",
-      "salon": "RHLMINT"
-    }
-  ],
-  "IIO-15175": [
-    {
-      "campus": "RIO HONDO",
-      "crn": "2630",
-      "dias": "MA JU",
-      "grupo": "001",
-      "horario": "16:00-17:30",
-      "nombre": "DISEÑO E IMPRESION 3D POR COMP",
-      "profesor": "SERGIO ROMERO HERNANDEZ",
-      "salon": "RHPACE"
-    },
-    {
-      "campus": "RIO HONDO",
-      "crn": "2630",
-      "dias": "MA",
-      "grupo": "001",
-      "horario": "10:00-12:00",
-      "nombre": "DISEÑO E IMPRESION 3D POR COMP",
-      "profesor": "FRANCISCO JAVIER VILLA LOPEZ",
       "salon": "RHLMINT"
     }
   ],
@@ -10404,16 +9976,6 @@
     },
     {
       "campus": "RIO HONDO",
-      "crn": "2696",
-      "dias": "LU MI",
-      "grupo": "006",
-      "horario": "17:30-19:00",
-      "nombre": "ESTRATEGIAS DE COMUNIC ESCRITA",
-      "profesor": "SERGIO JAVIER LUIS ALCAZAR",
-      "salon": "RHACERV"
-    },
-    {
-      "campus": "RIO HONDO",
       "crn": "2697",
       "dias": "MA JU",
       "grupo": "007",
@@ -10479,7 +10041,7 @@
       "grupo": "013",
       "horario": "17:30-19:00",
       "nombre": "ESTRATEGIAS DE COMUNIC ESCRITA",
-      "profesor": "LILYTH KATHERINE ORMSBY JENKINS",
+      "profesor": "",
       "salon": "RHACERV"
     },
     {
@@ -10781,7 +10343,7 @@
       "grupo": "008",
       "horario": "12:00-13:00",
       "nombre": "SEMIN. DE COMUNICAC. ESCRITA",
-      "profesor": "",
+      "profesor": "FEDERICO AUGUSTO GUZMAN RUBIO",
       "salon": "RH201"
     },
     {
@@ -10997,16 +10559,6 @@
       "nombre": "COMUNIC. ESCRITA PARA ACTUARIA",
       "profesor": "FLORENCIA GRACIELA ZOZAYA BECERRA",
       "salon": "PF107"
-    },
-    {
-      "campus": "RIO HONDO",
-      "crn": "2944",
-      "dias": "MI",
-      "grupo": "003",
-      "horario": "20:00-21:00",
-      "nombre": "COMUNIC. ESCRITA PARA ACTUARIA",
-      "profesor": "FLORENCIA GRACIELA ZOZAYA BECERRA",
-      "salon": "PF107"
     }
   ],
   "LEN-12714": [
@@ -11085,16 +10637,6 @@
       "nombre": "COMUNIC. ESCRITA PARA DIR. FIN",
       "profesor": "MARCELA RABADAN GALLARDO",
       "salon": "RH202"
-    },
-    {
-      "campus": "RIO HONDO",
-      "crn": "3103",
-      "dias": "MI",
-      "grupo": "004",
-      "horario": "10:00-11:00",
-      "nombre": "COMUNIC. ESCRITA PARA DIR. FIN",
-      "profesor": "FEDERICO AUGUSTO GUZMAN RUBIO",
-      "salon": "RHSA1"
     }
   ],
   "LEN-12718": [
@@ -11294,16 +10836,6 @@
   "LEN-12754": [
     {
       "campus": "RIO HONDO",
-      "crn": "3006",
-      "dias": "MA",
-      "grupo": "001",
-      "horario": "07:30-08:30",
-      "nombre": "COMUNIC PROFESIONAL PARA ADMON",
-      "profesor": "DIANA LUCIA ALVAREZ MACIAS",
-      "salon": "PF108"
-    },
-    {
-      "campus": "RIO HONDO",
       "crn": "3007",
       "dias": "JU",
       "grupo": "002",
@@ -11355,16 +10887,6 @@
       "nombre": "COMUNIC. PROFES. PARA DIR. FIN",
       "profesor": "GEORGE BOONE FERNANDEZ",
       "salon": "RH204"
-    },
-    {
-      "campus": "RIO HONDO",
-      "crn": "3013",
-      "dias": "MI",
-      "grupo": "004",
-      "horario": "08:00-09:00",
-      "nombre": "COMUNIC. PROFES. PARA DIR. FIN",
-      "profesor": "EDUARDO JOSE PABLO MARTIN GARCIA CORREA",
-      "salon": "RHPB3"
     }
   ],
   "LEN-12758": [
@@ -11419,16 +10941,6 @@
       "nombre": "COMUNIC. PROFES. PARA MAT. APL",
       "profesor": "JORGE NEME SANCHEZ",
       "salon": "RH208"
-    },
-    {
-      "campus": "RIO HONDO",
-      "crn": "3019",
-      "dias": "LU",
-      "grupo": "002",
-      "horario": "08:00-09:00",
-      "nombre": "COMUNIC. PROFES. PARA MAT. APL",
-      "profesor": "ALEXANDRA LEMUS RODRIGUEZ",
-      "salon": "RHPB3"
     }
   ],
   "LEN-12761": [
@@ -11477,18 +10989,6 @@
       "salon": "RHB-5"
     }
   ],
-  "LEN-12765": [
-    {
-      "campus": "RIO HONDO",
-      "crn": "3050",
-      "dias": "JU",
-      "grupo": "001",
-      "horario": "16:00-17:00",
-      "nombre": "COM. PROFES. PARA ING. EN MECA",
-      "profesor": "INTI VARGAS MORENO",
-      "salon": "PF107"
-    }
-  ],
   "LEN-12766": [
     {
       "campus": "RIO HONDO",
@@ -11522,7 +11022,7 @@
       "horario": "08:30-10:00",
       "nombre": "MET. CUANTITATIVOS PARA DER.",
       "profesor": "YOLANDA ISABEL PRETELIN MUÑOZ DE COTE",
-      "salon": "RH105"
+      "salon": "RH301"
     }
   ],
   "MAT-11100": [
@@ -11585,7 +11085,7 @@
       "grupo": "002",
       "horario": "16:00-18:00",
       "nombre": "MATEMATICAS, II",
-      "profesor": "",
+      "profesor": "SOFIA ROSE MARTINEZ ALBERGA",
       "salon": "PF105"
     },
     {
@@ -11637,7 +11137,7 @@
       "grupo": "002",
       "horario": "16:00-18:00",
       "nombre": "MATEMATICAS, III",
-      "profesor": "",
+      "profesor": "SOFIA ROSE MARTINEZ ALBERGA",
       "salon": "PF105"
     },
     {
@@ -11743,7 +11243,7 @@
       "grupo": "006",
       "horario": "11:30-13:00",
       "nombre": "CALCULO UNIVARIADO",
-      "profesor": "",
+      "profesor": "ANA BELEN AVILEZ GARCIA",
       "salon": "RH209"
     },
     {
@@ -11993,16 +11493,6 @@
       "nombre": "CALCULO EN UNA VARIABLE",
       "profesor": "MAYA DENTI OCHOA",
       "salon": "PF108"
-    },
-    {
-      "campus": "RIO HONDO",
-      "crn": "3434",
-      "dias": "LU MI VI",
-      "grupo": "009",
-      "horario": "10:00-11:30",
-      "nombre": "CALCULO EN UNA VARIABLE",
-      "profesor": "JUANITA GASCA ARANGO",
-      "salon": "RHB-5"
     }
   ],
   "MAT-12221": [
@@ -12087,7 +11577,7 @@
       "grupo": "002",
       "horario": "16:00-18:00",
       "nombre": "ALGEBRA MATRICIAL",
-      "profesor": "",
+      "profesor": "SOFIA ROSE MARTINEZ ALBERGA",
       "salon": "PF105"
     },
     {
@@ -12161,7 +11651,7 @@
       "grupo": "002",
       "horario": "16:00-18:00",
       "nombre": "ALGEBRA LINEAL APLICADA",
-      "profesor": "",
+      "profesor": "SOFIA ROSE MARTINEZ ALBERGA",
       "salon": "PF105"
     },
     {
@@ -12183,7 +11673,7 @@
       "grupo": "001",
       "horario": "12:00-14:00",
       "nombre": "ALGEBRA LINEAL",
-      "profesor": "",
+      "profesor": "SOFIA ROSE MARTINEZ ALBERGA",
       "salon": "RH302"
     },
     {
@@ -12193,7 +11683,7 @@
       "grupo": "002",
       "horario": "12:00-14:00",
       "nombre": "ALGEBRA LINEAL",
-      "profesor": "",
+      "profesor": "SOFIA ROSE MARTINEZ ALBERGA",
       "salon": "RH302"
     }
   ],
@@ -12292,16 +11782,6 @@
     }
   ],
   "MAT-14201": [
-    {
-      "campus": "RIO HONDO",
-      "crn": "2349",
-      "dias": "LU MI",
-      "grupo": "001",
-      "horario": "07:00-09:00",
-      "nombre": "ALGEB. LINEAL, I (GEO ANA. II)",
-      "profesor": "JORGE MONROY JIMENEZ",
-      "salon": "RH302"
-    },
     {
       "campus": "RIO HONDO",
       "crn": "2350",
@@ -12565,7 +12045,7 @@
       "grupo": "003",
       "horario": "09:30-11:00",
       "nombre": "MATEMATICAS DISCRETAS",
-      "profesor": "",
+      "profesor": "ANA BELEN AVILEZ GARCIA",
       "salon": "RH305"
     }
   ],
@@ -12669,7 +12149,7 @@
       "grupo": "003",
       "horario": "09:30-11:00",
       "nombre": "ALGEBRA SUPERIOR, II",
-      "profesor": "",
+      "profesor": "ANA BELEN AVILEZ GARCIA",
       "salon": "RH305"
     }
   ],
@@ -12780,7 +12260,7 @@
       "horario": "08:30-10:00",
       "nombre": "MATEMATICAS FINANCIERAS I",
       "profesor": "ERNESTO ANTONIO GOMEZ VELAZQUEZ",
-      "salon": "RH301"
+      "salon": "RH105"
     }
   ],
   "MAT-24100": [
@@ -12949,7 +12429,7 @@
       "grupo": "001",
       "horario": "08:30-10:00",
       "nombre": "PROGRAMACION LINEAL",
-      "profesor": "",
+      "profesor": "HARRY FERNANDO OVIEDO LEON",
       "salon": "RH209"
     },
     {
@@ -12959,7 +12439,7 @@
       "grupo": "001",
       "horario": "08:30-10:00",
       "nombre": "PROGRAMACION LINEAL",
-      "profesor": "",
+      "profesor": "HARRY FERNANDO OVIEDO LEON",
       "salon": "RHCC302"
     }
   ],
@@ -12971,7 +12451,7 @@
       "grupo": "001",
       "horario": "11:00-12:30",
       "nombre": "ANALISIS APLICADO, I",
-      "profesor": "",
+      "profesor": "HARRY FERNANDO OVIEDO LEON",
       "salon": "RH314"
     }
   ],
@@ -13005,7 +12485,7 @@
       "grupo": "001",
       "horario": "11:00-12:30",
       "nombre": "OPTIMIZACION NUMERICA I",
-      "profesor": "",
+      "profesor": "HARRY FERNANDO OVIEDO LEON",
       "salon": "RH314"
     }
   ],
