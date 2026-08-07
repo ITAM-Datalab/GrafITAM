@@ -268,7 +268,7 @@
       "horario": "10:00-11:30",
       "nombre": "INNOV Y DISEÑO DE MODEL DE NEG",
       "profesor": "MARTHA BELDEN LANKENAU",
-      "salon": "PF106"
+      "salon": "RHSA2"
     }
   ],
   "ADM-11007": [
@@ -1807,7 +1807,7 @@
       "grupo": "001",
       "horario": "14:00-15:30",
       "nombre": "COMMUNICATION IN SPANISH II",
-      "profesor": "NORMA ARACELY AVILA MIRANDA",
+      "profesor": "REBECCA SOTO BUSTAMANTE",
       "salon": "RH205"
     },
     {
@@ -1817,7 +1817,7 @@
       "grupo": "001",
       "horario": "15:30-16:00",
       "nombre": "COMMUNICATION IN SPANISH II",
-      "profesor": "NORMA ARACELY AVILA MIRANDA",
+      "profesor": "REBECCA SOTO BUSTAMANTE",
       "salon": "RH205"
     }
   ],
@@ -2216,7 +2216,7 @@
       "horario": "08:30-10:00",
       "nombre": "FUNDAMENTOS DE PROGRAMACION",
       "profesor": "MONICA ZAVALA ESTRADA",
-      "salon": "RHCC201"
+      "salon": "PF104"
     },
     {
       "campus": "RIO HONDO",
@@ -2449,7 +2449,7 @@
       "grupo": "003",
       "horario": "08:30-10:00",
       "nombre": "RAZONAMIENTO ALGORITMICO",
-      "profesor": "MONICA ZAVALA ESTRADA",
+      "profesor": "FABIAN ORDUÑA FERREIRA",
       "salon": "RHCC201"
     },
     {
@@ -3765,6 +3765,18 @@
       "salon": "RHSA4"
     }
   ],
+  "CSO-12042": [
+    {
+      "campus": "RIO HONDO",
+      "crn": "3457",
+      "dias": "MA JU",
+      "grupo": "001",
+      "horario": "08:30-10:00",
+      "nombre": "HISTORIA DE MEXICO,II",
+      "profesor": "JOSE IGNACIO LANZAGORTA GARCIA",
+      "salon": "RHSA4"
+    }
+  ],
   "CSO-12049": [
     {
       "campus": "RIO HONDO",
@@ -4094,7 +4106,7 @@
       "horario": "10:00-11:30",
       "nombre": "DER. INTERNACIONAL PUBLICO,I",
       "profesor": "JORGE AGUILERA SUAREZ",
-      "salon": "RHSA2"
+      "salon": "PF106"
     }
   ],
   "DER-10006": [
@@ -4906,7 +4918,7 @@
       "horario": "12:00-14:00",
       "nombre": "CONCURSOS INTERNACIONALES",
       "profesor": "HANNAH BIRKENKOTTER",
-      "salon": "RH313"
+      "salon": "RHCUBIC"
     }
   ],
   "DER-11119": [
@@ -5146,7 +5158,7 @@
       "horario": "12:00-14:00",
       "nombre": "CONCURSOS INTERNACIONALES II",
       "profesor": "HANNAH BIRKENKOTTER",
-      "salon": "RH313"
+      "salon": "RHCUBIC"
     }
   ],
   "DER-11202": [
@@ -5594,13 +5606,13 @@
   "DER-13615": [
     {
       "campus": "RIO HONDO",
-      "crn": "3178",
-      "dias": "VI",
-      "grupo": "001",
-      "horario": "16:00-18:00",
+      "crn": "3458",
+      "dias": "MI",
+      "grupo": "002",
+      "horario": "19:30-21:30",
       "nombre": "JUICIO ORAL CIVIL Y FAMILIAR",
-      "profesor": "",
-      "salon": "RH308"
+      "profesor": "FRANCISCO VILLAGRAN BALLESTEROS",
+      "salon": "RHB-5"
     }
   ],
   "DER-14402": [
@@ -6131,7 +6143,7 @@
       "grupo": "001",
       "horario": "07:00-08:30",
       "nombre": "DERECHO MERCANTIL II",
-      "profesor": "GIZEH VICENTE POLO BALLINAS",
+      "profesor": "ANTONIO CASARES CARRILLO",
       "salon": "RH102"
     }
   ],
@@ -6143,7 +6155,7 @@
       "grupo": "001",
       "horario": "07:00-08:30",
       "nombre": "DERECHO MERCANTIL, II",
-      "profesor": "GIZEH VICENTE POLO BALLINAS",
+      "profesor": "ANTONIO CASARES CARRILLO",
       "salon": "RH102"
     }
   ],
@@ -6338,7 +6350,7 @@
       "horario": "10:00-11:30",
       "nombre": "DERECHO INTERNACIONAL I",
       "profesor": "JORGE AGUILERA SUAREZ",
-      "salon": "RHSA2"
+      "salon": "PF106"
     }
   ],
   "DER-18601": [
@@ -6372,7 +6384,7 @@
       "horario": "10:00-11:30",
       "nombre": "DERECHO INTERNACIONAL PUBLICO",
       "profesor": "JORGE AGUILERA SUAREZ",
-      "salon": "RHSA2"
+      "salon": "PF106"
     }
   ],
   "DER-18802": [
@@ -7197,7 +7209,7 @@
       "grupo": "007",
       "horario": "16:00-17:30",
       "nombre": "PRINCIPIOS DE MACROECONOMIA",
-      "profesor": "",
+      "profesor": "FELIPE JUNCAL MENDOZA",
       "salon": "PF103"
     }
   ],
@@ -7303,7 +7315,7 @@
       "grupo": "007",
       "horario": "16:00-17:30",
       "nombre": "ECONOMIA, II",
-      "profesor": "",
+      "profesor": "FELIPE JUNCAL MENDOZA",
       "salon": "PF103"
     }
   ],
@@ -7568,7 +7580,7 @@
       "horario": "08:30-10:00",
       "nombre": "EVALUACION DE PROYECTOS",
       "profesor": "RICARDO SERGIO FADL KURI",
-      "salon": "PF104"
+      "salon": "PF106"
     }
   ],
   "ECO-15111": [
@@ -7645,18 +7657,8 @@
       "grupo": "002",
       "horario": "08:00-11:00",
       "nombre": "SEMINARIO DE LA ECO. DE MEX.",
-      "profesor": "ALAIN IZE LAMACHE",
-      "salon": "RHLI1"
-    },
-    {
-      "campus": "RIO HONDO",
-      "crn": "3323",
-      "dias": "MA",
-      "grupo": "002",
-      "horario": "08:00-11:00",
-      "nombre": "SEMINARIO DE LA ECO. DE MEX.",
-      "profesor": "GUILLERMO ORTIZ MARTINEZ",
-      "salon": "RHLI1"
+      "profesor": "DIEGO ALEJANDRO DOMINGUEZ LARREA",
+      "salon": "RH213"
     }
   ],
   "ECO-17201": [
@@ -9667,16 +9669,6 @@
       "nombre": "ING. DE PROCESOS DE NEGOCIOS",
       "profesor": "ELIAS HERIBERTO ARIAS NAVA",
       "salon": "RHLMINT"
-    },
-    {
-      "campus": "RIO HONDO",
-      "crn": "2618",
-      "dias": "LU MI",
-      "grupo": "002",
-      "horario": "07:00-08:30",
-      "nombre": "ING. DE PROCESOS DE NEGOCIOS",
-      "profesor": "",
-      "salon": "RHPACE"
     }
   ],
   "IIO-14278": [
@@ -9689,6 +9681,16 @@
       "nombre": "ADMON. CADENA DE SUMINISTRO",
       "profesor": "ALEJANDRO TERAN CASTELLANOS",
       "salon": "RH307"
+    },
+    {
+      "campus": "RIO HONDO",
+      "crn": "2620",
+      "dias": "MA JU",
+      "grupo": "002",
+      "horario": "19:00-21:00",
+      "nombre": "ADMON. CADENA DE SUMINISTRO",
+      "profesor": "ALEJANDRO TERAN CASTELLANOS",
+      "salon": "RH311"
     }
   ],
   "IIO-15130": [
@@ -10036,16 +10038,6 @@
     },
     {
       "campus": "RIO HONDO",
-      "crn": "2717",
-      "dias": "MA JU",
-      "grupo": "013",
-      "horario": "17:30-19:00",
-      "nombre": "ESTRATEGIAS DE COMUNIC ESCRITA",
-      "profesor": "",
-      "salon": "RHACERV"
-    },
-    {
-      "campus": "RIO HONDO",
       "crn": "2718",
       "dias": "VI",
       "grupo": "014",
@@ -10251,7 +10243,7 @@
       "grupo": "034",
       "horario": "13:00-14:30",
       "nombre": "ESTRATEGIAS DE COMUNIC ESCRITA",
-      "profesor": "",
+      "profesor": "RENE LAZCURAIN MORENO",
       "salon": "PF101"
     },
     {
@@ -10353,7 +10345,7 @@
       "grupo": "009",
       "horario": "13:00-14:00",
       "nombre": "SEMIN. DE COMUNICAC. ESCRITA",
-      "profesor": "",
+      "profesor": "FRANCISCO JOSE FERNANDEZ DEFEZ",
       "salon": "RH201"
     },
     {
@@ -10958,6 +10950,16 @@
   "LEN-12762": [
     {
       "campus": "RIO HONDO",
+      "crn": "3459",
+      "dias": "JU",
+      "grupo": "000",
+      "horario": "13:00-14:00",
+      "nombre": "COMUN. PROFE. CIENCIA DE DATOS",
+      "profesor": "DIANA LUCIA ALVAREZ MACIAS",
+      "salon": "RHCUBIC"
+    },
+    {
+      "campus": "RIO HONDO",
       "crn": "3032",
       "dias": "JU",
       "grupo": "001",
@@ -10987,6 +10989,18 @@
       "nombre": "COM. PROFES. PARA ING. EN COMP",
       "profesor": "INTI VARGAS MORENO",
       "salon": "RHB-5"
+    }
+  ],
+  "LEN-12765": [
+    {
+      "campus": "RIO HONDO",
+      "crn": "3460",
+      "dias": "JU",
+      "grupo": "002",
+      "horario": "16:00-17:00",
+      "nombre": "COM. PROFES. PARA ING. EN MECA",
+      "profesor": "DIANA LUCIA ALVAREZ MACIAS",
+      "salon": "RHCUBIC"
     }
   ],
   "LEN-12766": [
@@ -11034,7 +11048,7 @@
       "horario": "08:30-10:00",
       "nombre": "MATEMATICAS, I",
       "profesor": "YOLANDA ISABEL PRETELIN MUÑOZ DE COTE",
-      "salon": "RH105"
+      "salon": "RH301"
     },
     {
       "campus": "RIO HONDO",
@@ -11273,7 +11287,7 @@
       "grupo": "009",
       "horario": "16:00-17:30",
       "nombre": "CALCULO UNIVARIADO",
-      "profesor": "",
+      "profesor": "GERARDO GONZALEZ ROBERT",
       "salon": "RH302"
     },
     {
@@ -11911,7 +11925,7 @@
       "grupo": "010",
       "horario": "12:30-14:00",
       "nombre": "GEOMETRIA VECTORIAL",
-      "profesor": "",
+      "profesor": "GERARDO GONZALEZ ROBERT",
       "salon": "RH316"
     },
     {
@@ -12674,7 +12688,7 @@
       "horario": "18:00-20:00",
       "nombre": "SEMINARIO DE TITULACION",
       "profesor": "SERGIO HERNANDEZ SANCHEZ",
-      "salon": "RH314"
+      "salon": "RHCC201"
     }
   ],
   "SDI-17112": [
