@@ -466,7 +466,7 @@
       "horario": "11:30-13:00",
       "nombre": "ESTRATEGIA DE NEGOCIOS I",
       "profesor": "CLAUDIA NOEMI GONZALEZ BRAMBILA",
-      "salon": "RHB-4"
+      "salon": "RH102"
     },
     {
       "campus": "RIO HONDO",
@@ -766,7 +766,7 @@
       "horario": "16:00-17:30",
       "nombre": "COMPORTAMIENTO HUMANO, II",
       "profesor": "LUIS MARTIN ARCINIEGA RUIZ DE ESPARZA",
-      "salon": "RH311"
+      "salon": "RH212"
     }
   ],
   "ADM-14405": [
@@ -864,7 +864,7 @@
       "horario": "16:00-17:30",
       "nombre": "CAPITAL  HUMANO",
       "profesor": "LUIS MARTIN ARCINIEGA RUIZ DE ESPARZA",
-      "salon": "RH311"
+      "salon": "RH212"
     }
   ],
   "ADM-15501": [
@@ -1288,7 +1288,7 @@
       "horario": "16:00-17:30",
       "nombre": "FINANZAS EN LOS NEGOCIOS II",
       "profesor": "MARIA DE LAS MERCEDES ADAMUZ PEÑA",
-      "salon": "RH212"
+      "salon": "RH311"
     }
   ],
   "ADM-15563": [
@@ -1751,7 +1751,7 @@
       "grupo": "001",
       "horario": "16:00-19:00",
       "nombre": "PUBL Y ESTR DE COMUNIC INTEGR",
-      "profesor": "",
+      "profesor": "MARIA JESUS LAMAS SARMIENTO",
       "salon": "RH316"
     }
   ],
@@ -8027,7 +8027,7 @@
       "grupo": "017",
       "horario": "13:00-14:00",
       "nombre": "IDEAS E INST. POL. Y SOC. I",
-      "profesor": "",
+      "profesor": "JAVIER ARTURO VELAZQUEZ GALVAN",
       "salon": "RH210"
     }
   ],
@@ -8151,7 +8151,7 @@
       "grupo": "007",
       "horario": "12:00-13:00",
       "nombre": "IDEAS E INST. POL. Y SOC. III",
-      "profesor": "CARLOS JEFFREY MCCADDEN MARTINEZ",
+      "profesor": "CARLOS GUTIERREZ LOZANO",
       "salon": "RH208"
     },
     {
@@ -8161,7 +8161,7 @@
       "grupo": "008",
       "horario": "13:00-14:00",
       "nombre": "IDEAS E INST. POL. Y SOC. III",
-      "profesor": "CARLOS JEFFREY MCCADDEN MARTINEZ",
+      "profesor": "CARLOS GUTIERREZ LOZANO",
       "salon": "RH208"
     },
     {
@@ -8191,7 +8191,7 @@
       "grupo": "011",
       "horario": "10:00-11:00",
       "nombre": "IDEAS E INST. POL. Y SOC. III",
-      "profesor": "",
+      "profesor": "CARLOS GUTIERREZ LOZANO",
       "salon": "RH208"
     }
   ],
@@ -8253,7 +8253,7 @@
       "grupo": "006",
       "horario": "09:00-10:00",
       "nombre": "PROB. DE LA CIV. CONTEMP., I",
-      "profesor": "CARLOS GUTIERREZ LOZANO",
+      "profesor": "FRANCISCO ALEJANDRO GONZALEZ GOMEZ",
       "salon": "RH204"
     },
     {
@@ -8283,7 +8283,7 @@
       "grupo": "009",
       "horario": "10:00-11:00",
       "nombre": "PROB. DE LA CIV. CONTEMP., I",
-      "profesor": "CARLOS GUTIERREZ LOZANO",
+      "profesor": "ANA REGINA LUEVANO CAYON",
       "salon": "RH204"
     },
     {
@@ -8393,7 +8393,7 @@
       "grupo": "020",
       "horario": "13:00-14:00",
       "nombre": "PROB. DE LA CIV. CONTEMP., I",
-      "profesor": "CARLOS GUTIERREZ LOZANO",
+      "profesor": "DAVID MORENO GUINEA",
       "salon": "RH203"
     },
     {
@@ -8589,8 +8589,18 @@
       "grupo": "005",
       "horario": "16:00-17:30",
       "nombre": "PROBLEMAS DE LA REALIDAD MEX.",
-      "profesor": "ARTURO PELAEZ GALVEZ",
+      "profesor": "",
       "salon": "RH206"
+    },
+    {
+      "campus": "RIO HONDO",
+      "crn": "3461",
+      "dias": "MA JU",
+      "grupo": "006",
+      "horario": "11:30-13:00",
+      "nombre": "PROBLEMAS DE LA REALIDAD MEX.",
+      "profesor": "ARTURO PELAEZ GALVEZ",
+      "salon": "RH203"
     }
   ],
   "EIN-11101": [
