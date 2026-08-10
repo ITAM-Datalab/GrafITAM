@@ -1807,7 +1807,7 @@
       "grupo": "001",
       "horario": "14:00-15:30",
       "nombre": "COMMUNICATION IN SPANISH II",
-      "profesor": "REBECCA SOTO BUSTAMANTE",
+      "profesor": "NORMA ARACELY AVILA MIRANDA",
       "salon": "RH205"
     },
     {
@@ -1817,8 +1817,28 @@
       "grupo": "001",
       "horario": "15:30-16:00",
       "nombre": "COMMUNICATION IN SPANISH II",
-      "profesor": "REBECCA SOTO BUSTAMANTE",
+      "profesor": "NORMA ARACELY AVILA MIRANDA",
       "salon": "RH205"
+    },
+    {
+      "campus": "",
+      "crn": "3462",
+      "dias": "MA JU",
+      "grupo": "002",
+      "horario": "14:00-15:30",
+      "nombre": "COMMUNICATION IN SPANISH II",
+      "profesor": "REBECCA SOTO BUSTAMANTE",
+      "salon": ""
+    },
+    {
+      "campus": "",
+      "crn": "3462",
+      "dias": "MA JU",
+      "grupo": "002",
+      "horario": "15:30-16:00",
+      "nombre": "COMMUNICATION IN SPANISH II",
+      "profesor": "REBECCA SOTO BUSTAMANTE",
+      "salon": ""
     }
   ],
   "CLE-10518": [
@@ -2601,6 +2621,16 @@
       "nombre": "RAZONAMIENTO ALGORITMICO",
       "profesor": "",
       "salon": "RHCC102"
+    },
+    {
+      "campus": "RIO HONDO",
+      "crn": "3466",
+      "dias": "MA JU",
+      "grupo": "019",
+      "horario": "13:00-14:30",
+      "nombre": "RAZONAMIENTO ALGORITMICO",
+      "profesor": "ANA EUGENIA DIAZ ROSIÑOL",
+      "salon": "RHCC201"
     }
   ],
   "COM-16307": [
@@ -7657,7 +7687,7 @@
       "grupo": "002",
       "horario": "08:00-11:00",
       "nombre": "SEMINARIO DE LA ECO. DE MEX.",
-      "profesor": "DIEGO ALEJANDRO DOMINGUEZ LARREA",
+      "profesor": "ALAIN IZE LAMACHE",
       "salon": "RH213"
     }
   ],
@@ -9164,7 +9194,7 @@
       "horario": "16:00-17:30",
       "nombre": "CALCULO DE PROBABILIDADES.,II",
       "profesor": "ERNESTO JUVENAL BARRIOS ZAMUDIO",
-      "salon": "RH301"
+      "salon": "RH106"
     },
     {
       "campus": "RIO HONDO",
@@ -9416,7 +9446,7 @@
       "horario": "16:00-17:30",
       "nombre": "CALCULO DE PROBABILIDADES II",
       "profesor": "ERNESTO JUVENAL BARRIOS ZAMUDIO",
-      "salon": "RH301"
+      "salon": "RH106"
     },
     {
       "campus": "RIO HONDO",
@@ -12591,6 +12621,28 @@
       "salon": "RHLFIEL"
     }
   ],
+  "SDI-11221": [
+    {
+      "campus": "RIO HONDO",
+      "crn": "3464",
+      "dias": "MA JU",
+      "grupo": "001",
+      "horario": "17:30-19:30",
+      "nombre": "ELEMENTOS DE ELECTRONICA",
+      "profesor": "RAFAEL CISNEROS MONTOYA",
+      "salon": "RH205"
+    },
+    {
+      "campus": "RIO HONDO",
+      "crn": "3465",
+      "dias": "VI",
+      "grupo": "002",
+      "horario": "10:00-12:00",
+      "nombre": "ELEMENTOS DE ELECTRONICA",
+      "profesor": "MARIO ANDRES AGUILAR ORDUÑA",
+      "salon": "RHLFIEL"
+    }
+  ],
   "SDI-11322": [
     {
       "campus": "RIO HONDO",
@@ -12687,6 +12739,18 @@
       "nombre": "REDES DE COMPUTADORAS",
       "profesor": "ALEJANDRO EDGAR ZACATENCO SANTOS",
       "salon": "RHLREDE"
+    }
+  ],
+  "SDI-14105": [
+    {
+      "campus": "RIO HONDO",
+      "crn": "3463",
+      "dias": "LU MI",
+      "grupo": "001",
+      "horario": "12:30-14:00",
+      "nombre": "INTRODUCCION A LA INGENIERIA",
+      "profesor": "JOSE GUADALUPE ROMERO VELAZQUEZ",
+      "salon": "RH316"
     }
   ],
   "SDI-15816": [
