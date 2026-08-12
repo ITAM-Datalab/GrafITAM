@@ -676,7 +676,7 @@
       "horario": "16:00-19:00",
       "nombre": "NEGOCIACION (OP)",
       "profesor": "XIMENA ARGUELLES SACRISTAN",
-      "salon": "RHB-3"
+      "salon": "RH203"
     }
   ],
   "ADM-13101": [
@@ -1821,24 +1821,24 @@
       "salon": "RH205"
     },
     {
-      "campus": "",
+      "campus": "RIO HONDO",
       "crn": "3462",
       "dias": "MA JU",
       "grupo": "002",
       "horario": "14:00-15:30",
       "nombre": "COMMUNICATION IN SPANISH II",
       "profesor": "REBECCA SOTO BUSTAMANTE",
-      "salon": ""
+      "salon": "RH202"
     },
     {
-      "campus": "",
+      "campus": "RIO HONDO",
       "crn": "3462",
       "dias": "MA JU",
       "grupo": "002",
       "horario": "15:30-16:00",
       "nombre": "COMMUNICATION IN SPANISH II",
       "profesor": "REBECCA SOTO BUSTAMANTE",
-      "salon": ""
+      "salon": "RH202"
     }
   ],
   "CLE-10518": [
@@ -5179,6 +5179,18 @@
       "salon": "RH309"
     }
   ],
+  "DER-11123": [
+    {
+      "campus": "RIO HONDO",
+      "crn": "3241",
+      "dias": "VI",
+      "grupo": "001",
+      "horario": "12:00-14:00",
+      "nombre": "CONCURSOS INTERNAC. (CLINICA)",
+      "profesor": "HANNAH BIRKENKOTTER",
+      "salon": "RH313"
+    }
+  ],
   "DER-11124": [
     {
       "campus": "RIO HONDO",
@@ -5517,7 +5529,7 @@
       "grupo": "002",
       "horario": "19:00-21:00",
       "nombre": "OBLIGACIONES",
-      "profesor": "",
+      "profesor": "ELIAS GALLARDO PALMA",
       "salon": "RH309"
     }
   ],
@@ -6231,7 +6243,7 @@
       "grupo": "001",
       "horario": "16:00-18:00",
       "nombre": "CLINICA EN DER Y POL PUBLICA",
-      "profesor": "",
+      "profesor": "VALENTINA MONTOYA ROBLEDO",
       "salon": "RHCUBIC"
     }
   ],
@@ -6471,7 +6483,7 @@
       "grupo": "001",
       "horario": "07:00-08:30",
       "nombre": "DERECHO LABORAL II",
-      "profesor": "",
+      "profesor": "SALVADOR FERNANDO MARTINEZ GUTIERREZ",
       "salon": "RH311"
     },
     {
@@ -8619,7 +8631,7 @@
       "grupo": "005",
       "horario": "16:00-17:30",
       "nombre": "PROBLEMAS DE LA REALIDAD MEX.",
-      "profesor": "",
+      "profesor": "ARTURO PELAEZ GALVEZ",
       "salon": "RH206"
     }
   ],
@@ -9282,7 +9294,7 @@
       "horario": "11:30-13:00",
       "nombre": "ESTADISTICA APLICADA, II",
       "profesor": "ERNESTO JUVENAL BARRIOS ZAMUDIO",
-      "salon": "RH311"
+      "salon": "RHB-2"
     },
     {
       "campus": "RIO HONDO",
@@ -9340,7 +9352,7 @@
       "horario": "11:30-13:00",
       "nombre": "METODOS LINEALES",
       "profesor": "ERNESTO JUVENAL BARRIOS ZAMUDIO",
-      "salon": "RH311"
+      "salon": "RHB-2"
     },
     {
       "campus": "RIO HONDO",
@@ -12625,31 +12637,11 @@
     {
       "campus": "RIO HONDO",
       "crn": "3464",
-      "dias": "MA JU",
-      "grupo": "001",
-      "horario": "17:30-19:30",
-      "nombre": "ELEMENTOS DE ELECTRONICA",
-      "profesor": "MARIO ANDRES AGUILAR ORDUÑA",
-      "salon": "RH205"
-    },
-    {
-      "campus": "RIO HONDO",
-      "crn": "3464",
       "dias": "VI",
       "grupo": "001",
       "horario": "10:00-12:00",
       "nombre": "ELEMENTOS DE ELECTRONICA",
       "profesor": "MARIO ANDRES AGUILAR ORDUÑA",
-      "salon": "RHLFIEL"
-    },
-    {
-      "campus": "RIO HONDO",
-      "crn": "3464",
-      "dias": "VI",
-      "grupo": "001",
-      "horario": "10:00-12:00",
-      "nombre": "ELEMENTOS DE ELECTRONICA",
-      "profesor": "RAFAEL CISNEROS MONTOYA",
       "salon": "RHLFIEL"
     },
     {
