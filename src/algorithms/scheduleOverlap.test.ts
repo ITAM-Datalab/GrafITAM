@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { parseHorario, parseDias, groupsOverlap } from './scheduleOverlap'
+import { parseHorario, parseDias, groupsOverlap, groupByCrn, groupSessions } from './scheduleOverlap'
 import type { ScheduleGroup } from '../types/schedule'
 
 function group(overrides: Partial<ScheduleGroup>): ScheduleGroup {
@@ -46,5 +46,54 @@ describe('groupsOverlap', () => {
     const a = group({ dias: 'LU', horario: '09:00-10:30' })
     const b = group({ courseId: 'COM-11302', crn: '9999', dias: 'LU', horario: '10:30-12:00' })
     expect(groupsOverlap(a, b)).toBe(false)
+  })
+})
+
+describe('groupByCrn', () => {
+  it('agrupa varias filas con el mismo CRN (ej. teoría + laboratorio)', () => {
+    const teoria = group({ crn: '2753', dias: 'LU MI', horario: '10:00-12:00' })
+    const lab = group({ crn: '2753', dias: 'JU', horario: '07:00-09:00' })
+    const otra = group({ courseId: 'COM-11302', crn: '9999' })
+
+    const result = groupByCrn([teoria, lab, otra])
+
+    expect(result.get('2753')).toEqual([teoria, lab])
+    expect(result.get('9999')).toEqual([otra])
+  })
+})
+
+describe('groupSessions', () => {
+  it('junta varias filas con mismo horario/días en una sola sesión con todos los profesores', () => {
+    const rows = [
+      group({ crn: '2574', profesor: 'CECILIA MARIA ORTIZ AHLF' }),
+      group({ crn: '2574', profesor: 'CLAUDIA NOEMI GONZALEZ BRAMBILA' }),
+      group({ crn: '2574', profesor: 'MARIA DE LA CRUZ TORRES MANTECON' }),
+    ]
+
+    const sessions = groupSessions(rows)
+
+    expect(sessions).toHaveLength(1)
+    expect(sessions[0].profesores).toEqual([
+      'CECILIA MARIA ORTIZ AHLF',
+      'CLAUDIA NOEMI GONZALEZ BRAMBILA',
+      'MARIA DE LA CRUZ TORRES MANTECON',
+    ])
+  })
+
+  it('mantiene teoría y laboratorio como sesiones separadas (no regresiona #24)', () => {
+    const teoria = group({ crn: '2753', dias: 'LU MI', horario: '10:00-12:00' })
+    const lab = group({ crn: '2753', dias: 'JU', horario: '07:00-09:00' })
+
+    const sessions = groupSessions([teoria, lab])
+
+    expect(sessions).toHaveLength(2)
+    expect(sessions[0].dias).toBe('LU MI')
+    expect(sessions[1].dias).toBe('JU')
+  })
+
+  it('deduplica un profesor repetido en la misma sesión', () => {
+    const rows = [group({ profesor: 'Prof. X' }), group({ profesor: 'Prof. X' })]
+
+    expect(groupSessions(rows)[0].profesores).toEqual(['Prof. X'])
   })
 })

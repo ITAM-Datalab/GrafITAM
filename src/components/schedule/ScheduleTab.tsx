@@ -1,7 +1,7 @@
 import { useMemo, useState } from 'react'
 import { useCurriculumStore } from '../../store/curriculumStore'
 import { useScheduleStore } from '../../store/scheduleStore'
-import { groupsOverlap } from '../../algorithms/scheduleOverlap'
+import { groupsOverlap, groupByCrn, groupSessions } from '../../algorithms/scheduleOverlap'
 import { horarioPeriodos } from '../../data/horariosLoader'
 import { getCourseColor } from './coursePalette'
 import type { ScheduleGroup } from '../../types/schedule'
@@ -46,9 +46,10 @@ export default function ScheduleTab() {
   }, [planData, allTrackedCourseIds, groupsByCourse])
 
   const selectedGroupObjects: ScheduleGroup[] = useMemo(() => {
-    return Object.entries(selectedGroups)
-      .map(([courseId, crn]) => groupsByCourse[courseId]?.find((g) => g.crn === crn))
-      .filter((g): g is ScheduleGroup => Boolean(g))
+    // Un CRN puede traer varias filas (teoría + laboratorio) -- incluirlas todas.
+    return Object.entries(selectedGroups).flatMap(
+      ([courseId, crn]) => groupsByCourse[courseId]?.filter((g) => g.crn === crn) ?? [],
+    )
   }, [selectedGroups, groupsByCourse])
 
   const handleDownload = async () => {
@@ -173,15 +174,16 @@ export default function ScheduleTab() {
                 </p>
               ) : (
                 <div className="flex flex-col gap-1.5">
-                  {groups.map((group) => {
-                    const isSelected = selectedCrn === group.crn
-                    const hasConflict = selectedGroupObjects.some(
-                      (g) => g.courseId !== courseId && groupsOverlap(g, group),
+                  {Array.from(groupByCrn(groups).entries()).map(([crn, rows]) => {
+                    const isSelected = selectedCrn === crn
+                    const hasConflict = rows.some((row) =>
+                      selectedGroupObjects.some((g) => g.courseId !== courseId && groupsOverlap(g, row)),
                     )
+                    const first = rows[0]
 
                     return (
                       <label
-                        key={group.crn}
+                        key={crn}
                         className="flex items-start gap-2 text-xs rounded px-2 py-1.5 cursor-pointer"
                         style={{
                           border: hasConflict
@@ -197,16 +199,18 @@ export default function ScheduleTab() {
                           type="radio"
                           name={`group-${courseId}`}
                           checked={isSelected}
-                          onClick={() =>
-                            isSelected ? clearGroup(courseId) : selectGroup(courseId, group.crn)
-                          }
+                          onClick={() => (isSelected ? clearGroup(courseId) : selectGroup(courseId, crn))}
                           onChange={() => {}}
                           className="mt-0.5"
                         />
                         <span>
-                          Grupo {group.grupo} · CRN {group.crn} · {group.horario} {group.dias}
-                          <br />
-                          <span className="opacity-70">{group.profesor} · {group.salon}</span>
+                          Grupo {first.grupo} · CRN {crn}
+                          {groupSessions(rows).map((session, i) => (
+                            <div key={i}>
+                              {session.horario} {session.dias} · {session.salon}{' '}
+                              <span className="opacity-70">{session.profesores.join(' / ')}</span>
+                            </div>
+                          ))}
                           {hasConflict && (
                             <>
                               <br />

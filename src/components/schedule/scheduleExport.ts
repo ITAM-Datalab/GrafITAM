@@ -1,6 +1,6 @@
 import ExcelJS from 'exceljs'
 import type { SavedSchedule, ScheduleData } from '../../types/schedule'
-import { parseDias, parseHorario } from '../../algorithms/scheduleOverlap'
+import { parseDias, parseHorario, groupSessions } from '../../algorithms/scheduleOverlap'
 import { getCourseColor } from './coursePalette'
 
 const DIAS = ['LU', 'MA', 'MI', 'JU', 'VI', 'SA']
@@ -75,35 +75,39 @@ function buildScheduleSheet(
   const filledCells = new Set<string>()
 
   for (const [courseId, crn] of selected) {
-    const group = groupsByCourse[courseId]?.find((g) => g.crn === crn)
-    if (!group) continue
+    // Un CRN puede traer varias filas (teoría + laboratorio) -- dibujar todas.
+    const rows = groupsByCourse[courseId]?.filter((g) => g.crn === crn) ?? []
+    if (rows.length === 0) continue
 
-    const nombre = courseNames[courseId] ?? group.nombre
+    const nombre = courseNames[courseId] ?? rows[0].nombre
     const color = getCourseColor(courseId, orderedCourseIds)
-    const dias = parseDias(group.dias)
-    const { inicio, fin } = parseHorario(group.horario)
-    const startSlot = Math.max(0, timeToSlot(inicio))
-    const endSlot = Math.min(TOTAL_SLOTS, timeToSlot(fin))
-    if (endSlot <= startSlot) continue
 
-    for (const dia of dias) {
-      const dayIndex = DIAS.indexOf(dia)
-      if (dayIndex === -1) continue
-      const col = GRID_FIRST_COL + dayIndex
-      const topRow = FIRST_TIME_ROW + startSlot
-      const bottomRow = FIRST_TIME_ROW + endSlot - 1
+    for (const session of groupSessions(rows)) {
+      const dias = parseDias(session.dias)
+      const { inicio, fin } = parseHorario(session.horario)
+      const startSlot = Math.max(0, timeToSlot(inicio))
+      const endSlot = Math.min(TOTAL_SLOTS, timeToSlot(fin))
+      if (endSlot <= startSlot) continue
 
-      // Si ya hay algo en ese rango (traslape sin resolver), se deja el primero que llegó.
-      if (filledCells.has(`${topRow}-${col}`)) continue
-      for (let r = topRow; r <= bottomRow; r++) filledCells.add(`${r}-${col}`)
+      for (const dia of dias) {
+        const dayIndex = DIAS.indexOf(dia)
+        if (dayIndex === -1) continue
+        const col = GRID_FIRST_COL + dayIndex
+        const topRow = FIRST_TIME_ROW + startSlot
+        const bottomRow = FIRST_TIME_ROW + endSlot - 1
 
-      if (bottomRow > topRow) sheet.mergeCells(topRow, col, bottomRow, col)
+        // Si ya hay algo en ese rango (traslape sin resolver), se deja el primero que llegó.
+        if (filledCells.has(`${topRow}-${col}`)) continue
+        for (let r = topRow; r <= bottomRow; r++) filledCells.add(`${r}-${col}`)
 
-      const cell = sheet.getCell(topRow, col)
-      cell.value = `${courseId} ${nombre}\n${group.profesor}\n${group.salon}`
-      cell.alignment = { horizontal: 'center', vertical: 'middle', wrapText: true }
-      cell.fill = { type: 'pattern', pattern: 'solid', fgColor: { argb: hexToArgb(color.bg) } }
-      cell.font = { color: { argb: hexToArgb(color.text) } }
+        if (bottomRow > topRow) sheet.mergeCells(topRow, col, bottomRow, col)
+
+        const cell = sheet.getCell(topRow, col)
+        cell.value = `${courseId} ${nombre}\n${session.profesores.join(' / ')}\n${session.salon}`
+        cell.alignment = { horizontal: 'center', vertical: 'middle', wrapText: true }
+        cell.fill = { type: 'pattern', pattern: 'solid', fgColor: { argb: hexToArgb(color.bg) } }
+        cell.font = { color: { argb: hexToArgb(color.text) } }
+      }
     }
   }
 
