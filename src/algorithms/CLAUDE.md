@@ -81,9 +81,13 @@ Calcula el resaltado transitivo para el hover del grafo (`FlowCanvas.tsx`): dado
 parseHorario(horario: string): { inicio: number; fin: number }   // "09:00-10:30" -> minutos desde medianoche
 parseDias(dias: string): string[]                                 // "LU MI VI" -> ["LU","MI","VI"]
 groupsOverlap(a: ScheduleGroup, b: ScheduleGroup): boolean
+groupByCrn(groups: ScheduleGroup[]): Map<string, ScheduleGroup[]>
+groupSessions(rows: ScheduleGroup[]): CrnSession[]   // { horario, dias, salon, profesores: string[] }[]
 ```
 
 `groupsOverlap` es true si comparten al menos un día Y sus rangos de horas se cruzan (`aInicio < bFin && bInicio < aFin` — un grupo que termina justo cuando otro empieza NO es traslape).
+
+`groupByCrn` junta todas las filas de un mismo CRN (ej. teoría + laboratorio, distinto horario/día) — usado también por `scheduleAssign.ts` para tratarlas como unidad atómica de backtracking, no tocar su contrato. `groupSessions` sub-agrupa las filas de un CRN por `(horario, dias)`: cuando ITACA reporta el mismo CRN/horario/día con varios profesores (team-teaching, ej. `ADM-12302`), esas filas colapsan en una sola sesión con `profesores` unidos — sin esto, `ScheduleTab.tsx`/`ScheduleCalendar.tsx`/`scheduleExport.ts` dibujaban 3 líneas/bloques duplicados en vez de 1.
 
 ## `scheduleAssign.ts`
 

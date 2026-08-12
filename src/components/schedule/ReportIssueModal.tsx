@@ -17,22 +17,46 @@ const GOOGLE_FORM_ENTRIES = {
   comentario: '1981201194',
 }
 
-type TipoProblema = 'materia_faltante' | 'grupo_incorrecto' | 'plan_faltante' | 'otro'
+type TipoProblema =
+  | 'materia_faltante'
+  | 'grupo_incorrecto'
+  | 'horario_incompleto'
+  | 'plan_faltante'
+  | 'plan_dato_incorrecto'
+  | 'otro'
 
 const TIPO_LABELS: Record<TipoProblema, string> = {
   materia_faltante: 'Materia no aparece en horarios',
   grupo_incorrecto: 'Grupo/CRN incorrecto o faltante',
+  horario_incompleto: 'Horario incompleto (falta una sesión, ej. laboratorio)',
   plan_faltante: 'Plan de estudios no encontrado',
+  plan_dato_incorrecto: 'Dato incorrecto en el plan de estudios (créditos, prerrequisitos, área, etc.)',
   otro: 'Otro problema',
 }
 
-// Texto exacto de la opción correspondiente en el Google Form — 'otro' no tiene
-// texto fijo, usa el mecanismo de "Otro" (__other_option__) del form en su lugar.
+// Texto exacto de la opción correspondiente en el Google Form — null usa el
+// mecanismo de "Otro" (__other_option__) del form: aplica a 'otro' y a las 2
+// categorías nuevas, que todavía no existen como opción fija en el form real.
 const TIPO_FORM_OPTION: Record<TipoProblema, string | null> = {
   materia_faltante: 'Materia no aparece en horarios',
   grupo_incorrecto: 'Grupo/CRN incorrecto o faltante',
+  horario_incompleto: null,
   plan_faltante: 'Plan de estudios no encontrado',
+  plan_dato_incorrecto: null,
   otro: null,
+}
+
+// Qué campo es obligatorio por tipo de problema: 'plan_faltante' pide la
+// carrera/plan (no aplica clave de materia); 'otro' solo pide comentario;
+// cualquier otro tipo -- incluidas las 2 categorías nuevas, que necesitan saber
+// a qué materia del plan/horario se refiere el reporte -- pide la clave.
+const REQUIRED_FIELD: Record<TipoProblema, 'clave' | 'carrera' | 'comentario'> = {
+  materia_faltante: 'clave',
+  grupo_incorrecto: 'clave',
+  horario_incompleto: 'clave',
+  plan_faltante: 'carrera',
+  plan_dato_incorrecto: 'clave',
+  otro: 'comentario',
 }
 
 type SubmitState = 'idle' | 'submitting' | 'success' | 'error'
@@ -69,15 +93,13 @@ export default function ReportIssueModal() {
   const [comentario, setComentario] = useState('')
   const [submitState, setSubmitState] = useState<SubmitState>('idle')
 
-  // Qué campo es obligatorio cambia según el tipo de problema: para "Plan de
-  // estudios no encontrado" no aplica pedir una clave de materia (se pide la
-  // carrera/plan en su lugar), y "Otro problema" solo necesita el comentario.
+  const requiredField = REQUIRED_FIELD[tipo]
   const isValid =
-    tipo === 'plan_faltante'
-      ? carrera.trim() !== ''
-      : tipo === 'otro'
-        ? comentario.trim() !== ''
-        : clave.trim() !== ''
+    requiredField === 'clave'
+      ? clave.trim() !== ''
+      : requiredField === 'carrera'
+        ? carrera.trim() !== ''
+        : comentario.trim() !== ''
 
   const resetForm = () => {
     setOpen(false)
@@ -163,7 +185,7 @@ export default function ReportIssueModal() {
             </select>
 
             <label className="block text-xs font-semibold mb-1">
-              Clave de materia{tipo === 'materia_faltante' || tipo === 'grupo_incorrecto' ? '' : ' (opcional)'}
+              Clave de materia{requiredField === 'clave' ? '' : ' (opcional)'}
             </label>
             <input
               value={clave}
@@ -187,7 +209,7 @@ export default function ReportIssueModal() {
             />
 
             <label className="block text-xs font-semibold mb-1">
-              Carrera o plan de estudios{tipo === 'plan_faltante' ? '' : ' (opcional)'}
+              Carrera o plan de estudios{requiredField === 'carrera' ? '' : ' (opcional)'}
             </label>
             <input
               value={carrera}

@@ -503,25 +503,17 @@
     "coreqs": [],
     "estado": 0
   },
-  "OPTATIVA-2": {
+  "OPTATIVA-AREA-1": {
     "semestre": 8,
-    "nombre": "Optativa II",
+    "nombre": "Optativa de Estadística",
     "creditos": 6,
     "prerreqs": [],
     "coreqs": [],
     "estado": 0
   },
-  "OPTATIVA-3": {
+  "OPTATIVA-AREA-2": {
     "semestre": 8,
-    "nombre": "Optativa III",
-    "creditos": 6,
-    "prerreqs": [],
-    "coreqs": [],
-    "estado": 0
-  },
-  "OPTATIVA-4": {
-    "semestre": 8,
-    "nombre": "Optativa IV",
+    "nombre": "Optativa de Estadística",
     "creditos": 6,
     "prerreqs": [],
     "coreqs": [],

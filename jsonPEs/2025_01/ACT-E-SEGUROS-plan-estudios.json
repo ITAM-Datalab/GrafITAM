@@ -479,13 +479,5 @@
     "prerreqs": [],
     "coreqs": [],
     "estado": 0
-  },
-  "OPTATIVA-2": {
-    "semestre": 8,
-    "nombre": "Optativa II",
-    "creditos": 6,
-    "prerreqs": [],
-    "coreqs": [],
-    "estado": 0
   }
 }

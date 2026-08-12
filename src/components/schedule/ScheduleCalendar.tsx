@@ -1,5 +1,5 @@
 import type { ScheduleGroup } from '../../types/schedule'
-import { parseDias, parseHorario, groupsOverlap } from '../../algorithms/scheduleOverlap'
+import { parseDias, parseHorario, groupsOverlap, groupSessions } from '../../algorithms/scheduleOverlap'
 import { layoutDayBlocks } from '../../algorithms/calendarLayout'
 import { getCourseColor } from './coursePalette'
 
@@ -18,11 +18,38 @@ interface Props {
 export default function ScheduleCalendar({ groups, orderedCourseIds, courseNames }: Props) {
   const totalMinutes = (END_HOUR - START_HOUR) * 60
 
-  const blocks = groups.flatMap((group) => {
-    const dias = parseDias(group.dias)
-    const { inicio, fin } = parseHorario(group.horario)
-    const hasConflict = groups.some((other) => other !== group && groupsOverlap(other, group))
-    return dias.map((dia) => ({ group, dia, inicio, fin, hasConflict }))
+  // groups es una fila seleccionada por materia -- agrupar primero por
+  // courseId+crn y luego por (horario, dias) para no dibujar un bloque separado
+  // por cada profesor cuando varias filas comparten CRN/horario/día (team-teaching).
+  const blocks = Array.from(
+    groups.reduce((byGroup, g) => {
+      const key = `${g.courseId}|${g.crn}`
+      const list = byGroup.get(key) ?? []
+      list.push(g)
+      byGroup.set(key, list)
+      return byGroup
+    }, new Map<string, ScheduleGroup[]>()),
+  ).flatMap(([, rows]) => {
+    const first = rows[0]
+    return groupSessions(rows).flatMap((session) => {
+      const dias = parseDias(session.dias)
+      const { inicio, fin } = parseHorario(session.horario)
+      const hasConflict = groups.some(
+        (other) =>
+          other.courseId !== first.courseId &&
+          groupsOverlap(other, { ...first, horario: session.horario, dias: session.dias }),
+      )
+      return dias.map((dia) => ({
+        courseId: first.courseId,
+        crn: first.crn,
+        nombre: first.nombre,
+        session,
+        dia,
+        inicio,
+        fin,
+        hasConflict,
+      }))
+    })
   })
 
   return (
@@ -67,13 +94,14 @@ export default function ScheduleCalendar({ groups, orderedCourseIds, courseNames
               }}
             >
               {layout.map(({ item: b, left, width }, i) => {
-                const color = getCourseColor(b.group.courseId, orderedCourseIds)
-                const nombre = courseNames[b.group.courseId] ?? b.group.nombre
-                const fullLabel = `${b.group.courseId} ${nombre} · ${b.group.salon} · ${b.group.profesor} · ${b.group.horario}`
+                const color = getCourseColor(b.courseId, orderedCourseIds)
+                const nombre = courseNames[b.courseId] ?? b.nombre
+                const profesores = b.session.profesores.join(' / ')
+                const fullLabel = `${b.courseId} ${nombre} · ${b.session.salon} · ${profesores} · ${b.session.horario}`
 
                 return (
                   <div
-                    key={`${b.group.crn}-${dia}-${i}`}
+                    key={`${b.crn}-${dia}-${i}`}
                     title={fullLabel}
                     className="absolute rounded text-[10px] px-1 py-0.5 overflow-hidden leading-tight"
                     style={{
@@ -87,11 +115,11 @@ export default function ScheduleCalendar({ groups, orderedCourseIds, courseNames
                     }}
                   >
                     <div className="font-semibold leading-tight">
-                      {b.group.courseId} {nombre}
+                      {b.courseId} {nombre}
                     </div>
-                    <div className="opacity-80 leading-tight">{b.group.salon}</div>
+                    <div className="opacity-80 leading-tight">{b.session.salon}</div>
                     <div className="opacity-80 leading-tight">
-                      {b.group.profesor} · {b.group.horario}
+                      {profesores} · {b.session.horario}
                     </div>
                   </div>
                 )
