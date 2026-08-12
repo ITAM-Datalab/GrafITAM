@@ -2691,6 +2691,16 @@
       "nombre": "APLIC. TI EN LOS NEGOCIOS",
       "profesor": "ISRAEL LOPEZ AVILA",
       "salon": "PF101"
+    },
+    {
+      "campus": "RIO HONDO",
+      "crn": "3467",
+      "dias": "LU MI",
+      "grupo": "002",
+      "horario": "12:00-13:30",
+      "nombre": "APLIC. TI EN LOS NEGOCIOS",
+      "profesor": "LETICIA RENTERIA FERRAN",
+      "salon": "RHCC202"
     }
   ],
   "COM-22102": [
@@ -12639,16 +12649,6 @@
       "crn": "3464",
       "dias": "VI",
       "grupo": "001",
-      "horario": "10:00-12:00",
-      "nombre": "ELEMENTOS DE ELECTRONICA",
-      "profesor": "MARIO ANDRES AGUILAR ORDUÑA",
-      "salon": "RHLFIEL"
-    },
-    {
-      "campus": "RIO HONDO",
-      "crn": "3465",
-      "dias": "VI",
-      "grupo": "002",
       "horario": "10:00-12:00",
       "nombre": "ELEMENTOS DE ELECTRONICA",
       "profesor": "MARIO ANDRES AGUILAR ORDUÑA",
