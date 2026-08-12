@@ -520,37 +520,5 @@
     "prerreqs": [],
     "coreqs": [],
     "estado": 0
-  },
-  "OPTATIVA-5": {
-    "semestre": 5,
-    "nombre": "Optativa V",
-    "creditos": 6,
-    "prerreqs": [],
-    "coreqs": [],
-    "estado": 0
-  },
-  "OPTATIVA-6": {
-    "semestre": 6,
-    "nombre": "Optativa VI",
-    "creditos": 6,
-    "prerreqs": [],
-    "coreqs": [],
-    "estado": 0
-  },
-  "OPTATIVA-7": {
-    "semestre": 6,
-    "nombre": "Optativa VII",
-    "creditos": 6,
-    "prerreqs": [],
-    "coreqs": [],
-    "estado": 0
-  },
-  "OPTATIVA-8": {
-    "semestre": 9,
-    "nombre": "Optativa VIII",
-    "creditos": 6,
-    "prerreqs": [],
-    "coreqs": [],
-    "estado": 0
   }
 }

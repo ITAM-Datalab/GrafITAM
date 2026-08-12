@@ -655,25 +655,25 @@
     "coreqs": [],
     "estado": 0
   },
-  "OPTATIVA-1": {
+  "OPTATIVA-AREA-1": {
     "semestre": 11,
-    "nombre": "Optativa I",
+    "nombre": "Optativa de Economía Financiera I",
     "creditos": 6,
     "prerreqs": [],
     "coreqs": [],
     "estado": 0
   },
-  "OPTATIVA-2": {
+  "OPTATIVA-AREA-2": {
     "semestre": 11,
-    "nombre": "Optativa II",
+    "nombre": "Optativa de Economía Financiera II",
     "creditos": 6,
     "prerreqs": [],
     "coreqs": [],
     "estado": 0
   },
-  "OPTATIVA-3": {
+  "OPTATIVA-AREA-3": {
     "semestre": 11,
-    "nombre": "Optativa III",
+    "nombre": "Optativa de Economía Financiera III",
     "creditos": 6,
     "prerreqs": [],
     "coreqs": [],

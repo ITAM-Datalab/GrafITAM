@@ -499,13 +499,5 @@
     "prerreqs": [],
     "coreqs": [],
     "estado": 0
-  },
-  "OPTATIVA-5": {
-    "semestre": 6,
-    "nombre": "Optativa V",
-    "creditos": 6,
-    "prerreqs": [],
-    "coreqs": [],
-    "estado": 0
   }
 }

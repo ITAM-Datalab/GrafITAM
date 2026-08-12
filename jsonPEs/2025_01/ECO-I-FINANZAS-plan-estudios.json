@@ -558,17 +558,9 @@
     "coreqs": [],
     "estado": 0
   },
-  "OPTATIVA-3": {
+  "AREA-1": {
     "semestre": 8,
-    "nombre": "Optativa III",
-    "creditos": 6,
-    "prerreqs": [],
-    "coreqs": [],
-    "estado": 0
-  },
-  "OPTATIVA-4": {
-    "semestre": 8,
-    "nombre": "Optativa IV",
+    "nombre": "Materia 1 de Área de Concentración",
     "creditos": 6,
     "prerreqs": [],
     "coreqs": [],

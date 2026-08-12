@@ -12,18 +12,26 @@ Schema de salida:
 
 Los slots de optativa de la tabla de cada semestre (ej. "Optativa de Estadistica",
 sin clave real) se agregan como materias sinteticas "OPTATIVA-1", "OPTATIVA-2", ...
-con nombre "Optativa I", "Optativa II", ..., sin prerrequisitos, en un semestre
-extra al final del plan (para que el grafo las dibuje en su propia columna final,
-desconectadas de todo) — sus creditos si cuentan para la barra de progreso.
+con nombre "Optativa I", "Optativa II", ..., sin prerrequisitos, en su propio
+semestre real (el que trae el PDF para ese slot) — sus creditos si cuentan para la
+barra de progreso.
 
 Los slots "Materia N de Area de Concentracion" (sin clave real tampoco, ej. familia
-ECD/ECO/EDF) se agregan como "AREA-N" — a diferencia de las optativas, se quedan en
-su propio semestre real (no en una columna final), porque representan una materia
-obligatoria de esa etapa del plan.
+ECD/ECO/EDF) se agregan como "AREA-N" — igual que las optativas, se quedan en su
+propio semestre real, porque representan una materia obligatoria de esa etapa del
+plan.
 
 Algunos PDFs (ACT/ECD/ECO/EDF) no son un solo plan: repiten un "tronco comun" mas
-2-5 secciones "AREA DE CONCENTRACION: X" completas. Cada area se separa en su
-propio archivo: {PLAN_CODE}-{AREA-SLUG}-plan-estudios.json (ver AREA_HEADER_RE).
+2-5 secciones "AREA DE CONCENTRACION: X" completas, cada una reimprimiendo la
+tabla COMPLETA de todos los semestres del plan (no solo los finales — verificado
+con pdfplumber). Cada area se separa en su propio archivo:
+{PLAN_CODE}-{AREA-SLUG}-plan-estudios.json (ver AREA_HEADER_RE). Como la tabla
+reimpresa vuelve a traer los slots "Optativa" genericos que ya vienen del tronco
+comun, y en PDFs como ECO/EDF los slots de especializacion de un area tampoco
+traen la forma "Materia N de Area de Concentracion" (aparecen como "Optativa" a
+secas, indistinguibles por texto), se agrega ademas "OPTATIVA-AREA-N": cualquier
+fila "Optativa..." que la tabla propia de un area traiga MAS ALLA de lo ya
+heredado del tronco para ese mismo (semestre, texto) — ver _record_optativa_slot.
 """
 
 import json
@@ -31,7 +39,7 @@ import re
 import subprocess
 import sys
 import unicodedata
-from collections import defaultdict
+from collections import Counter, defaultdict
 from pathlib import Path
 
 
@@ -96,13 +104,44 @@ OPTATIVAS_RE = re.compile(r'MATERIAS?\s+OPTATIVAS?', re.IGNORECASE)
 # nombre se colaban al nombre de la siguiente materia real — bug ya corregido aquí).
 OPTATIVA_SLOT_RE = re.compile(r'^Optativas?(\s|$)', re.IGNORECASE)
 
+# Slot "Optativa..." SIN calificador propio (ej. "Optativa" a secas) — a diferencia
+# de "Optativa de Finanzas", que sí trae su propio nombre, este texto es idéntico
+# al de cualquier elective libre genérico. Se usa solo para decidir el nombre de
+# respaldo de un slot en OPTATIVA-AREA-N (ver _record_optativa_slot) cuando no hay
+# forma de identificar el área por el propio texto del PDF.
+BARE_OPTATIVA_RE = re.compile(r'^Optativas?$', re.IGNORECASE)
+
+
+def _clean_optativa_text(raw: str) -> str:
+    """Normaliza el texto de un slot 'Optativa...' capturado del PDF (quita
+    marcadores de nota al pie tipo '(*)' y espacios de sobra) para poder comparar
+    de forma estable si dos ocurrencias son 'la misma fila reimpresa' — ver
+    _record_optativa_slot."""
+    return re.sub(r'\(\*+\).*$', '', raw).strip()
+
 # Renglón de slot "Materia N de Área de Concentración" (ej. familia ECD/ECO/EDF) —
 # igual que una optativa, sin clave real, pero a diferencia de Optativa este slot SÍ
 # debe quedarse en su propio semestre (no en una columna final): representa una
 # materia obligatoria de esa etapa del plan que el alumno elige según su área, no
 # una optativa libre de cualquier semestre. El número ya lo trae el PDF y es estable,
-# así que se preserva tal cual en vez de renumerar.
-AREA_CONCENTRACION_SLOT_RE = re.compile(r'^Materia\s+(\d+)\s+de\s+\S*rea\s+de\s+[Cc]oncentraci', re.IGNORECASE)
+# así que se preserva tal cual en vez de renumerar. ECO-I.pdf usa "Electiva N de área
+# de concentración" en vez de "Materia N..." para el mismo tipo de slot — mismo
+# mecanismo, solo cambia la palabra clave del PDF; el nombre de salida sigue siendo
+# siempre "Materia N de Área de Concentración" (se genera aparte, del número capturado,
+# no del texto que matcheó).
+AREA_CONCENTRACION_SLOT_RE = re.compile(
+    r'^(?:Materia|Electiva)\s+(\d+)\s+de\s+\S*rea\s+de\s+[Cc]oncentraci', re.IGNORECASE
+)
+
+# Variante SIN número: "Electiva de área de concentración" (confirmado con
+# pdfplumber en ECO-I.pdf, áreas Finanzas y Empresarial — cada una trae un único
+# slot de este tipo, así que el PDF no lo numera). Mismo slot que
+# AREA_CONCENTRACION_SLOT_RE, tratado como si fuera el número 1 -- no puede haber
+# ambigüedad con un "Electiva 1..." explícito porque area_concentracion no se
+# hereda entre secciones (cada área arranca su propio dict vacío).
+AREA_CONCENTRACION_SLOT_SINGULAR_RE = re.compile(
+    r'^Electiva\s+de\s+\S*rea\s+de\s+[Cc]oncentraci', re.IGNORECASE
+)
 
 # Renglón placeholder "Materia Área de Concentración" SIN número — a diferencia de
 # AREA_CONCENTRACION_SLOT_RE (que trae un slot real numerado), este es un rótulo que
@@ -113,7 +152,8 @@ AREA_CONCENTRACION_SLOT_RE = re.compile(r'^Materia\s+(\d+)\s+de\s+\S*rea\s+de\s+
 AREA_CONCENTRACION_LABEL_RE = re.compile(r'^Materia\s+\S*rea\s+de\s+[Cc]oncentraci[oó]n\s*$', re.IGNORECASE)
 
 # Encabezado de página que abre una sección de área de concentración completa (ej.
-# familia ACT/ECD/ECO/EDF: el PDF reimprime los semestres finales una vez por área —
+# familia ACT/ECD/ECO/EDF: el PDF reimprime la tabla COMPLETA de todos los
+# semestres una vez por área — verificado con pdfplumber, no solo los finales —
 # "ÁREA DE CONCENTRACIÓN: SEGUROS", luego "...: ESTADÍSTICA", etc.). Todo lo parseado
 # ANTES del primer match de este regex es el "tronco común" (compartido entre áreas,
 # tenga o no la etiqueta "TRONCO COMÚN" impresa — algunos PDFs como ADM-D no la traen).
@@ -310,8 +350,16 @@ def _new_section() -> dict:
     return {
         'courses': {},
         'coreq_groups': defaultdict(list),
-        # (semestre, creditos) de cada slot de optativa encontrado (sin clave real), en orden
+        # (semestre, creditos, texto_crudo) de cada slot de optativa encontrado
+        # (sin clave real), en orden — el texto se usa para deduplicar slots
+        # reimpresos entre tronco y área (ver _record_optativa_slot)
         'optativa_credits': [],
+        # (semestre, creditos, texto_crudo) de slots "Optativa..." que la tabla
+        # propia de un área trae MÁS ALLÁ de lo ya heredado del tronco para ese
+        # mismo (semestre, texto) — identifica optativas específicas del área
+        # (issue #25), separado de optativa_credits para no duplicar (issue #23).
+        # Queda vacío para el tronco y para planes sin área.
+        'optativa_area_credits': [],
         # numero (tal cual lo trae el PDF) -> (semestre, creditos) de cada slot de
         # área de concentración; si el mismo número se repite (bloque duplicado),
         # la última aparición gana — igual que con materias reales
@@ -334,6 +382,7 @@ def parse_pdf(pdf_path: Path, pdfplumber) -> dict[str | None, tuple[dict, int]]:
     courses = current_section['courses']
     coreq_groups = current_section['coreq_groups']
     optativa_credits = current_section['optativa_credits']
+    optativa_area_credits = current_section['optativa_area_credits']
     area_concentracion = current_section['area_concentracion']
 
     with pdfplumber.open(str(pdf_path)) as pdf:
@@ -368,6 +417,50 @@ def parse_pdf(pdf_path: Path, pdfplumber) -> dict[str | None, tuple[dict, int]]:
         last_saved_top: float | None = None
         in_optativas = False
         done = False
+
+        # Ver _new_section(): mientras se parsea el tronco común, is_area_section
+        # es False y toda fila "Optativa..." se agrega directo a optativa_credits
+        # (comportamiento sin cambios). Al abrir una sección de área (más abajo,
+        # match de AREA_HEADER_RE), is_area_section pasa a True y estas dos
+        # estructuras se recalculan: optativa_inherited_counts es el snapshot de
+        # cuántas filas "Optativa..." trae el tronco por (semestre, texto) —
+        # optativa_consumed cuenta cuántas de esas copias ya se "reencontraron"
+        # mientras se reparsea la tabla propia del área.
+        is_area_section = False
+        optativa_inherited_counts: Counter = Counter()
+        optativa_consumed: defaultdict = defaultdict(int)
+
+        def _record_optativa_slot(creditos: int, raw_text: str) -> None:
+            """Clasifica una fila 'Optativa...' recién encontrada.
+
+            Fuera de una sección de área (tronco, o plan sin áreas): sin cambios,
+            se agrega directo a optativa_credits.
+
+            Dentro de una sección de área: la sección ya heredó una copia
+            congelada de optativa_credits del tronco al abrirse (ver más abajo,
+            línea de 'new_section[\'optativa_credits\'] = ...'). Si esta fila es
+            la reimpresión de un slot que el tronco ya traía para este mismo
+            (semestre, texto), NO se vuelve a agregar (evita la duplicación de
+            #23). Si excede lo heredado para ese (semestre, texto), es un slot
+            extra — específico de esta área — y se agrega a
+            optativa_area_credits (#25) en vez de a optativa_credits.
+            """
+            text = _clean_optativa_text(raw_text)
+            if not is_area_section:
+                optativa_credits.append((current_semester, creditos, text))
+                return
+            # .upper() en la clave (no en el texto guardado): algunos PDFs
+            # (ej. ECO-E FUNDAMENTOS ECONÓMICOS) reimprimen "OPTATIVA" en
+            # mayúsculas en la tabla del área donde el tronco trae "Optativa" en
+            # title case — mismo slot, distinta caja tipográfica. Sin normalizar,
+            # el mismatch de texto hacía que nunca se "consumiera" el heredado y
+            # el slot se duplicaba igual que el bug original de #23.
+            key = (current_semester, text.upper())
+            if optativa_consumed[key] < optativa_inherited_counts.get(key, 0):
+                optativa_consumed[key] += 1
+                # ya cubierto por el slot heredado del tronco — no duplicar
+            else:
+                optativa_area_credits.append((current_semester, creditos, text))
 
         for page_idx, page in enumerate(pdf.pages):
             if done:
@@ -430,9 +523,16 @@ def parse_pdf(pdf_path: Path, pdfplumber) -> dict[str | None, tuple[dict, int]]:
                         list, {k: list(v) for k, v in tronco['coreq_groups'].items()}
                     )
                     new_section['optativa_credits'] = list(tronco['optativa_credits'])
-                    # A diferencia de optativa_credits (slots que siguen sin resolver
-                    # sin importar el área), area_concentracion NO se hereda: los
-                    # slots "Materia N de Área de Concentración" del tronco común
+                    # optativa_credits SÍ se sigue heredando tal cual (garantiza que
+                    # el "piso" del tronco nunca se pierda, incluso si esta área no
+                    # reimprimiera completo algún semestre compartido). El reparseo
+                    # de la tabla propia de esta área ya no vuelve a agregar
+                    # duplicados de estos mismos slots (ver _record_optativa_slot,
+                    # más arriba) — solo agrega a optativa_area_credits lo que
+                    # exceda este snapshot (optativa_inherited_counts, abajo).
+                    #
+                    # area_concentracion, en cambio, NO se hereda: los slots
+                    # "Materia N de Área de Concentración" del tronco común
                     # representan un placeholder que la tabla propia de cada área
                     # siempre rellena con una materia real bajo su propia clave — si
                     # se heredara, el placeholder del tronco quedaría como entrada
@@ -447,8 +547,14 @@ def parse_pdf(pdf_path: Path, pdfplumber) -> dict[str | None, tuple[dict, int]]:
                     courses = current_section['courses']
                     coreq_groups = current_section['coreq_groups']
                     optativa_credits = current_section['optativa_credits']
+                    optativa_area_credits = current_section['optativa_area_credits']
                     area_concentracion = current_section['area_concentracion']
                     current_semester = 0
+                    is_area_section = True
+                    optativa_inherited_counts = Counter(
+                        (sem, txt.upper()) for sem, _, txt in optativa_credits
+                    )
+                    optativa_consumed = defaultdict(int)
                     continue
 
                 # Inicio de sección optativas: limpiar estado pendiente y saltar la sección
@@ -537,22 +643,27 @@ def parse_pdf(pdf_path: Path, pdfplumber) -> dict[str | None, tuple[dict, int]]:
                             # Slot genérico de optativa — liberar el stub anterior y capturar
                             # sus créditos (el renglón en sí no tiene clave real, se descarta)
                             m_area2 = AREA_CONCENTRACION_SLOT_RE.match(name_text2)
+                            numero_area2 = (
+                                m_area2.group(1)
+                                if m_area2
+                                else ('1' if AREA_CONCENTRACION_SLOT_SINGULAR_RE.match(name_text2) else None)
+                            )
                             if OPTATIVA_SLOT_RE.match(name_text2):
                                 _flush_stub(pending_stub, courses, coreq_groups)
                                 pending_stub = None
                                 pending_name = ''
                                 cred_text_opt = ' '.join(w['text'] for w in cred_words)
                                 m_cred_opt = re.search(r'\d+', cred_text_opt)
-                                optativa_credits.append(
-                                    (current_semester, int(m_cred_opt.group()) if m_cred_opt else 6)
+                                _record_optativa_slot(
+                                    int(m_cred_opt.group()) if m_cred_opt else 6, name_text2
                                 )
-                            elif m_area2:
+                            elif numero_area2:
                                 _flush_stub(pending_stub, courses, coreq_groups)
                                 pending_stub = None
                                 pending_name = ''
                                 cred_text_area = ' '.join(w['text'] for w in cred_words)
                                 m_cred_area = re.search(r'\d+', cred_text_area)
-                                area_concentracion[m_area2.group(1)] = (
+                                area_concentracion[numero_area2] = (
                                     current_semester,
                                     int(m_cred_area.group()) if m_cred_area else 6,
                                 )
@@ -592,19 +703,24 @@ def parse_pdf(pdf_path: Path, pdfplumber) -> dict[str | None, tuple[dict, int]]:
                         raw = merge_letter_runs(name_words).strip()
                         raw = re.sub(r'\(\*+\).*$', '', raw).strip()
                         m_area = AREA_CONCENTRACION_SLOT_RE.match(raw) if raw else None
+                        numero_area = (
+                            m_area.group(1)
+                            if m_area
+                            else ('1' if raw and AREA_CONCENTRACION_SLOT_SINGULAR_RE.match(raw) else None)
+                        )
                         if raw and OPTATIVA_SLOT_RE.match(raw):
                             # Slot genérico de optativa (no el nombre de la siguiente materia)
                             cred_text_opt = ' '.join(w['text'] for w in cred_words)
                             m_cred_opt = re.search(r'\d+', cred_text_opt)
-                            optativa_credits.append(
-                                (current_semester, int(m_cred_opt.group()) if m_cred_opt else 6)
+                            _record_optativa_slot(
+                                int(m_cred_opt.group()) if m_cred_opt else 6, raw
                             )
-                        elif m_area:
+                        elif numero_area:
                             # Slot de "Materia N de Área de Concentración" — se queda en
                             # el semestre actual, no es el nombre de la siguiente materia
                             cred_text_area = ' '.join(w['text'] for w in cred_words)
                             m_cred_area = re.search(r'\d+', cred_text_area)
-                            area_concentracion[m_area.group(1)] = (
+                            area_concentracion[numero_area] = (
                                 current_semester,
                                 int(m_cred_area.group()) if m_cred_area else 6,
                             )
@@ -765,10 +881,29 @@ def parse_pdf(pdf_path: Path, pdfplumber) -> dict[str | None, tuple[dict, int]]:
         # Optativas sintéticas: cada una en su semestre real (el que trae el PDF),
         # desconectadas de prerreqs — mismo patrón que "Materia N de Área de
         # Concentración" abajo. Numeración global secuencial por orden de aparición.
-        for i, (semestre, creditos) in enumerate(sec_optativa_credits, start=1):
+        for i, (semestre, creditos, _raw_text) in enumerate(sec_optativa_credits, start=1):
             sec_courses[f"OPTATIVA-{i}"] = {
                 "semestre": semestre,
                 "nombre": f"Optativa {to_roman(i)}",
+                "creditos": creditos,
+                "prerreqs": [],
+                "coreqs": [],
+                "estado": 0,
+            }
+
+        # Optativas específicas de esta área (#25): filas "Optativa..." que la tabla
+        # propia del área trae MÁS ALLÁ de lo que el tronco ya traía para ese mismo
+        # (semestre, texto) — ver _record_optativa_slot. Si el PDF les dio su propio
+        # calificador (ej. "Optativa de Finanzas") se usa tal cual, tomado directo
+        # del texto capturado; si el texto era un "Optativa" genérico puro (sin
+        # forma de distinguirlo por texto, caso ECO/EDF), se nombra con el área para
+        # que el usuario entienda que es de esa especialización, no un elective libre.
+        sec_optativa_area_credits = section['optativa_area_credits']
+        for i, (semestre, creditos, raw_text) in enumerate(sec_optativa_area_credits, start=1):
+            nombre = raw_text if not BARE_OPTATIVA_RE.match(raw_text) else f"Optativa de {(label or '').title()} {to_roman(i)}"
+            sec_courses[f"OPTATIVA-AREA-{i}"] = {
+                "semestre": semestre,
+                "nombre": nombre,
                 "creditos": creditos,
                 "prerreqs": [],
                 "coreqs": [],
@@ -849,11 +984,18 @@ def main():
             with open(output_path, "w", encoding="utf-8") as f:
                 json.dump(courses, f, ensure_ascii=False, indent=2)
 
-            n_optativas = sum(1 for k in courses if k.startswith('OPTATIVA-'))
+            # OPTATIVA-AREA-N también empieza con "OPTATIVA-" -- excluirlo del
+            # primer conteo para no contarlo dos veces.
+            n_optativas = sum(
+                1 for k in courses if k.startswith('OPTATIVA-') and not k.startswith('OPTATIVA-AREA-')
+            )
+            n_optativas_area = sum(1 for k in courses if k.startswith('OPTATIVA-AREA-'))
             n_area = sum(1 for k in courses if k.startswith('AREA-'))
             suffix_parts = []
             if n_optativas:
                 suffix_parts.append(f"+{n_optativas} optativas")
+            if n_optativas_area:
+                suffix_parts.append(f"+{n_optativas_area} optativas de area")
             if n_area:
                 suffix_parts.append(f"+{n_area} area de concentracion")
             suffix = f" ({', '.join(suffix_parts)})" if suffix_parts else ""
@@ -865,7 +1007,7 @@ def main():
             # concentración) — un plan optativa-pesado (ej. MA-C: 37 reales + 9
             # optativas) no debe marcarse sospechoso solo porque tiene pocas materias
             # con clave fija.
-            total_count = real_course_count + n_optativas + n_area
+            total_count = real_course_count + n_optativas + n_optativas_area + n_area
             if total_count < MIN_MATERIAS:
                 sospechosos.append(
                     f"{output_path.name} ({real_course_count} materias reales, {total_count} en total)"
