@@ -4811,6 +4811,18 @@
       "salon": "RHB-3"
     }
   ],
+  "DER-11107": [
+    {
+      "campus": "RIO HONDO",
+      "crn": "3468",
+      "dias": "MI",
+      "grupo": "001",
+      "horario": "07:00-09:00",
+      "nombre": "TALLER EN BIENES Y DER REALES",
+      "profesor": "ESTEBAN ALBERTO CORTES ADAME",
+      "salon": "RH102"
+    }
+  ],
   "DER-11109": [
     {
       "campus": "RIO HONDO",
@@ -5187,18 +5199,6 @@
       "nombre": "TEORÍA DEL DERECHO I",
       "profesor": "PABLO ARIEL RAPETTI",
       "salon": "RH309"
-    }
-  ],
-  "DER-11123": [
-    {
-      "campus": "RIO HONDO",
-      "crn": "3241",
-      "dias": "VI",
-      "grupo": "001",
-      "horario": "12:00-14:00",
-      "nombre": "CONCURSOS INTERNAC. (CLINICA)",
-      "profesor": "HANNAH BIRKENKOTTER",
-      "salon": "RH313"
     }
   ],
   "DER-11124": [
