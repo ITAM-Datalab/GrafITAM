@@ -908,7 +908,7 @@
       "horario": "19:00-20:30",
       "nombre": "FINANZAS, II",
       "profesor": "POLUX ERNESTO DIAZ RUIZ",
-      "salon": "RH111"
+      "salon": "RH110"
     }
   ],
   "ADM-15503": [
@@ -984,7 +984,7 @@
       "horario": "19:00-20:30",
       "nombre": "INVERSIONES",
       "profesor": "POLUX ERNESTO DIAZ RUIZ",
-      "salon": "RH212"
+      "salon": "RH110"
     }
   ],
   "ADM-15514": [
@@ -1514,7 +1514,7 @@
       "horario": "16:00-17:30",
       "nombre": "INGENIERIA FINANCIERA",
       "profesor": "MARIA DE LAS MERCEDES ADAMUZ PEÑA",
-      "salon": "RH212"
+      "salon": "RH110"
     },
     {
       "campus": "RIO HONDO",
@@ -2356,7 +2356,7 @@
       "horario": "12:00-14:00",
       "nombre": "MODELADO COMPUT. PARA NEGOCIOS",
       "profesor": "LETICIA RENTERIA FERRAN",
-      "salon": "RHCC202"
+      "salon": "RHCC101"
     }
   ],
   "COM-16305": [
@@ -2550,7 +2550,7 @@
       "horario": "12:00-13:30",
       "nombre": "RAZONAMIENTO ALGORITMICO",
       "profesor": "IRMA LOZANO MENDICUTI",
-      "salon": "RHCC101"
+      "salon": "RHCC202"
     },
     {
       "campus": "RIO HONDO",
@@ -2700,7 +2700,7 @@
       "horario": "12:00-13:30",
       "nombre": "APLIC. TI EN LOS NEGOCIOS",
       "profesor": "LETICIA RENTERIA FERRAN",
-      "salon": "RHCC202"
+      "salon": "RHCC101"
     }
   ],
   "COM-22102": [
@@ -5496,7 +5496,7 @@
       "horario": "07:00-08:30",
       "nombre": "BIENES Y DERECHOS REALES",
       "profesor": "IRVIN ARTURO CASTILLO CESAREO",
-      "salon": "RH313"
+      "salon": "RHB-4"
     }
   ],
   "DER-13201": [
@@ -5542,7 +5542,7 @@
       "horario": "07:00-08:30",
       "nombre": "BIENES Y DERECHOS REALES",
       "profesor": "IRVIN ARTURO CASTILLO CESAREO",
-      "salon": "RH313"
+      "salon": "RHB-4"
     }
   ],
   "DER-13403": [
@@ -6219,7 +6219,7 @@
       "grupo": "001",
       "horario": "07:00-08:30",
       "nombre": "DERECHO MERCANTIL II",
-      "profesor": "ANTONIO CASARES CARRILLO",
+      "profesor": "SAP SAP CU44517",
       "salon": "RH102"
     }
   ],
@@ -6231,7 +6231,7 @@
       "grupo": "001",
       "horario": "07:00-08:30",
       "nombre": "DERECHO MERCANTIL, II",
-      "profesor": "ANTONIO CASARES CARRILLO",
+      "profesor": "SAP SAP CU44517",
       "salon": "RH102"
     }
   ],
@@ -9492,7 +9492,7 @@
       "horario": "10:00-11:30",
       "nombre": "CALCULO DE PROBABILIDADES II",
       "profesor": "ERICK MIER MORENO",
-      "salon": "RH306"
+      "salon": "RH102"
     }
   ],
   "EST-24129": [
@@ -12686,7 +12686,7 @@
       "horario": "17:30-19:30",
       "nombre": "ELEMENTOS DE ELECTRONICA",
       "profesor": "RAFAEL CISNEROS MONTOYA",
-      "salon": "PF108"
+      "salon": "RH205"
     },
     {
       "campus": "RIO HONDO",
@@ -12708,7 +12708,7 @@
       "horario": "16:00-18:00",
       "nombre": "CIRCUITOS LOGICOS",
       "profesor": "MARIO ANDRES AGUILAR ORDUÑA",
-      "salon": "RH301"
+      "salon": "RHLI2"
     },
     {
       "campus": "RIO HONDO",
