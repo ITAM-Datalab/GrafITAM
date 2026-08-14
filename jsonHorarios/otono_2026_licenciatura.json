@@ -28,7 +28,7 @@
       "horario": "17:30-19:00",
       "nombre": "CALCULO ACTUARIAL I",
       "profesor": "HUGO CUEVAS BRAVO",
-      "salon": "RH302"
+      "salon": "RH111"
     }
   ],
   "ACT-11301": [
@@ -908,7 +908,7 @@
       "horario": "19:00-20:30",
       "nombre": "FINANZAS, II",
       "profesor": "POLUX ERNESTO DIAZ RUIZ",
-      "salon": "RH212"
+      "salon": "RH111"
     }
   ],
   "ADM-15503": [
@@ -920,7 +920,7 @@
       "horario": "16:00-17:30",
       "nombre": "FINANZAS.,III",
       "profesor": "MARIA DE LAS MERCEDES ADAMUZ PEÑA",
-      "salon": "RH212"
+      "salon": "RH110"
     },
     {
       "campus": "RIO HONDO",
@@ -1785,7 +1785,7 @@
       "grupo": "001",
       "horario": "14:00-15:30",
       "nombre": "COMMUNICATION IN SPANISH I",
-      "profesor": "EMILIO ENRIQUE NAVARRO HERNANDEZ",
+      "profesor": "JOSE ANTONIO ZARATE CHAVIRA",
       "salon": "RH204"
     },
     {
@@ -1795,7 +1795,7 @@
       "grupo": "001",
       "horario": "15:30-16:00",
       "nombre": "COMMUNICATION IN SPANISH I",
-      "profesor": "EMILIO ENRIQUE NAVARRO HERNANDEZ",
+      "profesor": "JOSE ANTONIO ZARATE CHAVIRA",
       "salon": "RH204"
     }
   ],
@@ -2609,7 +2609,7 @@
       "grupo": "017",
       "horario": "16:00-17:30",
       "nombre": "RAZONAMIENTO ALGORITMICO",
-      "profesor": "",
+      "profesor": "PAULINA GARZA ALLENDE",
       "salon": "RHCC302"
     },
     {
@@ -2629,8 +2629,8 @@
       "grupo": "019",
       "horario": "13:00-14:30",
       "nombre": "RAZONAMIENTO ALGORITMICO",
-      "profesor": "",
-      "salon": "RHCC201"
+      "profesor": "SILVIA RIOS MAGOS",
+      "salon": "RHCC101"
     }
   ],
   "COM-16307": [
@@ -3624,7 +3624,7 @@
       "horario": "07:00-08:30",
       "nombre": "ESTR. Y CONTROL DE RIESGOS FIN",
       "profesor": "YANIRA ROSALBA PETRIDES JIMENEZ",
-      "salon": "PF104"
+      "salon": "RH110"
     }
   ],
   "CSO-10001": [
@@ -4844,7 +4844,7 @@
       "horario": "07:00-09:00",
       "nombre": "TALLER DISERT JURID CONSTIT. I",
       "profesor": "",
-      "salon": "RH102"
+      "salon": "RH301"
     }
   ],
   "DER-11111": [
@@ -5002,7 +5002,7 @@
       "horario": "16:00-17:30",
       "nombre": "FILOSOFIA DEL DERECHO",
       "profesor": "RODOLFO DARIO VAZQUEZ CARDOZO",
-      "salon": "RH301"
+      "salon": "RHB-5"
     },
     {
       "campus": "RIO HONDO",
@@ -5012,7 +5012,7 @@
       "horario": "16:00-17:30",
       "nombre": "FILOSOFIA DEL DERECHO",
       "profesor": "JUAN JESUS GARZA ONOFRE",
-      "salon": "RH301"
+      "salon": "RHB-5"
     },
     {
       "campus": "RIO HONDO",
@@ -5201,6 +5201,18 @@
       "salon": "RH309"
     }
   ],
+  "DER-11123": [
+    {
+      "campus": "RIO HONDO",
+      "crn": "3241",
+      "dias": "VI",
+      "grupo": "001",
+      "horario": "12:00-14:00",
+      "nombre": "CONCURSOS INTERNAC. (CLINICA)",
+      "profesor": "HANNAH BIRKENKOTTER",
+      "salon": "RH313"
+    }
+  ],
   "DER-11124": [
     {
       "campus": "RIO HONDO",
@@ -5233,6 +5245,18 @@
       "nombre": "TEORIA DEL DERECHO II",
       "profesor": "PABLO ARIEL RAPETTI",
       "salon": "PF102"
+    }
+  ],
+  "DER-11203": [
+    {
+      "campus": "RIO HONDO",
+      "crn": "3469",
+      "dias": "JU",
+      "grupo": "001",
+      "horario": "11:30-14:30",
+      "nombre": "INVESTIG. Y REDACCION JURIDICA",
+      "profesor": "ROMAIN SYLVAIN JEAN GENIEZ",
+      "salon": "RH201"
     }
   ],
   "DER-11206": [
@@ -5936,7 +5960,7 @@
       "horario": "07:00-08:30",
       "nombre": "DER CONST. I Y SEM DE TEO POL",
       "profesor": "RODRIGO CAMARENA GONZALEZ",
-      "salon": "RH102"
+      "salon": "RH301"
     },
     {
       "campus": "RIO HONDO",
@@ -6858,7 +6882,7 @@
       "horario": "11:30-13:00",
       "nombre": "PRINCIPIOS DE MICROECONOMIA",
       "profesor": "ANTONIO VIVANCO CASAMADRID",
-      "salon": "RH101"
+      "salon": "RH104"
     },
     {
       "campus": "RIO HONDO",
@@ -7060,7 +7084,7 @@
       "horario": "11:30-13:00",
       "nombre": "ECONOMIA, I",
       "profesor": "ANTONIO VIVANCO CASAMADRID",
-      "salon": "RH101"
+      "salon": "RH104"
     },
     {
       "campus": "RIO HONDO",
@@ -7146,7 +7170,7 @@
       "horario": "16:00-17:30",
       "nombre": "MICROECONOMIA AVANZADA I",
       "profesor": "XINYANG WANG",
-      "salon": "RHSA1"
+      "salon": "RH213"
     },
     {
       "campus": "RIO HONDO",
@@ -7156,7 +7180,7 @@
       "horario": "17:30-19:00",
       "nombre": "MICROECONOMIA AVANZADA I",
       "profesor": "XINYANG WANG",
-      "salon": "RHSA1"
+      "salon": "RH213"
     }
   ],
   "ECO-11122": [
@@ -7212,7 +7236,7 @@
       "horario": "11:30-13:00",
       "nombre": "PRINCIPIOS DE MACROECONOMIA",
       "profesor": "CHRISTIANE FABREGA CHIMALI",
-      "salon": "RH104"
+      "salon": "RH101"
     },
     {
       "campus": "RIO HONDO",
@@ -7222,7 +7246,7 @@
       "horario": "10:00-11:30",
       "nombre": "PRINCIPIOS DE MACROECONOMIA",
       "profesor": "SOFIA CORONA VERDUZCO",
-      "salon": "RH106"
+      "salon": "RH113"
     },
     {
       "campus": "RIO HONDO",
@@ -7318,7 +7342,7 @@
       "horario": "11:30-13:00",
       "nombre": "ECONOMIA, II",
       "profesor": "CHRISTIANE FABREGA CHIMALI",
-      "salon": "RH104"
+      "salon": "RH101"
     },
     {
       "campus": "RIO HONDO",
@@ -7328,7 +7352,7 @@
       "horario": "10:00-11:30",
       "nombre": "ECONOMIA, II",
       "profesor": "SOFIA CORONA VERDUZCO",
-      "salon": "RH106"
+      "salon": "RH113"
     },
     {
       "campus": "RIO HONDO",
@@ -8744,7 +8768,7 @@
       "horario": "10:00-11:30",
       "nombre": "POL. Y GOB. DE ESTADOS UNIDOS",
       "profesor": "ANA LUCIA GUERRERO AGUILAR",
-      "salon": "PF106"
+      "salon": "RH106"
     }
   ],
   "EIN-15105": [
@@ -8768,7 +8792,7 @@
       "horario": "10:00-11:30",
       "nombre": "PROCESO POL. EN E.U.A.:DIMENS.",
       "profesor": "ANA LUCIA GUERRERO AGUILAR",
-      "salon": "PF106"
+      "salon": "RH106"
     }
   ],
   "EIN-16402": [
@@ -8990,7 +9014,7 @@
       "horario": "07:00-09:00",
       "nombre": "PROBABILIDAD",
       "profesor": "MIGUEL ANGEL MENDEZ ANTONIO",
-      "salon": "RH311"
+      "salon": "RHSA1"
     }
   ],
   "EST-11102": [
@@ -9216,7 +9240,7 @@
       "horario": "10:00-11:30",
       "nombre": "CALCULO DE PROBABILIDADES.,II",
       "profesor": "ERICK MIER MORENO",
-      "salon": "RH306"
+      "salon": "RH102"
     }
   ],
   "EST-14103": [
@@ -10941,7 +10965,7 @@
       "grupo": "001",
       "horario": "07:00-08:00",
       "nombre": "COMUNIC. PROFESIONAL PARA ECON",
-      "profesor": "MARIA LUISA DIAZ DE LEON RASCON",
+      "profesor": "OCTAVIO ORTEGA VELIO MEJIA",
       "salon": "RH201"
     },
     {
@@ -11686,7 +11710,7 @@
       "horario": "12:00-14:00",
       "nombre": "PRINCIPIOS DE ALGEBRA LINEAL",
       "profesor": "IRMA BEATRIZ RUMBOS PELLICER",
-      "salon": "RH307"
+      "salon": "RH303"
     },
     {
       "campus": "RIO HONDO",
@@ -12235,7 +12259,17 @@
     {
       "campus": "RIO HONDO",
       "crn": "2387",
-      "dias": "MA JU",
+      "dias": "JU",
+      "grupo": "001",
+      "horario": "16:00-18:00",
+      "nombre": "MATEMATICA COMPUTACIONAL",
+      "profesor": "ZEFERINO PARADA GARCIA",
+      "salon": "RHCC302"
+    },
+    {
+      "campus": "RIO HONDO",
+      "crn": "2387",
+      "dias": "MA",
       "grupo": "001",
       "horario": "16:00-18:00",
       "nombre": "MATEMATICA COMPUTACIONAL",
@@ -12457,7 +12491,17 @@
     {
       "campus": "RIO HONDO",
       "crn": "2400",
-      "dias": "MA JU",
+      "dias": "JU",
+      "grupo": "001",
+      "horario": "16:00-18:00",
+      "nombre": "ANALISIS NUMERICO I",
+      "profesor": "ZEFERINO PARADA GARCIA",
+      "salon": "RHCC302"
+    },
+    {
+      "campus": "RIO HONDO",
+      "crn": "2400",
+      "dias": "MA",
       "grupo": "001",
       "horario": "16:00-18:00",
       "nombre": "ANALISIS NUMERICO I",
@@ -12642,7 +12686,7 @@
       "horario": "17:30-19:30",
       "nombre": "ELEMENTOS DE ELECTRONICA",
       "profesor": "RAFAEL CISNEROS MONTOYA",
-      "salon": "RH205"
+      "salon": "PF108"
     },
     {
       "campus": "RIO HONDO",
@@ -12664,7 +12708,7 @@
       "horario": "16:00-18:00",
       "nombre": "CIRCUITOS LOGICOS",
       "profesor": "MARIO ANDRES AGUILAR ORDUÑA",
-      "salon": "RHLI2"
+      "salon": "RH301"
     },
     {
       "campus": "RIO HONDO",
