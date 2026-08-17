@@ -930,7 +930,7 @@
       "horario": "17:30-19:00",
       "nombre": "FINANZAS.,III",
       "profesor": "MARIA DE LAS MERCEDES ADAMUZ PEÑA",
-      "salon": "RH212"
+      "salon": "RH104"
     }
   ],
   "ADM-15507": [
@@ -1204,7 +1204,7 @@
       "horario": "08:30-10:00",
       "nombre": "INTRO A FINA E INTERMED FINANC",
       "profesor": "FRANCISCO PEREZ GONZALEZ",
-      "salon": "RH"
+      "salon": "RH212"
     },
     {
       "campus": "RIO HONDO",
@@ -1214,7 +1214,7 @@
       "horario": "08:30-10:00",
       "nombre": "INTRO A FINA E INTERMED FINANC",
       "profesor": "JANKO HERNANDEZ CORTES",
-      "salon": "RH"
+      "salon": "RH212"
     },
     {
       "campus": "RIO HONDO",
@@ -1524,7 +1524,7 @@
       "horario": "17:30-19:00",
       "nombre": "INGENIERIA FINANCIERA",
       "profesor": "MARIA DE LAS MERCEDES ADAMUZ PEÑA",
-      "salon": "RH212"
+      "salon": "RH104"
     }
   ],
   "ADM-15610": [
@@ -1638,7 +1638,7 @@
       "horario": "17:30-19:00",
       "nombre": "MERCADOTECNIA.,III",
       "profesor": "CECILIA MARIA ORTIZ AHLF",
-      "salon": "RHB-5"
+      "salon": "RH212"
     }
   ],
   "ADM-16608": [
@@ -1694,7 +1694,7 @@
       "horario": "17:30-19:00",
       "nombre": "MODELOS DE MERCADOTECNIA",
       "profesor": "CECILIA MARIA ORTIZ AHLF",
-      "salon": "RHB-5"
+      "salon": "RH212"
     }
   ],
   "ADM-16731": [
@@ -1740,7 +1740,7 @@
       "horario": "17:30-19:00",
       "nombre": "ADMON ESTRATEGICA DE MARCAS",
       "profesor": "CECILIA MARIA ORTIZ AHLF",
-      "salon": "RHB-5"
+      "salon": "RH212"
     }
   ],
   "ADM-16736": [
@@ -2047,6 +2047,18 @@
       "nombre": "ALGORITMICA Y PROGRAMACION",
       "profesor": "LETICIA RENTERIA FERRAN",
       "salon": "RHCC102"
+    }
+  ],
+  "COM-11304": [
+    {
+      "campus": "",
+      "crn": "3477",
+      "dias": "LU",
+      "grupo": "001",
+      "horario": "18:00-21:00",
+      "nombre": "PROGRAMACION AVANZADA",
+      "profesor": "JUAN SALVADOR MARMOL YAHYA",
+      "salon": ""
     }
   ],
   "COM-11308": [
@@ -2791,6 +2803,16 @@
       "nombre": "MINERIA DE DATOS",
       "profesor": "SAUL CABALLERO RAMIREZ",
       "salon": "RHCC102"
+    },
+    {
+      "campus": "",
+      "crn": "3478",
+      "dias": "JU",
+      "grupo": "002",
+      "horario": "18:00-21:00",
+      "nombre": "MINERIA DE DATOS",
+      "profesor": "EDGAR FRANCISCO ROMAN RANGEL",
+      "salon": ""
     }
   ],
   "COM-23114": [
@@ -7499,6 +7521,16 @@
       "nombre": "MACROECONOMIA AVANZADA",
       "profesor": "JORGE JESUS ALONSO ORTIZ",
       "salon": "RH103"
+    },
+    {
+      "campus": "RIO HONDO",
+      "crn": "3480",
+      "dias": "MA",
+      "grupo": "003",
+      "horario": "19:00-22:00",
+      "nombre": "MACROECONOMIA AVANZADA",
+      "profesor": "RAFAEL GUERRA CABRERA",
+      "salon": "RHCUBIC"
     }
   ],
   "ECO-12126": [
@@ -9467,6 +9499,16 @@
       "nombre": "SIMULACION",
       "profesor": "JORGE FRANCISCO DE LA VEGA GONGORA",
       "salon": "RH109"
+    },
+    {
+      "campus": "RIO HONDO",
+      "crn": "3479",
+      "dias": "VI",
+      "grupo": "002",
+      "horario": "07:00-10:00",
+      "nombre": "SIMULACION",
+      "profesor": "JORGE FRANCISCO DE LA VEGA GONGORA",
+      "salon": "PF102"
     }
   ],
   "EST-24112": [
@@ -9877,22 +9919,22 @@
     {
       "campus": "RIO HONDO",
       "crn": "3446",
-      "dias": "VI",
-      "grupo": "002",
-      "horario": "16:00-19:00",
-      "nombre": "FUNDAMENTOS DE QUIMICA",
-      "profesor": "GRACIELA GUADALUPE DEL CARMEN DIAZ ARGOMEDO",
-      "salon": "RHLQUIM"
-    },
-    {
-      "campus": "RIO HONDO",
-      "crn": "3446",
       "dias": "MA JU",
       "grupo": "002",
       "horario": "16:00-18:00",
       "nombre": "FUNDAMENTOS DE QUIMICA",
       "profesor": "JOSE MANUEL HERNANDEZ SOTO",
       "salon": "RH310"
+    },
+    {
+      "campus": "RIO HONDO",
+      "crn": "3446",
+      "dias": "VI",
+      "grupo": "002",
+      "horario": "16:00-19:00",
+      "nombre": "FUNDAMENTOS DE QUIMICA",
+      "profesor": "GRACIELA GUADALUPE DEL CARMEN DIAZ ARGOMEDO",
+      "salon": "RHLQUIM"
     }
   ],
   "IIO-15132": [
