@@ -118,7 +118,7 @@
       "horario": "08:30-10:00",
       "nombre": "ESTAD. APLICADA A LA ACTUARIA",
       "profesor": "MARIA MERCEDES GREGORIO DOMINGUEZ",
-      "salon": "RHPB3"
+      "salon": "RH313"
     }
   ],
   "ACT-15352": [
@@ -8834,7 +8834,7 @@
       "horario": "13:00-14:30",
       "nombre": "INT. A LAS R. INTERNACIONALES",
       "profesor": "ISABEL FLORES ALCAZAR",
-      "salon": "PF106"
+      "salon": "RH208"
     },
     {
       "campus": "RIO HONDO",
@@ -8964,7 +8964,7 @@
       "horario": "11:30-13:00",
       "nombre": "RELACIONES MEXICO-E.U.A.-CANAD",
       "profesor": "ATHANASIOS  HRISTOULAS",
-      "salon": "PF106"
+      "salon": "RH"
     }
   ],
   "EIN-17304": [
@@ -9314,7 +9314,7 @@
       "horario": "10:00-11:30",
       "nombre": "CALCULO DE PROBABILIDADES.,I",
       "profesor": "ERICK MIER MORENO",
-      "salon": "RHB-1"
+      "salon": "RHB-5"
     },
     {
       "campus": "RIO HONDO",
@@ -9576,7 +9576,7 @@
       "horario": "10:00-11:30",
       "nombre": "CALCULO DE PROBABILIDADES I",
       "profesor": "ERICK MIER MORENO",
-      "salon": "RHB-1"
+      "salon": "RHB-5"
     },
     {
       "campus": "RIO HONDO",
@@ -10203,7 +10203,7 @@
       "grupo": "008",
       "horario": "12:00-13:00",
       "nombre": "SEM. DE COMUNICACION ESCRITA",
-      "profesor": "",
+      "profesor": "FEDERICO AUGUSTO GUZMAN RUBIO",
       "salon": "RH201"
     }
   ],
