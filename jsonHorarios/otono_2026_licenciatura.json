@@ -10131,7 +10131,67 @@
       "grupo": "001",
       "horario": "17:30-19:00",
       "nombre": "SEMINARIO DE TITULACION",
+      "profesor": "ALFREDO VILLAFRANCA QUINTO",
+      "salon": "RH314"
+    },
+    {
+      "campus": "RIO HONDO",
+      "crn": "2634",
+      "dias": "MA JU",
+      "grupo": "001",
+      "horario": "17:30-19:00",
+      "nombre": "SEMINARIO DE TITULACION",
       "profesor": "MIGUEL FRANCISCO DE LASCURAIN MORHAN",
+      "salon": "RH314"
+    },
+    {
+      "campus": "RIO HONDO",
+      "crn": "2634",
+      "dias": "MA JU",
+      "grupo": "001",
+      "horario": "17:30-19:00",
+      "nombre": "SEMINARIO DE TITULACION",
+      "profesor": "JOSE PANTALEON DOMINGUEZ ESPONDA",
+      "salon": "RH314"
+    },
+    {
+      "campus": "RIO HONDO",
+      "crn": "2634",
+      "dias": "MA JU",
+      "grupo": "001",
+      "horario": "17:30-19:00",
+      "nombre": "SEMINARIO DE TITULACION",
+      "profesor": "JOSE RAFAEL GONZALEZ DIAZ",
+      "salon": "RH314"
+    },
+    {
+      "campus": "RIO HONDO",
+      "crn": "2634",
+      "dias": "MA JU",
+      "grupo": "001",
+      "horario": "17:30-19:00",
+      "nombre": "SEMINARIO DE TITULACION",
+      "profesor": "DAVID MORENO GUINEA",
+      "salon": "RH314"
+    },
+    {
+      "campus": "RIO HONDO",
+      "crn": "2634",
+      "dias": "MA JU",
+      "grupo": "001",
+      "horario": "17:30-19:00",
+      "nombre": "SEMINARIO DE TITULACION",
+      "profesor": "JESUS ALEJANDRO ORDIERES SIERES",
+      "salon": "RH314"
+    },
+    {
+      "campus": "RIO HONDO",
+      "crn": "2634",
+      "dias": "MA JU",
+      "grupo": "001",
+      "horario": "17:30-19:00",
+      "nombre": "SEMINARIO DE TITULACION",
+      "profesor": "GABRIELA HERNANDEZ GARCIA",
       "salon": "RH314"
     }
   ],
@@ -12963,7 +13023,27 @@
       "grupo": "001",
       "horario": "18:00-20:00",
       "nombre": "SEMINARIO DE TITULACION",
+      "profesor": "JOSE PANTALEON DOMINGUEZ ESPONDA",
+      "salon": "RHCC201"
+    },
+    {
+      "campus": "RIO HONDO",
+      "crn": "2755",
+      "dias": "MI",
+      "grupo": "001",
+      "horario": "18:00-20:00",
+      "nombre": "SEMINARIO DE TITULACION",
       "profesor": "SERGIO HERNANDEZ SANCHEZ",
+      "salon": "RHCC201"
+    },
+    {
+      "campus": "RIO HONDO",
+      "crn": "2755",
+      "dias": "MI",
+      "grupo": "001",
+      "horario": "18:00-20:00",
+      "nombre": "SEMINARIO DE TITULACION",
+      "profesor": "JESUS ALEJANDRO ORDIERES SIERES",
       "salon": "RHCC201"
     }
   ],
@@ -13146,7 +13226,7 @@
       "horario": "10:00-11:00",
       "nombre": "DINAMICA DE SISTEMAS PARA NEGO",
       "profesor": "ANTE SALCEDO GONZALEZ",
-      "salon": "RHLI2"
+      "salon": "RH203"
     }
   ],
   "SDI-24810": [
