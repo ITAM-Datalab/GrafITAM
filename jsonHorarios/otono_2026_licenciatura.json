@@ -2325,6 +2325,76 @@
       "nombre": "CCIA DATOS Y TRANSF DE LA SOC",
       "profesor": "CARLOS FERNANDO ESPONDA DARLINGTON",
       "salon": "RH108"
+    },
+    {
+      "campus": "RIO HONDO",
+      "crn": "2978",
+      "dias": "VI",
+      "grupo": "001",
+      "horario": "09:00-11:00",
+      "nombre": "CCIA DATOS Y TRANSF DE LA SOC",
+      "profesor": "CARLOS FERNANDO ESPONDA DARLINGTON",
+      "salon": "RH108"
+    },
+    {
+      "campus": "RIO HONDO",
+      "crn": "2978",
+      "dias": "VI",
+      "grupo": "001",
+      "horario": "09:00-11:00",
+      "nombre": "CCIA DATOS Y TRANSF DE LA SOC",
+      "profesor": "CARLOS FERNANDO ESPONDA DARLINGTON",
+      "salon": "RH108"
+    },
+    {
+      "campus": "RIO HONDO",
+      "crn": "2978",
+      "dias": "VI",
+      "grupo": "001",
+      "horario": "09:00-11:00",
+      "nombre": "CCIA DATOS Y TRANSF DE LA SOC",
+      "profesor": "CARLOS FERNANDO ESPONDA DARLINGTON",
+      "salon": "RH108"
+    },
+    {
+      "campus": "RIO HONDO",
+      "crn": "2978",
+      "dias": "VI",
+      "grupo": "001",
+      "horario": "09:00-11:00",
+      "nombre": "CCIA DATOS Y TRANSF DE LA SOC",
+      "profesor": "CARLOS FERNANDO ESPONDA DARLINGTON",
+      "salon": "RH108"
+    },
+    {
+      "campus": "RIO HONDO",
+      "crn": "2978",
+      "dias": "VI",
+      "grupo": "001",
+      "horario": "09:00-11:00",
+      "nombre": "CCIA DATOS Y TRANSF DE LA SOC",
+      "profesor": "CARLOS FERNANDO ESPONDA DARLINGTON",
+      "salon": "RH108"
+    },
+    {
+      "campus": "RIO HONDO",
+      "crn": "2978",
+      "dias": "VI",
+      "grupo": "001",
+      "horario": "09:00-11:00",
+      "nombre": "CCIA DATOS Y TRANSF DE LA SOC",
+      "profesor": "CARLOS FERNANDO ESPONDA DARLINGTON",
+      "salon": "RH108"
+    },
+    {
+      "campus": "RIO HONDO",
+      "crn": "2978",
+      "dias": "VI",
+      "grupo": "001",
+      "horario": "09:00-11:00",
+      "nombre": "CCIA DATOS Y TRANSF DE LA SOC",
+      "profesor": "CARLOS FERNANDO ESPONDA DARLINGTON",
+      "salon": "RH108"
     }
   ],
   "COM-16301": [
@@ -2400,7 +2470,7 @@
       "horario": "07:00-08:30",
       "nombre": "GESTION DE DATOS",
       "profesor": "CARLOS ANTONIO ZOZAYA GOROSTIZA",
-      "salon": "PF102"
+      "salon": "RHPACE"
     },
     {
       "campus": "RIO HONDO",
@@ -2677,7 +2747,7 @@
       "grupo": "001",
       "horario": "16:00-18:00",
       "nombre": "HERR. COMP. Y PROD. EMPRESAR.",
-      "profesor": "LETICIA RENTERIA FERRAN",
+      "profesor": "TERESITA SOLA TREJO",
       "salon": "RHCC201"
     }
   ],
@@ -8964,7 +9034,7 @@
       "horario": "11:30-13:00",
       "nombre": "RELACIONES MEXICO-E.U.A.-CANAD",
       "profesor": "ATHANASIOS  HRISTOULAS",
-      "salon": "RH"
+      "salon": "RH311"
     }
   ],
   "EIN-17304": [
@@ -10386,7 +10456,7 @@
       "horario": "16:00-17:30",
       "nombre": "ESTRATEGIAS DE COMUNIC ESCRITA",
       "profesor": "NANCY FABIOLA MENDEZ LOPEZ",
-      "salon": "RHASHAK"
+      "salon": "RH104"
     },
     {
       "campus": "RIO HONDO",
@@ -10416,7 +10486,7 @@
       "horario": "10:00-11:30",
       "nombre": "ESTRATEGIAS DE COMUNIC ESCRITA",
       "profesor": "MARIA DE LAS MERCEDES ANTONIA RODRIGUEZ ABASCAL",
-      "salon": "RHASHAK"
+      "salon": "RH309"
     },
     {
       "campus": "RIO HONDO",
@@ -10436,7 +10506,7 @@
       "horario": "13:00-14:30",
       "nombre": "ESTRATEGIAS DE COMUNIC ESCRITA",
       "profesor": "GABRIEL ASTEY WOOD",
-      "salon": "RHASHAK"
+      "salon": "RH211"
     },
     {
       "campus": "RIO HONDO",
@@ -10446,7 +10516,7 @@
       "horario": "16:00-17:30",
       "nombre": "ESTRATEGIAS DE COMUNIC ESCRITA",
       "profesor": "KARINA ESTHELA VILLANUEVA GONZALEZ",
-      "salon": "RHASHAK"
+      "salon": "RH211"
     },
     {
       "campus": "RIO HONDO",
@@ -10466,7 +10536,7 @@
       "horario": "10:00-13:00",
       "nombre": "ESTRATEGIAS DE COMUNIC ESCRITA",
       "profesor": "DANIEL SALAZAR RAMOS",
-      "salon": "RHASHAK"
+      "salon": "RH301"
     },
     {
       "campus": "RIO HONDO",
@@ -10900,7 +10970,7 @@
       "horario": "10:00-11:00",
       "nombre": "COMUNIC. ESCRITA PARA DIR. FIN",
       "profesor": "MARCELA RABADAN GALLARDO",
-      "salon": "RH112"
+      "salon": "RH202"
     },
     {
       "campus": "RIO HONDO",
@@ -10978,7 +11048,7 @@
       "horario": "09:00-10:00",
       "nombre": "COM. ESCRITA CIENCIA DE DATOS",
       "profesor": "DIANA LUCIA ALVAREZ MACIAS",
-      "salon": "RHLI2"
+      "salon": "RHB-5"
     },
     {
       "campus": "RIO HONDO",
@@ -11294,7 +11364,7 @@
       "horario": "19:00-20:00",
       "nombre": "COM. PROFES. PARA ING. EN NEG.",
       "profesor": "CARLOS MIGUEL VALDOVINOS CHAVEZ",
-      "salon": "PF107"
+      "salon": "RH104"
     }
   ],
   "LEN-12767": [
@@ -12914,7 +12984,7 @@
       "horario": "16:00-18:00",
       "nombre": "CIRCUITOS LOGICOS",
       "profesor": "MARIO ANDRES AGUILAR ORDUÑA",
-      "salon": "RHLI2"
+      "salon": "PF108"
     },
     {
       "campus": "RIO HONDO",
@@ -13226,7 +13296,7 @@
       "horario": "10:00-11:00",
       "nombre": "DINAMICA DE SISTEMAS PARA NEGO",
       "profesor": "ANTE SALCEDO GONZALEZ",
-      "salon": "RH203"
+      "salon": "RHLI2"
     }
   ],
   "SDI-24810": [
