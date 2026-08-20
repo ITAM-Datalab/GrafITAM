@@ -46,11 +46,11 @@ export default function ManualTab() {
             selector aparece para elegirla.
           </p>
           <p>
-            Si no recuerdas tu código de programa, usa el botón{' '}
-            <strong className="font-semibold">&quot;Buscar plan&quot;</strong> — cambia a un buscador de texto libre
-            donde puedes escribir el nombre de tu carrera, un área de concentración o tu generación de ingreso (ej.
-            "actuaria", "riesgos financieros" o "2019"). Al elegir un resultado, la vista regresa sola a los
-            selectores con tu plan ya cargado.
+            Al abrir la app verás un buscador de texto libre: escribe el nombre de tu carrera, un área de
+            concentración o tu generación de ingreso (ej. "actuaria", "riesgos financieros" o "2019"). Al elegir un
+            resultado, la vista regresa sola a los selectores con tu plan ya cargado. Si prefieres elegir por
+            programa, generación y área con selectores desde el inicio, usa el botón{' '}
+            <strong className="font-semibold">&quot;Código del plan&quot;</strong>.
           </p>
           <p>La barra de progreso muestra tus créditos aprobados sobre el total del plan.</p>
         </Section>
