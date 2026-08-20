@@ -14,7 +14,7 @@ export default function PlanSelector() {
   const [selectedProgram, setSelectedProgram] = useState(() => activeMeta?.program ?? '')
   const [selectedLetter, setSelectedLetter] = useState(() => activeMeta?.letter ?? '')
   const [selectedArea, setSelectedArea] = useState(() => activeMeta?.area ?? '')
-  const [searchMode, setSearchMode] = useState(false)
+  const [searchMode, setSearchMode] = useState(true)
 
   const loadPlan = useCurriculumStore((s) => s.loadPlan)
   const resetPlan = useCurriculumStore((s) => s.resetPlan)
@@ -171,7 +171,7 @@ export default function PlanSelector() {
             fontWeight: searchMode ? 600 : 400,
           }}
         >
-          {searchMode ? 'Ver selects' : 'Buscar plan'}
+          {searchMode ? 'Código del plan' : 'Buscar plan'}
         </button>
       </div>
 
