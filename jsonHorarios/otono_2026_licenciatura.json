@@ -3695,6 +3695,18 @@
       "salon": "PF108"
     }
   ],
+  "CON-17100": [
+    {
+      "campus": "",
+      "crn": "3481",
+      "dias": "MA JU",
+      "grupo": "003",
+      "horario": "19:00-22:00",
+      "nombre": "SEMINAR. DE INVEST. CONTABLE,I",
+      "profesor": "BENITO REVAH MEYOHAS",
+      "salon": ""
+    }
+  ],
   "CON-17102": [
     {
       "campus": "RIO HONDO",
@@ -4077,7 +4089,7 @@
       "grupo": "001",
       "horario": "08:30-10:00",
       "nombre": "ECONOMIA POLITICA, I",
-      "profesor": "",
+      "profesor": "HORACIO ALEJANDRO LARREGUY ARBESU",
       "salon": "RHSA4"
     }
   ],
@@ -4345,16 +4357,6 @@
       "grupo": "002",
       "horario": "07:00-10:00",
       "nombre": "FUNDAMENTOS JURIDICOS",
-      "profesor": "TANIA GABRIELA RODRIGUEZ HUERTA",
-      "salon": "RHSA1"
-    },
-    {
-      "campus": "RIO HONDO",
-      "crn": "3211",
-      "dias": "VI",
-      "grupo": "002",
-      "horario": "07:00-10:00",
-      "nombre": "FUNDAMENTOS JURIDICOS",
       "profesor": "MARIANA AGUILAR AGUILAR",
       "salon": "RHSA1"
     },
@@ -4366,16 +4368,6 @@
       "horario": "17:30-19:00",
       "nombre": "FUNDAMENTOS JURIDICOS",
       "profesor": "TANIA GABRIELA RODRIGUEZ HUERTA",
-      "salon": "RHB-3"
-    },
-    {
-      "campus": "RIO HONDO",
-      "crn": "3211",
-      "dias": "LU",
-      "grupo": "002",
-      "horario": "17:30-19:00",
-      "nombre": "FUNDAMENTOS JURIDICOS",
-      "profesor": "MARIANA AGUILAR AGUILAR",
       "salon": "RHB-3"
     }
   ],
@@ -4625,16 +4617,6 @@
       "grupo": "001",
       "horario": "07:00-08:30",
       "nombre": "DERECHO PUBLICO",
-      "profesor": "JOYCE CAROL  SADKA",
-      "salon": "RH309"
-    },
-    {
-      "campus": "RIO HONDO",
-      "crn": "3226",
-      "dias": "MA JU",
-      "grupo": "001",
-      "horario": "07:00-08:30",
-      "nombre": "DERECHO PUBLICO",
       "profesor": "LUIS ENRIQUE PEREDA TREJO",
       "salon": "RH309"
     },
@@ -4647,26 +4629,6 @@
       "nombre": "DERECHO PUBLICO",
       "profesor": "JOYCE CAROL  SADKA",
       "salon": "RH309"
-    },
-    {
-      "campus": "RIO HONDO",
-      "crn": "3226",
-      "dias": "MA",
-      "grupo": "001",
-      "horario": "08:30-10:00",
-      "nombre": "DERECHO PUBLICO",
-      "profesor": "LUIS ENRIQUE PEREDA TREJO",
-      "salon": "RH309"
-    },
-    {
-      "campus": "RIO HONDO",
-      "crn": "3227",
-      "dias": "VI",
-      "grupo": "002",
-      "horario": "07:00-10:00",
-      "nombre": "DERECHO PUBLICO",
-      "profesor": "JOYCE CAROL  SADKA",
-      "salon": "RHSA1"
     },
     {
       "campus": "RIO HONDO",
@@ -4686,16 +4648,6 @@
       "horario": "08:30-10:00",
       "nombre": "DERECHO PUBLICO",
       "profesor": "JOYCE CAROL  SADKA",
-      "salon": "RH309"
-    },
-    {
-      "campus": "RIO HONDO",
-      "crn": "3227",
-      "dias": "JU",
-      "grupo": "002",
-      "horario": "08:30-10:00",
-      "nombre": "DERECHO PUBLICO",
-      "profesor": "MARIANA AGUILAR AGUILAR",
       "salon": "RH309"
     }
   ],
@@ -4719,188 +4671,6 @@
       "nombre": "SEM LEG Y ETICA EN CIENC DATOS",
       "profesor": "JOSE LUIS HERNANDEZ SANCHEZ",
       "salon": "RHSA2"
-    }
-  ],
-  "DER-11101": [
-    {
-      "campus": "RIO HONDO",
-      "crn": "2889",
-      "dias": "LU MI",
-      "grupo": "001",
-      "horario": "12:30-14:00",
-      "nombre": "TEORIA DEL DERECHO, I",
-      "profesor": "ALBERTO PUPPO",
-      "salon": "RH309"
-    },
-    {
-      "campus": "RIO HONDO",
-      "crn": "2889",
-      "dias": "MA JU",
-      "grupo": "001",
-      "horario": "08:30-10:00",
-      "nombre": "TEORIA DEL DERECHO, I",
-      "profesor": "ALBERTO PUPPO",
-      "salon": "RH102"
-    },
-    {
-      "campus": "RIO HONDO",
-      "crn": "2889",
-      "dias": "VI",
-      "grupo": "001",
-      "horario": "19:30-20:00",
-      "nombre": "TEORIA DEL DERECHO, I",
-      "profesor": "ALBERTO PUPPO",
-      "salon": "PF102"
-    },
-    {
-      "campus": "RIO HONDO",
-      "crn": "2890",
-      "dias": "MA JU",
-      "grupo": "002",
-      "horario": "13:00-14:30",
-      "nombre": "TEORIA DEL DERECHO, I",
-      "profesor": "PABLO ARIEL RAPETTI",
-      "salon": "RH315"
-    },
-    {
-      "campus": "RIO HONDO",
-      "crn": "2890",
-      "dias": "VI",
-      "grupo": "002",
-      "horario": "19:30-20:00",
-      "nombre": "TEORIA DEL DERECHO, I",
-      "profesor": "ALBERTO PUPPO",
-      "salon": "PF102"
-    },
-    {
-      "campus": "RIO HONDO",
-      "crn": "2890",
-      "dias": "MA JU",
-      "grupo": "002",
-      "horario": "13:00-14:30",
-      "nombre": "TEORIA DEL DERECHO, I",
-      "profesor": "ALBERTO PUPPO",
-      "salon": "RH315"
-    },
-    {
-      "campus": "RIO HONDO",
-      "crn": "2890",
-      "dias": "MA JU",
-      "grupo": "002",
-      "horario": "08:30-10:00",
-      "nombre": "TEORIA DEL DERECHO, I",
-      "profesor": "PABLO ARIEL RAPETTI",
-      "salon": "RHB-3"
-    },
-    {
-      "campus": "RIO HONDO",
-      "crn": "2890",
-      "dias": "MA JU",
-      "grupo": "002",
-      "horario": "08:30-10:00",
-      "nombre": "TEORIA DEL DERECHO, I",
-      "profesor": "ALBERTO PUPPO",
-      "salon": "RHB-3"
-    },
-    {
-      "campus": "RIO HONDO",
-      "crn": "2890",
-      "dias": "VI",
-      "grupo": "002",
-      "horario": "19:30-20:00",
-      "nombre": "TEORIA DEL DERECHO, I",
-      "profesor": "PABLO ARIEL RAPETTI",
-      "salon": "PF102"
-    },
-    {
-      "campus": "RIO HONDO",
-      "crn": "2891",
-      "dias": "MA JU",
-      "grupo": "003",
-      "horario": "13:00-14:30",
-      "nombre": "TEORIA DEL DERECHO, I",
-      "profesor": "ALBERTO PUPPO",
-      "salon": "RH315"
-    },
-    {
-      "campus": "RIO HONDO",
-      "crn": "2891",
-      "dias": "MA JU",
-      "grupo": "003",
-      "horario": "08:30-10:00",
-      "nombre": "TEORIA DEL DERECHO, I",
-      "profesor": "ALBERTO PUPPO",
-      "salon": "RH102"
-    },
-    {
-      "campus": "RIO HONDO",
-      "crn": "2891",
-      "dias": "VI",
-      "grupo": "003",
-      "horario": "19:30-20:00",
-      "nombre": "TEORIA DEL DERECHO, I",
-      "profesor": "ALBERTO PUPPO",
-      "salon": "PF102"
-    },
-    {
-      "campus": "RIO HONDO",
-      "crn": "2892",
-      "dias": "LU MI",
-      "grupo": "004",
-      "horario": "12:30-14:00",
-      "nombre": "TEORIA DEL DERECHO, I",
-      "profesor": "PABLO ARIEL RAPETTI",
-      "salon": "RH309"
-    },
-    {
-      "campus": "RIO HONDO",
-      "crn": "2892",
-      "dias": "VI",
-      "grupo": "004",
-      "horario": "19:30-20:00",
-      "nombre": "TEORIA DEL DERECHO, I",
-      "profesor": "ALBERTO PUPPO",
-      "salon": "PF102"
-    },
-    {
-      "campus": "RIO HONDO",
-      "crn": "2892",
-      "dias": "LU MI",
-      "grupo": "004",
-      "horario": "12:30-14:00",
-      "nombre": "TEORIA DEL DERECHO, I",
-      "profesor": "ALBERTO PUPPO",
-      "salon": "RH309"
-    },
-    {
-      "campus": "RIO HONDO",
-      "crn": "2892",
-      "dias": "VI",
-      "grupo": "004",
-      "horario": "19:30-20:00",
-      "nombre": "TEORIA DEL DERECHO, I",
-      "profesor": "PABLO ARIEL RAPETTI",
-      "salon": "PF102"
-    },
-    {
-      "campus": "RIO HONDO",
-      "crn": "2892",
-      "dias": "MA JU",
-      "grupo": "004",
-      "horario": "08:30-10:00",
-      "nombre": "TEORIA DEL DERECHO, I",
-      "profesor": "ALBERTO PUPPO",
-      "salon": "RHB-3"
-    },
-    {
-      "campus": "RIO HONDO",
-      "crn": "2892",
-      "dias": "MA JU",
-      "grupo": "004",
-      "horario": "08:30-10:00",
-      "nombre": "TEORIA DEL DERECHO, I",
-      "profesor": "PABLO ARIEL RAPETTI",
-      "salon": "RHB-3"
     }
   ],
   "DER-11107": [
@@ -5301,18 +5071,6 @@
       "grupo": "001",
       "horario": "12:00-14:00",
       "nombre": "CONCURSOS INTERNAC. (CLINICA)",
-      "profesor": "HANNAH BIRKENKOTTER",
-      "salon": "RH313"
-    }
-  ],
-  "DER-11124": [
-    {
-      "campus": "RIO HONDO",
-      "crn": "3362",
-      "dias": "VI",
-      "grupo": "001",
-      "horario": "12:00-14:00",
-      "nombre": "CONCURSOS INTERNACIONALES II",
       "profesor": "HANNAH BIRKENKOTTER",
       "salon": "RHCUBIC"
     }
