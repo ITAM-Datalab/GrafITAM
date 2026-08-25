@@ -2051,14 +2051,14 @@
   ],
   "COM-11304": [
     {
-      "campus": "",
+      "campus": "RIO HONDO",
       "crn": "3477",
       "dias": "LU",
       "grupo": "001",
       "horario": "18:00-21:00",
       "nombre": "PROGRAMACION AVANZADA",
       "profesor": "JUAN SALVADOR MARMOL YAHYA",
-      "salon": ""
+      "salon": "RHCUBIC"
     }
   ],
   "COM-11308": [
@@ -3134,7 +3134,7 @@
       "horario": "07:00-10:00",
       "nombre": "ANAL. FINANCIERO DE LA EMPRESA",
       "profesor": "VICTOR MANUEL FERNANDEZ GONZALEZ ANGULO",
-      "salon": "RHB-5"
+      "salon": "RH212"
     }
   ],
   "CON-10011": [
@@ -4980,7 +4980,7 @@
       "horario": "08:30-10:00",
       "nombre": "TEORÍA DEL DERECHO I",
       "profesor": "PABLO ARIEL RAPETTI",
-      "salon": "RHB-3"
+      "salon": "RH305"
     },
     {
       "campus": "RIO HONDO",
@@ -4990,7 +4990,7 @@
       "horario": "08:30-10:00",
       "nombre": "TEORÍA DEL DERECHO I",
       "profesor": "ALBERTO PUPPO",
-      "salon": "RHB-3"
+      "salon": "RH305"
     },
     {
       "campus": "RIO HONDO",
@@ -5030,7 +5030,7 @@
       "horario": "08:30-10:00",
       "nombre": "TEORÍA DEL DERECHO I",
       "profesor": "ALBERTO PUPPO",
-      "salon": "RHB-3"
+      "salon": "RH305"
     },
     {
       "campus": "RIO HONDO",
@@ -5040,7 +5040,7 @@
       "horario": "08:30-10:00",
       "nombre": "TEORÍA DEL DERECHO I",
       "profesor": "PABLO ARIEL RAPETTI",
-      "salon": "RHB-3"
+      "salon": "RH305"
     },
     {
       "campus": "RIO HONDO",
@@ -5084,7 +5084,7 @@
       "horario": "10:00-11:30",
       "nombre": "TEORIA DEL DERECHO II",
       "profesor": "PABLO ARIEL RAPETTI",
-      "salon": "RHB-3"
+      "salon": "RH306"
     },
     {
       "campus": "RIO HONDO",
@@ -5118,7 +5118,7 @@
       "horario": "10:00-11:30",
       "nombre": "TEORÍA DEL DERECHO II",
       "profesor": "PABLO ARIEL RAPETTI",
-      "salon": "RHB-3"
+      "salon": "RH306"
     }
   ],
   "DER-11207": [
@@ -5210,7 +5210,7 @@
       "horario": "17:00-19:00",
       "nombre": "ETICA DE LA PROFESION JURIDICA",
       "profesor": "ANA MARIA ZORRILLA NORIEGA",
-      "salon": "PF108"
+      "salon": "RH303"
     }
   ],
   "DER-12103": [
@@ -5222,7 +5222,7 @@
       "horario": "11:30-13:00",
       "nombre": "HISTORIA DEL DERECHO",
       "profesor": "JULIO ANTONIO RIOS FIGUEROA",
-      "salon": "RHB-1"
+      "salon": "RH307"
     },
     {
       "campus": "RIO HONDO",
@@ -5254,7 +5254,7 @@
       "horario": "11:30-13:00",
       "nombre": "HISTORIA DEL DERECHO MEXICANO",
       "profesor": "JULIO ANTONIO RIOS FIGUEROA",
-      "salon": "RHB-1"
+      "salon": "RH307"
     }
   ],
   "DER-12204": [
@@ -5346,7 +5346,7 @@
       "horario": "07:00-08:30",
       "nombre": "BIENES Y DERECHOS REALES",
       "profesor": "IRVIN ARTURO CASTILLO CESAREO",
-      "salon": "RHB-4"
+      "salon": "RH303"
     }
   ],
   "DER-13201": [
@@ -5392,7 +5392,7 @@
       "horario": "07:00-08:30",
       "nombre": "BIENES Y DERECHOS REALES",
       "profesor": "IRVIN ARTURO CASTILLO CESAREO",
-      "salon": "RHB-4"
+      "salon": "RH303"
     }
   ],
   "DER-13403": [
@@ -6156,7 +6156,7 @@
       "horario": "20:00-22:00",
       "nombre": "LAB. DERECHO PRIVADO (CLINICA)",
       "profesor": "SEBASTIAN FERNANDEZ ALONSO MARQUEZ",
-      "salon": "RHB-3"
+      "salon": "RH304"
     }
   ],
   "DER-17047": [
@@ -8958,7 +8958,7 @@
       "horario": "19:00-21:00",
       "nombre": "PROBABILIDAD",
       "profesor": "HUGO CUEVAS BRAVO",
-      "salon": "RHB-2"
+      "salon": "RH212"
     },
     {
       "campus": "RIO HONDO",
@@ -12720,7 +12720,7 @@
       "horario": "17:30-19:30",
       "nombre": "ELEMENTOS DE ELECTRONICA",
       "profesor": "RAFAEL CISNEROS MONTOYA",
-      "salon": "RH205"
+      "salon": "PF108"
     },
     {
       "campus": "RIO HONDO",
@@ -12742,7 +12742,7 @@
       "horario": "16:00-18:00",
       "nombre": "CIRCUITOS LOGICOS",
       "profesor": "MARIO ANDRES AGUILAR ORDUÑA",
-      "salon": "PF108"
+      "salon": "RH304"
     },
     {
       "campus": "RIO HONDO",
