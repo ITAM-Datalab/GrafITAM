@@ -5,3 +5,8 @@ dist/
 /2025_01/
 __pycache__/
 diagnostic.py
+.venv/
+.ipynb_checkpoints/
+/planes.pkl
+/prerrequisitosMega.pkl
+/jsonPEs_pickles/
