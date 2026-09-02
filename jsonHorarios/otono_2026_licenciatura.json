@@ -2105,18 +2105,6 @@
       "salon": "RHCC201"
     }
   ],
-  "COM-11500": [
-    {
-      "campus": "RIO HONDO",
-      "crn": "3376",
-      "dias": "MA JU",
-      "grupo": "001",
-      "horario": "11:30-13:00",
-      "nombre": "CIENCIA DE DATOS PRACTICA",
-      "profesor": "ANA EUGENIA DIAZ ROSIÑOL",
-      "salon": "RH210"
-    }
-  ],
   "COM-12101": [
     {
       "campus": "RIO HONDO",
@@ -8708,7 +8696,7 @@
       "horario": "16:00-17:30",
       "nombre": "TEORIA DE LAS REL. INT.",
       "profesor": "RODRIGO CHACON AGUIRRE",
-      "salon": "RH303"
+      "salon": "RH205"
     }
   ],
   "EIN-14303": [
@@ -8838,7 +8826,7 @@
       "horario": "16:00-19:00",
       "nombre": "MEDIO ORIENTE",
       "profesor": "ANGEL/RABIH RAYES EL-KANTAR",
-      "salon": "PF106"
+      "salon": "RHPB3"
     }
   ],
   "EIN-19555": [
