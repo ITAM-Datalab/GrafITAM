@@ -1572,7 +1572,7 @@
       "horario": "19:00-22:00",
       "nombre": "SEMINARIO TIT",
       "profesor": "FERNANDO DIEGO PEREZ CERVANTES",
-      "salon": "PF103"
+      "salon": "PF102"
     }
   ],
   "ADM-16601": [
@@ -4193,6 +4193,18 @@
       "grupo": "001",
       "horario": "17:30-19:00",
       "nombre": "SEMINARIO DE INV. POLITICA  A",
+      "profesor": "ADRIAN LUCARDI",
+      "salon": "RH309"
+    }
+  ],
+  "CSO-19086": [
+    {
+      "campus": "RIO HONDO",
+      "crn": "3490",
+      "dias": "MA JU",
+      "grupo": "001",
+      "horario": "17:30-19:00",
+      "nombre": "SEMINARIO DE INV. POLITICA F",
       "profesor": "ADRIAN LUCARDI",
       "salon": "RH309"
     }
@@ -10852,7 +10864,7 @@
       "horario": "18:00-19:00",
       "nombre": "COM ESCR  ING MECATR Y ROBOTIC",
       "profesor": "JESUS ADRIAN FERNANDEZ REYES",
-      "salon": "PF102"
+      "salon": "RH110"
     }
   ],
   "LEN-12733": [
