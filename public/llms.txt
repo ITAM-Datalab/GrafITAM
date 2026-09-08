@@ -1,0 +1,20 @@
+# GrafItam
+
+> Visualizador interactivo de los planes de estudio (mapas curriculares) del Instituto Tecnológico Autónomo de México (ITAM), basado en grafos DAG.
+
+GrafItam permite a estudiantes y aspirantes del ITAM explorar el grafo completo de materias de cualquier programa de licenciatura y generación, incluyendo prerrequisitos (dependencias entre materias) y correquisitos (materias que deben cursarse juntas). Los usuarios pueden marcar materias como aprobadas o planeadas para futuros semestres, con detección automática de inconsistencias (por ejemplo, una materia planeada antes de cumplir sus prerrequisitos).
+
+## Funcionalidad principal
+
+- Selección de programa (carrera), generación (plan de estudios por año) y área de concentración cuando aplica.
+- Grafo visual de materias con aristas dirigidas para prerrequisitos y líneas para correquisitos.
+- Seguimiento de progreso: créditos aprobados sobre el total del plan.
+- Pestaña "Planear Horario": importa horarios y grupos (CRN) reales del sistema ITACA del ITAM y arma un horario semanal sin traslapes para las materias planeadas.
+
+## Cobertura
+
+Cubre los planes de estudio vigentes de licenciatura del ITAM (más de 80 programas, incluyendo variantes por generación y área de concentración), generados a partir de los PDFs oficiales publicados por el ITAM.
+
+## Enlace
+
+https://BraulioLoz.github.io/GrafITAM/
