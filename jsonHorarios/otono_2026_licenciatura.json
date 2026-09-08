@@ -4274,7 +4274,7 @@
       "horario": "07:00-08:30",
       "nombre": "REGIMEN LABORAL MEXICANO",
       "profesor": "JOSE LUIS CABALLERO RODRIGUEZ",
-      "salon": "RHB-3"
+      "salon": "RH212"
     },
     {
       "campus": "RIO HONDO",
@@ -4718,7 +4718,7 @@
       "horario": "11:30-13:00",
       "nombre": "HABILIDADES JURID. GLOBALES I",
       "profesor": "AMRITA BAHRI",
-      "salon": "RHSA2"
+      "salon": "RH310"
     }
   ],
   "DER-11112": [
@@ -5220,7 +5220,7 @@
       "horario": "13:00-14:30",
       "nombre": "HISTORIA DEL DERECHO",
       "profesor": "RAYMUNDO GAMA LEYVA",
-      "salon": "RH102"
+      "salon": "RH313"
     },
     {
       "campus": "RIO HONDO",
@@ -5582,7 +5582,7 @@
       "horario": "17:30-19:00",
       "nombre": "DERECHO PROCESAL PENAL",
       "profesor": "SONIA LILIA RODRIGUEZ ZETINA",
-      "salon": "RH111"
+      "salon": "RH207"
     },
     {
       "campus": "RIO HONDO",
@@ -5604,7 +5604,7 @@
       "horario": "17:30-19:00",
       "nombre": "DERECHO PROCESAL PENAL",
       "profesor": "SONIA LILIA RODRIGUEZ ZETINA",
-      "salon": "RH111"
+      "salon": "RH207"
     }
   ],
   "DER-14607": [
@@ -6192,7 +6192,7 @@
       "horario": "07:00-08:30",
       "nombre": "DERECHO ADMINISTRATIVO II",
       "profesor": "NATALIA REYES HEROLES SCHARRER",
-      "salon": "RH313"
+      "salon": "RH317"
     },
     {
       "campus": "RIO HONDO",
@@ -6202,7 +6202,7 @@
       "horario": "07:00-08:30",
       "nombre": "DERECHO ADMINISTRATIVO II",
       "profesor": "JOSE OMAR HERNANDEZ SALGADO",
-      "salon": "RH313"
+      "salon": "RH317"
     }
   ],
   "DER-17703": [
@@ -6224,7 +6224,7 @@
       "horario": "19:00-21:00",
       "nombre": "DERECHO FISCAL I",
       "profesor": "FERNANDO BUENO AJA",
-      "salon": "RH310"
+      "salon": "RH107"
     }
   ],
   "DER-17804": [
@@ -6270,7 +6270,7 @@
       "horario": "19:00-20:30",
       "nombre": "DERECHO FISCAL I",
       "profesor": "FERNANDO BUENO AJA",
-      "salon": "RH310"
+      "salon": "RH107"
     }
   ],
   "DER-18044": [
@@ -6374,7 +6374,7 @@
       "horario": "07:00-08:30",
       "nombre": "DERECHO LABORAL I",
       "profesor": "JOSE LUIS CABALLERO RODRIGUEZ",
-      "salon": "RHB-3"
+      "salon": "RH212"
     },
     {
       "campus": "RIO HONDO",
