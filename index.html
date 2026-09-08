@@ -3,10 +3,73 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>GrafItam</title>
+    <title>GrafItam — Visualizador de Planes de Estudio del ITAM</title>
+    <meta
+      name="description"
+      content="Visualizador interactivo de los planes de estudio del ITAM: explora el grafo de materias, prerrequisitos y correquisitos de cualquier carrera y generación, marca tus materias aprobadas y planea tus próximos semestres. Incluye armado de horario sin traslapes con datos reales de ITACA."
+    />
+    <meta
+      name="keywords"
+      content="ITAM, planes de estudio, mapa curricular, materias ITAM, prerrequisitos, correquisitos, generación, carreras ITAM, licenciatura ITAM, horario ITAM, ITACA"
+    />
+    <link rel="canonical" href="https://BraulioLoz.github.io/GrafITAM/" />
+    <meta name="theme-color" content="#1A0F0A" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="GrafItam — Visualizador de Planes de Estudio del ITAM" />
+    <meta
+      property="og:description"
+      content="Explora el grafo de materias, prerrequisitos y correquisitos de cualquier carrera y generación del ITAM, marca tus materias aprobadas y planea tus próximos semestres."
+    />
+    <meta property="og:url" content="https://BraulioLoz.github.io/GrafITAM/" />
+    <meta property="og:locale" content="es_MX" />
+    <meta property="og:site_name" content="GrafItam" />
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="GrafItam — Visualizador de Planes de Estudio del ITAM" />
+    <meta
+      name="twitter:description"
+      content="Explora el grafo de materias, prerrequisitos y correquisitos de cualquier carrera y generación del ITAM, marca tus materias aprobadas y planea tus próximos semestres."
+    />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "GrafItam",
+        "url": "https://BraulioLoz.github.io/GrafITAM/",
+        "description": "Visualizador interactivo de los planes de estudio del ITAM basado en grafos DAG: muestra materias, prerrequisitos y correquisitos de cualquier carrera y generación, permite marcar materias aprobadas o planeadas y armar horario sin traslapes con datos reales de ITACA.",
+        "applicationCategory": "EducationalApplication",
+        "operatingSystem": "Any (navegador web)",
+        "inLanguage": "es-MX",
+        "isAccessibleForFree": true,
+        "about": {
+          "@type": "CollegeOrUniversity",
+          "name": "Instituto Tecnológico Autónomo de México (ITAM)"
+        }
+      }
+    </script>
   </head>
   <body>
     <div id="root"></div>
+
+    <noscript>
+      <div style="font-family: system-ui, sans-serif; max-width: 640px; margin: 40px auto; padding: 0 16px; color: #1a0f0a;">
+        <h1>GrafItam — Visualizador de Planes de Estudio del ITAM</h1>
+        <p>
+          GrafItam es un visualizador interactivo de los planes de estudio del Instituto Tecnológico
+          Autónomo de México (ITAM), basado en grafos de materias (DAG). Muestra las materias de
+          cualquier carrera y generación, sus prerrequisitos y correquisitos, permite marcar materias
+          como aprobadas o planeadas para futuros semestres, y detecta inconsistencias en la
+          planeación (materias planeadas antes de cumplir sus prerrequisitos).
+        </p>
+        <p>
+          Incluye una pestaña "Planear Horario" para importar horarios y grupos (CRN) reales del
+          sistema ITACA del ITAM y armar un horario semanal sin traslapes.
+        </p>
+        <p>Esta aplicación requiere JavaScript para funcionar. Actívalo en tu navegador para usar el grafo interactivo.</p>
+      </div>
+    </noscript>
 
     <!-- ============================================================
          INSTRUMENTACIÓN TEMPORAL DE DIAGNÓSTICO — pantalla en blanco iOS Safari.
