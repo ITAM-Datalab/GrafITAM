@@ -7793,6 +7793,18 @@
       "salon": "RH113"
     }
   ],
+  "ECO-21112": [
+    {
+      "campus": "RIO HONDO",
+      "crn": "3411",
+      "dias": "LU MI",
+      "grupo": "001",
+      "horario": "18:00-19:30",
+      "nombre": "EQUILIBRIO GENERAL",
+      "profesor": "ANDREY  GOMBERG",
+      "salon": "RH108"
+    }
+  ],
   "ECO-21113": [
     {
       "campus": "RIO HONDO",
