@@ -4063,9 +4063,9 @@
     {
       "campus": "RIO HONDO",
       "crn": "3055",
-      "dias": "LU MI",
+      "dias": "VI",
       "grupo": "001",
-      "horario": "10:00-11:30",
+      "horario": "08:30-10:00",
       "nombre": "ECONOMIA POLITICA, I",
       "profesor": "HORACIO ALEJANDRO LARREGUY ARBESU",
       "salon": "RHSA4"
@@ -4073,9 +4073,9 @@
     {
       "campus": "RIO HONDO",
       "crn": "3055",
-      "dias": "VI",
+      "dias": "LU MI",
       "grupo": "001",
-      "horario": "08:30-10:00",
+      "horario": "10:00-11:30",
       "nombre": "ECONOMIA POLITICA, I",
       "profesor": "HORACIO ALEJANDRO LARREGUY ARBESU",
       "salon": "RHSA4"
@@ -4085,9 +4085,9 @@
     {
       "campus": "RIO HONDO",
       "crn": "3455",
-      "dias": "LU MI",
+      "dias": "VI",
       "grupo": "002",
-      "horario": "10:00-11:30",
+      "horario": "08:30-10:00",
       "nombre": "ECONOMIA POLITICA II",
       "profesor": "HORACIO ALEJANDRO LARREGUY ARBESU",
       "salon": "RHSA4"
@@ -4095,9 +4095,9 @@
     {
       "campus": "RIO HONDO",
       "crn": "3455",
-      "dias": "VI",
+      "dias": "LU MI",
       "grupo": "002",
-      "horario": "08:30-10:00",
+      "horario": "10:00-11:30",
       "nombre": "ECONOMIA POLITICA II",
       "profesor": "HORACIO ALEJANDRO LARREGUY ARBESU",
       "salon": "RHSA4"
@@ -4323,6 +4323,16 @@
     {
       "campus": "RIO HONDO",
       "crn": "3210",
+      "dias": "LU",
+      "grupo": "001",
+      "horario": "17:30-19:00",
+      "nombre": "FUNDAMENTOS JURIDICOS",
+      "profesor": "TANIA GABRIELA RODRIGUEZ HUERTA",
+      "salon": "RHB-3"
+    },
+    {
+      "campus": "RIO HONDO",
+      "crn": "3210",
       "dias": "MA JU",
       "grupo": "001",
       "horario": "07:00-08:30",
@@ -4337,17 +4347,17 @@
       "grupo": "001",
       "horario": "17:30-19:00",
       "nombre": "FUNDAMENTOS JURIDICOS",
-      "profesor": "TANIA GABRIELA RODRIGUEZ HUERTA",
+      "profesor": "LUIS ENRIQUE PEREDA TREJO",
       "salon": "RHB-3"
     },
     {
       "campus": "RIO HONDO",
-      "crn": "3210",
+      "crn": "3211",
       "dias": "LU",
-      "grupo": "001",
+      "grupo": "002",
       "horario": "17:30-19:00",
       "nombre": "FUNDAMENTOS JURIDICOS",
-      "profesor": "LUIS ENRIQUE PEREDA TREJO",
+      "profesor": "TANIA GABRIELA RODRIGUEZ HUERTA",
       "salon": "RHB-3"
     },
     {
@@ -4359,16 +4369,6 @@
       "nombre": "FUNDAMENTOS JURIDICOS",
       "profesor": "MARIANA AGUILAR AGUILAR",
       "salon": "RHSA1"
-    },
-    {
-      "campus": "RIO HONDO",
-      "crn": "3211",
-      "dias": "LU",
-      "grupo": "002",
-      "horario": "17:30-19:00",
-      "nombre": "FUNDAMENTOS JURIDICOS",
-      "profesor": "TANIA GABRIELA RODRIGUEZ HUERTA",
-      "salon": "RHB-3"
     }
   ],
   "DER-10015": [
@@ -4613,6 +4613,16 @@
     {
       "campus": "RIO HONDO",
       "crn": "3226",
+      "dias": "MA",
+      "grupo": "001",
+      "horario": "08:30-10:00",
+      "nombre": "DERECHO PUBLICO",
+      "profesor": "JOYCE CAROL  SADKA",
+      "salon": "RH309"
+    },
+    {
+      "campus": "RIO HONDO",
+      "crn": "3226",
       "dias": "MA JU",
       "grupo": "001",
       "horario": "07:00-08:30",
@@ -4622,9 +4632,9 @@
     },
     {
       "campus": "RIO HONDO",
-      "crn": "3226",
-      "dias": "MA",
-      "grupo": "001",
+      "crn": "3227",
+      "dias": "JU",
+      "grupo": "002",
       "horario": "08:30-10:00",
       "nombre": "DERECHO PUBLICO",
       "profesor": "JOYCE CAROL  SADKA",
@@ -4639,16 +4649,6 @@
       "nombre": "DERECHO PUBLICO",
       "profesor": "MARIANA AGUILAR AGUILAR",
       "salon": "RHSA1"
-    },
-    {
-      "campus": "RIO HONDO",
-      "crn": "3227",
-      "dias": "JU",
-      "grupo": "002",
-      "horario": "08:30-10:00",
-      "nombre": "DERECHO PUBLICO",
-      "profesor": "JOYCE CAROL  SADKA",
-      "salon": "RH309"
     }
   ],
   "DER-10114": [
@@ -4849,22 +4849,22 @@
     {
       "campus": "RIO HONDO",
       "crn": "3197",
-      "dias": "MA JU",
-      "grupo": "001",
-      "horario": "08:30-10:00",
-      "nombre": "FILOSOFIA DEL DERECHO",
-      "profesor": "JUAN JESUS GARZA ONOFRE",
-      "salon": "RH314"
-    },
-    {
-      "campus": "RIO HONDO",
-      "crn": "3197",
       "dias": "LU",
       "grupo": "001",
       "horario": "16:00-17:30",
       "nombre": "FILOSOFIA DEL DERECHO",
       "profesor": "RODOLFO DARIO VAZQUEZ CARDOZO",
       "salon": "RHB-5"
+    },
+    {
+      "campus": "RIO HONDO",
+      "crn": "3197",
+      "dias": "MA JU",
+      "grupo": "001",
+      "horario": "08:30-10:00",
+      "nombre": "FILOSOFIA DEL DERECHO",
+      "profesor": "JUAN JESUS GARZA ONOFRE",
+      "salon": "RH314"
     },
     {
       "campus": "RIO HONDO",
@@ -4967,20 +4967,20 @@
       "crn": "2880",
       "dias": "MA JU",
       "grupo": "002",
-      "horario": "13:00-14:30",
+      "horario": "08:30-10:00",
       "nombre": "TEORÍA DEL DERECHO I",
-      "profesor": "ALBERTO PUPPO",
-      "salon": "RH315"
+      "profesor": "PABLO ARIEL RAPETTI",
+      "salon": "RH305"
     },
     {
       "campus": "RIO HONDO",
       "crn": "2880",
       "dias": "MA JU",
       "grupo": "002",
-      "horario": "08:30-10:00",
+      "horario": "13:00-14:30",
       "nombre": "TEORÍA DEL DERECHO I",
-      "profesor": "PABLO ARIEL RAPETTI",
-      "salon": "RH305"
+      "profesor": "ALBERTO PUPPO",
+      "salon": "RH315"
     },
     {
       "campus": "RIO HONDO",
@@ -5035,22 +5035,22 @@
     {
       "campus": "RIO HONDO",
       "crn": "2884",
-      "dias": "MA JU",
-      "grupo": "004",
-      "horario": "08:30-10:00",
-      "nombre": "TEORÍA DEL DERECHO I",
-      "profesor": "PABLO ARIEL RAPETTI",
-      "salon": "RH305"
-    },
-    {
-      "campus": "RIO HONDO",
-      "crn": "2884",
       "dias": "LU MI",
       "grupo": "004",
       "horario": "12:30-14:00",
       "nombre": "TEORÍA DEL DERECHO I",
       "profesor": "ALBERTO PUPPO",
       "salon": "RH309"
+    },
+    {
+      "campus": "RIO HONDO",
+      "crn": "2884",
+      "dias": "MA JU",
+      "grupo": "004",
+      "horario": "08:30-10:00",
+      "nombre": "TEORÍA DEL DERECHO I",
+      "profesor": "PABLO ARIEL RAPETTI",
+      "salon": "RH305"
     },
     {
       "campus": "RIO HONDO",
@@ -5441,22 +5441,22 @@
     {
       "campus": "RIO HONDO",
       "crn": "3080",
-      "dias": "LU MI",
-      "grupo": "001",
-      "horario": "16:00-17:30",
-      "nombre": "TEO GRAL PROC Y SEM DE PRUEBA",
-      "profesor": "CESAR CLAUDIO URRUTIA ROMERO",
-      "salon": "RH102"
-    },
-    {
-      "campus": "RIO HONDO",
-      "crn": "3080",
       "dias": "VI",
       "grupo": "001",
       "horario": "08:30-10:00",
       "nombre": "TEO GRAL PROC Y SEM DE PRUEBA",
       "profesor": "RAYMUNDO GAMA LEYVA",
       "salon": "RH309"
+    },
+    {
+      "campus": "RIO HONDO",
+      "crn": "3080",
+      "dias": "LU MI",
+      "grupo": "001",
+      "horario": "16:00-17:30",
+      "nombre": "TEO GRAL PROC Y SEM DE PRUEBA",
+      "profesor": "CESAR CLAUDIO URRUTIA ROMERO",
+      "salon": "RH102"
     }
   ],
   "DER-13504": [
@@ -5693,6 +5693,16 @@
     {
       "campus": "RIO HONDO",
       "crn": "2993",
+      "dias": "LU",
+      "grupo": "001",
+      "horario": "07:00-08:30",
+      "nombre": "DER CONST. I Y SEM DE TEO POL",
+      "profesor": "ROBERTO NIEMBRO ORTEGA",
+      "salon": "RH301"
+    },
+    {
+      "campus": "RIO HONDO",
+      "crn": "2993",
       "dias": "MA JU",
       "grupo": "001",
       "horario": "08:30-10:00",
@@ -5707,16 +5717,6 @@
       "grupo": "001",
       "horario": "07:00-08:30",
       "nombre": "DER CONST. I Y SEM DE TEO POL",
-      "profesor": "ROBERTO NIEMBRO ORTEGA",
-      "salon": "RH301"
-    },
-    {
-      "campus": "RIO HONDO",
-      "crn": "2993",
-      "dias": "LU",
-      "grupo": "001",
-      "horario": "07:00-08:30",
-      "nombre": "DER CONST. I Y SEM DE TEO POL",
       "profesor": "ANA MICAELA ALTERIO",
       "salon": "RH301"
     },
@@ -5729,6 +5729,16 @@
       "nombre": "DER CONST. I Y SEM DE TEO POL",
       "profesor": "ROBERTO NIEMBRO ORTEGA",
       "salon": "RH211"
+    },
+    {
+      "campus": "RIO HONDO",
+      "crn": "3056",
+      "dias": "MA JU",
+      "grupo": "002",
+      "horario": "11:30-13:00",
+      "nombre": "DER CONST. I Y SEM DE TEO POL",
+      "profesor": "RODRIGO CAMARENA GONZALEZ",
+      "salon": "RHSA1"
     },
     {
       "campus": "RIO HONDO",
@@ -5747,16 +5757,6 @@
       "grupo": "002",
       "horario": "11:30-13:00",
       "nombre": "DER CONST. I Y SEM DE TEO POL",
-      "profesor": "RODRIGO CAMARENA GONZALEZ",
-      "salon": "RHSA1"
-    },
-    {
-      "campus": "RIO HONDO",
-      "crn": "3056",
-      "dias": "MA JU",
-      "grupo": "002",
-      "horario": "11:30-13:00",
-      "nombre": "DER CONST. I Y SEM DE TEO POL",
       "profesor": "JULIO ANTONIO RIOS FIGUEROA",
       "salon": "RHSA1"
     },
@@ -5783,22 +5783,22 @@
     {
       "campus": "RIO HONDO",
       "crn": "3059",
-      "dias": "MA JU",
-      "grupo": "003",
-      "horario": "08:30-10:00",
-      "nombre": "DER CONST. I Y SEM DE TEO POL",
-      "profesor": "JULIO ANTONIO RIOS FIGUEROA",
-      "salon": "RH211"
-    },
-    {
-      "campus": "RIO HONDO",
-      "crn": "3059",
       "dias": "JU",
       "grupo": "003",
       "horario": "13:00-14:30",
       "nombre": "DER CONST. I Y SEM DE TEO POL",
       "profesor": "ANA MICAELA ALTERIO",
       "salon": "RH301"
+    },
+    {
+      "campus": "RIO HONDO",
+      "crn": "3059",
+      "dias": "MA JU",
+      "grupo": "003",
+      "horario": "08:30-10:00",
+      "nombre": "DER CONST. I Y SEM DE TEO POL",
+      "profesor": "JULIO ANTONIO RIOS FIGUEROA",
+      "salon": "RH211"
     },
     {
       "campus": "RIO HONDO",
@@ -5823,22 +5823,22 @@
     {
       "campus": "RIO HONDO",
       "crn": "3063",
-      "dias": "LU",
-      "grupo": "004",
-      "horario": "07:00-08:30",
-      "nombre": "DER CONST. I Y SEM DE TEO POL",
-      "profesor": "RODRIGO CAMARENA GONZALEZ",
-      "salon": "RH301"
-    },
-    {
-      "campus": "RIO HONDO",
-      "crn": "3063",
       "dias": "MA JU",
       "grupo": "004",
       "horario": "11:30-13:00",
       "nombre": "DER CONST. I Y SEM DE TEO POL",
       "profesor": "ROBERTO NIEMBRO ORTEGA",
       "salon": "RHSA1"
+    },
+    {
+      "campus": "RIO HONDO",
+      "crn": "3063",
+      "dias": "LU",
+      "grupo": "004",
+      "horario": "07:00-08:30",
+      "nombre": "DER CONST. I Y SEM DE TEO POL",
+      "profesor": "RODRIGO CAMARENA GONZALEZ",
+      "salon": "RH301"
     },
     {
       "campus": "RIO HONDO",
@@ -5941,6 +5941,16 @@
     {
       "campus": "RIO HONDO",
       "crn": "3092",
+      "dias": "LU MI",
+      "grupo": "001",
+      "horario": "16:00-17:30",
+      "nombre": "DER. CONST. III Y SEM DE ARGUM",
+      "profesor": "FRANCISCA MARIA POU GIMENEZ",
+      "salon": "RH317"
+    },
+    {
+      "campus": "RIO HONDO",
+      "crn": "3092",
       "dias": "VI",
       "grupo": "001",
       "horario": "10:00-11:30",
@@ -5955,16 +5965,6 @@
       "grupo": "001",
       "horario": "16:00-17:30",
       "nombre": "DER. CONST. III Y SEM DE ARGUM",
-      "profesor": "FRANCISCA MARIA POU GIMENEZ",
-      "salon": "RH317"
-    },
-    {
-      "campus": "RIO HONDO",
-      "crn": "3092",
-      "dias": "LU MI",
-      "grupo": "001",
-      "horario": "16:00-17:30",
-      "nombre": "DER. CONST. III Y SEM DE ARGUM",
       "profesor": "MARIA GUADALUPE ADRIANA ORTEGA ORTIZ",
       "salon": "RH317"
     },
@@ -5981,22 +5981,22 @@
     {
       "campus": "RIO HONDO",
       "crn": "3093",
-      "dias": "JU",
-      "grupo": "002",
-      "horario": "19:00-20:30",
-      "nombre": "DER. CONST. III Y SEM DE ARGUM",
-      "profesor": "MIGUEL ANTONIO NUÑEZ VALADEZ",
-      "salon": "RH308"
-    },
-    {
-      "campus": "RIO HONDO",
-      "crn": "3093",
       "dias": "LU MI",
       "grupo": "002",
       "horario": "19:30-21:00",
       "nombre": "DER. CONST. III Y SEM DE ARGUM",
       "profesor": "DAVID GARCIA SARUBBI",
       "salon": "RH317"
+    },
+    {
+      "campus": "RIO HONDO",
+      "crn": "3093",
+      "dias": "JU",
+      "grupo": "002",
+      "horario": "19:00-20:30",
+      "nombre": "DER. CONST. III Y SEM DE ARGUM",
+      "profesor": "MIGUEL ANTONIO NUÑEZ VALADEZ",
+      "salon": "RH308"
     },
     {
       "campus": "RIO HONDO",
