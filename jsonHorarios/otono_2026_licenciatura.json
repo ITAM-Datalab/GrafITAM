@@ -585,16 +585,6 @@
       "nombre": "TOPICOS DE NEGOCIOS",
       "profesor": "MARIA CRUZ MERINO SANZ",
       "salon": "PF104"
-    },
-    {
-      "campus": "RIO HONDO",
-      "crn": "2627",
-      "dias": "LU MI",
-      "grupo": "002",
-      "horario": "07:00-08:30",
-      "nombre": "TOPICOS DE NEGOCIOS",
-      "profesor": "RENATA HERRERIAS FRANCO",
-      "salon": "RH312"
     }
   ],
   "ADM-12311": [
@@ -8850,7 +8840,7 @@
       "horario": "16:00-19:00",
       "nombre": "MEDIO ORIENTE",
       "profesor": "ANGEL/RABIH RAYES EL-KANTAR",
-      "salon": "RHPB3"
+      "salon": "PF106"
     }
   ],
   "EIN-19555": [
@@ -10948,6 +10938,16 @@
     }
   ],
   "LEN-12755": [
+    {
+      "campus": "RIO HONDO",
+      "crn": "3008",
+      "dias": "JU",
+      "grupo": "001",
+      "horario": "16:00-17:00",
+      "nombre": "COMUN. PROFESIONAL PARA C. POL",
+      "profesor": "INTI VARGAS MORENO",
+      "salon": "RH202"
+    },
     {
       "campus": "RIO HONDO",
       "crn": "3008",
