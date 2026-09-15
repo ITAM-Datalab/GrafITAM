@@ -8878,6 +8878,16 @@
     },
     {
       "campus": "RIO HONDO",
+      "crn": "2434",
+      "dias": "MA JU",
+      "grupo": "002",
+      "horario": "18:00-20:00",
+      "nombre": "ESTADISTICA.,I",
+      "profesor": "MIGUEL ANGEL AVILA DEL BOSQUE",
+      "salon": "RH301"
+    },
+    {
+      "campus": "RIO HONDO",
       "crn": "2435",
       "dias": "MA JU",
       "grupo": "003",
