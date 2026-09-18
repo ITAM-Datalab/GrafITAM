@@ -6523,7 +6523,7 @@
       "grupo": "003",
       "horario": "11:30-13:00",
       "nombre": "PENSAMIENTO ECONOMICO",
-      "profesor": "FELIX VELEZ FERNANDEZ VARELA",
+      "profesor": "",
       "salon": "RH317"
     }
   ],
@@ -6535,7 +6535,7 @@
       "grupo": "001",
       "horario": "11:30-13:00",
       "nombre": "HISTORIA DEL ANALISIS ECO.",
-      "profesor": "FELIX VELEZ FERNANDEZ VARELA",
+      "profesor": "",
       "salon": "RH317"
     }
   ],
@@ -7643,7 +7643,7 @@
       "grupo": "002",
       "horario": "17:30-19:00",
       "nombre": "HISTORIA ECONOMICA DE MEXICO",
-      "profesor": "FELIX VELEZ FERNANDEZ VARELA",
+      "profesor": "BERNARDO BATIZ LAZO",
       "salon": "RH106"
     },
     {
@@ -7699,7 +7699,7 @@
       "grupo": "001",
       "horario": "17:30-19:00",
       "nombre": "HISTORIA ECONOMICA MODERNA",
-      "profesor": "FELIX VELEZ FERNANDEZ VARELA",
+      "profesor": "BERNARDO BATIZ LAZO",
       "salon": "RH106"
     }
   ],
