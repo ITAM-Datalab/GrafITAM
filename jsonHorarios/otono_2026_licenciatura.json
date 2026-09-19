@@ -2853,14 +2853,14 @@
       "salon": "RHCC102"
     },
     {
-      "campus": "",
+      "campus": "RIO HONDO",
       "crn": "3478",
       "dias": "JU",
       "grupo": "002",
       "horario": "18:00-21:00",
       "nombre": "MINERIA DE DATOS",
       "profesor": "EDGAR FRANCISCO ROMAN RANGEL",
-      "salon": ""
+      "salon": "RHCUBIC"
     }
   ],
   "COM-23114": [
@@ -6515,16 +6515,6 @@
       "nombre": "PENSAMIENTO ECONOMICO",
       "profesor": "JUAN CARLOS BELAUSTEGUIGOITIA RIUS",
       "salon": "RH103"
-    },
-    {
-      "campus": "RIO HONDO",
-      "crn": "3451",
-      "dias": "LU MI",
-      "grupo": "003",
-      "horario": "11:30-13:00",
-      "nombre": "PENSAMIENTO ECONOMICO",
-      "profesor": "",
-      "salon": "RH317"
     }
   ],
   "ECO-10301": [
@@ -6535,8 +6525,8 @@
       "grupo": "001",
       "horario": "11:30-13:00",
       "nombre": "HISTORIA DEL ANALISIS ECO.",
-      "profesor": "",
-      "salon": "RH317"
+      "profesor": "DIEGO ALEJANDRO DOMINGUEZ LARREA",
+      "salon": "RH106"
     }
   ],
   "ECO-10516": [
