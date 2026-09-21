@@ -10088,6 +10088,16 @@
     },
     {
       "campus": "RIO HONDO",
+      "crn": "2697",
+      "dias": "MA JU",
+      "grupo": "007",
+      "horario": "07:00-08:30",
+      "nombre": "ESTRATEGIAS DE COMUNIC ESCRITA",
+      "profesor": "EMILIO ENRIQUE NAVARRO HERNANDEZ",
+      "salon": "RHACERV"
+    },
+    {
+      "campus": "RIO HONDO",
       "crn": "2701",
       "dias": "MA JU",
       "grupo": "008",
@@ -10132,6 +10142,16 @@
       "dias": "MA JU",
       "grupo": "012",
       "horario": "16:00-17:30",
+      "nombre": "ESTRATEGIAS DE COMUNIC ESCRITA",
+      "profesor": "LILYTH KATHERINE ORMSBY JENKINS",
+      "salon": "RHACERV"
+    },
+    {
+      "campus": "RIO HONDO",
+      "crn": "2718",
+      "dias": "VI",
+      "grupo": "014",
+      "horario": "07:00-10:00",
       "nombre": "ESTRATEGIAS DE COMUNIC ESCRITA",
       "profesor": "LILYTH KATHERINE ORMSBY JENKINS",
       "salon": "RHACERV"
@@ -10460,6 +10480,16 @@
     },
     {
       "campus": "RIO HONDO",
+      "crn": "2773",
+      "dias": "MA",
+      "grupo": "010",
+      "horario": "16:00-17:00",
+      "nombre": "SEMIN. DE COMUNICAC. ESCRITA",
+      "profesor": "FRANCISCO JOSE FERNANDEZ DEFEZ",
+      "salon": "RH201"
+    },
+    {
+      "campus": "RIO HONDO",
       "crn": "2774",
       "dias": "MI",
       "grupo": "011",
@@ -10536,6 +10566,16 @@
       "horario": "09:00-10:00",
       "nombre": "SEMIN. DE COMUNICAC. ESCRITA",
       "profesor": "ANA TAMARIT AMIEVA",
+      "salon": "RH206"
+    },
+    {
+      "campus": "RIO HONDO",
+      "crn": "2782",
+      "dias": "JU",
+      "grupo": "019",
+      "horario": "09:00-10:00",
+      "nombre": "SEMIN. DE COMUNICAC. ESCRITA",
+      "profesor": "AMERICO DEL RIO ORTEGA",
       "salon": "RH206"
     },
     {
