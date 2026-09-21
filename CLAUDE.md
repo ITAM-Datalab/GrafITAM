@@ -1,6 +1,6 @@
 # GrafItam
 
- interactivo de planes de estudio del ITAM basado en grafos DAG. El usuario selecciona un programa y generación; la app muestra el grafo de materias con sus prerrequisitos, y permite marcar materias como aprobadas y planear semestres futuros. Una segunda pestaña ("Planear Horario") permite, para las materias marcadas como planeadas, importar sus grupos/CRN de ITACA y armar un horario semanal sin traslapes (ver `src/components/schedule/CLAUDE.md`).
+Visualizador interactivo de planes de estudio del ITAM basado en grafos DAG. El usuario selecciona un programa y generación; la app muestra el grafo de materias con sus prerrequisitos, y permite marcar materias como aprobadas y planear semestres futuros. Una segunda pestaña ("Planear Horario") permite, para las materias marcadas como planeadas, importar sus grupos/CRN de ITACA y armar un horario semanal sin traslapes (ver `src/components/schedule/CLAUDE.md`).
 
 ## Stack
 
