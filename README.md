@@ -11,7 +11,7 @@ Visualizador interactivo de planes de estudio del ITAM basado en grafos dirigido
 - Permite marcar materias como **aprobadas** (con propagación automática a prerreqs) o **planeadas** (con propagación a correqs)
 - Detecta inconsistencias topológicas cuando una materia planeada está en un semestre incorrecto
 - Muestra el progreso en créditos aprobados sobre el total del plan
-- Persiste        estado del usuario en LocalStorage
+- Persiste el estado del usuario en LocalStorage
 
 ## Stack
 
