@@ -3,7 +3,8 @@ import PlanSelector from './components/PlanSelector'
 import FlowCanvas from './components/FlowCanvas'
 import ScheduleTab from './components/schedule/ScheduleTab'
 import ReportIssueModal from './components/schedule/ReportIssueModal'
-import ManualTab from './components/manual/ManualTab'
+//import ManualTab from './components/manual/ManualTab'
+import HelpBubble from './components/manual/HelpBubble'
 import { useCurriculumStore } from './store/curriculumStore'
 import { trackEvent } from './lib/analytics'
 import bgDesktop from './assets/bg-desktop.png'
@@ -13,7 +14,8 @@ export default function App() {
   const activePlan = useCurriculumStore((s) => s.activePlan)
   const planData = useCurriculumStore((s) => s.planData)
   const loadPlan = useCurriculumStore((s) => s.loadPlan)
-  const [tab, setTab] = useState<'plan' | 'horario' | 'manual'>('manual')
+  const [tab, setTab] = useState<'plan' | 'horario'>('plan')
+  //useState<'plan' | 'horario' | 'manual'>('manual')
 
   useEffect(() => {
     if (activePlan && !planData) {
@@ -47,19 +49,12 @@ export default function App() {
         </div>
         <PlanSelector />
         <div className="flex flex-wrap gap-1 px-4 bg-base-cream border-b border-itam-muted/40">
-          <button
-            onClick={() => {
-              setTab('manual')
-              trackEvent('/tab/manual', 'Tab: Manual')
-            }}
-            className="text-sm px-3 py-2 font-semibold border-b-2 transition-colors"
-            style={{
-              borderColor: tab === 'manual' ? '#1E5E4B' : 'transparent',
-              color: tab === 'manual' ? '#1E5E4B' : 'rgba(13, 59, 46, 0.65)',
-            }}
-          >
-            Manual
-          </button>
+          
+          <div className="ml-auto flex items-center gap-2 py-1">
+            <ReportIssueModal />
+            <HelpBubble />
+          </div>
+
           <button
             onClick={() => {
               setTab('plan')
@@ -95,8 +90,6 @@ export default function App() {
       <main className="flex-1 overflow-hidden">
         {tab === 'horario' ? (
           <ScheduleTab />
-        ) : tab === 'manual' ? (
-          <ManualTab />
         ) : planData ? (
           <FlowCanvas />
         ) : (
