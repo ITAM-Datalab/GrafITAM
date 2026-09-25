@@ -1,3 +1,3 @@
 export { programIndex, allPlanMetas, areasByPlan, parseFilename, buildPlanFilename } from './loader'
-export { programNames } from './programNames'
+export { programNames, singlePrograms } from './programNames'
 export { planGenerations } from './planGenerations'
