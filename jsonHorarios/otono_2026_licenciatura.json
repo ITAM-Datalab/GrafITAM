@@ -4240,7 +4240,7 @@
       "horario": "10:00-11:30",
       "nombre": "DER. INTERNACIONAL PUBLICO,I",
       "profesor": "JORGE AGUILERA SUAREZ",
-      "salon": "PF106"
+      "salon": "RHB-5"
     }
   ],
   "DER-10006": [
@@ -6066,7 +6066,7 @@
       "horario": "08:30-10:00",
       "nombre": "DERECHO MERCANTIL I",
       "profesor": "ROSA MARIA ROJAS VERTIZ CONTRERAS",
-      "salon": "PF108"
+      "salon": "RHSA4"
     },
     {
       "campus": "RIO HONDO",
@@ -6294,7 +6294,7 @@
       "horario": "10:00-11:30",
       "nombre": "DERECHO INTERNACIONAL I",
       "profesor": "JORGE AGUILERA SUAREZ",
-      "salon": "PF106"
+      "salon": "RHB-5"
     }
   ],
   "DER-18601": [
@@ -6328,7 +6328,7 @@
       "horario": "10:00-11:30",
       "nombre": "DERECHO INTERNACIONAL PUBLICO",
       "profesor": "JORGE AGUILERA SUAREZ",
-      "salon": "PF106"
+      "salon": "RHB-5"
     }
   ],
   "DER-18802": [
@@ -7176,7 +7176,7 @@
       "horario": "16:00-17:30",
       "nombre": "PRINCIPIOS DE MACROECONOMIA",
       "profesor": "FELIPE JUNCAL MENDOZA",
-      "salon": "PF103"
+      "salon": "RH315"
     }
   ],
   "ECO-12011": [
@@ -7282,7 +7282,7 @@
       "horario": "16:00-17:30",
       "nombre": "ECONOMIA, II",
       "profesor": "FELIPE JUNCAL MENDOZA",
-      "salon": "PF103"
+      "salon": "RH315"
     }
   ],
   "ECO-12105": [
