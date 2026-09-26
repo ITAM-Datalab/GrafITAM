@@ -81,3 +81,10 @@ export const programNames: Record<string, string> = {
   RI: 'Relaciones Internacionales',
   RPL: 'Relaciones Internacionales y Ciencia Política',
 }
+// Licenciaturas individuales (no planes conjuntos). Lista explícita porque
+// varios nombres individuales llevan " y " (ej. "Ingeniería y Ciencias de la
+// Computación"). Usada por PlanSearchBar para mostrarlas primero.
+export const singlePrograms: ReadonlySet<string> = new Set([
+  'ACT', 'ADM', 'ADN', 'CAF', 'CDA', 'CEF', 'COM', 'CPL', 'DER', 'DFI', 'DMK',
+  'ECO', 'IA', 'ICC', 'IND', 'ISI', 'MA', 'MCT', 'MRI', 'NEG', 'RI',
+])

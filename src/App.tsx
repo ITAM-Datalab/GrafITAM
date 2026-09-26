@@ -3,17 +3,20 @@ import PlanSelector from './components/PlanSelector'
 import FlowCanvas from './components/FlowCanvas'
 import ScheduleTab from './components/schedule/ScheduleTab'
 import ReportIssueModal from './components/schedule/ReportIssueModal'
-import ManualTab from './components/manual/ManualTab'
+//import ManualTab from './components/manual/ManualTab'
+import HelpBubble from './components/manual/HelpBubble'
 import { useCurriculumStore } from './store/curriculumStore'
 import { trackEvent } from './lib/analytics'
 import bgDesktop from './assets/bg-desktop.png'
 import bgMobile from './assets/bg-mobile.png'
+import datalabLogo from './assets/datalab-logo.png'
 
 export default function App() {
   const activePlan = useCurriculumStore((s) => s.activePlan)
   const planData = useCurriculumStore((s) => s.planData)
   const loadPlan = useCurriculumStore((s) => s.loadPlan)
-  const [tab, setTab] = useState<'plan' | 'horario' | 'manual'>('manual')
+  const [tab, setTab] = useState<'plan' | 'horario'>('plan')
+  //useState<'plan' | 'horario' | 'manual'>('manual')
 
   useEffect(() => {
     if (activePlan && !planData) {
@@ -38,28 +41,34 @@ export default function App() {
         className="fixed inset-0 w-full h-full object-cover object-top -z-10 block md:hidden"
       />
 
+      {/* Velo sobre la ilustración para bajar el contraste del fondo (hallazgo V3). */}
+      <div aria-hidden className="fixed inset-0 -z-10 bg-base-cream/80 backdrop-blur-[2px]" />
+
       <header className="flex-shrink-0">
-        <div className="px-4 py-2" style={{ background: '#0D3B2E', color: '#FCFAF8' }}>
-          <h1 className="text-base font-bold tracking-widest">GrafItam</h1>
-          <p className="text-[10px] tracking-wide" style={{ opacity: 0.65 }}>
-            Visualizador de Plan de Estudios · ITAM
-          </p>
+        <div
+          className="px-4 py-2 flex items-center justify-between gap-3"
+          style={{ background: '#0D3B2E', color: '#FCFAF8' }}
+        >
+          <div>
+            <h1 className="text-base font-bold tracking-widest">GrafItam</h1>
+            <p className="text-[10px] tracking-wide" style={{ opacity: 0.65 }}>
+              Visualizador de Plan de Estudios · ITAM
+            </p>
+          </div>
+          <a       
+            href="https://github.com/ITAM-Datalab"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex-shrink-0 flex items-center gap-1.5 rounded-full border border-white/30 pl-1 pr-2.5 py-0.5 text-[10px] font-semibold tracking-wide hover:bg-white/10 transition-colors"
+            title="Proyecto del DataLab del ITAM"
+          >
+            <img src={datalabLogo} alt="" aria-hidden className="h-4 w-4 rounded-full bg-white p-[1px]" />
+            Made in DataLab
+          </a>
         </div>
+
         <PlanSelector />
         <div className="flex flex-wrap gap-1 px-4 bg-base-cream border-b border-itam-muted/40">
-          <button
-            onClick={() => {
-              setTab('manual')
-              trackEvent('/tab/manual', 'Tab: Manual')
-            }}
-            className="text-sm px-3 py-2 font-semibold border-b-2 transition-colors"
-            style={{
-              borderColor: tab === 'manual' ? '#1E5E4B' : 'transparent',
-              color: tab === 'manual' ? '#1E5E4B' : 'rgba(13, 59, 46, 0.65)',
-            }}
-          >
-            Manual
-          </button>
           <button
             onClick={() => {
               setTab('plan')
@@ -86,17 +95,17 @@ export default function App() {
           >
             Planear Horario
           </button>
-          <div className="ml-auto flex items-center py-1">
+          <div className="ml-auto flex items-center gap-2 py-1">
             <ReportIssueModal />
+            <HelpBubble />
           </div>
         </div>
       </header>
 
+
       <main className="flex-1 overflow-hidden">
         {tab === 'horario' ? (
           <ScheduleTab />
-        ) : tab === 'manual' ? (
-          <ManualTab />
         ) : planData ? (
           <FlowCanvas />
         ) : (

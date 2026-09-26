@@ -1,5 +1,5 @@
 import type { ScheduleData, ScheduleGroup, SelectedGroups } from '../types/schedule'
-import { groupsOverlap } from './scheduleOverlap'
+import { groupByCrn, groupsOverlap } from './scheduleOverlap'
 
 export function autoAssignSchedule(groupsByCourse: ScheduleData): SelectedGroups {
   const courseIds = Object.keys(groupsByCourse)
@@ -17,12 +17,14 @@ export function autoAssignSchedule(groupsByCourse: ScheduleData): SelectedGroups
     const courseId = courseIds[index]
     const groups = groupsByCourse[courseId] ?? []
 
-    for (const group of groups) {
-      if (selected.every((g) => !groupsOverlap(g, group))) {
-        current[courseId] = group.crn
-        selected.push(group)
+    // Un CRN puede traer varias sesiones (ej. LU MI + JU): se revisan todas.
+    for (const [crn, rows] of groupByCrn(groups)) {
+      const fits = rows.every((row) => selected.every((g) => !groupsOverlap(g, row)))
+      if (fits) {
+        current[courseId] = crn
+        selected.push(...rows)
         backtrack(index + 1, current, currentCount + 1, selected)
-        selected.pop()
+        selected.splice(selected.length - rows.length, rows.length)
         delete current[courseId]
       }
     }
