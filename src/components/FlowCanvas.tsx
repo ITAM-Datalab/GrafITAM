@@ -3,7 +3,6 @@ import {
   ReactFlow,
   Background,
   Controls,
-  MiniMap,
   useNodesState,
   useEdgesState,
   MarkerType,
@@ -12,16 +11,17 @@ import {
 } from '@xyflow/react'
 import '@xyflow/react/dist/style.css'
 import { useCurriculumStore } from '../store/curriculumStore'
-import { computeGridLayout } from '../algorithms/dagreLayout'
+import { computeGridLayout, COLUMN_GAP, NODE_WIDTH } from '../algorithms/dagreLayout'
 import { buildDependentsIndex, computeHoverHighlight, coreqEdgeId, prereqEdgeId } from '../algorithms/graphHighlight'
 import CourseNode, { type CourseNodeData } from './CourseNode'
+import SemesterHeader, { SEMESTER_HEADER_PREFIX, type SemesterHeaderData } from './SemesterHeader'
 import PrereqEdge from './edges/PrereqEdge'
 import CoreqEdge from './edges/CoreqEdge'
 import ErrorEdge from './edges/ErrorEdge'
 import EdgeMarkers from './edges/EdgeMarkers'
 import type { Course } from '../types/curriculum'
 
-const nodeTypes = { courseNode: CourseNode }
+const nodeTypes = { courseNode: CourseNode, semesterHeader: SemesterHeader }
 const edgeTypes = { prereqEdge: PrereqEdge, coreqEdge: CoreqEdge, errorEdge: ErrorEdge }
 
 const EDGE_DIM_OPACITY = 0.35
@@ -137,19 +137,42 @@ export default function FlowCanvas() {
       },
     }))
   }, [layoutedNodes, highlight])
+  
+    // Encabezado arriba de cada columna. Son nodos de solo lectura.
+  const headerNodes: Node<SemesterHeaderData>[] = useMemo(() => {
+    if (!planData) return []
+    const stats: Record<number, { materias: number; creditos: number }> = {}
+    for (const course of Object.values(planData)) {
+      const sem = userSemesters[course.id] ?? course.semestre
+      if (!stats[sem]) stats[sem] = { materias: 0, creditos: 0 }
+      stats[sem].materias += 1
+      stats[sem].creditos += course.creditos
+    }
+    return Object.entries(stats).map(([sem, { materias, creditos }]) => ({
+      id: `${SEMESTER_HEADER_PREFIX}${sem}`,
+      type: 'semesterHeader',
+      position: { x: (Number(sem) - 1) * (NODE_WIDTH + COLUMN_GAP), y: -64 },
+      data: { semestre: Number(sem), materias, creditos },
+      draggable: false,
+      selectable: false,
+      connectable: false,
+    }))
+  }, [planData, userSemesters])
+  const allNodes: Node[] = useMemo(() => [...headerNodes, ...displayNodes], [headerNodes, displayNodes])
 
-  const [nodes, setNodes, onNodesChange] = useNodesState(displayNodes)
+  const [nodes, setNodes, onNodesChange] = useNodesState<Node>(allNodes)
   const [edges, setEdges, onEdgesChange] = useEdgesState(displayEdges)
 
   useEffect(() => {
-    setNodes(displayNodes)
-  }, [displayNodes, setNodes])
+    setNodes(allNodes)
+  }, [allNodes, setNodes])
 
   useEffect(() => {
     setEdges(displayEdges)
   }, [displayEdges, setEdges])
 
   const handleNodeMouseEnter = useCallback((event: React.MouseEvent, node: Node) => {
+    if (node.id.startsWith(SEMESTER_HEADER_PREFIX)) return
     if (hoverClearTimerRef.current) {
       clearTimeout(hoverClearTimerRef.current)
       hoverClearTimerRef.current = null
@@ -184,22 +207,13 @@ export default function FlowCanvas() {
         onNodeMouseEnter={handleNodeMouseEnter}
         onNodeMouseLeave={handleNodeMouseLeave}
         fitView
-        fitViewOptions={{ padding: 0.15 }}
+        fitViewOptions={{ padding: 0.12 }}
         minZoom={0.1}
         maxZoom={2}
         nodesDraggable={false}
       >
         <Background color="#DDD8D3" gap={24} size={1} />
-        <Controls />
-        <MiniMap
-          nodeColor={(n) =>
-            (n.data as CourseNodeData).course &&
-            userState[(n.data as CourseNodeData).course.id]?.aprobada
-              ? '#1E5E4B'
-              : '#FCFAF8'
-          }
-          maskColor="rgba(237,232,200,0.6)"
-        />
+        <Controls showInteractive={false}/>
       </ReactFlow>
 
       {tooltip && (() => {
