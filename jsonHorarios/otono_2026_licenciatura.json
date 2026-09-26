@@ -2529,6 +2529,16 @@
       "grupo": "003",
       "horario": "08:30-10:00",
       "nombre": "RAZONAMIENTO ALGORITMICO",
+      "profesor": "JOSE ALEJANDRO JARDI RAMOS",
+      "salon": "RHCC201"
+    },
+    {
+      "campus": "RIO HONDO",
+      "crn": "3130",
+      "dias": "MA JU",
+      "grupo": "003",
+      "horario": "08:30-10:00",
+      "nombre": "RAZONAMIENTO ALGORITMICO",
       "profesor": "FABIAN ORDUÑA FERREIRA",
       "salon": "RHCC201"
     },
