@@ -34,7 +34,8 @@ export default function ManualTab() {
             qué prerrequisitos necesita. Marca lo que ya cursaste, planea semestres futuros, y arma tu horario con
             los grupos reales de cada periodo — usa las pestañas de arriba (<strong className="font-semibold">Plan
             de Estudios</strong> y <strong className="font-semibold">Planear Horario</strong>) para moverte entre
-            las dos vistas.
+            las dos vistas. Puedes volver a abrir esta ayuda cuando quieras con el botón{' '}
+            <strong className="font-semibold">?</strong> de arriba a la derecha.
           </p>
         </Section>
 
@@ -159,7 +160,7 @@ export default function ManualTab() {
 
         <Section title="No encuentro mi materia, grupo o plan — ¿qué hago?">
           <p>
-            Usa el botón "Reporta un problema" (junto a las pestañas, arriba), llena el formulario y da clic en
+            Usa el botón "Reportar" (el de la banderita, arriba a la derecha), llena el formulario y da clic en
             "Enviar reporte": va directo a revisión, sin necesitar cuenta de Google ni de GitHub. Si el envío
             falla, aparece la opción de reportarlo por Google Form en su lugar.
           </p>

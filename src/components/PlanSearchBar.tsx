@@ -1,5 +1,5 @@
 import { useMemo, useState } from 'react'
-import { allPlanMetas, buildPlanFilename, programNames, planGenerations } from '../data/planIndex'
+import { allPlanMetas, buildPlanFilename, programNames, planGenerations, singlePrograms } from '../data/planIndex'
 import type { PlanMeta } from '../types/curriculum'
 import { trackEvent } from '../lib/analytics'
 
@@ -21,6 +21,13 @@ function splitGroups(query: string): string[][] {
     .split(GROUP_SPLIT_RE)
     .map((part) => fold(part).trim().split(/\s+/).filter(Boolean))
     .filter((tokens) => tokens.length > 0)
+}
+
+// Carreras individuales primero y planes conjuntos después, sin cambiar el orden dentro de cada grupo.
+function singlesFirst(metas: PlanMeta[]): PlanMeta[] {
+  const singles = metas.filter((m) => singlePrograms.has(m.program))
+  const joints = metas.filter((m) => !singlePrograms.has(m.program))
+  return [...singles, ...joints]
 }
 
 function haystackFor(meta: PlanMeta): string {
@@ -51,7 +58,7 @@ export default function PlanSearchBar({ onSelect }: Props) {
     // programa, etc.), lo cual esconde variantes del mismo programa
     // (ej. CDA-A/B/C) entre sí en vez de mostrarlas juntas.
     if (groups.length === 1) {
-      return allPlanMetas.filter((m) => matchesGroup(m, groups[0]))
+      return singlesFirst(allPlanMetas.filter((m) => matchesGroup(m, groups[0])))
     }
 
     // Con más de un grupo (query compuesta, ej. "Economía y Relaciones
@@ -64,7 +71,7 @@ export default function PlanSearchBar({ onSelect }: Props) {
         !groups.every((tokens) => matchesGroup(m, tokens)) &&
         groups.some((tokens) => matchesGroup(m, tokens)),
     )
-    return [...fullMatches, ...partialMatches]
+    return [...singlesFirst(fullMatches), ...singlesFirst(partialMatches)]
   }, [query])
 
   return (
