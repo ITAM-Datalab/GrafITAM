@@ -5527,6 +5527,16 @@
       "nombre": "JUICIO ORAL CIVIL Y FAMILIAR",
       "profesor": "FRANCISCO VILLAGRAN BALLESTEROS",
       "salon": "RHB-5"
+    },
+    {
+      "campus": "RIO HONDO",
+      "crn": "3458",
+      "dias": "MI",
+      "grupo": "002",
+      "horario": "19:30-21:30",
+      "nombre": "JUICIO ORAL CIVIL Y FAMILIAR",
+      "profesor": "CESAR LEYVA DEL VALLE",
+      "salon": "RHB-5"
     }
   ],
   "DER-14402": [
