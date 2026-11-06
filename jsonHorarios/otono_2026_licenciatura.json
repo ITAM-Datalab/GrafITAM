@@ -4209,6 +4209,18 @@
       "salon": "RH309"
     }
   ],
+  "CSO-19111": [
+    {
+      "campus": "",
+      "crn": "3673",
+      "dias": "JU VI",
+      "grupo": "001",
+      "horario": "10:00-13:01",
+      "nombre": "SEMINARIO DE CASO",
+      "profesor": "JEFFREY ALLEN WELDON",
+      "salon": ""
+    }
+  ],
   "DER-10003": [
     {
       "campus": "RIO HONDO",
