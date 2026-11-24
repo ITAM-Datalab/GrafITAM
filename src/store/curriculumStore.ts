@@ -26,6 +26,7 @@ export const useCurriculumStore = create<CurriculumState>()(
             aprobada: existingUserState?.[id]?.aprobada ?? false,
             planeada: existingUserState?.[id]?.planeada ?? false,
             semestrePlaneado: existingUserState?.[id]?.semestrePlaneado ?? course.semestre,
+            planeadaEn: existingUserState?.[id]?.planeadaEn,
           }
         }
 
@@ -102,12 +103,15 @@ export const useCurriculumStore = create<CurriculumState>()(
           // Invariante: aprobada XOR planeada (después de todas las aprobaciones)
           next = clearPlannedWhereApproved(next)
 
-          next[courseId] = { ...next[courseId], planeada: true, aprobada: false }
+          // Momento en que se planeó, para mostrar la lista de Planear Horario como pila
+          const planeadaEn = Date.now()
+          next[courseId] = { ...next[courseId], planeada: true, aprobada: false, planeadaEn }
 
           // Auto-planear correquisitos
           for (const partnerId of course.coreqGroup) {
             if (next[partnerId]) {
-              next[partnerId] = { ...next[partnerId], planeada: true, aprobada: false }
+              // Un instante antes, para que la materia elegida quede arriba de su correquisito
+              next[partnerId] = { ...next[partnerId], planeada: true, aprobada: false, planeadaEn: planeadaEn - 1 }
             }
           }
 

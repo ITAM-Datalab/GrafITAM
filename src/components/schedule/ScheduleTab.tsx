@@ -37,6 +37,16 @@ export default function ScheduleTab() {
     [plannedCourseIds, manualCourseIds],
   )
 
+  // Orden de la lista como pila: primero las buscadas (la más reciente arriba) y luego
+  // las planeadas, de la última marcada a la primera. allTrackedCourseIds conserva el
+  // orden original para colores, calendario, Excel y auto-asignar.
+  const displayCourseIds = useMemo(() => {
+    const planned = [...plannedCourseIds].sort(
+      (a, b) => (userState[b]?.planeadaEn ?? 0) - (userState[a]?.planeadaEn ?? 0),
+    )
+    return [...[...manualCourseIds].reverse(), ...planned]
+  }, [plannedCourseIds, manualCourseIds, userState])
+
   const courseNames = useMemo(() => {
     const names: Record<string, string> = {}
     for (const id of allTrackedCourseIds) {
@@ -127,7 +137,7 @@ export default function ScheduleTab() {
           </p>
         )}
 
-        {allTrackedCourseIds.map((courseId) => {
+        {displayCourseIds.map((courseId) => {
           const course = planData?.[courseId]
           const groups = groupsByCourse[courseId] ?? []
           const selectedCrn = selectedGroups[courseId]

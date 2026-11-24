@@ -4,6 +4,8 @@ export interface CourseUserState {
   aprobada: boolean
   planeada: boolean
   semestrePlaneado: number
+  /** Momento (Date.now()) en que se marcó como planeada; ordena la lista de Planear Horario como pila. */
+  planeadaEn?: number
 }
 
 export type UserStateMap = Record<string, CourseUserState>
