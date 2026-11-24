@@ -27,12 +27,18 @@ const edgeTypes = { prereqEdge: PrereqEdge, coreqEdge: CoreqEdge, errorEdge: Err
 const EDGE_DIM_OPACITY = 0.35
 const NODE_DIM_OPACITY = 0.55
 const HOVER_GRACE_MS = 100
+// Aristas de la cadena resaltada (ver PrereqEdge). La punta de flecha de xyflow escala con
+// el grosor de la línea (markerUnits = strokeWidth), por eso su tamaño base es menor.
+const HIGHLIGHT_EDGE_COLOR = '#0D3B2E'
+const HIGHLIGHT_MARKER_SIZE = 10
 
 export default function FlowCanvas() {
   const planData = useCurriculumStore((s) => s.planData)
   const userState = useCurriculumStore((s) => s.userState)
   const validationErrors = useCurriculumStore((s) => s.validationErrors)
   const [hoveredNodeId, setHoveredNodeId] = useState<string | null>(null)
+  // Materia fijada con clic: su resaltado no se pierde al mover el mouse
+  const [pinnedNodeId, setPinnedNodeId] = useState<string | null>(null)
   const [tooltip, setTooltip] = useState<{ courseId: string; x: number; y: number } | null>(null)
   const tooltipTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null)
   const hoverClearTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null)
@@ -106,20 +112,36 @@ export default function FlowCanvas() {
     [planData],
   )
 
+  // Al cambiar de plan se suelta la materia fijada
+  useEffect(() => {
+    setPinnedNodeId(null)
+  }, [planData])
+
+  // La materia fijada manda; si no hay, se usa la del hover
+  const activeNodeId = pinnedNodeId ?? hoveredNodeId
   const highlight = useMemo(
-    () => (hoveredNodeId && planData ? computeHoverHighlight(hoveredNodeId, planData, dependentsIndex) : null),
-    [hoveredNodeId, planData, dependentsIndex],
+    () => (activeNodeId && planData ? computeHoverHighlight(activeNodeId, planData, dependentsIndex) : null),
+    [activeNodeId, planData, dependentsIndex],
   )
 
   const displayEdges = useMemo(() => {
     if (!highlight) return rawEdges
-    return rawEdges.map((edge) => ({
-      ...edge,
-      style: {
-        ...(edge.style ?? {}),
-        opacity: highlight.edgeIds.has(edge.id) ? 1 : EDGE_DIM_OPACITY,
-      },
-    }))
+    return rawEdges.map((edge) => {
+      const isHighlighted = highlight.edgeIds.has(edge.id)
+      return {
+        ...edge,
+        data: { ...(edge.data ?? {}), highlighted: isHighlighted },
+        // La punta de flecha de una arista remarcada toma el mismo color que la línea
+        markerEnd:
+          isHighlighted && typeof edge.markerEnd === 'object'
+            ? { ...edge.markerEnd, color: HIGHLIGHT_EDGE_COLOR, width: HIGHLIGHT_MARKER_SIZE, height: HIGHLIGHT_MARKER_SIZE }
+            : edge.markerEnd,
+        style: {
+          ...(edge.style ?? {}),
+          opacity: isHighlighted ? 1 : EDGE_DIM_OPACITY,
+        },
+      }
+    })
   }, [rawEdges, highlight])
 
   const layoutedNodes = useMemo(
@@ -134,9 +156,13 @@ export default function FlowCanvas() {
       style: {
         ...(node.style ?? {}),
         opacity: highlight.nodeIds.has(node.id) ? 1 : NODE_DIM_OPACITY,
+        // Borde para que se note cuál materia está fijada
+        ...(node.id === pinnedNodeId
+          ? { outline: `2px solid ${HIGHLIGHT_EDGE_COLOR}`, outlineOffset: 2, borderRadius: 8 }
+          : {}),
       },
     }))
-  }, [layoutedNodes, highlight])
+  }, [layoutedNodes, highlight, pinnedNodeId])
   
     // Encabezado arriba de cada columna. Son nodos de solo lectura.
   const headerNodes: Node<SemesterHeaderData>[] = useMemo(() => {
@@ -191,6 +217,16 @@ export default function FlowCanvas() {
     }, HOVER_GRACE_MS)
   }, [])
 
+  // Clic en una materia: la fija, o la suelta si ya estaba fija. Los botones de la tarjeta
+  // detienen el clic (CourseNode), así que marcar aprobada/planeada no la fija.
+  const handleNodeClick = useCallback((_event: React.MouseEvent, node: Node) => {
+    if (node.id.startsWith(SEMESTER_HEADER_PREFIX)) return
+    setPinnedNodeId((current) => (current === node.id ? null : node.id))
+  }, [])
+
+  // Clic en el fondo vacío: suelta la materia fijada
+  const handlePaneClick = useCallback(() => setPinnedNodeId(null), [])
+
   if (!planData) return null
 
   return (
@@ -206,6 +242,8 @@ export default function FlowCanvas() {
         onEdgesChange={onEdgesChange}
         onNodeMouseEnter={handleNodeMouseEnter}
         onNodeMouseLeave={handleNodeMouseLeave}
+        onNodeClick={handleNodeClick}
+        onPaneClick={handlePaneClick}
         fitView
         fitViewOptions={{ padding: 0.12 }}
         minZoom={0.1}
