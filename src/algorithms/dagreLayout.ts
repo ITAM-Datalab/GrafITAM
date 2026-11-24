@@ -1,6 +1,6 @@
 import type { Node } from '@xyflow/react'
 
-const NODE_WIDTH = 188
+export const NODE_WIDTH = 188
 const NODE_HEIGHT = 112
 export const COLUMN_GAP = 120
 const NODE_GAP = 28
