@@ -14,9 +14,7 @@ function CourseNode({ data }: NodeProps) {
   const togglePlanned = useCurriculumStore((s) => s.togglePlanned)
   const hasError = useCurriculumStore((s) => s.validationErrors.some((e) => e.courseId === course.id))
   const showAvailable = useCurriculumStore((s) => s.showAvailable)
-  const allPrereqsApproved = useCurriculumStore((s) =>
-    course.prerreqs.every((id) => s.userState[id]?.aprobada ?? false),
-  )
+  const allPrereqsApproved = useCurriculumStore((s) => course.prerreqs.every((id) => s.userState[id]?.aprobada ?? false))
 
   const isApproved = userState?.aprobada ?? false
   const isPlanned = userState?.planeada ?? false
@@ -35,7 +33,7 @@ function CourseNode({ data }: NodeProps) {
 
   return (
     <div
-      className="rounded-lg px-3 py-2 select-none text-xs font-medium"
+      className="rounded-lg px-3 py-2 select-none text-xs font-medium shadow-sm"
       style={{ width: 188, ...stateStyles }}
     >
       <Handle type="target" position={Position.Left} style={{ background: 'transparent', border: 'none' }} />

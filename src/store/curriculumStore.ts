@@ -50,12 +50,8 @@ export const useCurriculumStore = create<CurriculumState>()(
           // Invariante: aprobada XOR planeada (incluye ancestros auto-aprobados)
           next = clearPlannedWhereApproved(next)
         } else {
+          // Desmarcar solo esta materia; su correquisito ya no se desmarca con ella.
           next[courseId] = { ...next[courseId], aprobada: false }
-          for (const partnerId of course.coreqGroup) {
-            if (next[partnerId]) {
-              next[partnerId] = { ...next[partnerId], aprobada: false }
-            }
-          }
         }
 
         const validationErrors = validateTopology(planData, next)
